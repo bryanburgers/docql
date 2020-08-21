@@ -1,0 +1,43 @@
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+{{#each fields}}
+<section id="field.{{name}}" class="field {{#if isDeprecated}}deprecated{{/if}}">
+    <h3>
+        <code><a class="field" href="#field.{{name}}">{{ name }}</a>
+            {{~#if args}}({{#each args}}<span class="{{#if isDeprecated}}deprecated{{/if}}"><a class="arg" href="#field.{{../name}}.arg.{{name}}">{{ name }}</a>: {{ t(type) }}{{#if defaultValue}} = {{defaultValue}}{{/if}}{{#if @last}}{{else}}</span>, {{/if}}{{/each}}){{/if~}}
+            : {{ t(type) }}
+        </code>
+    </h3>
+    {{#if isDeprecated}}
+    <div class="stability">
+        <div class="stab deprecated">
+            <span class="emoji">👎</span>
+            <span class="label">Deprecated:</span>
+            <p class="reason">{{ deprecationReason }}</p>
+        </div>
+    </div>
+    {{/if}}
+    {{#if description}}
+    <div class="docblock">
+        {{ docblock(description) }}
+    </div>
+    {{/if}}
+    {{#if args}}
+        <div class="args" id="field.{{name}}.args">
+            <h4><a href="#field.{{name}}.args">Args</a></h4>
+            {{#each args}}
+            <div id="field.{{../name}}.arg.{{name}}" class="arg {{#if isDeprecated}}deprecated{{/if}}">
+                <h5>
+                    <code><a class="arg" href="#field.{{../name}}.arg.{{name}}">{{name}}</a>: {{ t(type) }}{{#if defaultValue }} = {{defaultValue}}{{/if}}</code>
+                </h5>
+                {{#if description}}
+                <div class="docblock">
+                    {{ docblock(description) }}
+                </div>
+                {{/if}}
+                </div>
+            {{/each}}
+        </div>
+    {{/if}}
+</section>
+{{/each}}

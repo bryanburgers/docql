@@ -1,0 +1,29 @@
+<h1 class="fqn">
+    Input Object <a href="index.html">{{ schemaName }}</a>::<wbr><a class="input_object" href="">{{ inputObject.name }}</a>
+</h1>
+
+{{#if inputObject.description}}
+<div class="docblock">
+    {{ docblock(inputObject.description) }}
+</div>
+{{/if}}
+
+<h2 id="input_fields"><a href="#input_fields">Input Fields</a></h2>
+
+{{#each inputObject.inputFields}}
+<section>
+    <h3 id="input_field.{{name}}" class="input_field {{#if isDeprecated}}deprecated{{/if}}">
+        <code><a class="field" href="#input_field.{{name}}">{{ name }}</a>
+            {{~#if args}}({{#each args}}<span class="{{#if isDeprecated}}deprecated{{/if}}">{{ name }}: {{ t(type) }}{{#if defaultValue}} = {{defaultValue}}{{/if}}{{#if @last}}{{else}}</span>, {{/if}}{{/each}}){{/if~}}
+            : {{ t(type) }}
+        </code>
+    </h3>
+    {{#if description}}
+    <div class="docblock">
+        {{ docblock(description) }}
+    </div>
+    {{/if}}
+</section>
+{{/each}}
+
+{{>uses uses=uses}}

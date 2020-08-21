@@ -1,0 +1,11 @@
+{{#if possibleTypes}}
+<h2 id="possible_types"><a href="#possible_types">Possible Types</a></h2>
+
+{{#each possibleTypes}}
+<section id="possible_type.{{name}}" class="possible_type {{#if isDeprecated}}deprecated{{/if}}">
+    <h3>
+        <code><a class="{{ kind(kind) }}" href="{{ kind(kind) }}.{{name}}.html">{{name}}</a></code>
+    </h3>
+</section>
+{{/each}}
+{{/if}}

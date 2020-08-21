@@ -1,0 +1,11 @@
+<h1 class="fqn">
+    Scalar <a href="index.html">{{ schemaName }}</a>::<wbr><a class="scalar" href="">{{ scalar.name }}</a>
+</h1>
+
+{{#if scalar.description}}
+<div class="docblock">
+    {{ docblock(scalar.description) }}
+</div>
+{{/if}}
+
+{{>uses uses=uses}}

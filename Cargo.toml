@@ -1,0 +1,42 @@
+[package]
+name = "docql"
+version = "0.1.0"
+authors = ["Bryan Burgers <bryan@burgers.io>"]
+edition = "2018"
+description = "Generate static HTML documentation for GraphQL APIs."
+homepage = "https://github.com/bryanburgers/docql"
+repository = "https://github.com/bryanburgers/docql"
+readme = "README.md"
+license = "MIT"
+keywords = ["graphql"]
+categories = ["command-line-utilities", "web-programming"]
+default-run = "docql"
+
+[dependencies]
+async-trait = "0.1"
+chrono = "0.4"
+clap = "2.33"
+futures = "0.3"
+handlebars = "3"
+pulldown-cmark = "0.7"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "1"
+url = "2"
+
+# Only used for the binary
+reqwest = { version = "0.10", default-features = false, features = ["rustls-tls", "json"], optional = true}
+tokio = { version = "0.2", features = ["fs", "macros"], optional = true }
+
+[features]
+default = ["bin"]
+bin = ["reqwest", "tokio"]
+
+[[bin]]
+name = "docql"
+path = "src/bin/main.rs"
+required-features = ["bin"]
+
+[package.metadata.docs.rs]
+features = []
+no-default-features = true

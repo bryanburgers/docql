@@ -1,0 +1,15 @@
+<h1 class="fqn">
+    Interface <a href="index.html">{{ schemaName }}</a>::<wbr><a class="interface" href="">{{ interface.name }}</a>
+</h1>
+
+{{#if interface.description}}
+<div class="docblock">
+    {{ docblock(interface.description) }}
+</div>
+{{/if}}
+
+{{>fields fields=interface.fields}}
+
+{{>possible_types possibleTypes=interface.possibleTypes}}
+
+{{>uses uses=uses}}

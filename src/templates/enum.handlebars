@@ -1,0 +1,26 @@
+<h1 class="fqn">
+    Enum <a href="index.html">{{ schemaName }}</a>::<wbr><a class="enum" href="">{{ enum.name }}</a>
+</h1>
+
+{{#if enum.description}}
+<div class="docblock">
+    {{ docblock(enum.description) }}
+</div>
+{{/if}}
+
+<h2 id="enum_values"><a href="#enum_values">Enum Values</a></h2>
+
+{{#each enum.enumValues}}
+<section id="enum_value.{{name}}" class="field {{#if isDeprecated}}deprecated{{/if}}">
+    <h3>
+        <code><a class="enum_value" href="#enum_value.{{name}}">{{ name }}</a></code>
+    </h3>
+    {{#if description}}
+    <div class="docblock">
+        {{ docblock(description) }}
+    </div>
+    {{/if}}
+</section>
+{{/each}}
+
+{{>uses uses=uses}}

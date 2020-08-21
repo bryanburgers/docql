@@ -1,0 +1,18 @@
+{{#if uses}}
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+{{#each uses}}
+<section id="use.{{type.name}}" class="use">
+    <h3>
+        <code><a class="{{ kind(type.kind) }}" href="{{ kind(type.kind) }}.{{ type.name }}.html">{{ type.name }}</a>
+        {{~#if field ~}}
+        .<a class="field" href="{{ kind(type.kind) }}.{{ type.name }}.html#field.{{ field.name }}">{{field.name}}</a>
+        {{/if}}
+        {{~#if input_field ~}}
+        .<a class="input_field" href="{{ kind(type.kind) }}.{{ type.name }}.html#input_field.{{ input_field.name }}">{{input_field.name}}</a>
+        {{/if}}
+        </code>
+    </h3>
+</section>
+{{/each}}
+{{/if}}

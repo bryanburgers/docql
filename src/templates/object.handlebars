@@ -1,0 +1,13 @@
+<h1 class="fqn">
+    Object <a href="index.html">{{ schemaName }}</a>::<wbr><a class="object" href="">{{ object.name }}</a>
+</h1>
+
+{{#if object.description}}
+<div class="docblock">
+    {{ docblock(object.description) }}
+</div>
+{{/if}}
+
+{{>fields fields=object.fields}}
+
+{{>uses uses=uses}}

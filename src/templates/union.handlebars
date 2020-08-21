@@ -1,0 +1,13 @@
+<h1 class="fqn">
+    Union <a href="index.html">{{ schemaName }}</a>::<wbr><a class="union" href="">{{ union.name }}</a>
+</h1>
+
+{{#if union.description}}
+<div class="docblock">
+    {{ docblock(union.description) }}
+</div>
+{{/if}}
+
+{{>possible_types possibleTypes=union.possibleType}}
+
+{{>uses uses=uses}}

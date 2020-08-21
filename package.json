@@ -1,0 +1,25 @@
+{
+  "name": "docql",
+  "version": "0.1.0",
+  "description": "Generate static HTML documentation for GraphQL APIs.",
+  "main": "./docql-node/docql.js",
+  "bin": {
+    "docql": "./docql-node/docql.js"
+  },
+  "scripts": {
+    "prepare": "cd docql-node; wasm-pack build --target nodejs"
+  },
+  "author": "Bryan Burgers <bryan@burgers.io>",
+  "license": "MIT",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/bryanburgers/docql.git"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  },
+  "files": [
+    "docql-node/docql.js",
+    "docql-node/pkg/package.json"
+  ]
+}
