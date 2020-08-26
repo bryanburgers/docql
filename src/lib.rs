@@ -1,9 +1,9 @@
 //! Generate static HTML documentation for GraphQL endpoints
 #![deny(missing_docs)]
+use chrono::NaiveDate;
 use clap::{App, AppSettings, Arg};
 use futures::stream::{StreamExt as _, TryStreamExt as _};
 use std::collections::HashMap;
-use chrono::NaiveDate;
 
 mod error;
 mod handlebars_helpers;
@@ -86,8 +86,12 @@ pub async fn main(runtime: impl Runtime) -> Result<()> {
     let output = matches.value_of("output").unwrap();
     let name = matches.value_of("name").unwrap();
 
-    let date = runtime.date().await.map_err(|e| Error::Date(e.to_string()))?;
-    let date = NaiveDate::parse_from_str(&date, "%Y-%m-%d").map_err(|e| Error::Date(e.to_string()))?;
+    let date = runtime
+        .date()
+        .await
+        .map_err(|e| Error::Date(e.to_string()))?;
+    let date =
+        NaiveDate::parse_from_str(&date, "%Y-%m-%d").map_err(|e| Error::Date(e.to_string()))?;
 
     let mut headers: HashMap<String, String> = HashMap::new();
     headers.insert("user-agent".to_string(), USER_AGENT.to_string());

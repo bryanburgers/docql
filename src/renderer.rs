@@ -1,6 +1,6 @@
 use super::{handlebars_helpers, schema, Result};
-use serde::Serialize;
 use chrono::NaiveDate;
+use serde::Serialize;
 
 pub struct Renderer<'a> {
     schema_name: String,

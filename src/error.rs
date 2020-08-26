@@ -22,19 +22,19 @@ pub enum Error {
     WriteFile(String, String),
 
     /// Parsing the GraphQL schema as a serde object failed
-    #[error(transparent)]
+    #[error("Failed to parse GraphQL Introspection response: {0}")]
     Serde(#[from] serde_json::Error),
 
     /// Loading a handlebars template failed
-    #[error(transparent)]
+    #[error("Failed to load handlebars template: {0}")]
     HandlebarsTemplate(#[from] handlebars::TemplateError),
 
     /// Rendering a handlebars template failed
-    #[error(transparent)]
+    #[error("Failed to render handlebars template: {0}")]
     HandlebarsRender(#[from] handlebars::RenderError),
 
     /// An error occurred parsing arguments
-    #[error(transparent)]
+    #[error("Failed to parse arguments: {0}")]
     ClapError(#[from] clap::Error),
 }
 
