@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">App</a>
+</h1>
+
+
+<div class="docblock">
+    <p>A GitHub App.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.createdAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createdAt">createdAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was created.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.databaseId" class="field ">
+    <h3>
+        <code><a class="field" href="#field.databaseId">databaseId</a>: <a class="scalar" href="scalar.Int.html">Int</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the primary key from the database.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.description" class="field ">
+    <h3>
+        <code><a class="field" href="#field.description">description</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The description of the app.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.logoBackgroundColor" class="field ">
+    <h3>
+        <code><a class="field" href="#field.logoBackgroundColor">logoBackgroundColor</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The hex color code, without the leading '#', for the logo background.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.logoUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.logoUrl">logoUrl</a>(<span class=""><a class="arg" href="#field.logoUrl.arg.size">size</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A URL pointing to the app's logo.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.logoUrl.args">
+            <h4><a href="#field.logoUrl.args">Args</a></h4>
+            
+            <div id="field.logoUrl.arg.size" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.logoUrl.arg.size">size</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The size of the resulting image.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.name" class="field ">
+    <h3>
+        <code><a class="field" href="#field.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The name of the app.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.slug" class="field ">
+    <h3>
+        <code><a class="field" href="#field.slug">slug</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A slug based on the name of the app for use in URLs.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.updatedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updatedAt">updatedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was last updated.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.url" class="field ">
+    <h3>
+        <code><a class="field" href="#field.url">url</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The URL to the app's homepage.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.MarketplaceListing" class="use">
+    <h3>
+        <code><a class="object" href="object.MarketplaceListing.html">MarketplaceListing</a>.<a class="field" href="object.MarketplaceListing.html#field.app">app</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PushAllowanceActor" class="use">
+    <h3>
+        <code><a class="union" href="union.PushAllowanceActor.html">PushAllowanceActor</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.SearchResultItem" class="use">
+    <h3>
+        <code><a class="union" href="union.SearchResultItem.html">SearchResultItem</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

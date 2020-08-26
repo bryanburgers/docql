@@ -1,0 +1,1327 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">Query</a>
+</h1>
+
+
+<div class="docblock">
+    <p>The query root of GitHub's GraphQL interface.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.codeOfConduct" class="field ">
+    <h3>
+        <code><a class="field" href="#field.codeOfConduct">codeOfConduct</a>(<span class=""><a class="arg" href="#field.codeOfConduct.arg.key">key</a>: <a class="scalar" href="scalar.String.html">String</a>!): <a class="object" href="object.CodeOfConduct.html">CodeOfConduct</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Look up a code of conduct by its key</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.codeOfConduct.args">
+            <h4><a href="#field.codeOfConduct.args">Args</a></h4>
+            
+            <div id="field.codeOfConduct.arg.key" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.codeOfConduct.arg.key">key</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The code of conduct's key</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.codesOfConduct" class="field ">
+    <h3>
+        <code><a class="field" href="#field.codesOfConduct">codesOfConduct</a>: [<a class="object" href="object.CodeOfConduct.html">CodeOfConduct</a>]
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Look up a code of conduct by its key</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.enterprise" class="field ">
+    <h3>
+        <code><a class="field" href="#field.enterprise">enterprise</a>(<span class=""><a class="arg" href="#field.enterprise.arg.slug">slug</a>: <a class="scalar" href="scalar.String.html">String</a>!</span>, <span class=""><a class="arg" href="#field.enterprise.arg.invitationToken">invitationToken</a>: <a class="scalar" href="scalar.String.html">String</a>): <a class="object" href="object.Enterprise.html">Enterprise</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Look up an enterprise by URL slug.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.enterprise.args">
+            <h4><a href="#field.enterprise.args">Args</a></h4>
+            
+            <div id="field.enterprise.arg.slug" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.enterprise.arg.slug">slug</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The enterprise URL slug.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.enterprise.arg.invitationToken" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.enterprise.arg.invitationToken">invitationToken</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The enterprise invitation token.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.enterpriseAdministratorInvitation" class="field ">
+    <h3>
+        <code><a class="field" href="#field.enterpriseAdministratorInvitation">enterpriseAdministratorInvitation</a>(<span class=""><a class="arg" href="#field.enterpriseAdministratorInvitation.arg.userLogin">userLogin</a>: <a class="scalar" href="scalar.String.html">String</a>!</span>, <span class=""><a class="arg" href="#field.enterpriseAdministratorInvitation.arg.enterpriseSlug">enterpriseSlug</a>: <a class="scalar" href="scalar.String.html">String</a>!</span>, <span class=""><a class="arg" href="#field.enterpriseAdministratorInvitation.arg.role">role</a>: <a class="enum" href="enum.EnterpriseAdministratorRole.html">EnterpriseAdministratorRole</a>!): <a class="object" href="object.EnterpriseAdministratorInvitation.html">EnterpriseAdministratorInvitation</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Look up a pending enterprise administrator invitation by invitee, enterprise and role.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.enterpriseAdministratorInvitation.args">
+            <h4><a href="#field.enterpriseAdministratorInvitation.args">Args</a></h4>
+            
+            <div id="field.enterpriseAdministratorInvitation.arg.userLogin" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.enterpriseAdministratorInvitation.arg.userLogin">userLogin</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The login of the user invited to join the business.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.enterpriseAdministratorInvitation.arg.enterpriseSlug" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.enterpriseAdministratorInvitation.arg.enterpriseSlug">enterpriseSlug</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The slug of the enterprise the user was invited to join.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.enterpriseAdministratorInvitation.arg.role" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.enterpriseAdministratorInvitation.arg.role">role</a>: <a class="enum" href="enum.EnterpriseAdministratorRole.html">EnterpriseAdministratorRole</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The role for the business member invitation.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.enterpriseAdministratorInvitationByToken" class="field ">
+    <h3>
+        <code><a class="field" href="#field.enterpriseAdministratorInvitationByToken">enterpriseAdministratorInvitationByToken</a>(<span class=""><a class="arg" href="#field.enterpriseAdministratorInvitationByToken.arg.invitationToken">invitationToken</a>: <a class="scalar" href="scalar.String.html">String</a>!): <a class="object" href="object.EnterpriseAdministratorInvitation.html">EnterpriseAdministratorInvitation</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Look up a pending enterprise administrator invitation by invitation token.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.enterpriseAdministratorInvitationByToken.args">
+            <h4><a href="#field.enterpriseAdministratorInvitationByToken.args">Args</a></h4>
+            
+            <div id="field.enterpriseAdministratorInvitationByToken.arg.invitationToken" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.enterpriseAdministratorInvitationByToken.arg.invitationToken">invitationToken</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The invitation token sent with the invitation email.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.license" class="field ">
+    <h3>
+        <code><a class="field" href="#field.license">license</a>(<span class=""><a class="arg" href="#field.license.arg.key">key</a>: <a class="scalar" href="scalar.String.html">String</a>!): <a class="object" href="object.License.html">License</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Look up an open source license by its key</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.license.args">
+            <h4><a href="#field.license.args">Args</a></h4>
+            
+            <div id="field.license.arg.key" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.license.arg.key">key</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The license's downcased SPDX ID</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.licenses" class="field ">
+    <h3>
+        <code><a class="field" href="#field.licenses">licenses</a>: [<a class="object" href="object.License.html">License</a>]!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Return a list of known open source licenses</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.marketplaceCategories" class="field ">
+    <h3>
+        <code><a class="field" href="#field.marketplaceCategories">marketplaceCategories</a>(<span class=""><a class="arg" href="#field.marketplaceCategories.arg.includeCategories">includeCategories</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</span>, <span class=""><a class="arg" href="#field.marketplaceCategories.arg.excludeEmpty">excludeEmpty</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></span>, <span class=""><a class="arg" href="#field.marketplaceCategories.arg.excludeSubcategories">excludeSubcategories</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>): [<a class="object" href="object.MarketplaceCategory.html">MarketplaceCategory</a>!]!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Get alphabetically sorted list of Marketplace categories</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.marketplaceCategories.args">
+            <h4><a href="#field.marketplaceCategories.args">Args</a></h4>
+            
+            <div id="field.marketplaceCategories.arg.includeCategories" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.marketplaceCategories.arg.includeCategories">includeCategories</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Return only the specified categories.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.marketplaceCategories.arg.excludeEmpty" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.marketplaceCategories.arg.excludeEmpty">excludeEmpty</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Exclude categories with no listings.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.marketplaceCategories.arg.excludeSubcategories" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.marketplaceCategories.arg.excludeSubcategories">excludeSubcategories</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns top level categories only, excluding any subcategories.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.marketplaceCategory" class="field ">
+    <h3>
+        <code><a class="field" href="#field.marketplaceCategory">marketplaceCategory</a>(<span class=""><a class="arg" href="#field.marketplaceCategory.arg.slug">slug</a>: <a class="scalar" href="scalar.String.html">String</a>!</span>, <span class=""><a class="arg" href="#field.marketplaceCategory.arg.useTopicAliases">useTopicAliases</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>): <a class="object" href="object.MarketplaceCategory.html">MarketplaceCategory</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Look up a Marketplace category by its slug.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.marketplaceCategory.args">
+            <h4><a href="#field.marketplaceCategory.args">Args</a></h4>
+            
+            <div id="field.marketplaceCategory.arg.slug" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.marketplaceCategory.arg.slug">slug</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The URL slug of the category.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.marketplaceCategory.arg.useTopicAliases" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.marketplaceCategory.arg.useTopicAliases">useTopicAliases</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Also check topic aliases for the category slug</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.marketplaceListing" class="field ">
+    <h3>
+        <code><a class="field" href="#field.marketplaceListing">marketplaceListing</a>(<span class=""><a class="arg" href="#field.marketplaceListing.arg.slug">slug</a>: <a class="scalar" href="scalar.String.html">String</a>!): <a class="object" href="object.MarketplaceListing.html">MarketplaceListing</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Look up a single Marketplace listing</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.marketplaceListing.args">
+            <h4><a href="#field.marketplaceListing.args">Args</a></h4>
+            
+            <div id="field.marketplaceListing.arg.slug" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.marketplaceListing.arg.slug">slug</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Select the listing that matches this slug. It's the short name of the listing used in its URL.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.marketplaceListings" class="field ">
+    <h3>
+        <code><a class="field" href="#field.marketplaceListings">marketplaceListings</a>(<span class=""><a class="arg" href="#field.marketplaceListings.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.marketplaceListings.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.marketplaceListings.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.marketplaceListings.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.marketplaceListings.arg.categorySlug">categorySlug</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.marketplaceListings.arg.useTopicAliases">useTopicAliases</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></span>, <span class=""><a class="arg" href="#field.marketplaceListings.arg.viewerCanAdmin">viewerCanAdmin</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></span>, <span class=""><a class="arg" href="#field.marketplaceListings.arg.adminId">adminId</a>: <a class="scalar" href="scalar.ID.html">ID</a></span>, <span class=""><a class="arg" href="#field.marketplaceListings.arg.organizationId">organizationId</a>: <a class="scalar" href="scalar.ID.html">ID</a></span>, <span class=""><a class="arg" href="#field.marketplaceListings.arg.allStates">allStates</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></span>, <span class=""><a class="arg" href="#field.marketplaceListings.arg.slugs">slugs</a>: [<a class="scalar" href="scalar.String.html">String</a>]</span>, <span class=""><a class="arg" href="#field.marketplaceListings.arg.primaryCategoryOnly">primaryCategoryOnly</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</span>, <span class=""><a class="arg" href="#field.marketplaceListings.arg.withFreeTrialsOnly">withFreeTrialsOnly</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false): <a class="object" href="object.MarketplaceListingConnection.html">MarketplaceListingConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Look up Marketplace listings</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.marketplaceListings.args">
+            <h4><a href="#field.marketplaceListings.args">Args</a></h4>
+            
+            <div id="field.marketplaceListings.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.marketplaceListings.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.marketplaceListings.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.marketplaceListings.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.marketplaceListings.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.marketplaceListings.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.marketplaceListings.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.marketplaceListings.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.marketplaceListings.arg.categorySlug" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.marketplaceListings.arg.categorySlug">categorySlug</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Select only listings with the given category.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.marketplaceListings.arg.useTopicAliases" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.marketplaceListings.arg.useTopicAliases">useTopicAliases</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Also check topic aliases for the category slug</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.marketplaceListings.arg.viewerCanAdmin" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.marketplaceListings.arg.viewerCanAdmin">viewerCanAdmin</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Select listings to which user has admin access. If omitted, listings visible to the
+viewer are returned.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.marketplaceListings.arg.adminId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.marketplaceListings.arg.adminId">adminId</a>: <a class="scalar" href="scalar.ID.html">ID</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Select listings that can be administered by the specified user.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.marketplaceListings.arg.organizationId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.marketplaceListings.arg.organizationId">organizationId</a>: <a class="scalar" href="scalar.ID.html">ID</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Select listings for products owned by the specified organization.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.marketplaceListings.arg.allStates" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.marketplaceListings.arg.allStates">allStates</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Select listings visible to the viewer even if they are not approved. If omitted or
+false, only approved listings will be returned.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.marketplaceListings.arg.slugs" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.marketplaceListings.arg.slugs">slugs</a>: [<a class="scalar" href="scalar.String.html">String</a>]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Select the listings with these slugs, if they are visible to the viewer.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.marketplaceListings.arg.primaryCategoryOnly" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.marketplaceListings.arg.primaryCategoryOnly">primaryCategoryOnly</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Select only listings where the primary category matches the given category slug.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.marketplaceListings.arg.withFreeTrialsOnly" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.marketplaceListings.arg.withFreeTrialsOnly">withFreeTrialsOnly</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Select only listings that offer a free trial.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.meta" class="field ">
+    <h3>
+        <code><a class="field" href="#field.meta">meta</a>: <a class="object" href="object.GitHubMetadata.html">GitHubMetadata</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Return information about the GitHub instance</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.node" class="field ">
+    <h3>
+        <code><a class="field" href="#field.node">node</a>(<span class=""><a class="arg" href="#field.node.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!): <a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Fetches an object given its ID.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.node.args">
+            <h4><a href="#field.node.args">Args</a></h4>
+            
+            <div id="field.node.arg.id" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.node.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>ID of the object.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.nodes" class="field ">
+    <h3>
+        <code><a class="field" href="#field.nodes">nodes</a>(<span class=""><a class="arg" href="#field.nodes.arg.ids">ids</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]!): [<a class="interface" href="interface.Node.html">Node</a>]!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Lookup nodes by a list of IDs.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.nodes.args">
+            <h4><a href="#field.nodes.args">Args</a></h4>
+            
+            <div id="field.nodes.arg.ids" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.nodes.arg.ids">ids</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The list of node IDs.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.organization" class="field ">
+    <h3>
+        <code><a class="field" href="#field.organization">organization</a>(<span class=""><a class="arg" href="#field.organization.arg.login">login</a>: <a class="scalar" href="scalar.String.html">String</a>!): <a class="object" href="object.Organization.html">Organization</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Lookup a organization by login.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.organization.args">
+            <h4><a href="#field.organization.args">Args</a></h4>
+            
+            <div id="field.organization.arg.login" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.organization.arg.login">login</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The organization's login.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.rateLimit" class="field ">
+    <h3>
+        <code><a class="field" href="#field.rateLimit">rateLimit</a>(<span class=""><a class="arg" href="#field.rateLimit.arg.dryRun">dryRun</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false): <a class="object" href="object.RateLimit.html">RateLimit</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The client's rate limit information.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.rateLimit.args">
+            <h4><a href="#field.rateLimit.args">Args</a></h4>
+            
+            <div id="field.rateLimit.arg.dryRun" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.rateLimit.arg.dryRun">dryRun</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>If true, calculate the cost for the query without evaluating it</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.relay" class="field ">
+    <h3>
+        <code><a class="field" href="#field.relay">relay</a>: <a class="object" href="object.Query.html">Query</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Hack to workaround https://github.com/facebook/relay/issues/112 re-exposing the root query object</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.repository" class="field ">
+    <h3>
+        <code><a class="field" href="#field.repository">repository</a>(<span class=""><a class="arg" href="#field.repository.arg.owner">owner</a>: <a class="scalar" href="scalar.String.html">String</a>!</span>, <span class=""><a class="arg" href="#field.repository.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!): <a class="object" href="object.Repository.html">Repository</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Lookup a given repository by the owner and repository name.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.repository.args">
+            <h4><a href="#field.repository.args">Args</a></h4>
+            
+            <div id="field.repository.arg.owner" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repository.arg.owner">owner</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The login field of a user or organization</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repository.arg.name" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repository.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The name of the repository</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.repositoryOwner" class="field ">
+    <h3>
+        <code><a class="field" href="#field.repositoryOwner">repositoryOwner</a>(<span class=""><a class="arg" href="#field.repositoryOwner.arg.login">login</a>: <a class="scalar" href="scalar.String.html">String</a>!): <a class="interface" href="interface.RepositoryOwner.html">RepositoryOwner</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Lookup a repository owner (ie. either a User or an Organization) by login.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.repositoryOwner.args">
+            <h4><a href="#field.repositoryOwner.args">Args</a></h4>
+            
+            <div id="field.repositoryOwner.arg.login" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositoryOwner.arg.login">login</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The username to lookup the owner by.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.resource" class="field ">
+    <h3>
+        <code><a class="field" href="#field.resource">resource</a>(<span class=""><a class="arg" href="#field.resource.arg.url">url</a>: <a class="scalar" href="scalar.URI.html">URI</a>!): <a class="interface" href="interface.UniformResourceLocatable.html">UniformResourceLocatable</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Lookup resource by a URL.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.resource.args">
+            <h4><a href="#field.resource.args">Args</a></h4>
+            
+            <div id="field.resource.arg.url" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.resource.arg.url">url</a>: <a class="scalar" href="scalar.URI.html">URI</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The URL.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.search" class="field ">
+    <h3>
+        <code><a class="field" href="#field.search">search</a>(<span class=""><a class="arg" href="#field.search.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.search.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.search.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.search.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.search.arg.query">query</a>: <a class="scalar" href="scalar.String.html">String</a>!</span>, <span class=""><a class="arg" href="#field.search.arg.type">type</a>: <a class="enum" href="enum.SearchType.html">SearchType</a>!): <a class="object" href="object.SearchResultItemConnection.html">SearchResultItemConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Perform a search across resources.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.search.args">
+            <h4><a href="#field.search.args">Args</a></h4>
+            
+            <div id="field.search.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.search.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.search.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.search.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.search.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.search.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.search.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.search.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.search.arg.query" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.search.arg.query">query</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The search string to look for.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.search.arg.type" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.search.arg.type">type</a>: <a class="enum" href="enum.SearchType.html">SearchType</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The types of search items to search within.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.securityAdvisories" class="field ">
+    <h3>
+        <code><a class="field" href="#field.securityAdvisories">securityAdvisories</a>(<span class=""><a class="arg" href="#field.securityAdvisories.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.SecurityAdvisoryOrder.html">SecurityAdvisoryOrder</a> = {field: UPDATED_AT, direction: DESC}</span>, <span class=""><a class="arg" href="#field.securityAdvisories.arg.identifier">identifier</a>: <a class="input_object" href="input_object.SecurityAdvisoryIdentifierFilter.html">SecurityAdvisoryIdentifierFilter</a></span>, <span class=""><a class="arg" href="#field.securityAdvisories.arg.publishedSince">publishedSince</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a></span>, <span class=""><a class="arg" href="#field.securityAdvisories.arg.updatedSince">updatedSince</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a></span>, <span class=""><a class="arg" href="#field.securityAdvisories.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.securityAdvisories.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.securityAdvisories.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.securityAdvisories.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.SecurityAdvisoryConnection.html">SecurityAdvisoryConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>GitHub Security Advisories</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.securityAdvisories.args">
+            <h4><a href="#field.securityAdvisories.args">Args</a></h4>
+            
+            <div id="field.securityAdvisories.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.securityAdvisories.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.SecurityAdvisoryOrder.html">SecurityAdvisoryOrder</a> = {field: UPDATED_AT, direction: DESC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for the returned topics.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.securityAdvisories.arg.identifier" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.securityAdvisories.arg.identifier">identifier</a>: <a class="input_object" href="input_object.SecurityAdvisoryIdentifierFilter.html">SecurityAdvisoryIdentifierFilter</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Filter advisories by identifier, e.g. GHSA or CVE.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.securityAdvisories.arg.publishedSince" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.securityAdvisories.arg.publishedSince">publishedSince</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Filter advisories to those published since a time in the past.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.securityAdvisories.arg.updatedSince" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.securityAdvisories.arg.updatedSince">updatedSince</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Filter advisories to those updated since a time in the past.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.securityAdvisories.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.securityAdvisories.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.securityAdvisories.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.securityAdvisories.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.securityAdvisories.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.securityAdvisories.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.securityAdvisories.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.securityAdvisories.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.securityAdvisory" class="field ">
+    <h3>
+        <code><a class="field" href="#field.securityAdvisory">securityAdvisory</a>(<span class=""><a class="arg" href="#field.securityAdvisory.arg.ghsaId">ghsaId</a>: <a class="scalar" href="scalar.String.html">String</a>!): <a class="object" href="object.SecurityAdvisory.html">SecurityAdvisory</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Fetch a Security Advisory by its GHSA ID</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.securityAdvisory.args">
+            <h4><a href="#field.securityAdvisory.args">Args</a></h4>
+            
+            <div id="field.securityAdvisory.arg.ghsaId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.securityAdvisory.arg.ghsaId">ghsaId</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>GitHub Security Advisory ID.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.securityVulnerabilities" class="field ">
+    <h3>
+        <code><a class="field" href="#field.securityVulnerabilities">securityVulnerabilities</a>(<span class=""><a class="arg" href="#field.securityVulnerabilities.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.SecurityVulnerabilityOrder.html">SecurityVulnerabilityOrder</a> = {field: UPDATED_AT, direction: DESC}</span>, <span class=""><a class="arg" href="#field.securityVulnerabilities.arg.ecosystem">ecosystem</a>: <a class="enum" href="enum.SecurityAdvisoryEcosystem.html">SecurityAdvisoryEcosystem</a></span>, <span class=""><a class="arg" href="#field.securityVulnerabilities.arg.package">package</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.securityVulnerabilities.arg.severities">severities</a>: [<a class="enum" href="enum.SecurityAdvisorySeverity.html">SecurityAdvisorySeverity</a>!]</span>, <span class=""><a class="arg" href="#field.securityVulnerabilities.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.securityVulnerabilities.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.securityVulnerabilities.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.securityVulnerabilities.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.SecurityVulnerabilityConnection.html">SecurityVulnerabilityConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Software Vulnerabilities documented by GitHub Security Advisories</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.securityVulnerabilities.args">
+            <h4><a href="#field.securityVulnerabilities.args">Args</a></h4>
+            
+            <div id="field.securityVulnerabilities.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.securityVulnerabilities.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.SecurityVulnerabilityOrder.html">SecurityVulnerabilityOrder</a> = {field: UPDATED_AT, direction: DESC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for the returned topics.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.securityVulnerabilities.arg.ecosystem" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.securityVulnerabilities.arg.ecosystem">ecosystem</a>: <a class="enum" href="enum.SecurityAdvisoryEcosystem.html">SecurityAdvisoryEcosystem</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>An ecosystem to filter vulnerabilities by.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.securityVulnerabilities.arg.package" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.securityVulnerabilities.arg.package">package</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>A package name to filter vulnerabilities by.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.securityVulnerabilities.arg.severities" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.securityVulnerabilities.arg.severities">severities</a>: [<a class="enum" href="enum.SecurityAdvisorySeverity.html">SecurityAdvisorySeverity</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>A list of severities to filter vulnerabilities by.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.securityVulnerabilities.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.securityVulnerabilities.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.securityVulnerabilities.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.securityVulnerabilities.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.securityVulnerabilities.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.securityVulnerabilities.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.securityVulnerabilities.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.securityVulnerabilities.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.sponsorsListing" class="field deprecated">
+    <h3>
+        <code><a class="field" href="#field.sponsorsListing">sponsorsListing</a>(<span class=""><a class="arg" href="#field.sponsorsListing.arg.slug">slug</a>: <a class="scalar" href="scalar.String.html">String</a>!): <a class="object" href="object.SponsorsListing.html">SponsorsListing</a>
+        </code>
+    </h3>
+    
+    <div class="stability">
+        <div class="stab deprecated">
+            <span class="emoji">👎</span>
+            <span class="label">Deprecated:</span>
+            <p class="reason">&#x60;Query.sponsorsListing&#x60; will be removed. Use &#x60;Sponsorable.sponsorsListing&#x60; instead. Removal on 2020-04-01 UTC.</p>
+        </div>
+    </div>
+    
+    
+    <div class="docblock">
+        <p>Look up a single Sponsors Listing</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.sponsorsListing.args">
+            <h4><a href="#field.sponsorsListing.args">Args</a></h4>
+            
+            <div id="field.sponsorsListing.arg.slug" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.sponsorsListing.arg.slug">slug</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Select the Sponsors listing which matches this slug</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.topic" class="field ">
+    <h3>
+        <code><a class="field" href="#field.topic">topic</a>(<span class=""><a class="arg" href="#field.topic.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!): <a class="object" href="object.Topic.html">Topic</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Look up a topic by name.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.topic.args">
+            <h4><a href="#field.topic.args">Args</a></h4>
+            
+            <div id="field.topic.arg.name" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.topic.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The topic's name.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.user" class="field ">
+    <h3>
+        <code><a class="field" href="#field.user">user</a>(<span class=""><a class="arg" href="#field.user.arg.login">login</a>: <a class="scalar" href="scalar.String.html">String</a>!): <a class="object" href="object.User.html">User</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Lookup a user by login.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.user.args">
+            <h4><a href="#field.user.args">Args</a></h4>
+            
+            <div id="field.user.arg.login" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.user.arg.login">login</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The user's login.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.viewer" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewer">viewer</a>: <a class="object" href="object.User.html">User</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The currently authenticated user.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.Query" class="use">
+    <h3>
+        <code><a class="object" href="object.Query.html">Query</a>.<a class="field" href="object.Query.html#field.relay">relay</a>
+        
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

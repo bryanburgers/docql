@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>__Type</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">__Type</a>
+</h1>
+
+
+<div class="docblock">
+    <p>The fundamental unit of any GraphQL Schema is the type. There are many kinds of types in GraphQL as represented by the <code>__TypeKind</code> enum.</p>
+<p>Depending on the kind of a type, certain fields describe information about that type. Scalar types provide no information beyond a name and description, while Enum types provide their values. Object and Interface types provide the fields they describe. Abstract types, Union and Interface, provide the Object types possible at runtime. List and NonNull types compose other types.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.description" class="field ">
+    <h3>
+        <code><a class="field" href="#field.description">description</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.enumValues" class="field ">
+    <h3>
+        <code><a class="field" href="#field.enumValues">enumValues</a>(<span class=""><a class="arg" href="#field.enumValues.arg.includeDeprecated">includeDeprecated</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false): [<a class="object" href="object.__EnumValue.html">__EnumValue</a>!]
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.enumValues.args">
+            <h4><a href="#field.enumValues.args">Args</a></h4>
+            
+            <div id="field.enumValues.arg.includeDeprecated" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.enumValues.arg.includeDeprecated">includeDeprecated</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.fields" class="field ">
+    <h3>
+        <code><a class="field" href="#field.fields">fields</a>(<span class=""><a class="arg" href="#field.fields.arg.includeDeprecated">includeDeprecated</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false): [<a class="object" href="object.__Field.html">__Field</a>!]
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.fields.args">
+            <h4><a href="#field.fields.args">Args</a></h4>
+            
+            <div id="field.fields.arg.includeDeprecated" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.fields.arg.includeDeprecated">includeDeprecated</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.inputFields" class="field ">
+    <h3>
+        <code><a class="field" href="#field.inputFields">inputFields</a>: [<a class="object" href="object.__InputValue.html">__InputValue</a>!]
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.interfaces" class="field ">
+    <h3>
+        <code><a class="field" href="#field.interfaces">interfaces</a>: [<a class="object" href="object.__Type.html">__Type</a>!]
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.kind" class="field ">
+    <h3>
+        <code><a class="field" href="#field.kind">kind</a>: <a class="enum" href="enum.__TypeKind.html">__TypeKind</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.name" class="field ">
+    <h3>
+        <code><a class="field" href="#field.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.ofType" class="field ">
+    <h3>
+        <code><a class="field" href="#field.ofType">ofType</a>: <a class="object" href="object.__Type.html">__Type</a>
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.possibleTypes" class="field ">
+    <h3>
+        <code><a class="field" href="#field.possibleTypes">possibleTypes</a>: [<a class="object" href="object.__Type.html">__Type</a>!]
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.__Field" class="use">
+    <h3>
+        <code><a class="object" href="object.__Field.html">__Field</a>.<a class="field" href="object.__Field.html#field.type">type</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.__InputValue" class="use">
+    <h3>
+        <code><a class="object" href="object.__InputValue.html">__InputValue</a>.<a class="field" href="object.__InputValue.html#field.type">type</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.__Schema" class="use">
+    <h3>
+        <code><a class="object" href="object.__Schema.html">__Schema</a>.<a class="field" href="object.__Schema.html#field.mutationType">mutationType</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.__Schema" class="use">
+    <h3>
+        <code><a class="object" href="object.__Schema.html">__Schema</a>.<a class="field" href="object.__Schema.html#field.queryType">queryType</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.__Schema" class="use">
+    <h3>
+        <code><a class="object" href="object.__Schema.html">__Schema</a>.<a class="field" href="object.__Schema.html#field.subscriptionType">subscriptionType</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.__Schema" class="use">
+    <h3>
+        <code><a class="object" href="object.__Schema.html">__Schema</a>.<a class="field" href="object.__Schema.html#field.types">types</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.__Type" class="use">
+    <h3>
+        <code><a class="object" href="object.__Type.html">__Type</a>.<a class="field" href="object.__Type.html#field.interfaces">interfaces</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.__Type" class="use">
+    <h3>
+        <code><a class="object" href="object.__Type.html">__Type</a>.<a class="field" href="object.__Type.html#field.ofType">ofType</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.__Type" class="use">
+    <h3>
+        <code><a class="object" href="object.__Type.html">__Type</a>.<a class="field" href="object.__Type.html#field.possibleTypes">possibleTypes</a>
+        
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

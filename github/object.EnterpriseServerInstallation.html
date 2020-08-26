@@ -1,0 +1,326 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EnterpriseServerInstallation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">EnterpriseServerInstallation</a>
+</h1>
+
+
+<div class="docblock">
+    <p>An Enterprise Server installation.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.createdAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createdAt">createdAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was created.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.customerName" class="field ">
+    <h3>
+        <code><a class="field" href="#field.customerName">customerName</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The customer name to which the Enterprise Server installation belongs.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.hostName" class="field ">
+    <h3>
+        <code><a class="field" href="#field.hostName">hostName</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The host name of the Enterprise Server installation.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.isConnected" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isConnected">isConnected</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether or not the installation is connected to an Enterprise Server installation via GitHub Connect.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.updatedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updatedAt">updatedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was last updated.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.userAccounts" class="field ">
+    <h3>
+        <code><a class="field" href="#field.userAccounts">userAccounts</a>(<span class=""><a class="arg" href="#field.userAccounts.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.EnterpriseServerUserAccountOrder.html">EnterpriseServerUserAccountOrder</a> = {field: LOGIN, direction: ASC}</span>, <span class=""><a class="arg" href="#field.userAccounts.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.userAccounts.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.userAccounts.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.userAccounts.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.EnterpriseServerUserAccountConnection.html">EnterpriseServerUserAccountConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>User accounts on this Enterprise Server installation.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.userAccounts.args">
+            <h4><a href="#field.userAccounts.args">Args</a></h4>
+            
+            <div id="field.userAccounts.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.userAccounts.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.EnterpriseServerUserAccountOrder.html">EnterpriseServerUserAccountOrder</a> = {field: LOGIN, direction: ASC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for Enterprise Server user accounts returned from the connection.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.userAccounts.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.userAccounts.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.userAccounts.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.userAccounts.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.userAccounts.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.userAccounts.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.userAccounts.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.userAccounts.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.userAccountsUploads" class="field ">
+    <h3>
+        <code><a class="field" href="#field.userAccountsUploads">userAccountsUploads</a>(<span class=""><a class="arg" href="#field.userAccountsUploads.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.EnterpriseServerUserAccountsUploadOrder.html">EnterpriseServerUserAccountsUploadOrder</a> = {field: CREATED_AT, direction: DESC}</span>, <span class=""><a class="arg" href="#field.userAccountsUploads.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.userAccountsUploads.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.userAccountsUploads.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.userAccountsUploads.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.EnterpriseServerUserAccountsUploadConnection.html">EnterpriseServerUserAccountsUploadConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>User accounts uploads for the Enterprise Server installation.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.userAccountsUploads.args">
+            <h4><a href="#field.userAccountsUploads.args">Args</a></h4>
+            
+            <div id="field.userAccountsUploads.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.userAccountsUploads.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.EnterpriseServerUserAccountsUploadOrder.html">EnterpriseServerUserAccountsUploadOrder</a> = {field: CREATED_AT, direction: DESC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for Enterprise Server user accounts uploads returned from the connection.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.userAccountsUploads.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.userAccountsUploads.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.userAccountsUploads.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.userAccountsUploads.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.userAccountsUploads.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.userAccountsUploads.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.userAccountsUploads.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.userAccountsUploads.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.EnterpriseServerInstallationConnection" class="use">
+    <h3>
+        <code><a class="object" href="object.EnterpriseServerInstallationConnection.html">EnterpriseServerInstallationConnection</a>.<a class="field" href="object.EnterpriseServerInstallationConnection.html#field.nodes">nodes</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.EnterpriseServerInstallationEdge" class="use">
+    <h3>
+        <code><a class="object" href="object.EnterpriseServerInstallationEdge.html">EnterpriseServerInstallationEdge</a>.<a class="field" href="object.EnterpriseServerInstallationEdge.html#field.node">node</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.EnterpriseServerUserAccount" class="use">
+    <h3>
+        <code><a class="object" href="object.EnterpriseServerUserAccount.html">EnterpriseServerUserAccount</a>.<a class="field" href="object.EnterpriseServerUserAccount.html#field.enterpriseServerInstallation">enterpriseServerInstallation</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.EnterpriseServerUserAccountsUpload" class="use">
+    <h3>
+        <code><a class="object" href="object.EnterpriseServerUserAccountsUpload.html">EnterpriseServerUserAccountsUpload</a>.<a class="field" href="object.EnterpriseServerUserAccountsUpload.html#field.enterpriseServerInstallation">enterpriseServerInstallation</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

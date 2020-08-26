@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-padding-top: 32px;
+}
+html, input, select, textarea {
+    color: #000;
+    font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font: 16px/1.4 "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-top: 32px;
+    scroll-padding-top: 32px;
+
+    background-color: #353535;
+    color: #ddd;
+    position: relative;
+
+    display: grid;
+    min-height: 100vh;
+}
+
+body > footer {
+    align-self: end;
+    border-top: 1px solid #3e3e3e;
+    font-size: 0.8em;
+    background: #313131;
+}
+footer p {
+    max-width: 960px;
+    text-align: center;
+    margin: 1em auto;
+}
+
+a {
+    /* color: #ddd; */
+    color: #d2991d;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.docql {
+    font-family: "Source Serif Pro", Georgia, Times, "Times New Roman", serif;
+    padding: 10px 15px 20px 15px;
+    position: relative;
+}
+
+.content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.fqn {
+    border-bottom-color: #d2d2d2;
+}
+h1, h2, h3, h4, h5 {
+    font-family: "Fira Sans", sans-serif;
+}
+h1 {
+    color: #ddd;
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+h1.fqn {
+    margin-top: 0;
+    border-bottom: 1px dashed;
+}
+h2 {
+    border-bottom: 1px solid #d2d2d2;
+}
+h3 {
+    font-size: 1em;
+}
+.docblock {
+    margin-left: 24px;
+    position: relative;
+}
+.args {
+    margin-left: 24px;
+}
+
+code {
+    font-weight: normal;
+    font-family: "Source Code Pro", monospace;
+}
+:target {
+    background-color: #494a3d;
+}
+
+a.field, a.input_field { color: #2bab63; }
+a.scalar { color: #ff7f00; }
+a.object { color: #2dbfb8; }
+a.input_object { color: #09bd00; }
+a.interface { color: #b78cf2; }
+a.union { color: #43aec7; }
+a.enum { color: #82b089; }
+a.arg { color: #ffe3a5; }
+
+.deprecated h1,
+.deprecated h2,
+.deprecated h3,
+.deprecated h4,
+.deprecated h5,
+.deprecated h6 {
+    opacity: 30%;
+}
+
+.stability {
+    position: relative;
+    margin-left: 26px;
+}
+.stability::before {
+    color: #ccc;
+    content: '⬑';
+    font-size: 25px;
+    position: absolute;
+    top: -6px;
+    left: -19px;
+}
+.stab.deprecated {
+    display: inline-flex;
+    font-size: 90%;
+    background: #f3dfff;
+    border-color: #7f0087;
+    color: #2f2f2f;
+    opacity: 1;
+    align-content: flex-start;
+    padding: 3px;
+}
+.stab.deprecated * {
+    padding: 0 3px;
+}
+.stab.deprecated p {
+    margin: 0;
+}
+
+section {
+    margin: 1em -0.25em;
+    padding: 0.25em;
+}
+section > h3 {
+    margin: 0;
+}

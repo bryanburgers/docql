@@ -1,0 +1,1209 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ContributionsCollection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">ContributionsCollection</a>
+</h1>
+
+
+<div class="docblock">
+    <p>A contributions collection aggregates contributions such as opened issues and commits created by a user.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.commitContributionsByRepository" class="field ">
+    <h3>
+        <code><a class="field" href="#field.commitContributionsByRepository">commitContributionsByRepository</a>(<span class=""><a class="arg" href="#field.commitContributionsByRepository.arg.maxRepositories">maxRepositories</a>: <a class="scalar" href="scalar.Int.html">Int</a> = 25): [<a class="object" href="object.CommitContributionsByRepository.html">CommitContributionsByRepository</a>!]!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Commit contributions made by the user, grouped by repository.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.commitContributionsByRepository.args">
+            <h4><a href="#field.commitContributionsByRepository.args">Args</a></h4>
+            
+            <div id="field.commitContributionsByRepository.arg.maxRepositories" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.commitContributionsByRepository.arg.maxRepositories">maxRepositories</a>: <a class="scalar" href="scalar.Int.html">Int</a> = 25</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>How many repositories should be included.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.contributionCalendar" class="field ">
+    <h3>
+        <code><a class="field" href="#field.contributionCalendar">contributionCalendar</a>: <a class="object" href="object.ContributionCalendar.html">ContributionCalendar</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A calendar of this user's contributions on GitHub.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.contributionYears" class="field ">
+    <h3>
+        <code><a class="field" href="#field.contributionYears">contributionYears</a>: [<a class="scalar" href="scalar.Int.html">Int</a>!]!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The years the user has been making contributions with the most recent year first.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.doesEndInCurrentMonth" class="field ">
+    <h3>
+        <code><a class="field" href="#field.doesEndInCurrentMonth">doesEndInCurrentMonth</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Determine if this collection's time span ends in the current month.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.earliestRestrictedContributionDate" class="field ">
+    <h3>
+        <code><a class="field" href="#field.earliestRestrictedContributionDate">earliestRestrictedContributionDate</a>: <a class="scalar" href="scalar.Date.html">Date</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The date of the first restricted contribution the user made in this time period. Can only be non-null when the user has enabled private contribution counts.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.endedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.endedAt">endedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The ending date and time of this collection.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.firstIssueContribution" class="field ">
+    <h3>
+        <code><a class="field" href="#field.firstIssueContribution">firstIssueContribution</a>: <a class="union" href="union.CreatedIssueOrRestrictedContribution.html">CreatedIssueOrRestrictedContribution</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The first issue the user opened on GitHub. This will be null if that issue was opened outside the collection's time range and ignoreTimeRange is false. If the issue is not visible but the user has opted to show private contributions, a RestrictedContribution will be returned.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.firstPullRequestContribution" class="field ">
+    <h3>
+        <code><a class="field" href="#field.firstPullRequestContribution">firstPullRequestContribution</a>: <a class="union" href="union.CreatedPullRequestOrRestrictedContribution.html">CreatedPullRequestOrRestrictedContribution</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The first pull request the user opened on GitHub. This will be null if that pull request was opened outside the collection's time range and ignoreTimeRange is not true. If the pull request is not visible but the user has opted to show private contributions, a RestrictedContribution will be returned.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.firstRepositoryContribution" class="field ">
+    <h3>
+        <code><a class="field" href="#field.firstRepositoryContribution">firstRepositoryContribution</a>: <a class="union" href="union.CreatedRepositoryOrRestrictedContribution.html">CreatedRepositoryOrRestrictedContribution</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The first repository the user created on GitHub. This will be null if that first repository was created outside the collection's time range and ignoreTimeRange is false. If the repository is not visible, then a RestrictedContribution is returned.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.hasActivityInThePast" class="field ">
+    <h3>
+        <code><a class="field" href="#field.hasActivityInThePast">hasActivityInThePast</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Does the user have any more activity in the timeline that occurred prior to the collection's time range?</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.hasAnyContributions" class="field ">
+    <h3>
+        <code><a class="field" href="#field.hasAnyContributions">hasAnyContributions</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Determine if there are any contributions in this collection.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.hasAnyRestrictedContributions" class="field ">
+    <h3>
+        <code><a class="field" href="#field.hasAnyRestrictedContributions">hasAnyRestrictedContributions</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Determine if the user made any contributions in this time frame whose details are not visible because they were made in a private repository. Can only be true if the user enabled private contribution counts.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.isSingleDay" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isSingleDay">isSingleDay</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether or not the collector's time span is all within the same day.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.issueContributions" class="field ">
+    <h3>
+        <code><a class="field" href="#field.issueContributions">issueContributions</a>(<span class=""><a class="arg" href="#field.issueContributions.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.issueContributions.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.issueContributions.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.issueContributions.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.issueContributions.arg.excludeFirst">excludeFirst</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</span>, <span class=""><a class="arg" href="#field.issueContributions.arg.excludePopular">excludePopular</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</span>, <span class=""><a class="arg" href="#field.issueContributions.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.ContributionOrder.html">ContributionOrder</a> = {direction: DESC}): <a class="object" href="object.CreatedIssueContributionConnection.html">CreatedIssueContributionConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of issues the user opened.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.issueContributions.args">
+            <h4><a href="#field.issueContributions.args">Args</a></h4>
+            
+            <div id="field.issueContributions.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.issueContributions.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.issueContributions.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.issueContributions.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.issueContributions.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.issueContributions.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.issueContributions.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.issueContributions.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.issueContributions.arg.excludeFirst" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.issueContributions.arg.excludeFirst">excludeFirst</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Should the user's first issue ever be excluded from the result.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.issueContributions.arg.excludePopular" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.issueContributions.arg.excludePopular">excludePopular</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Should the user's most commented issue be excluded from the result.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.issueContributions.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.issueContributions.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.ContributionOrder.html">ContributionOrder</a> = {direction: DESC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for contributions returned from the connection.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.issueContributionsByRepository" class="field ">
+    <h3>
+        <code><a class="field" href="#field.issueContributionsByRepository">issueContributionsByRepository</a>(<span class=""><a class="arg" href="#field.issueContributionsByRepository.arg.maxRepositories">maxRepositories</a>: <a class="scalar" href="scalar.Int.html">Int</a> = 25</span>, <span class=""><a class="arg" href="#field.issueContributionsByRepository.arg.excludeFirst">excludeFirst</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</span>, <span class=""><a class="arg" href="#field.issueContributionsByRepository.arg.excludePopular">excludePopular</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false): [<a class="object" href="object.IssueContributionsByRepository.html">IssueContributionsByRepository</a>!]!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Issue contributions made by the user, grouped by repository.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.issueContributionsByRepository.args">
+            <h4><a href="#field.issueContributionsByRepository.args">Args</a></h4>
+            
+            <div id="field.issueContributionsByRepository.arg.maxRepositories" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.issueContributionsByRepository.arg.maxRepositories">maxRepositories</a>: <a class="scalar" href="scalar.Int.html">Int</a> = 25</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>How many repositories should be included.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.issueContributionsByRepository.arg.excludeFirst" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.issueContributionsByRepository.arg.excludeFirst">excludeFirst</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Should the user's first issue ever be excluded from the result.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.issueContributionsByRepository.arg.excludePopular" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.issueContributionsByRepository.arg.excludePopular">excludePopular</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Should the user's most commented issue be excluded from the result.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.joinedGitHubContribution" class="field ">
+    <h3>
+        <code><a class="field" href="#field.joinedGitHubContribution">joinedGitHubContribution</a>: <a class="object" href="object.JoinedGitHubContribution.html">JoinedGitHubContribution</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>When the user signed up for GitHub. This will be null if that sign up date falls outside the collection's time range and ignoreTimeRange is false.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.latestRestrictedContributionDate" class="field ">
+    <h3>
+        <code><a class="field" href="#field.latestRestrictedContributionDate">latestRestrictedContributionDate</a>: <a class="scalar" href="scalar.Date.html">Date</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The date of the most recent restricted contribution the user made in this time period. Can only be non-null when the user has enabled private contribution counts.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.mostRecentCollectionWithActivity" class="field ">
+    <h3>
+        <code><a class="field" href="#field.mostRecentCollectionWithActivity">mostRecentCollectionWithActivity</a>: <a class="object" href="object.ContributionsCollection.html">ContributionsCollection</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>When this collection's time range does not include any activity from the user, use this
+to get a different collection from an earlier time range that does have activity.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.mostRecentCollectionWithoutActivity" class="field ">
+    <h3>
+        <code><a class="field" href="#field.mostRecentCollectionWithoutActivity">mostRecentCollectionWithoutActivity</a>: <a class="object" href="object.ContributionsCollection.html">ContributionsCollection</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Returns a different contributions collection from an earlier time range than this one
+that does not have any contributions.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.popularIssueContribution" class="field ">
+    <h3>
+        <code><a class="field" href="#field.popularIssueContribution">popularIssueContribution</a>: <a class="object" href="object.CreatedIssueContribution.html">CreatedIssueContribution</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The issue the user opened on GitHub that received the most comments in the specified
+time frame.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.popularPullRequestContribution" class="field ">
+    <h3>
+        <code><a class="field" href="#field.popularPullRequestContribution">popularPullRequestContribution</a>: <a class="object" href="object.CreatedPullRequestContribution.html">CreatedPullRequestContribution</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The pull request the user opened on GitHub that received the most comments in the
+specified time frame.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.pullRequestContributions" class="field ">
+    <h3>
+        <code><a class="field" href="#field.pullRequestContributions">pullRequestContributions</a>(<span class=""><a class="arg" href="#field.pullRequestContributions.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.pullRequestContributions.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.pullRequestContributions.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.pullRequestContributions.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.pullRequestContributions.arg.excludeFirst">excludeFirst</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</span>, <span class=""><a class="arg" href="#field.pullRequestContributions.arg.excludePopular">excludePopular</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</span>, <span class=""><a class="arg" href="#field.pullRequestContributions.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.ContributionOrder.html">ContributionOrder</a> = {direction: DESC}): <a class="object" href="object.CreatedPullRequestContributionConnection.html">CreatedPullRequestContributionConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Pull request contributions made by the user.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.pullRequestContributions.args">
+            <h4><a href="#field.pullRequestContributions.args">Args</a></h4>
+            
+            <div id="field.pullRequestContributions.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pullRequestContributions.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pullRequestContributions.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pullRequestContributions.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pullRequestContributions.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pullRequestContributions.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pullRequestContributions.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pullRequestContributions.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pullRequestContributions.arg.excludeFirst" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pullRequestContributions.arg.excludeFirst">excludeFirst</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Should the user's first pull request ever be excluded from the result.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pullRequestContributions.arg.excludePopular" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pullRequestContributions.arg.excludePopular">excludePopular</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Should the user's most commented pull request be excluded from the result.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pullRequestContributions.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pullRequestContributions.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.ContributionOrder.html">ContributionOrder</a> = {direction: DESC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for contributions returned from the connection.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.pullRequestContributionsByRepository" class="field ">
+    <h3>
+        <code><a class="field" href="#field.pullRequestContributionsByRepository">pullRequestContributionsByRepository</a>(<span class=""><a class="arg" href="#field.pullRequestContributionsByRepository.arg.maxRepositories">maxRepositories</a>: <a class="scalar" href="scalar.Int.html">Int</a> = 25</span>, <span class=""><a class="arg" href="#field.pullRequestContributionsByRepository.arg.excludeFirst">excludeFirst</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</span>, <span class=""><a class="arg" href="#field.pullRequestContributionsByRepository.arg.excludePopular">excludePopular</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false): [<a class="object" href="object.PullRequestContributionsByRepository.html">PullRequestContributionsByRepository</a>!]!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Pull request contributions made by the user, grouped by repository.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.pullRequestContributionsByRepository.args">
+            <h4><a href="#field.pullRequestContributionsByRepository.args">Args</a></h4>
+            
+            <div id="field.pullRequestContributionsByRepository.arg.maxRepositories" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pullRequestContributionsByRepository.arg.maxRepositories">maxRepositories</a>: <a class="scalar" href="scalar.Int.html">Int</a> = 25</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>How many repositories should be included.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pullRequestContributionsByRepository.arg.excludeFirst" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pullRequestContributionsByRepository.arg.excludeFirst">excludeFirst</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Should the user's first pull request ever be excluded from the result.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pullRequestContributionsByRepository.arg.excludePopular" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pullRequestContributionsByRepository.arg.excludePopular">excludePopular</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Should the user's most commented pull request be excluded from the result.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.pullRequestReviewContributions" class="field ">
+    <h3>
+        <code><a class="field" href="#field.pullRequestReviewContributions">pullRequestReviewContributions</a>(<span class=""><a class="arg" href="#field.pullRequestReviewContributions.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.pullRequestReviewContributions.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.pullRequestReviewContributions.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.pullRequestReviewContributions.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.pullRequestReviewContributions.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.ContributionOrder.html">ContributionOrder</a> = {direction: DESC}): <a class="object" href="object.CreatedPullRequestReviewContributionConnection.html">CreatedPullRequestReviewContributionConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Pull request review contributions made by the user.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.pullRequestReviewContributions.args">
+            <h4><a href="#field.pullRequestReviewContributions.args">Args</a></h4>
+            
+            <div id="field.pullRequestReviewContributions.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pullRequestReviewContributions.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pullRequestReviewContributions.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pullRequestReviewContributions.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pullRequestReviewContributions.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pullRequestReviewContributions.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pullRequestReviewContributions.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pullRequestReviewContributions.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pullRequestReviewContributions.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pullRequestReviewContributions.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.ContributionOrder.html">ContributionOrder</a> = {direction: DESC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for contributions returned from the connection.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.pullRequestReviewContributionsByRepository" class="field ">
+    <h3>
+        <code><a class="field" href="#field.pullRequestReviewContributionsByRepository">pullRequestReviewContributionsByRepository</a>(<span class=""><a class="arg" href="#field.pullRequestReviewContributionsByRepository.arg.maxRepositories">maxRepositories</a>: <a class="scalar" href="scalar.Int.html">Int</a> = 25): [<a class="object" href="object.PullRequestReviewContributionsByRepository.html">PullRequestReviewContributionsByRepository</a>!]!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Pull request review contributions made by the user, grouped by repository.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.pullRequestReviewContributionsByRepository.args">
+            <h4><a href="#field.pullRequestReviewContributionsByRepository.args">Args</a></h4>
+            
+            <div id="field.pullRequestReviewContributionsByRepository.arg.maxRepositories" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pullRequestReviewContributionsByRepository.arg.maxRepositories">maxRepositories</a>: <a class="scalar" href="scalar.Int.html">Int</a> = 25</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>How many repositories should be included.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.repositoryContributions" class="field ">
+    <h3>
+        <code><a class="field" href="#field.repositoryContributions">repositoryContributions</a>(<span class=""><a class="arg" href="#field.repositoryContributions.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.repositoryContributions.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.repositoryContributions.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.repositoryContributions.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.repositoryContributions.arg.excludeFirst">excludeFirst</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</span>, <span class=""><a class="arg" href="#field.repositoryContributions.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.ContributionOrder.html">ContributionOrder</a> = {direction: DESC}): <a class="object" href="object.CreatedRepositoryContributionConnection.html">CreatedRepositoryContributionConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of repositories owned by the user that the user created in this time range.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.repositoryContributions.args">
+            <h4><a href="#field.repositoryContributions.args">Args</a></h4>
+            
+            <div id="field.repositoryContributions.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositoryContributions.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositoryContributions.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositoryContributions.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositoryContributions.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositoryContributions.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositoryContributions.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositoryContributions.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositoryContributions.arg.excludeFirst" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositoryContributions.arg.excludeFirst">excludeFirst</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Should the user's first repository ever be excluded from the result.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositoryContributions.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositoryContributions.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.ContributionOrder.html">ContributionOrder</a> = {direction: DESC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for contributions returned from the connection.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.restrictedContributionsCount" class="field ">
+    <h3>
+        <code><a class="field" href="#field.restrictedContributionsCount">restrictedContributionsCount</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A count of contributions made by the user that the viewer cannot access. Only non-zero when the user has chosen to share their private contribution counts.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.startedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.startedAt">startedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The beginning date and time of this collection.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.totalCommitContributions" class="field ">
+    <h3>
+        <code><a class="field" href="#field.totalCommitContributions">totalCommitContributions</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>How many commits were made by the user in this time span.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.totalIssueContributions" class="field ">
+    <h3>
+        <code><a class="field" href="#field.totalIssueContributions">totalIssueContributions</a>(<span class=""><a class="arg" href="#field.totalIssueContributions.arg.excludeFirst">excludeFirst</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</span>, <span class=""><a class="arg" href="#field.totalIssueContributions.arg.excludePopular">excludePopular</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false): <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>How many issues the user opened.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.totalIssueContributions.args">
+            <h4><a href="#field.totalIssueContributions.args">Args</a></h4>
+            
+            <div id="field.totalIssueContributions.arg.excludeFirst" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.totalIssueContributions.arg.excludeFirst">excludeFirst</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Should the user's first issue ever be excluded from this count.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.totalIssueContributions.arg.excludePopular" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.totalIssueContributions.arg.excludePopular">excludePopular</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Should the user's most commented issue be excluded from this count.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.totalPullRequestContributions" class="field ">
+    <h3>
+        <code><a class="field" href="#field.totalPullRequestContributions">totalPullRequestContributions</a>(<span class=""><a class="arg" href="#field.totalPullRequestContributions.arg.excludeFirst">excludeFirst</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</span>, <span class=""><a class="arg" href="#field.totalPullRequestContributions.arg.excludePopular">excludePopular</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false): <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>How many pull requests the user opened.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.totalPullRequestContributions.args">
+            <h4><a href="#field.totalPullRequestContributions.args">Args</a></h4>
+            
+            <div id="field.totalPullRequestContributions.arg.excludeFirst" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.totalPullRequestContributions.arg.excludeFirst">excludeFirst</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Should the user's first pull request ever be excluded from this count.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.totalPullRequestContributions.arg.excludePopular" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.totalPullRequestContributions.arg.excludePopular">excludePopular</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Should the user's most commented pull request be excluded from this count.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.totalPullRequestReviewContributions" class="field ">
+    <h3>
+        <code><a class="field" href="#field.totalPullRequestReviewContributions">totalPullRequestReviewContributions</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>How many pull request reviews the user left.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.totalRepositoriesWithContributedCommits" class="field ">
+    <h3>
+        <code><a class="field" href="#field.totalRepositoriesWithContributedCommits">totalRepositoriesWithContributedCommits</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>How many different repositories the user committed to.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.totalRepositoriesWithContributedIssues" class="field ">
+    <h3>
+        <code><a class="field" href="#field.totalRepositoriesWithContributedIssues">totalRepositoriesWithContributedIssues</a>(<span class=""><a class="arg" href="#field.totalRepositoriesWithContributedIssues.arg.excludeFirst">excludeFirst</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</span>, <span class=""><a class="arg" href="#field.totalRepositoriesWithContributedIssues.arg.excludePopular">excludePopular</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false): <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>How many different repositories the user opened issues in.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.totalRepositoriesWithContributedIssues.args">
+            <h4><a href="#field.totalRepositoriesWithContributedIssues.args">Args</a></h4>
+            
+            <div id="field.totalRepositoriesWithContributedIssues.arg.excludeFirst" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.totalRepositoriesWithContributedIssues.arg.excludeFirst">excludeFirst</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Should the user's first issue ever be excluded from this count.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.totalRepositoriesWithContributedIssues.arg.excludePopular" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.totalRepositoriesWithContributedIssues.arg.excludePopular">excludePopular</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Should the user's most commented issue be excluded from this count.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.totalRepositoriesWithContributedPullRequestReviews" class="field ">
+    <h3>
+        <code><a class="field" href="#field.totalRepositoriesWithContributedPullRequestReviews">totalRepositoriesWithContributedPullRequestReviews</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>How many different repositories the user left pull request reviews in.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.totalRepositoriesWithContributedPullRequests" class="field ">
+    <h3>
+        <code><a class="field" href="#field.totalRepositoriesWithContributedPullRequests">totalRepositoriesWithContributedPullRequests</a>(<span class=""><a class="arg" href="#field.totalRepositoriesWithContributedPullRequests.arg.excludeFirst">excludeFirst</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</span>, <span class=""><a class="arg" href="#field.totalRepositoriesWithContributedPullRequests.arg.excludePopular">excludePopular</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false): <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>How many different repositories the user opened pull requests in.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.totalRepositoriesWithContributedPullRequests.args">
+            <h4><a href="#field.totalRepositoriesWithContributedPullRequests.args">Args</a></h4>
+            
+            <div id="field.totalRepositoriesWithContributedPullRequests.arg.excludeFirst" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.totalRepositoriesWithContributedPullRequests.arg.excludeFirst">excludeFirst</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Should the user's first pull request ever be excluded from this count.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.totalRepositoriesWithContributedPullRequests.arg.excludePopular" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.totalRepositoriesWithContributedPullRequests.arg.excludePopular">excludePopular</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Should the user's most commented pull request be excluded from this count.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.totalRepositoryContributions" class="field ">
+    <h3>
+        <code><a class="field" href="#field.totalRepositoryContributions">totalRepositoryContributions</a>(<span class=""><a class="arg" href="#field.totalRepositoryContributions.arg.excludeFirst">excludeFirst</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false): <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>How many repositories the user created.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.totalRepositoryContributions.args">
+            <h4><a href="#field.totalRepositoryContributions.args">Args</a></h4>
+            
+            <div id="field.totalRepositoryContributions.arg.excludeFirst" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.totalRepositoryContributions.arg.excludeFirst">excludeFirst</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Should the user's first repository ever be excluded from this count.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.user" class="field ">
+    <h3>
+        <code><a class="field" href="#field.user">user</a>: <a class="object" href="object.User.html">User</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The user who made the contributions in this collection.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.ContributionsCollection" class="use">
+    <h3>
+        <code><a class="object" href="object.ContributionsCollection.html">ContributionsCollection</a>.<a class="field" href="object.ContributionsCollection.html#field.mostRecentCollectionWithActivity">mostRecentCollectionWithActivity</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ContributionsCollection" class="use">
+    <h3>
+        <code><a class="object" href="object.ContributionsCollection.html">ContributionsCollection</a>.<a class="field" href="object.ContributionsCollection.html#field.mostRecentCollectionWithoutActivity">mostRecentCollectionWithoutActivity</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.User" class="use">
+    <h3>
+        <code><a class="object" href="object.User.html">User</a>.<a class="field" href="object.User.html#field.contributionsCollection">contributionsCollection</a>
+        
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

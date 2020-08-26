@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Labelable</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Interface <a href="index.html">GitHub</a>::<wbr><a class="interface" href="">Labelable</a>
+</h1>
+
+
+<div class="docblock">
+    <p>An object that can have labels assigned to it.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.labels" class="field ">
+    <h3>
+        <code><a class="field" href="#field.labels">labels</a>(<span class=""><a class="arg" href="#field.labels.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.LabelOrder.html">LabelOrder</a> = {field: CREATED_AT, direction: ASC}</span>, <span class=""><a class="arg" href="#field.labels.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.labels.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.labels.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.labels.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.LabelConnection.html">LabelConnection</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of labels associated with the object.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.labels.args">
+            <h4><a href="#field.labels.args">Args</a></h4>
+            
+            <div id="field.labels.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.labels.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.LabelOrder.html">LabelOrder</a> = {field: CREATED_AT, direction: ASC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for labels returned from the connection.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.labels.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.labels.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.labels.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.labels.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.labels.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.labels.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.labels.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.labels.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+
+
+
+<h2 id="possible_types"><a href="#possible_types">Possible Types</a></h2>
+
+
+<section id="possible_type.Issue" class="possible_type ">
+    <h3>
+        <code><a class="object" href="object.Issue.html">Issue</a></code>
+    </h3>
+</section>
+
+<section id="possible_type.PullRequest" class="possible_type ">
+    <h3>
+        <code><a class="object" href="object.PullRequest.html">PullRequest</a></code>
+    </h3>
+</section>
+
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.AddLabelsToLabelablePayload" class="use">
+    <h3>
+        <code><a class="object" href="object.AddLabelsToLabelablePayload.html">AddLabelsToLabelablePayload</a>.<a class="field" href="object.AddLabelsToLabelablePayload.html#field.labelable">labelable</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ClearLabelsFromLabelablePayload" class="use">
+    <h3>
+        <code><a class="object" href="object.ClearLabelsFromLabelablePayload.html">ClearLabelsFromLabelablePayload</a>.<a class="field" href="object.ClearLabelsFromLabelablePayload.html#field.labelable">labelable</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.LabeledEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.LabeledEvent.html">LabeledEvent</a>.<a class="field" href="object.LabeledEvent.html#field.labelable">labelable</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.RemoveLabelsFromLabelablePayload" class="use">
+    <h3>
+        <code><a class="object" href="object.RemoveLabelsFromLabelablePayload.html">RemoveLabelsFromLabelablePayload</a>.<a class="field" href="object.RemoveLabelsFromLabelablePayload.html#field.labelable">labelable</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.UnlabeledEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.UnlabeledEvent.html">UnlabeledEvent</a>.<a class="field" href="object.UnlabeledEvent.html#field.labelable">labelable</a>
+        
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

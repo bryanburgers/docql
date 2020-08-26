@@ -1,0 +1,485 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RepositoryInfo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Interface <a href="index.html">GitHub</a>::<wbr><a class="interface" href="">RepositoryInfo</a>
+</h1>
+
+
+<div class="docblock">
+    <p>A subset of repository info.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.createdAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createdAt">createdAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was created.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.description" class="field ">
+    <h3>
+        <code><a class="field" href="#field.description">description</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The description of the repository.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.descriptionHTML" class="field ">
+    <h3>
+        <code><a class="field" href="#field.descriptionHTML">descriptionHTML</a>: <a class="scalar" href="scalar.HTML.html">HTML</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The description of the repository rendered to HTML.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.forkCount" class="field ">
+    <h3>
+        <code><a class="field" href="#field.forkCount">forkCount</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Returns how many forks there are of this repository in the whole network.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.hasIssuesEnabled" class="field ">
+    <h3>
+        <code><a class="field" href="#field.hasIssuesEnabled">hasIssuesEnabled</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Indicates if the repository has issues feature enabled.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.hasProjectsEnabled" class="field ">
+    <h3>
+        <code><a class="field" href="#field.hasProjectsEnabled">hasProjectsEnabled</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Indicates if the repository has the Projects feature enabled.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.hasWikiEnabled" class="field ">
+    <h3>
+        <code><a class="field" href="#field.hasWikiEnabled">hasWikiEnabled</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Indicates if the repository has wiki feature enabled.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.homepageUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.homepageUrl">homepageUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The repository's URL.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.isArchived" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isArchived">isArchived</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Indicates if the repository is unmaintained.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.isFork" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isFork">isFork</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies if the repository is a fork.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.isLocked" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isLocked">isLocked</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Indicates if the repository has been locked or not.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.isMirror" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isMirror">isMirror</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies if the repository is a mirror.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.isPrivate" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isPrivate">isPrivate</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies if the repository is private.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.isTemplate" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isTemplate">isTemplate</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies if the repository is a template that can be used to generate new repositories.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.licenseInfo" class="field ">
+    <h3>
+        <code><a class="field" href="#field.licenseInfo">licenseInfo</a>: <a class="object" href="object.License.html">License</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The license associated with the repository</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.lockReason" class="field ">
+    <h3>
+        <code><a class="field" href="#field.lockReason">lockReason</a>: <a class="enum" href="enum.RepositoryLockReason.html">RepositoryLockReason</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The reason the repository has been locked.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.mirrorUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.mirrorUrl">mirrorUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The repository's original mirror URL.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.name" class="field ">
+    <h3>
+        <code><a class="field" href="#field.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The name of the repository.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.nameWithOwner" class="field ">
+    <h3>
+        <code><a class="field" href="#field.nameWithOwner">nameWithOwner</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The repository's name with owner.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.openGraphImageUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.openGraphImageUrl">openGraphImageUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The image used to represent this repository in Open Graph data.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.owner" class="field ">
+    <h3>
+        <code><a class="field" href="#field.owner">owner</a>: <a class="interface" href="interface.RepositoryOwner.html">RepositoryOwner</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The User owner of the repository.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.pushedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.pushedAt">pushedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies when the repository was last pushed to.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.resourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.resourcePath">resourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for this repository</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.shortDescriptionHTML" class="field ">
+    <h3>
+        <code><a class="field" href="#field.shortDescriptionHTML">shortDescriptionHTML</a>(<span class=""><a class="arg" href="#field.shortDescriptionHTML.arg.limit">limit</a>: <a class="scalar" href="scalar.Int.html">Int</a> = 200): <a class="scalar" href="scalar.HTML.html">HTML</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A description of the repository, rendered to HTML without any links in it.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.shortDescriptionHTML.args">
+            <h4><a href="#field.shortDescriptionHTML.args">Args</a></h4>
+            
+            <div id="field.shortDescriptionHTML.arg.limit" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.shortDescriptionHTML.arg.limit">limit</a>: <a class="scalar" href="scalar.Int.html">Int</a> = 200</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>How many characters to return.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.updatedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updatedAt">updatedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was last updated.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.url" class="field ">
+    <h3>
+        <code><a class="field" href="#field.url">url</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for this repository</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.usesCustomOpenGraphImage" class="field ">
+    <h3>
+        <code><a class="field" href="#field.usesCustomOpenGraphImage">usesCustomOpenGraphImage</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether this repository has a custom image to use with Open Graph as opposed to being represented by the owner's avatar.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="possible_types"><a href="#possible_types">Possible Types</a></h2>
+
+
+<section id="possible_type.Repository" class="possible_type ">
+    <h3>
+        <code><a class="object" href="object.Repository.html">Repository</a></code>
+    </h3>
+</section>
+
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.RepositoryInvitation" class="use">
+    <h3>
+        <code><a class="object" href="object.RepositoryInvitation.html">RepositoryInvitation</a>.<a class="field" href="object.RepositoryInvitation.html#field.repository">repository</a>
+        
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

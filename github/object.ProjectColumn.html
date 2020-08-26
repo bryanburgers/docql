@@ -1,0 +1,307 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ProjectColumn</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">ProjectColumn</a>
+</h1>
+
+
+<div class="docblock">
+    <p>A column inside a project.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.cards" class="field ">
+    <h3>
+        <code><a class="field" href="#field.cards">cards</a>(<span class=""><a class="arg" href="#field.cards.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.cards.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.cards.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.cards.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.cards.arg.archivedStates">archivedStates</a>: [<a class="enum" href="enum.ProjectCardArchivedState.html">ProjectCardArchivedState</a>] = [ARCHIVED, NOT_ARCHIVED]): <a class="object" href="object.ProjectCardConnection.html">ProjectCardConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>List of cards in the column</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.cards.args">
+            <h4><a href="#field.cards.args">Args</a></h4>
+            
+            <div id="field.cards.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.cards.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.cards.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.cards.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.cards.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.cards.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.cards.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.cards.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.cards.arg.archivedStates" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.cards.arg.archivedStates">archivedStates</a>: [<a class="enum" href="enum.ProjectCardArchivedState.html">ProjectCardArchivedState</a>] = [ARCHIVED, NOT_ARCHIVED]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>A list of archived states to filter the cards by</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.createdAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createdAt">createdAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was created.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.databaseId" class="field ">
+    <h3>
+        <code><a class="field" href="#field.databaseId">databaseId</a>: <a class="scalar" href="scalar.Int.html">Int</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the primary key from the database.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.name" class="field ">
+    <h3>
+        <code><a class="field" href="#field.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The project column's name.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.project" class="field ">
+    <h3>
+        <code><a class="field" href="#field.project">project</a>: <a class="object" href="object.Project.html">Project</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The project that contains this column.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.purpose" class="field ">
+    <h3>
+        <code><a class="field" href="#field.purpose">purpose</a>: <a class="enum" href="enum.ProjectColumnPurpose.html">ProjectColumnPurpose</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The semantic purpose of the column</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.resourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.resourcePath">resourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for this project column</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.updatedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updatedAt">updatedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was last updated.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.url" class="field ">
+    <h3>
+        <code><a class="field" href="#field.url">url</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for this project column</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.AddProjectCardPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.AddProjectCardPayload.html">AddProjectCardPayload</a>.<a class="field" href="object.AddProjectCardPayload.html#field.projectColumn">projectColumn</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.DeleteProjectCardPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.DeleteProjectCardPayload.html">DeleteProjectCardPayload</a>.<a class="field" href="object.DeleteProjectCardPayload.html#field.column">column</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ProjectCard" class="use">
+    <h3>
+        <code><a class="object" href="object.ProjectCard.html">ProjectCard</a>.<a class="field" href="object.ProjectCard.html#field.column">column</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ProjectColumnConnection" class="use">
+    <h3>
+        <code><a class="object" href="object.ProjectColumnConnection.html">ProjectColumnConnection</a>.<a class="field" href="object.ProjectColumnConnection.html#field.nodes">nodes</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ProjectColumnEdge" class="use">
+    <h3>
+        <code><a class="object" href="object.ProjectColumnEdge.html">ProjectColumnEdge</a>.<a class="field" href="object.ProjectColumnEdge.html#field.node">node</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.UpdateProjectColumnPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.UpdateProjectColumnPayload.html">UpdateProjectColumnPayload</a>.<a class="field" href="object.UpdateProjectColumnPayload.html#field.projectColumn">projectColumn</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

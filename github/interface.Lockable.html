@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lockable</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Interface <a href="index.html">GitHub</a>::<wbr><a class="interface" href="">Lockable</a>
+</h1>
+
+
+<div class="docblock">
+    <p>An object that can be locked.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.activeLockReason" class="field ">
+    <h3>
+        <code><a class="field" href="#field.activeLockReason">activeLockReason</a>: <a class="enum" href="enum.LockReason.html">LockReason</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Reason that the conversation was locked.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.locked" class="field ">
+    <h3>
+        <code><a class="field" href="#field.locked">locked</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p><code>true</code> if the object is locked</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="possible_types"><a href="#possible_types">Possible Types</a></h2>
+
+
+<section id="possible_type.Issue" class="possible_type ">
+    <h3>
+        <code><a class="object" href="object.Issue.html">Issue</a></code>
+    </h3>
+</section>
+
+<section id="possible_type.PullRequest" class="possible_type ">
+    <h3>
+        <code><a class="object" href="object.PullRequest.html">PullRequest</a></code>
+    </h3>
+</section>
+
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.LockLockablePayload" class="use">
+    <h3>
+        <code><a class="object" href="object.LockLockablePayload.html">LockLockablePayload</a>.<a class="field" href="object.LockLockablePayload.html#field.lockedRecord">lockedRecord</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.LockedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.LockedEvent.html">LockedEvent</a>.<a class="field" href="object.LockedEvent.html#field.lockable">lockable</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.UnlockLockablePayload" class="use">
+    <h3>
+        <code><a class="object" href="object.UnlockLockablePayload.html">UnlockLockablePayload</a>.<a class="field" href="object.UnlockLockablePayload.html#field.unlockedRecord">unlockedRecord</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.UnlockedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.UnlockedEvent.html">UnlockedEvent</a>.<a class="field" href="object.UnlockedEvent.html#field.lockable">lockable</a>
+        
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

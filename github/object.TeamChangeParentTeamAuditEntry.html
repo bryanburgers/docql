@@ -1,0 +1,537 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TeamChangeParentTeamAuditEntry</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">TeamChangeParentTeamAuditEntry</a>
+</h1>
+
+
+<div class="docblock">
+    <p>Audit log entry for a team.change_parent_team event.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.action" class="field ">
+    <h3>
+        <code><a class="field" href="#field.action">action</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The action name</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.actor" class="field ">
+    <h3>
+        <code><a class="field" href="#field.actor">actor</a>: <a class="union" href="union.AuditEntryActor.html">AuditEntryActor</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The user who initiated the action</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.actorIp" class="field ">
+    <h3>
+        <code><a class="field" href="#field.actorIp">actorIp</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The IP address of the actor</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.actorLocation" class="field ">
+    <h3>
+        <code><a class="field" href="#field.actorLocation">actorLocation</a>: <a class="object" href="object.ActorLocation.html">ActorLocation</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A readable representation of the actor's location</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.actorLogin" class="field ">
+    <h3>
+        <code><a class="field" href="#field.actorLogin">actorLogin</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The username of the user who initiated the action</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.actorResourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.actorResourcePath">actorResourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for the actor.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.actorUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.actorUrl">actorUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for the actor.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.createdAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createdAt">createdAt</a>: <a class="scalar" href="scalar.PreciseDateTime.html">PreciseDateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The time the action was initiated</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.isLdapMapped" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isLdapMapped">isLdapMapped</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether the team was mapped to an LDAP Group.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.operationType" class="field ">
+    <h3>
+        <code><a class="field" href="#field.operationType">operationType</a>: <a class="enum" href="enum.OperationType.html">OperationType</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The corresponding operation type for the action</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.organization" class="field ">
+    <h3>
+        <code><a class="field" href="#field.organization">organization</a>: <a class="object" href="object.Organization.html">Organization</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The Organization associated with the Audit Entry.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.organizationName" class="field ">
+    <h3>
+        <code><a class="field" href="#field.organizationName">organizationName</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The name of the Organization.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.organizationResourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.organizationResourcePath">organizationResourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for the organization</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.organizationUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.organizationUrl">organizationUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for the organization</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.parentTeam" class="field ">
+    <h3>
+        <code><a class="field" href="#field.parentTeam">parentTeam</a>: <a class="object" href="object.Team.html">Team</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The new parent team.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.parentTeamName" class="field ">
+    <h3>
+        <code><a class="field" href="#field.parentTeamName">parentTeamName</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The name of the new parent team</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.parentTeamNameWas" class="field ">
+    <h3>
+        <code><a class="field" href="#field.parentTeamNameWas">parentTeamNameWas</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The name of the former parent team</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.parentTeamResourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.parentTeamResourcePath">parentTeamResourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for the parent team</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.parentTeamUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.parentTeamUrl">parentTeamUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for the parent team</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.parentTeamWas" class="field ">
+    <h3>
+        <code><a class="field" href="#field.parentTeamWas">parentTeamWas</a>: <a class="object" href="object.Team.html">Team</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The former parent team.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.parentTeamWasResourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.parentTeamWasResourcePath">parentTeamWasResourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for the previous parent team</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.parentTeamWasUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.parentTeamWasUrl">parentTeamWasUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for the previous parent team</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.team" class="field ">
+    <h3>
+        <code><a class="field" href="#field.team">team</a>: <a class="object" href="object.Team.html">Team</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The team associated with the action</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.teamName" class="field ">
+    <h3>
+        <code><a class="field" href="#field.teamName">teamName</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The name of the team</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.teamResourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.teamResourcePath">teamResourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for this team</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.teamUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.teamUrl">teamUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for this team</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.user" class="field ">
+    <h3>
+        <code><a class="field" href="#field.user">user</a>: <a class="object" href="object.User.html">User</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The user affected by the action</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.userLogin" class="field ">
+    <h3>
+        <code><a class="field" href="#field.userLogin">userLogin</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>For actions involving two users, the actor is the initiator and the user is the affected user.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.userResourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.userResourcePath">userResourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for the user.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.userUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.userUrl">userUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for the user.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.OrganizationAuditEntry" class="use">
+    <h3>
+        <code><a class="union" href="union.OrganizationAuditEntry.html">OrganizationAuditEntry</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.AuditEntry" class="use">
+    <h3>
+        <code><a class="interface" href="interface.AuditEntry.html">AuditEntry</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.OrganizationAuditEntryData" class="use">
+    <h3>
+        <code><a class="interface" href="interface.OrganizationAuditEntryData.html">OrganizationAuditEntryData</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.TeamAuditEntryData" class="use">
+    <h3>
+        <code><a class="interface" href="interface.TeamAuditEntryData.html">TeamAuditEntryData</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

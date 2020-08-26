@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ProfileItemShowcase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">ProfileItemShowcase</a>
+</h1>
+
+
+<div class="docblock">
+    <p>A curatable list of repositories relating to a repository owner, which defaults to showing the most popular repositories they own.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.hasPinnedItems" class="field ">
+    <h3>
+        <code><a class="field" href="#field.hasPinnedItems">hasPinnedItems</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether or not the owner has pinned any repositories or gists.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.items" class="field ">
+    <h3>
+        <code><a class="field" href="#field.items">items</a>(<span class=""><a class="arg" href="#field.items.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.items.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.items.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.items.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.PinnableItemConnection.html">PinnableItemConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The repositories and gists in the showcase. If the profile owner has any pinned items, those will be returned. Otherwise, the profile owner's popular repositories will be returned.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.items.args">
+            <h4><a href="#field.items.args">Args</a></h4>
+            
+            <div id="field.items.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.items.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.items.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.items.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.items.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.items.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.items.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.items.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.Organization" class="use">
+    <h3>
+        <code><a class="object" href="object.Organization.html">Organization</a>.<a class="field" href="object.Organization.html#field.itemShowcase">itemShowcase</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.User" class="use">
+    <h3>
+        <code><a class="object" href="object.User.html">User</a>.<a class="field" href="object.User.html#field.itemShowcase">itemShowcase</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ProfileOwner" class="use">
+    <h3>
+        <code><a class="interface" href="interface.ProfileOwner.html">ProfileOwner</a>.<a class="field" href="interface.ProfileOwner.html#field.itemShowcase">itemShowcase</a>
+        
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

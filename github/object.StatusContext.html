@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>StatusContext</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">StatusContext</a>
+</h1>
+
+
+<div class="docblock">
+    <p>Represents an individual commit status context</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.avatarUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.avatarUrl">avatarUrl</a>(<span class=""><a class="arg" href="#field.avatarUrl.arg.size">size</a>: <a class="scalar" href="scalar.Int.html">Int</a> = 40): <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The avatar of the OAuth application or the user that created the status</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.avatarUrl.args">
+            <h4><a href="#field.avatarUrl.args">Args</a></h4>
+            
+            <div id="field.avatarUrl.arg.size" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.avatarUrl.arg.size">size</a>: <a class="scalar" href="scalar.Int.html">Int</a> = 40</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The size of the resulting square image.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.commit" class="field ">
+    <h3>
+        <code><a class="field" href="#field.commit">commit</a>: <a class="object" href="object.Commit.html">Commit</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>This commit this status context is attached to.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.context" class="field ">
+    <h3>
+        <code><a class="field" href="#field.context">context</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The name of this status context.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.createdAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createdAt">createdAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was created.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.creator" class="field ">
+    <h3>
+        <code><a class="field" href="#field.creator">creator</a>: <a class="interface" href="interface.Actor.html">Actor</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The actor who created this status context.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.description" class="field ">
+    <h3>
+        <code><a class="field" href="#field.description">description</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The description for this status context.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.state" class="field ">
+    <h3>
+        <code><a class="field" href="#field.state">state</a>: <a class="enum" href="enum.StatusState.html">StatusState</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The state of this status context.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.targetUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.targetUrl">targetUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The URL for this status context.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.Status" class="use">
+    <h3>
+        <code><a class="object" href="object.Status.html">Status</a>.<a class="field" href="object.Status.html#field.context">context</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Status" class="use">
+    <h3>
+        <code><a class="object" href="object.Status.html">Status</a>.<a class="field" href="object.Status.html#field.contexts">contexts</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.StatusCheckRollupContext" class="use">
+    <h3>
+        <code><a class="union" href="union.StatusCheckRollupContext.html">StatusCheckRollupContext</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EnterpriseOutsideCollaboratorEdge</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">EnterpriseOutsideCollaboratorEdge</a>
+</h1>
+
+
+<div class="docblock">
+    <p>A User who is an outside collaborator of an enterprise through one or more organizations.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.cursor" class="field ">
+    <h3>
+        <code><a class="field" href="#field.cursor">cursor</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A cursor for use in pagination.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.isUnlicensed" class="field deprecated">
+    <h3>
+        <code><a class="field" href="#field.isUnlicensed">isUnlicensed</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    <div class="stability">
+        <div class="stab deprecated">
+            <span class="emoji">👎</span>
+            <span class="label">Deprecated:</span>
+            <p class="reason">All outside collaborators consume a license Removal on 2021-01-01 UTC.</p>
+        </div>
+    </div>
+    
+    
+    <div class="docblock">
+        <p>Whether the outside collaborator does not have a license for the enterprise.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.node" class="field ">
+    <h3>
+        <code><a class="field" href="#field.node">node</a>: <a class="object" href="object.User.html">User</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The item at the end of the edge.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.repositories" class="field ">
+    <h3>
+        <code><a class="field" href="#field.repositories">repositories</a>(<span class=""><a class="arg" href="#field.repositories.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.repositories.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.repositories.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.repositories.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.repositories.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.RepositoryOrder.html">RepositoryOrder</a> = {field: NAME, direction: ASC}): <a class="object" href="object.EnterpriseRepositoryInfoConnection.html">EnterpriseRepositoryInfoConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The enterprise organization repositories this user is a member of.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.repositories.args">
+            <h4><a href="#field.repositories.args">Args</a></h4>
+            
+            <div id="field.repositories.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositories.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositories.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositories.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositories.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositories.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositories.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositories.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositories.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositories.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.RepositoryOrder.html">RepositoryOrder</a> = {field: NAME, direction: ASC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for repositories.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.EnterpriseOutsideCollaboratorConnection" class="use">
+    <h3>
+        <code><a class="object" href="object.EnterpriseOutsideCollaboratorConnection.html">EnterpriseOutsideCollaboratorConnection</a>.<a class="field" href="object.EnterpriseOutsideCollaboratorConnection.html#field.edges">edges</a>
+        
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

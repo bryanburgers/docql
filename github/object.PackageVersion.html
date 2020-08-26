@@ -1,0 +1,307 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PackageVersion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">PackageVersion</a>
+</h1>
+
+
+<div class="docblock">
+    <p>Information about a specific package version.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.files" class="field ">
+    <h3>
+        <code><a class="field" href="#field.files">files</a>(<span class=""><a class="arg" href="#field.files.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.PackageFileOrder.html">PackageFileOrder</a> = {field: CREATED_AT, direction: ASC}</span>, <span class=""><a class="arg" href="#field.files.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.files.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.files.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.files.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.PackageFileConnection.html">PackageFileConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>List of files associated with this package version</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.files.args">
+            <h4><a href="#field.files.args">Args</a></h4>
+            
+            <div id="field.files.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.files.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.PackageFileOrder.html">PackageFileOrder</a> = {field: CREATED_AT, direction: ASC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering of the returned package files.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.files.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.files.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.files.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.files.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.files.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.files.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.files.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.files.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.package" class="field ">
+    <h3>
+        <code><a class="field" href="#field.package">package</a>: <a class="object" href="object.Package.html">Package</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The package associated with this version.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.platform" class="field ">
+    <h3>
+        <code><a class="field" href="#field.platform">platform</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The platform this version was built for.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.preRelease" class="field ">
+    <h3>
+        <code><a class="field" href="#field.preRelease">preRelease</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether or not this version is a pre-release.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.readme" class="field ">
+    <h3>
+        <code><a class="field" href="#field.readme">readme</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The README of this package version.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.release" class="field ">
+    <h3>
+        <code><a class="field" href="#field.release">release</a>: <a class="object" href="object.Release.html">Release</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The release associated with this package version.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.statistics" class="field ">
+    <h3>
+        <code><a class="field" href="#field.statistics">statistics</a>: <a class="object" href="object.PackageVersionStatistics.html">PackageVersionStatistics</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Statistics about package activity.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.summary" class="field ">
+    <h3>
+        <code><a class="field" href="#field.summary">summary</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The package version summary.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.version" class="field ">
+    <h3>
+        <code><a class="field" href="#field.version">version</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The version string.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.Package" class="use">
+    <h3>
+        <code><a class="object" href="object.Package.html">Package</a>.<a class="field" href="object.Package.html#field.latestVersion">latestVersion</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Package" class="use">
+    <h3>
+        <code><a class="object" href="object.Package.html">Package</a>.<a class="field" href="object.Package.html#field.version">version</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PackageFile" class="use">
+    <h3>
+        <code><a class="object" href="object.PackageFile.html">PackageFile</a>.<a class="field" href="object.PackageFile.html#field.packageVersion">packageVersion</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PackageTag" class="use">
+    <h3>
+        <code><a class="object" href="object.PackageTag.html">PackageTag</a>.<a class="field" href="object.PackageTag.html#field.version">version</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PackageVersionConnection" class="use">
+    <h3>
+        <code><a class="object" href="object.PackageVersionConnection.html">PackageVersionConnection</a>.<a class="field" href="object.PackageVersionConnection.html#field.nodes">nodes</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PackageVersionEdge" class="use">
+    <h3>
+        <code><a class="object" href="object.PackageVersionEdge.html">PackageVersionEdge</a>.<a class="field" href="object.PackageVersionEdge.html#field.node">node</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

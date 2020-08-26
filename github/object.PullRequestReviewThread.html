@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PullRequestReviewThread</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">PullRequestReviewThread</a>
+</h1>
+
+
+<div class="docblock">
+    <p>A threaded list of comments for a given pull request.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.comments" class="field ">
+    <h3>
+        <code><a class="field" href="#field.comments">comments</a>(<span class=""><a class="arg" href="#field.comments.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.comments.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.comments.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.comments.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.comments.arg.skip">skip</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.PullRequestReviewCommentConnection.html">PullRequestReviewCommentConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of pull request comments associated with the thread.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.comments.args">
+            <h4><a href="#field.comments.args">Args</a></h4>
+            
+            <div id="field.comments.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.comments.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.comments.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.comments.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.comments.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.comments.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.comments.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.comments.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.comments.arg.skip" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.comments.arg.skip">skip</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Skips the first <em>n</em> elements in the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.diffSide" class="field ">
+    <h3>
+        <code><a class="field" href="#field.diffSide">diffSide</a>: <a class="enum" href="enum.DiffSide.html">DiffSide</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The side of the diff on which this thread was placed.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.isResolved" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isResolved">isResolved</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether this thread has been resolved</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.line" class="field ">
+    <h3>
+        <code><a class="field" href="#field.line">line</a>: <a class="scalar" href="scalar.Int.html">Int</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The line in the file to which this thread refers</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.originalLine" class="field ">
+    <h3>
+        <code><a class="field" href="#field.originalLine">originalLine</a>: <a class="scalar" href="scalar.Int.html">Int</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The original line in the file to which this thread refers.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.originalStartLine" class="field ">
+    <h3>
+        <code><a class="field" href="#field.originalStartLine">originalStartLine</a>: <a class="scalar" href="scalar.Int.html">Int</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The original start line in the file to which this thread refers (multi-line only).</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.pullRequest" class="field ">
+    <h3>
+        <code><a class="field" href="#field.pullRequest">pullRequest</a>: <a class="object" href="object.PullRequest.html">PullRequest</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the pull request associated with this thread.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.repository" class="field ">
+    <h3>
+        <code><a class="field" href="#field.repository">repository</a>: <a class="object" href="object.Repository.html">Repository</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the repository associated with this thread.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.resolvedBy" class="field ">
+    <h3>
+        <code><a class="field" href="#field.resolvedBy">resolvedBy</a>: <a class="object" href="object.User.html">User</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The user who resolved this thread</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.startDiffSide" class="field ">
+    <h3>
+        <code><a class="field" href="#field.startDiffSide">startDiffSide</a>: <a class="enum" href="enum.DiffSide.html">DiffSide</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The side of the diff that the first line of the thread starts on (multi-line only)</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.startLine" class="field ">
+    <h3>
+        <code><a class="field" href="#field.startLine">startLine</a>: <a class="scalar" href="scalar.Int.html">Int</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The start line in the file to which this thread refers (multi-line only)</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerCanResolve" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerCanResolve">viewerCanResolve</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether or not the viewer can resolve this thread</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerCanUnresolve" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerCanUnresolve">viewerCanUnresolve</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether or not the viewer can unresolve this thread</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.AddPullRequestReviewThreadPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.AddPullRequestReviewThreadPayload.html">AddPullRequestReviewThreadPayload</a>.<a class="field" href="object.AddPullRequestReviewThreadPayload.html#field.thread">thread</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequestReviewThreadConnection" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequestReviewThreadConnection.html">PullRequestReviewThreadConnection</a>.<a class="field" href="object.PullRequestReviewThreadConnection.html#field.nodes">nodes</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequestReviewThreadEdge" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequestReviewThreadEdge.html">PullRequestReviewThreadEdge</a>.<a class="field" href="object.PullRequestReviewThreadEdge.html#field.node">node</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ResolveReviewThreadPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.ResolveReviewThreadPayload.html">ResolveReviewThreadPayload</a>.<a class="field" href="object.ResolveReviewThreadPayload.html#field.thread">thread</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.UnresolveReviewThreadPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.UnresolveReviewThreadPayload.html">UnresolveReviewThreadPayload</a>.<a class="field" href="object.UnresolveReviewThreadPayload.html#field.thread">thread</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequestTimelineItem" class="use">
+    <h3>
+        <code><a class="union" href="union.PullRequestTimelineItem.html">PullRequestTimelineItem</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequestTimelineItems" class="use">
+    <h3>
+        <code><a class="union" href="union.PullRequestTimelineItems.html">PullRequestTimelineItems</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CreatedPullRequestReviewContribution</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">CreatedPullRequestReviewContribution</a>
+</h1>
+
+
+<div class="docblock">
+    <p>Represents the contribution a user made by leaving a review on a pull request.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.isRestricted" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isRestricted">isRestricted</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether this contribution is associated with a record you do not have access to. For
+example, your own 'first issue' contribution may have been made on a repository you can no
+longer access.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.occurredAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.occurredAt">occurredAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>When this contribution was made.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.pullRequest" class="field ">
+    <h3>
+        <code><a class="field" href="#field.pullRequest">pullRequest</a>: <a class="object" href="object.PullRequest.html">PullRequest</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The pull request the user reviewed.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.pullRequestReview" class="field ">
+    <h3>
+        <code><a class="field" href="#field.pullRequestReview">pullRequestReview</a>: <a class="object" href="object.PullRequestReview.html">PullRequestReview</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The review the user left on the pull request.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.repository" class="field ">
+    <h3>
+        <code><a class="field" href="#field.repository">repository</a>: <a class="object" href="object.Repository.html">Repository</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The repository containing the pull request that the user reviewed.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.resourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.resourcePath">resourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for this contribution.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.url" class="field ">
+    <h3>
+        <code><a class="field" href="#field.url">url</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for this contribution.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.user" class="field ">
+    <h3>
+        <code><a class="field" href="#field.user">user</a>: <a class="object" href="object.User.html">User</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The user who made this contribution.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.CreatedPullRequestReviewContributionConnection" class="use">
+    <h3>
+        <code><a class="object" href="object.CreatedPullRequestReviewContributionConnection.html">CreatedPullRequestReviewContributionConnection</a>.<a class="field" href="object.CreatedPullRequestReviewContributionConnection.html#field.nodes">nodes</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.CreatedPullRequestReviewContributionEdge" class="use">
+    <h3>
+        <code><a class="object" href="object.CreatedPullRequestReviewContributionEdge.html">CreatedPullRequestReviewContributionEdge</a>.<a class="field" href="object.CreatedPullRequestReviewContributionEdge.html#field.node">node</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Contribution" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Contribution.html">Contribution</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

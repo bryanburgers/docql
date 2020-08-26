@@ -1,0 +1,379 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ProfileOwner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Interface <a href="index.html">GitHub</a>::<wbr><a class="interface" href="">ProfileOwner</a>
+</h1>
+
+
+<div class="docblock">
+    <p>Represents any entity on GitHub that has a profile page.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.anyPinnableItems" class="field ">
+    <h3>
+        <code><a class="field" href="#field.anyPinnableItems">anyPinnableItems</a>(<span class=""><a class="arg" href="#field.anyPinnableItems.arg.type">type</a>: <a class="enum" href="enum.PinnableItemType.html">PinnableItemType</a>): <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Determine if this repository owner has any items that can be pinned to their profile.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.anyPinnableItems.args">
+            <h4><a href="#field.anyPinnableItems.args">Args</a></h4>
+            
+            <div id="field.anyPinnableItems.arg.type" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.anyPinnableItems.arg.type">type</a>: <a class="enum" href="enum.PinnableItemType.html">PinnableItemType</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Filter to only a particular kind of pinnable item.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.email" class="field ">
+    <h3>
+        <code><a class="field" href="#field.email">email</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The public profile email.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.itemShowcase" class="field ">
+    <h3>
+        <code><a class="field" href="#field.itemShowcase">itemShowcase</a>: <a class="object" href="object.ProfileItemShowcase.html">ProfileItemShowcase</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Showcases a selection of repositories and gists that the profile owner has either curated or that have been selected automatically based on popularity.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.location" class="field ">
+    <h3>
+        <code><a class="field" href="#field.location">location</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The public profile location.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.login" class="field ">
+    <h3>
+        <code><a class="field" href="#field.login">login</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The username used to login.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.name" class="field ">
+    <h3>
+        <code><a class="field" href="#field.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The public profile name.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.pinnableItems" class="field ">
+    <h3>
+        <code><a class="field" href="#field.pinnableItems">pinnableItems</a>(<span class=""><a class="arg" href="#field.pinnableItems.arg.types">types</a>: [<a class="enum" href="enum.PinnableItemType.html">PinnableItemType</a>!]</span>, <span class=""><a class="arg" href="#field.pinnableItems.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.pinnableItems.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.pinnableItems.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.pinnableItems.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.PinnableItemConnection.html">PinnableItemConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of repositories and gists this profile owner can pin to their profile.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.pinnableItems.args">
+            <h4><a href="#field.pinnableItems.args">Args</a></h4>
+            
+            <div id="field.pinnableItems.arg.types" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pinnableItems.arg.types">types</a>: [<a class="enum" href="enum.PinnableItemType.html">PinnableItemType</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Filter the types of pinnable items that are returned.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pinnableItems.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pinnableItems.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pinnableItems.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pinnableItems.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pinnableItems.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pinnableItems.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pinnableItems.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pinnableItems.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.pinnedItems" class="field ">
+    <h3>
+        <code><a class="field" href="#field.pinnedItems">pinnedItems</a>(<span class=""><a class="arg" href="#field.pinnedItems.arg.types">types</a>: [<a class="enum" href="enum.PinnableItemType.html">PinnableItemType</a>!]</span>, <span class=""><a class="arg" href="#field.pinnedItems.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.pinnedItems.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.pinnedItems.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.pinnedItems.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.PinnableItemConnection.html">PinnableItemConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of repositories and gists this profile owner has pinned to their profile</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.pinnedItems.args">
+            <h4><a href="#field.pinnedItems.args">Args</a></h4>
+            
+            <div id="field.pinnedItems.arg.types" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pinnedItems.arg.types">types</a>: [<a class="enum" href="enum.PinnableItemType.html">PinnableItemType</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Filter the types of pinned items that are returned.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pinnedItems.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pinnedItems.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pinnedItems.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pinnedItems.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pinnedItems.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pinnedItems.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pinnedItems.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pinnedItems.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.pinnedItemsRemaining" class="field ">
+    <h3>
+        <code><a class="field" href="#field.pinnedItemsRemaining">pinnedItemsRemaining</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Returns how many more items this profile owner can pin to their profile.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerCanChangePinnedItems" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerCanChangePinnedItems">viewerCanChangePinnedItems</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Can the viewer pin repositories and gists to the profile?</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.websiteUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.websiteUrl">websiteUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The public profile website URL.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="possible_types"><a href="#possible_types">Possible Types</a></h2>
+
+
+<section id="possible_type.Organization" class="possible_type ">
+    <h3>
+        <code><a class="object" href="object.Organization.html">Organization</a></code>
+    </h3>
+</section>
+
+<section id="possible_type.User" class="possible_type ">
+    <h3>
+        <code><a class="object" href="object.User.html">User</a></code>
+    </h3>
+</section>
+
+
+
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

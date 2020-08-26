@@ -1,0 +1,395 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SecurityAdvisory</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">SecurityAdvisory</a>
+</h1>
+
+
+<div class="docblock">
+    <p>A GitHub Security Advisory</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.databaseId" class="field ">
+    <h3>
+        <code><a class="field" href="#field.databaseId">databaseId</a>: <a class="scalar" href="scalar.Int.html">Int</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the primary key from the database.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.description" class="field ">
+    <h3>
+        <code><a class="field" href="#field.description">description</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>This is a long plaintext description of the advisory</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.ghsaId" class="field ">
+    <h3>
+        <code><a class="field" href="#field.ghsaId">ghsaId</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The GitHub Security Advisory ID</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.identifiers" class="field ">
+    <h3>
+        <code><a class="field" href="#field.identifiers">identifiers</a>: [<a class="object" href="object.SecurityAdvisoryIdentifier.html">SecurityAdvisoryIdentifier</a>!]!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of identifiers for this advisory</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.origin" class="field ">
+    <h3>
+        <code><a class="field" href="#field.origin">origin</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The organization that originated the advisory</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.permalink" class="field ">
+    <h3>
+        <code><a class="field" href="#field.permalink">permalink</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The permalink for the advisory</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.publishedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.publishedAt">publishedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>When the advisory was published</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.references" class="field ">
+    <h3>
+        <code><a class="field" href="#field.references">references</a>: [<a class="object" href="object.SecurityAdvisoryReference.html">SecurityAdvisoryReference</a>!]!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of references for this advisory</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.severity" class="field ">
+    <h3>
+        <code><a class="field" href="#field.severity">severity</a>: <a class="enum" href="enum.SecurityAdvisorySeverity.html">SecurityAdvisorySeverity</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The severity of the advisory</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.summary" class="field ">
+    <h3>
+        <code><a class="field" href="#field.summary">summary</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A short plaintext summary of the advisory</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.updatedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updatedAt">updatedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>When the advisory was last updated</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.vulnerabilities" class="field ">
+    <h3>
+        <code><a class="field" href="#field.vulnerabilities">vulnerabilities</a>(<span class=""><a class="arg" href="#field.vulnerabilities.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.SecurityVulnerabilityOrder.html">SecurityVulnerabilityOrder</a> = {field: UPDATED_AT, direction: DESC}</span>, <span class=""><a class="arg" href="#field.vulnerabilities.arg.ecosystem">ecosystem</a>: <a class="enum" href="enum.SecurityAdvisoryEcosystem.html">SecurityAdvisoryEcosystem</a></span>, <span class=""><a class="arg" href="#field.vulnerabilities.arg.package">package</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.vulnerabilities.arg.severities">severities</a>: [<a class="enum" href="enum.SecurityAdvisorySeverity.html">SecurityAdvisorySeverity</a>!]</span>, <span class=""><a class="arg" href="#field.vulnerabilities.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.vulnerabilities.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.vulnerabilities.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.vulnerabilities.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.SecurityVulnerabilityConnection.html">SecurityVulnerabilityConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Vulnerabilities associated with this Advisory</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.vulnerabilities.args">
+            <h4><a href="#field.vulnerabilities.args">Args</a></h4>
+            
+            <div id="field.vulnerabilities.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.vulnerabilities.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.SecurityVulnerabilityOrder.html">SecurityVulnerabilityOrder</a> = {field: UPDATED_AT, direction: DESC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for the returned topics.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.vulnerabilities.arg.ecosystem" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.vulnerabilities.arg.ecosystem">ecosystem</a>: <a class="enum" href="enum.SecurityAdvisoryEcosystem.html">SecurityAdvisoryEcosystem</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>An ecosystem to filter vulnerabilities by.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.vulnerabilities.arg.package" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.vulnerabilities.arg.package">package</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>A package name to filter vulnerabilities by.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.vulnerabilities.arg.severities" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.vulnerabilities.arg.severities">severities</a>: [<a class="enum" href="enum.SecurityAdvisorySeverity.html">SecurityAdvisorySeverity</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>A list of severities to filter vulnerabilities by.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.vulnerabilities.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.vulnerabilities.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.vulnerabilities.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.vulnerabilities.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.vulnerabilities.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.vulnerabilities.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.vulnerabilities.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.vulnerabilities.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.withdrawnAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.withdrawnAt">withdrawnAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>When the advisory was withdrawn, if it has been withdrawn</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.Query" class="use">
+    <h3>
+        <code><a class="object" href="object.Query.html">Query</a>.<a class="field" href="object.Query.html#field.securityAdvisory">securityAdvisory</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.RepositoryVulnerabilityAlert" class="use">
+    <h3>
+        <code><a class="object" href="object.RepositoryVulnerabilityAlert.html">RepositoryVulnerabilityAlert</a>.<a class="field" href="object.RepositoryVulnerabilityAlert.html#field.securityAdvisory">securityAdvisory</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.SecurityAdvisoryConnection" class="use">
+    <h3>
+        <code><a class="object" href="object.SecurityAdvisoryConnection.html">SecurityAdvisoryConnection</a>.<a class="field" href="object.SecurityAdvisoryConnection.html#field.nodes">nodes</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.SecurityAdvisoryEdge" class="use">
+    <h3>
+        <code><a class="object" href="object.SecurityAdvisoryEdge.html">SecurityAdvisoryEdge</a>.<a class="field" href="object.SecurityAdvisoryEdge.html#field.node">node</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.SecurityVulnerability" class="use">
+    <h3>
+        <code><a class="object" href="object.SecurityVulnerability.html">SecurityVulnerability</a>.<a class="field" href="object.SecurityVulnerability.html#field.advisory">advisory</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

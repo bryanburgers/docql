@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IssueFilters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Input Object <a href="index.html">GitHub</a>::<wbr><a class="input_object" href="">IssueFilters</a>
+</h1>
+
+
+<div class="docblock">
+    <p>Ways in which to filter lists of issues.</p>
+
+</div>
+
+
+<h2 id="input_fields"><a href="#input_fields">Input Fields</a></h2>
+
+
+<section>
+    <h3 id="input_field.assignee" class="input_field ">
+        <code><a class="field" href="#input_field.assignee">assignee</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    <div class="docblock">
+        <p>List issues assigned to given name. Pass in <code>null</code> for issues with no assigned user, and <code>*</code> for issues assigned to any user.</p>
+
+    </div>
+    
+</section>
+
+<section>
+    <h3 id="input_field.createdBy" class="input_field ">
+        <code><a class="field" href="#input_field.createdBy">createdBy</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    <div class="docblock">
+        <p>List issues created by given name.</p>
+
+    </div>
+    
+</section>
+
+<section>
+    <h3 id="input_field.labels" class="input_field ">
+        <code><a class="field" href="#input_field.labels">labels</a>: [<a class="scalar" href="scalar.String.html">String</a>!]
+        </code>
+    </h3>
+    
+    <div class="docblock">
+        <p>List issues where the list of label names exist on the issue.</p>
+
+    </div>
+    
+</section>
+
+<section>
+    <h3 id="input_field.mentioned" class="input_field ">
+        <code><a class="field" href="#input_field.mentioned">mentioned</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    <div class="docblock">
+        <p>List issues where the given name is mentioned in the issue.</p>
+
+    </div>
+    
+</section>
+
+<section>
+    <h3 id="input_field.milestone" class="input_field ">
+        <code><a class="field" href="#input_field.milestone">milestone</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    <div class="docblock">
+        <p>List issues by given milestone argument. If an string representation of an integer is passed, it should refer to a milestone by its number field. Pass in <code>null</code> for issues with no milestone, and <code>*</code> for issues that are assigned to any milestone.</p>
+
+    </div>
+    
+</section>
+
+<section>
+    <h3 id="input_field.since" class="input_field ">
+        <code><a class="field" href="#input_field.since">since</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>
+        </code>
+    </h3>
+    
+    <div class="docblock">
+        <p>List issues that have been updated at or after the given date.</p>
+
+    </div>
+    
+</section>
+
+<section>
+    <h3 id="input_field.states" class="input_field ">
+        <code><a class="field" href="#input_field.states">states</a>: [<a class="enum" href="enum.IssueState.html">IssueState</a>!]
+        </code>
+    </h3>
+    
+    <div class="docblock">
+        <p>List issues filtered by the list of states given.</p>
+
+    </div>
+    
+</section>
+
+<section>
+    <h3 id="input_field.viewerSubscribed" class="input_field ">
+        <code><a class="field" href="#input_field.viewerSubscribed">viewerSubscribed</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>
+        </code>
+    </h3>
+    
+    <div class="docblock">
+        <p>List issues subscribed to by viewer.</p>
+
+    </div>
+    
+</section>
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.Label" class="use">
+    <h3>
+        <code><a class="object" href="object.Label.html">Label</a>.<a class="field" href="object.Label.html#field.issues">issues</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Milestone" class="use">
+    <h3>
+        <code><a class="object" href="object.Milestone.html">Milestone</a>.<a class="field" href="object.Milestone.html#field.issues">issues</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Repository" class="use">
+    <h3>
+        <code><a class="object" href="object.Repository.html">Repository</a>.<a class="field" href="object.Repository.html#field.issues">issues</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.User" class="use">
+    <h3>
+        <code><a class="object" href="object.User.html">User</a>.<a class="field" href="object.User.html#field.issues">issues</a>
+        
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,2584 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EnterpriseOwnerInfo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">EnterpriseOwnerInfo</a>
+</h1>
+
+
+<div class="docblock">
+    <p>Enterprise information only visible to enterprise owners.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.actionExecutionCapabilitySettingOrganizations" class="field ">
+    <h3>
+        <code><a class="field" href="#field.actionExecutionCapabilitySettingOrganizations">actionExecutionCapabilitySettingOrganizations</a>(<span class=""><a class="arg" href="#field.actionExecutionCapabilitySettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.actionExecutionCapabilitySettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.actionExecutionCapabilitySettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.actionExecutionCapabilitySettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.actionExecutionCapabilitySettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}): <a class="object" href="object.OrganizationConnection.html">OrganizationConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of enterprise organizations configured with the provided action execution capabilities setting value.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.actionExecutionCapabilitySettingOrganizations.args">
+            <h4><a href="#field.actionExecutionCapabilitySettingOrganizations.args">Args</a></h4>
+            
+            <div id="field.actionExecutionCapabilitySettingOrganizations.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.actionExecutionCapabilitySettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.actionExecutionCapabilitySettingOrganizations.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.actionExecutionCapabilitySettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.actionExecutionCapabilitySettingOrganizations.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.actionExecutionCapabilitySettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.actionExecutionCapabilitySettingOrganizations.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.actionExecutionCapabilitySettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.actionExecutionCapabilitySettingOrganizations.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.actionExecutionCapabilitySettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for organizations with this setting.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.admins" class="field ">
+    <h3>
+        <code><a class="field" href="#field.admins">admins</a>(<span class=""><a class="arg" href="#field.admins.arg.query">query</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.admins.arg.role">role</a>: <a class="enum" href="enum.EnterpriseAdministratorRole.html">EnterpriseAdministratorRole</a></span>, <span class=""><a class="arg" href="#field.admins.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.EnterpriseMemberOrder.html">EnterpriseMemberOrder</a> = {field: LOGIN, direction: ASC}</span>, <span class=""><a class="arg" href="#field.admins.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.admins.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.admins.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.admins.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.EnterpriseAdministratorConnection.html">EnterpriseAdministratorConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of all of the administrators for this enterprise.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.admins.args">
+            <h4><a href="#field.admins.args">Args</a></h4>
+            
+            <div id="field.admins.arg.query" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.admins.arg.query">query</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The search string to look for.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.admins.arg.role" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.admins.arg.role">role</a>: <a class="enum" href="enum.EnterpriseAdministratorRole.html">EnterpriseAdministratorRole</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The role to filter by.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.admins.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.admins.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.EnterpriseMemberOrder.html">EnterpriseMemberOrder</a> = {field: LOGIN, direction: ASC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for administrators returned from the connection.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.admins.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.admins.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.admins.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.admins.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.admins.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.admins.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.admins.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.admins.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.affiliatedUsersWithTwoFactorDisabled" class="field ">
+    <h3>
+        <code><a class="field" href="#field.affiliatedUsersWithTwoFactorDisabled">affiliatedUsersWithTwoFactorDisabled</a>(<span class=""><a class="arg" href="#field.affiliatedUsersWithTwoFactorDisabled.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.affiliatedUsersWithTwoFactorDisabled.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.affiliatedUsersWithTwoFactorDisabled.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.affiliatedUsersWithTwoFactorDisabled.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.UserConnection.html">UserConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of users in the enterprise who currently have two-factor authentication disabled.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.affiliatedUsersWithTwoFactorDisabled.args">
+            <h4><a href="#field.affiliatedUsersWithTwoFactorDisabled.args">Args</a></h4>
+            
+            <div id="field.affiliatedUsersWithTwoFactorDisabled.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.affiliatedUsersWithTwoFactorDisabled.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.affiliatedUsersWithTwoFactorDisabled.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.affiliatedUsersWithTwoFactorDisabled.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.affiliatedUsersWithTwoFactorDisabled.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.affiliatedUsersWithTwoFactorDisabled.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.affiliatedUsersWithTwoFactorDisabled.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.affiliatedUsersWithTwoFactorDisabled.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.affiliatedUsersWithTwoFactorDisabledExist" class="field ">
+    <h3>
+        <code><a class="field" href="#field.affiliatedUsersWithTwoFactorDisabledExist">affiliatedUsersWithTwoFactorDisabledExist</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether or not affiliated users with two-factor authentication disabled exist in the enterprise.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.allowPrivateRepositoryForkingSetting" class="field ">
+    <h3>
+        <code><a class="field" href="#field.allowPrivateRepositoryForkingSetting">allowPrivateRepositoryForkingSetting</a>: <a class="enum" href="enum.EnterpriseEnabledDisabledSettingValue.html">EnterpriseEnabledDisabledSettingValue</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The setting value for whether private repository forking is enabled for repositories in organizations in this enterprise.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.allowPrivateRepositoryForkingSettingOrganizations" class="field ">
+    <h3>
+        <code><a class="field" href="#field.allowPrivateRepositoryForkingSettingOrganizations">allowPrivateRepositoryForkingSettingOrganizations</a>(<span class=""><a class="arg" href="#field.allowPrivateRepositoryForkingSettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.allowPrivateRepositoryForkingSettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.allowPrivateRepositoryForkingSettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.allowPrivateRepositoryForkingSettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.allowPrivateRepositoryForkingSettingOrganizations.arg.value">value</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!</span>, <span class=""><a class="arg" href="#field.allowPrivateRepositoryForkingSettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}): <a class="object" href="object.OrganizationConnection.html">OrganizationConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of enterprise organizations configured with the provided private repository forking setting value.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.allowPrivateRepositoryForkingSettingOrganizations.args">
+            <h4><a href="#field.allowPrivateRepositoryForkingSettingOrganizations.args">Args</a></h4>
+            
+            <div id="field.allowPrivateRepositoryForkingSettingOrganizations.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.allowPrivateRepositoryForkingSettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.allowPrivateRepositoryForkingSettingOrganizations.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.allowPrivateRepositoryForkingSettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.allowPrivateRepositoryForkingSettingOrganizations.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.allowPrivateRepositoryForkingSettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.allowPrivateRepositoryForkingSettingOrganizations.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.allowPrivateRepositoryForkingSettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.allowPrivateRepositoryForkingSettingOrganizations.arg.value" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.allowPrivateRepositoryForkingSettingOrganizations.arg.value">value</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The setting value to find organizations for.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.allowPrivateRepositoryForkingSettingOrganizations.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.allowPrivateRepositoryForkingSettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for organizations with this setting.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.defaultRepositoryPermissionSetting" class="field ">
+    <h3>
+        <code><a class="field" href="#field.defaultRepositoryPermissionSetting">defaultRepositoryPermissionSetting</a>: <a class="enum" href="enum.EnterpriseDefaultRepositoryPermissionSettingValue.html">EnterpriseDefaultRepositoryPermissionSettingValue</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The setting value for base repository permissions for organizations in this enterprise.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.defaultRepositoryPermissionSettingOrganizations" class="field ">
+    <h3>
+        <code><a class="field" href="#field.defaultRepositoryPermissionSettingOrganizations">defaultRepositoryPermissionSettingOrganizations</a>(<span class=""><a class="arg" href="#field.defaultRepositoryPermissionSettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.defaultRepositoryPermissionSettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.defaultRepositoryPermissionSettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.defaultRepositoryPermissionSettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.defaultRepositoryPermissionSettingOrganizations.arg.value">value</a>: <a class="enum" href="enum.DefaultRepositoryPermissionField.html">DefaultRepositoryPermissionField</a>!</span>, <span class=""><a class="arg" href="#field.defaultRepositoryPermissionSettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}): <a class="object" href="object.OrganizationConnection.html">OrganizationConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of enterprise organizations configured with the provided default repository permission.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.defaultRepositoryPermissionSettingOrganizations.args">
+            <h4><a href="#field.defaultRepositoryPermissionSettingOrganizations.args">Args</a></h4>
+            
+            <div id="field.defaultRepositoryPermissionSettingOrganizations.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.defaultRepositoryPermissionSettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.defaultRepositoryPermissionSettingOrganizations.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.defaultRepositoryPermissionSettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.defaultRepositoryPermissionSettingOrganizations.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.defaultRepositoryPermissionSettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.defaultRepositoryPermissionSettingOrganizations.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.defaultRepositoryPermissionSettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.defaultRepositoryPermissionSettingOrganizations.arg.value" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.defaultRepositoryPermissionSettingOrganizations.arg.value">value</a>: <a class="enum" href="enum.DefaultRepositoryPermissionField.html">DefaultRepositoryPermissionField</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The permission to find organizations for.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.defaultRepositoryPermissionSettingOrganizations.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.defaultRepositoryPermissionSettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for organizations with this setting.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.enterpriseServerInstallations" class="field ">
+    <h3>
+        <code><a class="field" href="#field.enterpriseServerInstallations">enterpriseServerInstallations</a>(<span class=""><a class="arg" href="#field.enterpriseServerInstallations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.enterpriseServerInstallations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.enterpriseServerInstallations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.enterpriseServerInstallations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.enterpriseServerInstallations.arg.connectedOnly">connectedOnly</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</span>, <span class=""><a class="arg" href="#field.enterpriseServerInstallations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.EnterpriseServerInstallationOrder.html">EnterpriseServerInstallationOrder</a> = {field: HOST_NAME, direction: ASC}): <a class="object" href="object.EnterpriseServerInstallationConnection.html">EnterpriseServerInstallationConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Enterprise Server installations owned by the enterprise.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.enterpriseServerInstallations.args">
+            <h4><a href="#field.enterpriseServerInstallations.args">Args</a></h4>
+            
+            <div id="field.enterpriseServerInstallations.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.enterpriseServerInstallations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.enterpriseServerInstallations.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.enterpriseServerInstallations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.enterpriseServerInstallations.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.enterpriseServerInstallations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.enterpriseServerInstallations.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.enterpriseServerInstallations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.enterpriseServerInstallations.arg.connectedOnly" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.enterpriseServerInstallations.arg.connectedOnly">connectedOnly</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = false</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Whether or not to only return installations discovered via GitHub Connect.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.enterpriseServerInstallations.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.enterpriseServerInstallations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.EnterpriseServerInstallationOrder.html">EnterpriseServerInstallationOrder</a> = {field: HOST_NAME, direction: ASC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for Enterprise Server installations returned.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.ipAllowListEnabledSetting" class="field ">
+    <h3>
+        <code><a class="field" href="#field.ipAllowListEnabledSetting">ipAllowListEnabledSetting</a>: <a class="enum" href="enum.IpAllowListEnabledSettingValue.html">IpAllowListEnabledSettingValue</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The setting value for whether the enterprise has an IP allow list enabled.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.ipAllowListEntries" class="field ">
+    <h3>
+        <code><a class="field" href="#field.ipAllowListEntries">ipAllowListEntries</a>(<span class=""><a class="arg" href="#field.ipAllowListEntries.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.ipAllowListEntries.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.ipAllowListEntries.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.ipAllowListEntries.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.ipAllowListEntries.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.IpAllowListEntryOrder.html">IpAllowListEntryOrder</a> = {field: ALLOW_LIST_VALUE, direction: ASC}): <a class="object" href="object.IpAllowListEntryConnection.html">IpAllowListEntryConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The IP addresses that are allowed to access resources owned by the enterprise.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.ipAllowListEntries.args">
+            <h4><a href="#field.ipAllowListEntries.args">Args</a></h4>
+            
+            <div id="field.ipAllowListEntries.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.ipAllowListEntries.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.ipAllowListEntries.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.ipAllowListEntries.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.ipAllowListEntries.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.ipAllowListEntries.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.ipAllowListEntries.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.ipAllowListEntries.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.ipAllowListEntries.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.ipAllowListEntries.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.IpAllowListEntryOrder.html">IpAllowListEntryOrder</a> = {field: ALLOW_LIST_VALUE, direction: ASC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for IP allow list entries returned.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.isUpdatingDefaultRepositoryPermission" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isUpdatingDefaultRepositoryPermission">isUpdatingDefaultRepositoryPermission</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether or not the default repository permission is currently being updated.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.isUpdatingTwoFactorRequirement" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isUpdatingTwoFactorRequirement">isUpdatingTwoFactorRequirement</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether the two-factor authentication requirement is currently being enforced.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.membersCanChangeRepositoryVisibilitySetting" class="field ">
+    <h3>
+        <code><a class="field" href="#field.membersCanChangeRepositoryVisibilitySetting">membersCanChangeRepositoryVisibilitySetting</a>: <a class="enum" href="enum.EnterpriseEnabledDisabledSettingValue.html">EnterpriseEnabledDisabledSettingValue</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The setting value for whether organization members with admin permissions on a repository can change repository visibility.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.membersCanChangeRepositoryVisibilitySettingOrganizations" class="field ">
+    <h3>
+        <code><a class="field" href="#field.membersCanChangeRepositoryVisibilitySettingOrganizations">membersCanChangeRepositoryVisibilitySettingOrganizations</a>(<span class=""><a class="arg" href="#field.membersCanChangeRepositoryVisibilitySettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.membersCanChangeRepositoryVisibilitySettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.membersCanChangeRepositoryVisibilitySettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.membersCanChangeRepositoryVisibilitySettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.membersCanChangeRepositoryVisibilitySettingOrganizations.arg.value">value</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!</span>, <span class=""><a class="arg" href="#field.membersCanChangeRepositoryVisibilitySettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}): <a class="object" href="object.OrganizationConnection.html">OrganizationConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of enterprise organizations configured with the provided can change repository visibility setting value.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.membersCanChangeRepositoryVisibilitySettingOrganizations.args">
+            <h4><a href="#field.membersCanChangeRepositoryVisibilitySettingOrganizations.args">Args</a></h4>
+            
+            <div id="field.membersCanChangeRepositoryVisibilitySettingOrganizations.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanChangeRepositoryVisibilitySettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanChangeRepositoryVisibilitySettingOrganizations.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanChangeRepositoryVisibilitySettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanChangeRepositoryVisibilitySettingOrganizations.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanChangeRepositoryVisibilitySettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanChangeRepositoryVisibilitySettingOrganizations.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanChangeRepositoryVisibilitySettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanChangeRepositoryVisibilitySettingOrganizations.arg.value" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanChangeRepositoryVisibilitySettingOrganizations.arg.value">value</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The setting value to find organizations for.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanChangeRepositoryVisibilitySettingOrganizations.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanChangeRepositoryVisibilitySettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for organizations with this setting.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.membersCanCreateInternalRepositoriesSetting" class="field ">
+    <h3>
+        <code><a class="field" href="#field.membersCanCreateInternalRepositoriesSetting">membersCanCreateInternalRepositoriesSetting</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The setting value for whether members of organizations in the enterprise can create internal repositories.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.membersCanCreatePrivateRepositoriesSetting" class="field ">
+    <h3>
+        <code><a class="field" href="#field.membersCanCreatePrivateRepositoriesSetting">membersCanCreatePrivateRepositoriesSetting</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The setting value for whether members of organizations in the enterprise can create private repositories.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.membersCanCreatePublicRepositoriesSetting" class="field ">
+    <h3>
+        <code><a class="field" href="#field.membersCanCreatePublicRepositoriesSetting">membersCanCreatePublicRepositoriesSetting</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The setting value for whether members of organizations in the enterprise can create public repositories.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.membersCanCreateRepositoriesSetting" class="field ">
+    <h3>
+        <code><a class="field" href="#field.membersCanCreateRepositoriesSetting">membersCanCreateRepositoriesSetting</a>: <a class="enum" href="enum.EnterpriseMembersCanCreateRepositoriesSettingValue.html">EnterpriseMembersCanCreateRepositoriesSettingValue</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The setting value for whether members of organizations in the enterprise can create repositories.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.membersCanCreateRepositoriesSettingOrganizations" class="field ">
+    <h3>
+        <code><a class="field" href="#field.membersCanCreateRepositoriesSettingOrganizations">membersCanCreateRepositoriesSettingOrganizations</a>(<span class=""><a class="arg" href="#field.membersCanCreateRepositoriesSettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.membersCanCreateRepositoriesSettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.membersCanCreateRepositoriesSettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.membersCanCreateRepositoriesSettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.membersCanCreateRepositoriesSettingOrganizations.arg.value">value</a>: <a class="enum" href="enum.OrganizationMembersCanCreateRepositoriesSettingValue.html">OrganizationMembersCanCreateRepositoriesSettingValue</a>!</span>, <span class=""><a class="arg" href="#field.membersCanCreateRepositoriesSettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}): <a class="object" href="object.OrganizationConnection.html">OrganizationConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of enterprise organizations configured with the provided repository creation setting value.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.membersCanCreateRepositoriesSettingOrganizations.args">
+            <h4><a href="#field.membersCanCreateRepositoriesSettingOrganizations.args">Args</a></h4>
+            
+            <div id="field.membersCanCreateRepositoriesSettingOrganizations.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanCreateRepositoriesSettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanCreateRepositoriesSettingOrganizations.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanCreateRepositoriesSettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanCreateRepositoriesSettingOrganizations.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanCreateRepositoriesSettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanCreateRepositoriesSettingOrganizations.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanCreateRepositoriesSettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanCreateRepositoriesSettingOrganizations.arg.value" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanCreateRepositoriesSettingOrganizations.arg.value">value</a>: <a class="enum" href="enum.OrganizationMembersCanCreateRepositoriesSettingValue.html">OrganizationMembersCanCreateRepositoriesSettingValue</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The setting to find organizations for.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanCreateRepositoriesSettingOrganizations.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanCreateRepositoriesSettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for organizations with this setting.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.membersCanDeleteIssuesSetting" class="field ">
+    <h3>
+        <code><a class="field" href="#field.membersCanDeleteIssuesSetting">membersCanDeleteIssuesSetting</a>: <a class="enum" href="enum.EnterpriseEnabledDisabledSettingValue.html">EnterpriseEnabledDisabledSettingValue</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The setting value for whether members with admin permissions for repositories can delete issues.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.membersCanDeleteIssuesSettingOrganizations" class="field ">
+    <h3>
+        <code><a class="field" href="#field.membersCanDeleteIssuesSettingOrganizations">membersCanDeleteIssuesSettingOrganizations</a>(<span class=""><a class="arg" href="#field.membersCanDeleteIssuesSettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.membersCanDeleteIssuesSettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.membersCanDeleteIssuesSettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.membersCanDeleteIssuesSettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.membersCanDeleteIssuesSettingOrganizations.arg.value">value</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!</span>, <span class=""><a class="arg" href="#field.membersCanDeleteIssuesSettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}): <a class="object" href="object.OrganizationConnection.html">OrganizationConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of enterprise organizations configured with the provided members can delete issues setting value.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.membersCanDeleteIssuesSettingOrganizations.args">
+            <h4><a href="#field.membersCanDeleteIssuesSettingOrganizations.args">Args</a></h4>
+            
+            <div id="field.membersCanDeleteIssuesSettingOrganizations.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanDeleteIssuesSettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanDeleteIssuesSettingOrganizations.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanDeleteIssuesSettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanDeleteIssuesSettingOrganizations.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanDeleteIssuesSettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanDeleteIssuesSettingOrganizations.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanDeleteIssuesSettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanDeleteIssuesSettingOrganizations.arg.value" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanDeleteIssuesSettingOrganizations.arg.value">value</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The setting value to find organizations for.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanDeleteIssuesSettingOrganizations.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanDeleteIssuesSettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for organizations with this setting.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.membersCanDeleteRepositoriesSetting" class="field ">
+    <h3>
+        <code><a class="field" href="#field.membersCanDeleteRepositoriesSetting">membersCanDeleteRepositoriesSetting</a>: <a class="enum" href="enum.EnterpriseEnabledDisabledSettingValue.html">EnterpriseEnabledDisabledSettingValue</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The setting value for whether members with admin permissions for repositories can delete or transfer repositories.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.membersCanDeleteRepositoriesSettingOrganizations" class="field ">
+    <h3>
+        <code><a class="field" href="#field.membersCanDeleteRepositoriesSettingOrganizations">membersCanDeleteRepositoriesSettingOrganizations</a>(<span class=""><a class="arg" href="#field.membersCanDeleteRepositoriesSettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.membersCanDeleteRepositoriesSettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.membersCanDeleteRepositoriesSettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.membersCanDeleteRepositoriesSettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.membersCanDeleteRepositoriesSettingOrganizations.arg.value">value</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!</span>, <span class=""><a class="arg" href="#field.membersCanDeleteRepositoriesSettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}): <a class="object" href="object.OrganizationConnection.html">OrganizationConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of enterprise organizations configured with the provided members can delete repositories setting value.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.membersCanDeleteRepositoriesSettingOrganizations.args">
+            <h4><a href="#field.membersCanDeleteRepositoriesSettingOrganizations.args">Args</a></h4>
+            
+            <div id="field.membersCanDeleteRepositoriesSettingOrganizations.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanDeleteRepositoriesSettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanDeleteRepositoriesSettingOrganizations.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanDeleteRepositoriesSettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanDeleteRepositoriesSettingOrganizations.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanDeleteRepositoriesSettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanDeleteRepositoriesSettingOrganizations.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanDeleteRepositoriesSettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanDeleteRepositoriesSettingOrganizations.arg.value" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanDeleteRepositoriesSettingOrganizations.arg.value">value</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The setting value to find organizations for.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanDeleteRepositoriesSettingOrganizations.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanDeleteRepositoriesSettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for organizations with this setting.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.membersCanInviteCollaboratorsSetting" class="field ">
+    <h3>
+        <code><a class="field" href="#field.membersCanInviteCollaboratorsSetting">membersCanInviteCollaboratorsSetting</a>: <a class="enum" href="enum.EnterpriseEnabledDisabledSettingValue.html">EnterpriseEnabledDisabledSettingValue</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The setting value for whether members of organizations in the enterprise can invite outside collaborators.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.membersCanInviteCollaboratorsSettingOrganizations" class="field ">
+    <h3>
+        <code><a class="field" href="#field.membersCanInviteCollaboratorsSettingOrganizations">membersCanInviteCollaboratorsSettingOrganizations</a>(<span class=""><a class="arg" href="#field.membersCanInviteCollaboratorsSettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.membersCanInviteCollaboratorsSettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.membersCanInviteCollaboratorsSettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.membersCanInviteCollaboratorsSettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.membersCanInviteCollaboratorsSettingOrganizations.arg.value">value</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!</span>, <span class=""><a class="arg" href="#field.membersCanInviteCollaboratorsSettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}): <a class="object" href="object.OrganizationConnection.html">OrganizationConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of enterprise organizations configured with the provided members can invite collaborators setting value.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.membersCanInviteCollaboratorsSettingOrganizations.args">
+            <h4><a href="#field.membersCanInviteCollaboratorsSettingOrganizations.args">Args</a></h4>
+            
+            <div id="field.membersCanInviteCollaboratorsSettingOrganizations.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanInviteCollaboratorsSettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanInviteCollaboratorsSettingOrganizations.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanInviteCollaboratorsSettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanInviteCollaboratorsSettingOrganizations.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanInviteCollaboratorsSettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanInviteCollaboratorsSettingOrganizations.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanInviteCollaboratorsSettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanInviteCollaboratorsSettingOrganizations.arg.value" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanInviteCollaboratorsSettingOrganizations.arg.value">value</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The setting value to find organizations for.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanInviteCollaboratorsSettingOrganizations.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanInviteCollaboratorsSettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for organizations with this setting.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.membersCanMakePurchasesSetting" class="field ">
+    <h3>
+        <code><a class="field" href="#field.membersCanMakePurchasesSetting">membersCanMakePurchasesSetting</a>: <a class="enum" href="enum.EnterpriseMembersCanMakePurchasesSettingValue.html">EnterpriseMembersCanMakePurchasesSettingValue</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Indicates whether members of this enterprise's organizations can purchase additional services for those organizations.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.membersCanUpdateProtectedBranchesSetting" class="field ">
+    <h3>
+        <code><a class="field" href="#field.membersCanUpdateProtectedBranchesSetting">membersCanUpdateProtectedBranchesSetting</a>: <a class="enum" href="enum.EnterpriseEnabledDisabledSettingValue.html">EnterpriseEnabledDisabledSettingValue</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The setting value for whether members with admin permissions for repositories can update protected branches.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.membersCanUpdateProtectedBranchesSettingOrganizations" class="field ">
+    <h3>
+        <code><a class="field" href="#field.membersCanUpdateProtectedBranchesSettingOrganizations">membersCanUpdateProtectedBranchesSettingOrganizations</a>(<span class=""><a class="arg" href="#field.membersCanUpdateProtectedBranchesSettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.membersCanUpdateProtectedBranchesSettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.membersCanUpdateProtectedBranchesSettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.membersCanUpdateProtectedBranchesSettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.membersCanUpdateProtectedBranchesSettingOrganizations.arg.value">value</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!</span>, <span class=""><a class="arg" href="#field.membersCanUpdateProtectedBranchesSettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}): <a class="object" href="object.OrganizationConnection.html">OrganizationConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of enterprise organizations configured with the provided members can update protected branches setting value.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.membersCanUpdateProtectedBranchesSettingOrganizations.args">
+            <h4><a href="#field.membersCanUpdateProtectedBranchesSettingOrganizations.args">Args</a></h4>
+            
+            <div id="field.membersCanUpdateProtectedBranchesSettingOrganizations.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanUpdateProtectedBranchesSettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanUpdateProtectedBranchesSettingOrganizations.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanUpdateProtectedBranchesSettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanUpdateProtectedBranchesSettingOrganizations.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanUpdateProtectedBranchesSettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanUpdateProtectedBranchesSettingOrganizations.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanUpdateProtectedBranchesSettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanUpdateProtectedBranchesSettingOrganizations.arg.value" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanUpdateProtectedBranchesSettingOrganizations.arg.value">value</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The setting value to find organizations for.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanUpdateProtectedBranchesSettingOrganizations.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanUpdateProtectedBranchesSettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for organizations with this setting.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.membersCanViewDependencyInsightsSetting" class="field ">
+    <h3>
+        <code><a class="field" href="#field.membersCanViewDependencyInsightsSetting">membersCanViewDependencyInsightsSetting</a>: <a class="enum" href="enum.EnterpriseEnabledDisabledSettingValue.html">EnterpriseEnabledDisabledSettingValue</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The setting value for whether members can view dependency insights.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.membersCanViewDependencyInsightsSettingOrganizations" class="field ">
+    <h3>
+        <code><a class="field" href="#field.membersCanViewDependencyInsightsSettingOrganizations">membersCanViewDependencyInsightsSettingOrganizations</a>(<span class=""><a class="arg" href="#field.membersCanViewDependencyInsightsSettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.membersCanViewDependencyInsightsSettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.membersCanViewDependencyInsightsSettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.membersCanViewDependencyInsightsSettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.membersCanViewDependencyInsightsSettingOrganizations.arg.value">value</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!</span>, <span class=""><a class="arg" href="#field.membersCanViewDependencyInsightsSettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}): <a class="object" href="object.OrganizationConnection.html">OrganizationConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of enterprise organizations configured with the provided members can view dependency insights setting value.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.membersCanViewDependencyInsightsSettingOrganizations.args">
+            <h4><a href="#field.membersCanViewDependencyInsightsSettingOrganizations.args">Args</a></h4>
+            
+            <div id="field.membersCanViewDependencyInsightsSettingOrganizations.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanViewDependencyInsightsSettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanViewDependencyInsightsSettingOrganizations.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanViewDependencyInsightsSettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanViewDependencyInsightsSettingOrganizations.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanViewDependencyInsightsSettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanViewDependencyInsightsSettingOrganizations.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanViewDependencyInsightsSettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanViewDependencyInsightsSettingOrganizations.arg.value" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanViewDependencyInsightsSettingOrganizations.arg.value">value</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The setting value to find organizations for.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.membersCanViewDependencyInsightsSettingOrganizations.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.membersCanViewDependencyInsightsSettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for organizations with this setting.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.organizationProjectsSetting" class="field ">
+    <h3>
+        <code><a class="field" href="#field.organizationProjectsSetting">organizationProjectsSetting</a>: <a class="enum" href="enum.EnterpriseEnabledDisabledSettingValue.html">EnterpriseEnabledDisabledSettingValue</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The setting value for whether organization projects are enabled for organizations in this enterprise.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.organizationProjectsSettingOrganizations" class="field ">
+    <h3>
+        <code><a class="field" href="#field.organizationProjectsSettingOrganizations">organizationProjectsSettingOrganizations</a>(<span class=""><a class="arg" href="#field.organizationProjectsSettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.organizationProjectsSettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.organizationProjectsSettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.organizationProjectsSettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.organizationProjectsSettingOrganizations.arg.value">value</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!</span>, <span class=""><a class="arg" href="#field.organizationProjectsSettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}): <a class="object" href="object.OrganizationConnection.html">OrganizationConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of enterprise organizations configured with the provided organization projects setting value.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.organizationProjectsSettingOrganizations.args">
+            <h4><a href="#field.organizationProjectsSettingOrganizations.args">Args</a></h4>
+            
+            <div id="field.organizationProjectsSettingOrganizations.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.organizationProjectsSettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.organizationProjectsSettingOrganizations.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.organizationProjectsSettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.organizationProjectsSettingOrganizations.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.organizationProjectsSettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.organizationProjectsSettingOrganizations.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.organizationProjectsSettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.organizationProjectsSettingOrganizations.arg.value" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.organizationProjectsSettingOrganizations.arg.value">value</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The setting value to find organizations for.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.organizationProjectsSettingOrganizations.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.organizationProjectsSettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for organizations with this setting.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.outsideCollaborators" class="field ">
+    <h3>
+        <code><a class="field" href="#field.outsideCollaborators">outsideCollaborators</a>(<span class=""><a class="arg" href="#field.outsideCollaborators.arg.login">login</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.outsideCollaborators.arg.query">query</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.outsideCollaborators.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.EnterpriseMemberOrder.html">EnterpriseMemberOrder</a> = {field: LOGIN, direction: ASC}</span>, <span class=""><a class="arg" href="#field.outsideCollaborators.arg.visibility">visibility</a>: <a class="enum" href="enum.RepositoryVisibility.html">RepositoryVisibility</a></span>, <span class=""><a class="arg" href="#field.outsideCollaborators.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.outsideCollaborators.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.outsideCollaborators.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.outsideCollaborators.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.EnterpriseOutsideCollaboratorConnection.html">EnterpriseOutsideCollaboratorConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of outside collaborators across the repositories in the enterprise.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.outsideCollaborators.args">
+            <h4><a href="#field.outsideCollaborators.args">Args</a></h4>
+            
+            <div id="field.outsideCollaborators.arg.login" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.outsideCollaborators.arg.login">login</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The login of one specific outside collaborator.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.outsideCollaborators.arg.query" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.outsideCollaborators.arg.query">query</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The search string to look for.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.outsideCollaborators.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.outsideCollaborators.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.EnterpriseMemberOrder.html">EnterpriseMemberOrder</a> = {field: LOGIN, direction: ASC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for outside collaborators returned from the connection.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.outsideCollaborators.arg.visibility" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.outsideCollaborators.arg.visibility">visibility</a>: <a class="enum" href="enum.RepositoryVisibility.html">RepositoryVisibility</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Only return outside collaborators on repositories with this visibility.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.outsideCollaborators.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.outsideCollaborators.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.outsideCollaborators.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.outsideCollaborators.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.outsideCollaborators.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.outsideCollaborators.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.outsideCollaborators.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.outsideCollaborators.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.pendingAdminInvitations" class="field ">
+    <h3>
+        <code><a class="field" href="#field.pendingAdminInvitations">pendingAdminInvitations</a>(<span class=""><a class="arg" href="#field.pendingAdminInvitations.arg.query">query</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.pendingAdminInvitations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.EnterpriseAdministratorInvitationOrder.html">EnterpriseAdministratorInvitationOrder</a> = {field: CREATED_AT, direction: DESC}</span>, <span class=""><a class="arg" href="#field.pendingAdminInvitations.arg.role">role</a>: <a class="enum" href="enum.EnterpriseAdministratorRole.html">EnterpriseAdministratorRole</a></span>, <span class=""><a class="arg" href="#field.pendingAdminInvitations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.pendingAdminInvitations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.pendingAdminInvitations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.pendingAdminInvitations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.EnterpriseAdministratorInvitationConnection.html">EnterpriseAdministratorInvitationConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of pending administrator invitations for the enterprise.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.pendingAdminInvitations.args">
+            <h4><a href="#field.pendingAdminInvitations.args">Args</a></h4>
+            
+            <div id="field.pendingAdminInvitations.arg.query" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pendingAdminInvitations.arg.query">query</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The search string to look for.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pendingAdminInvitations.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pendingAdminInvitations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.EnterpriseAdministratorInvitationOrder.html">EnterpriseAdministratorInvitationOrder</a> = {field: CREATED_AT, direction: DESC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for pending enterprise administrator invitations returned from the connection.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pendingAdminInvitations.arg.role" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pendingAdminInvitations.arg.role">role</a>: <a class="enum" href="enum.EnterpriseAdministratorRole.html">EnterpriseAdministratorRole</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The role to filter by.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pendingAdminInvitations.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pendingAdminInvitations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pendingAdminInvitations.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pendingAdminInvitations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pendingAdminInvitations.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pendingAdminInvitations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pendingAdminInvitations.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pendingAdminInvitations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.pendingCollaboratorInvitations" class="field ">
+    <h3>
+        <code><a class="field" href="#field.pendingCollaboratorInvitations">pendingCollaboratorInvitations</a>(<span class=""><a class="arg" href="#field.pendingCollaboratorInvitations.arg.query">query</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.pendingCollaboratorInvitations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.RepositoryInvitationOrder.html">RepositoryInvitationOrder</a> = {field: CREATED_AT, direction: DESC}</span>, <span class=""><a class="arg" href="#field.pendingCollaboratorInvitations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.pendingCollaboratorInvitations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.pendingCollaboratorInvitations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.pendingCollaboratorInvitations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.RepositoryInvitationConnection.html">RepositoryInvitationConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of pending collaborator invitations across the repositories in the enterprise.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.pendingCollaboratorInvitations.args">
+            <h4><a href="#field.pendingCollaboratorInvitations.args">Args</a></h4>
+            
+            <div id="field.pendingCollaboratorInvitations.arg.query" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pendingCollaboratorInvitations.arg.query">query</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The search string to look for.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pendingCollaboratorInvitations.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pendingCollaboratorInvitations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.RepositoryInvitationOrder.html">RepositoryInvitationOrder</a> = {field: CREATED_AT, direction: DESC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for pending repository collaborator invitations returned from the connection.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pendingCollaboratorInvitations.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pendingCollaboratorInvitations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pendingCollaboratorInvitations.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pendingCollaboratorInvitations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pendingCollaboratorInvitations.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pendingCollaboratorInvitations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pendingCollaboratorInvitations.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pendingCollaboratorInvitations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.pendingCollaborators" class="field deprecated">
+    <h3>
+        <code><a class="field" href="#field.pendingCollaborators">pendingCollaborators</a>(<span class=""><a class="arg" href="#field.pendingCollaborators.arg.query">query</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.pendingCollaborators.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.RepositoryInvitationOrder.html">RepositoryInvitationOrder</a> = {field: CREATED_AT, direction: DESC}</span>, <span class=""><a class="arg" href="#field.pendingCollaborators.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.pendingCollaborators.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.pendingCollaborators.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.pendingCollaborators.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.EnterprisePendingCollaboratorConnection.html">EnterprisePendingCollaboratorConnection</a>!
+        </code>
+    </h3>
+    
+    <div class="stability">
+        <div class="stab deprecated">
+            <span class="emoji">👎</span>
+            <span class="label">Deprecated:</span>
+            <p class="reason">Repository invitations can now be associated with an email, not only an invitee. Use the &#x60;pendingCollaboratorInvitations&#x60; field instead. Removal on 2020-10-01 UTC.</p>
+        </div>
+    </div>
+    
+    
+    <div class="docblock">
+        <p>A list of pending collaborators across the repositories in the enterprise.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.pendingCollaborators.args">
+            <h4><a href="#field.pendingCollaborators.args">Args</a></h4>
+            
+            <div id="field.pendingCollaborators.arg.query" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pendingCollaborators.arg.query">query</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The search string to look for.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pendingCollaborators.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pendingCollaborators.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.RepositoryInvitationOrder.html">RepositoryInvitationOrder</a> = {field: CREATED_AT, direction: DESC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for pending repository collaborator invitations returned from the connection.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pendingCollaborators.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pendingCollaborators.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pendingCollaborators.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pendingCollaborators.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pendingCollaborators.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pendingCollaborators.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pendingCollaborators.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pendingCollaborators.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.pendingMemberInvitations" class="field ">
+    <h3>
+        <code><a class="field" href="#field.pendingMemberInvitations">pendingMemberInvitations</a>(<span class=""><a class="arg" href="#field.pendingMemberInvitations.arg.query">query</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.pendingMemberInvitations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.pendingMemberInvitations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.pendingMemberInvitations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.pendingMemberInvitations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.EnterprisePendingMemberInvitationConnection.html">EnterprisePendingMemberInvitationConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of pending member invitations for organizations in the enterprise.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.pendingMemberInvitations.args">
+            <h4><a href="#field.pendingMemberInvitations.args">Args</a></h4>
+            
+            <div id="field.pendingMemberInvitations.arg.query" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pendingMemberInvitations.arg.query">query</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The search string to look for.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pendingMemberInvitations.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pendingMemberInvitations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pendingMemberInvitations.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pendingMemberInvitations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pendingMemberInvitations.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pendingMemberInvitations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pendingMemberInvitations.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pendingMemberInvitations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.repositoryProjectsSetting" class="field ">
+    <h3>
+        <code><a class="field" href="#field.repositoryProjectsSetting">repositoryProjectsSetting</a>: <a class="enum" href="enum.EnterpriseEnabledDisabledSettingValue.html">EnterpriseEnabledDisabledSettingValue</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The setting value for whether repository projects are enabled in this enterprise.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.repositoryProjectsSettingOrganizations" class="field ">
+    <h3>
+        <code><a class="field" href="#field.repositoryProjectsSettingOrganizations">repositoryProjectsSettingOrganizations</a>(<span class=""><a class="arg" href="#field.repositoryProjectsSettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.repositoryProjectsSettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.repositoryProjectsSettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.repositoryProjectsSettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.repositoryProjectsSettingOrganizations.arg.value">value</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!</span>, <span class=""><a class="arg" href="#field.repositoryProjectsSettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}): <a class="object" href="object.OrganizationConnection.html">OrganizationConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of enterprise organizations configured with the provided repository projects setting value.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.repositoryProjectsSettingOrganizations.args">
+            <h4><a href="#field.repositoryProjectsSettingOrganizations.args">Args</a></h4>
+            
+            <div id="field.repositoryProjectsSettingOrganizations.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositoryProjectsSettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositoryProjectsSettingOrganizations.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositoryProjectsSettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositoryProjectsSettingOrganizations.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositoryProjectsSettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositoryProjectsSettingOrganizations.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositoryProjectsSettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositoryProjectsSettingOrganizations.arg.value" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositoryProjectsSettingOrganizations.arg.value">value</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The setting value to find organizations for.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositoryProjectsSettingOrganizations.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositoryProjectsSettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for organizations with this setting.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.samlIdentityProvider" class="field ">
+    <h3>
+        <code><a class="field" href="#field.samlIdentityProvider">samlIdentityProvider</a>: <a class="object" href="object.EnterpriseIdentityProvider.html">EnterpriseIdentityProvider</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The SAML Identity Provider for the enterprise.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.samlIdentityProviderSettingOrganizations" class="field ">
+    <h3>
+        <code><a class="field" href="#field.samlIdentityProviderSettingOrganizations">samlIdentityProviderSettingOrganizations</a>(<span class=""><a class="arg" href="#field.samlIdentityProviderSettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.samlIdentityProviderSettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.samlIdentityProviderSettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.samlIdentityProviderSettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.samlIdentityProviderSettingOrganizations.arg.value">value</a>: <a class="enum" href="enum.IdentityProviderConfigurationState.html">IdentityProviderConfigurationState</a>!</span>, <span class=""><a class="arg" href="#field.samlIdentityProviderSettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}): <a class="object" href="object.OrganizationConnection.html">OrganizationConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of enterprise organizations configured with the SAML single sign-on setting value.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.samlIdentityProviderSettingOrganizations.args">
+            <h4><a href="#field.samlIdentityProviderSettingOrganizations.args">Args</a></h4>
+            
+            <div id="field.samlIdentityProviderSettingOrganizations.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.samlIdentityProviderSettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.samlIdentityProviderSettingOrganizations.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.samlIdentityProviderSettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.samlIdentityProviderSettingOrganizations.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.samlIdentityProviderSettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.samlIdentityProviderSettingOrganizations.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.samlIdentityProviderSettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.samlIdentityProviderSettingOrganizations.arg.value" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.samlIdentityProviderSettingOrganizations.arg.value">value</a>: <a class="enum" href="enum.IdentityProviderConfigurationState.html">IdentityProviderConfigurationState</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The setting value to find organizations for.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.samlIdentityProviderSettingOrganizations.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.samlIdentityProviderSettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for organizations with this setting.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.teamDiscussionsSetting" class="field ">
+    <h3>
+        <code><a class="field" href="#field.teamDiscussionsSetting">teamDiscussionsSetting</a>: <a class="enum" href="enum.EnterpriseEnabledDisabledSettingValue.html">EnterpriseEnabledDisabledSettingValue</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The setting value for whether team discussions are enabled for organizations in this enterprise.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.teamDiscussionsSettingOrganizations" class="field ">
+    <h3>
+        <code><a class="field" href="#field.teamDiscussionsSettingOrganizations">teamDiscussionsSettingOrganizations</a>(<span class=""><a class="arg" href="#field.teamDiscussionsSettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.teamDiscussionsSettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.teamDiscussionsSettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.teamDiscussionsSettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.teamDiscussionsSettingOrganizations.arg.value">value</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!</span>, <span class=""><a class="arg" href="#field.teamDiscussionsSettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}): <a class="object" href="object.OrganizationConnection.html">OrganizationConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of enterprise organizations configured with the provided team discussions setting value.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.teamDiscussionsSettingOrganizations.args">
+            <h4><a href="#field.teamDiscussionsSettingOrganizations.args">Args</a></h4>
+            
+            <div id="field.teamDiscussionsSettingOrganizations.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.teamDiscussionsSettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.teamDiscussionsSettingOrganizations.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.teamDiscussionsSettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.teamDiscussionsSettingOrganizations.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.teamDiscussionsSettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.teamDiscussionsSettingOrganizations.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.teamDiscussionsSettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.teamDiscussionsSettingOrganizations.arg.value" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.teamDiscussionsSettingOrganizations.arg.value">value</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The setting value to find organizations for.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.teamDiscussionsSettingOrganizations.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.teamDiscussionsSettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for organizations with this setting.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.twoFactorRequiredSetting" class="field ">
+    <h3>
+        <code><a class="field" href="#field.twoFactorRequiredSetting">twoFactorRequiredSetting</a>: <a class="enum" href="enum.EnterpriseEnabledSettingValue.html">EnterpriseEnabledSettingValue</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The setting value for whether the enterprise requires two-factor authentication for its organizations and users.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.twoFactorRequiredSettingOrganizations" class="field ">
+    <h3>
+        <code><a class="field" href="#field.twoFactorRequiredSettingOrganizations">twoFactorRequiredSettingOrganizations</a>(<span class=""><a class="arg" href="#field.twoFactorRequiredSettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.twoFactorRequiredSettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.twoFactorRequiredSettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.twoFactorRequiredSettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.twoFactorRequiredSettingOrganizations.arg.value">value</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!</span>, <span class=""><a class="arg" href="#field.twoFactorRequiredSettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}): <a class="object" href="object.OrganizationConnection.html">OrganizationConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of enterprise organizations configured with the two-factor authentication setting value.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.twoFactorRequiredSettingOrganizations.args">
+            <h4><a href="#field.twoFactorRequiredSettingOrganizations.args">Args</a></h4>
+            
+            <div id="field.twoFactorRequiredSettingOrganizations.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.twoFactorRequiredSettingOrganizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.twoFactorRequiredSettingOrganizations.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.twoFactorRequiredSettingOrganizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.twoFactorRequiredSettingOrganizations.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.twoFactorRequiredSettingOrganizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.twoFactorRequiredSettingOrganizations.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.twoFactorRequiredSettingOrganizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.twoFactorRequiredSettingOrganizations.arg.value" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.twoFactorRequiredSettingOrganizations.arg.value">value</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The setting value to find organizations for.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.twoFactorRequiredSettingOrganizations.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.twoFactorRequiredSettingOrganizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for organizations with this setting.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.Enterprise" class="use">
+    <h3>
+        <code><a class="object" href="object.Enterprise.html">Enterprise</a>.<a class="field" href="object.Enterprise.html#field.ownerInfo">ownerInfo</a>
+        
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

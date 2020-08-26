@@ -1,0 +1,922 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MarketplaceListing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">MarketplaceListing</a>
+</h1>
+
+
+<div class="docblock">
+    <p>A listing in the GitHub integration marketplace.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.app" class="field ">
+    <h3>
+        <code><a class="field" href="#field.app">app</a>: <a class="object" href="object.App.html">App</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The GitHub App this listing represents.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.companyUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.companyUrl">companyUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>URL to the listing owner's company site.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.configurationResourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.configurationResourcePath">configurationResourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for configuring access to the listing's integration or OAuth app</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.configurationUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.configurationUrl">configurationUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for configuring access to the listing's integration or OAuth app</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.documentationUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.documentationUrl">documentationUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>URL to the listing's documentation.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.extendedDescription" class="field ">
+    <h3>
+        <code><a class="field" href="#field.extendedDescription">extendedDescription</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The listing's detailed description.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.extendedDescriptionHTML" class="field ">
+    <h3>
+        <code><a class="field" href="#field.extendedDescriptionHTML">extendedDescriptionHTML</a>: <a class="scalar" href="scalar.HTML.html">HTML</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The listing's detailed description rendered to HTML.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.fullDescription" class="field ">
+    <h3>
+        <code><a class="field" href="#field.fullDescription">fullDescription</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The listing's introductory description.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.fullDescriptionHTML" class="field ">
+    <h3>
+        <code><a class="field" href="#field.fullDescriptionHTML">fullDescriptionHTML</a>: <a class="scalar" href="scalar.HTML.html">HTML</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The listing's introductory description rendered to HTML.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.hasPublishedFreeTrialPlans" class="field ">
+    <h3>
+        <code><a class="field" href="#field.hasPublishedFreeTrialPlans">hasPublishedFreeTrialPlans</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Does this listing have any plans with a free trial?</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.hasTermsOfService" class="field ">
+    <h3>
+        <code><a class="field" href="#field.hasTermsOfService">hasTermsOfService</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Does this listing have a terms of service link?</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.howItWorks" class="field ">
+    <h3>
+        <code><a class="field" href="#field.howItWorks">howItWorks</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A technical description of how this app works with GitHub.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.howItWorksHTML" class="field ">
+    <h3>
+        <code><a class="field" href="#field.howItWorksHTML">howItWorksHTML</a>: <a class="scalar" href="scalar.HTML.html">HTML</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The listing's technical description rendered to HTML.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.installationUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.installationUrl">installationUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>URL to install the product to the viewer's account or organization.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.installedForViewer" class="field ">
+    <h3>
+        <code><a class="field" href="#field.installedForViewer">installedForViewer</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether this listing's app has been installed for the current viewer</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.isArchived" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isArchived">isArchived</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether this listing has been removed from the Marketplace.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.isDraft" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isDraft">isDraft</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether this listing is still an editable draft that has not been submitted for review and is not publicly visible in the Marketplace.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.isPaid" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isPaid">isPaid</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether the product this listing represents is available as part of a paid plan.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.isPublic" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isPublic">isPublic</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether this listing has been approved for display in the Marketplace.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.isRejected" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isRejected">isRejected</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether this listing has been rejected by GitHub for display in the Marketplace.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.isUnverified" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isUnverified">isUnverified</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether this listing has been approved for unverified display in the Marketplace.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.isUnverifiedPending" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isUnverifiedPending">isUnverifiedPending</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether this draft listing has been submitted for review for approval to be unverified in the Marketplace.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.isVerificationPendingFromDraft" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isVerificationPendingFromDraft">isVerificationPendingFromDraft</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether this draft listing has been submitted for review from GitHub for approval to be verified in the Marketplace.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.isVerificationPendingFromUnverified" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isVerificationPendingFromUnverified">isVerificationPendingFromUnverified</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether this unverified listing has been submitted for review from GitHub for approval to be verified in the Marketplace.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.isVerified" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isVerified">isVerified</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether this listing has been approved for verified display in the Marketplace.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.logoBackgroundColor" class="field ">
+    <h3>
+        <code><a class="field" href="#field.logoBackgroundColor">logoBackgroundColor</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The hex color code, without the leading '#', for the logo background.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.logoUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.logoUrl">logoUrl</a>(<span class=""><a class="arg" href="#field.logoUrl.arg.size">size</a>: <a class="scalar" href="scalar.Int.html">Int</a> = 400): <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>URL for the listing's logo image.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.logoUrl.args">
+            <h4><a href="#field.logoUrl.args">Args</a></h4>
+            
+            <div id="field.logoUrl.arg.size" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.logoUrl.arg.size">size</a>: <a class="scalar" href="scalar.Int.html">Int</a> = 400</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The size in pixels of the resulting square image.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.name" class="field ">
+    <h3>
+        <code><a class="field" href="#field.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The listing's full name.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.normalizedShortDescription" class="field ">
+    <h3>
+        <code><a class="field" href="#field.normalizedShortDescription">normalizedShortDescription</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The listing's very short description without a trailing period or ampersands.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.pricingUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.pricingUrl">pricingUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>URL to the listing's detailed pricing.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.primaryCategory" class="field ">
+    <h3>
+        <code><a class="field" href="#field.primaryCategory">primaryCategory</a>: <a class="object" href="object.MarketplaceCategory.html">MarketplaceCategory</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The category that best describes the listing.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.privacyPolicyUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.privacyPolicyUrl">privacyPolicyUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>URL to the listing's privacy policy, may return an empty string for listings that do not require a privacy policy URL.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.resourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.resourcePath">resourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for the Marketplace listing.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.screenshotUrls" class="field ">
+    <h3>
+        <code><a class="field" href="#field.screenshotUrls">screenshotUrls</a>: [<a class="scalar" href="scalar.String.html">String</a>]!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The URLs for the listing's screenshots.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.secondaryCategory" class="field ">
+    <h3>
+        <code><a class="field" href="#field.secondaryCategory">secondaryCategory</a>: <a class="object" href="object.MarketplaceCategory.html">MarketplaceCategory</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>An alternate category that describes the listing.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.shortDescription" class="field ">
+    <h3>
+        <code><a class="field" href="#field.shortDescription">shortDescription</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The listing's very short description.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.slug" class="field ">
+    <h3>
+        <code><a class="field" href="#field.slug">slug</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The short name of the listing used in its URL.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.statusUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.statusUrl">statusUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>URL to the listing's status page.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.supportEmail" class="field ">
+    <h3>
+        <code><a class="field" href="#field.supportEmail">supportEmail</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>An email address for support for this listing's app.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.supportUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.supportUrl">supportUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Either a URL or an email address for support for this listing's app, may return an empty string for listings that do not require a support URL.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.termsOfServiceUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.termsOfServiceUrl">termsOfServiceUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>URL to the listing's terms of service.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.url" class="field ">
+    <h3>
+        <code><a class="field" href="#field.url">url</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for the Marketplace listing.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerCanAddPlans" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerCanAddPlans">viewerCanAddPlans</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Can the current viewer add plans for this Marketplace listing.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerCanApprove" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerCanApprove">viewerCanApprove</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Can the current viewer approve this Marketplace listing.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerCanDelist" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerCanDelist">viewerCanDelist</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Can the current viewer delist this Marketplace listing.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerCanEdit" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerCanEdit">viewerCanEdit</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Can the current viewer edit this Marketplace listing.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerCanEditCategories" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerCanEditCategories">viewerCanEditCategories</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Can the current viewer edit the primary and secondary category of this
+Marketplace listing.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerCanEditPlans" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerCanEditPlans">viewerCanEditPlans</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Can the current viewer edit the plans for this Marketplace listing.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerCanRedraft" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerCanRedraft">viewerCanRedraft</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Can the current viewer return this Marketplace listing to draft state
+so it becomes editable again.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerCanReject" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerCanReject">viewerCanReject</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Can the current viewer reject this Marketplace listing by returning it to
+an editable draft state or rejecting it entirely.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerCanRequestApproval" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerCanRequestApproval">viewerCanRequestApproval</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Can the current viewer request this listing be reviewed for display in
+the Marketplace as verified.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerHasPurchased" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerHasPurchased">viewerHasPurchased</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Indicates whether the current user has an active subscription to this Marketplace listing.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerHasPurchasedForAllOrganizations" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerHasPurchasedForAllOrganizations">viewerHasPurchasedForAllOrganizations</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Indicates if the current user has purchased a subscription to this Marketplace listing
+for all of the organizations the user owns.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerIsListingAdmin" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerIsListingAdmin">viewerIsListingAdmin</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Does the current viewer role allow them to administer this Marketplace listing.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.MarketplaceListingConnection" class="use">
+    <h3>
+        <code><a class="object" href="object.MarketplaceListingConnection.html">MarketplaceListingConnection</a>.<a class="field" href="object.MarketplaceListingConnection.html#field.nodes">nodes</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.MarketplaceListingEdge" class="use">
+    <h3>
+        <code><a class="object" href="object.MarketplaceListingEdge.html">MarketplaceListingEdge</a>.<a class="field" href="object.MarketplaceListingEdge.html#field.node">node</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Query" class="use">
+    <h3>
+        <code><a class="object" href="object.Query.html">Query</a>.<a class="field" href="object.Query.html#field.marketplaceListing">marketplaceListing</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.SearchResultItem" class="use">
+    <h3>
+        <code><a class="union" href="union.SearchResultItem.html">SearchResultItem</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

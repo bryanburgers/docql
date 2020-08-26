@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>StatusCheckRollup</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">StatusCheckRollup</a>
+</h1>
+
+
+<div class="docblock">
+    <p>Represents the rollup for both the check runs and status for a commit.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.commit" class="field ">
+    <h3>
+        <code><a class="field" href="#field.commit">commit</a>: <a class="object" href="object.Commit.html">Commit</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The commit the status and check runs are attached to.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.contexts" class="field ">
+    <h3>
+        <code><a class="field" href="#field.contexts">contexts</a>(<span class=""><a class="arg" href="#field.contexts.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.contexts.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.contexts.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.contexts.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.StatusCheckRollupContextConnection.html">StatusCheckRollupContextConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of status contexts and check runs for this commit.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.contexts.args">
+            <h4><a href="#field.contexts.args">Args</a></h4>
+            
+            <div id="field.contexts.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.contexts.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.contexts.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.contexts.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.contexts.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.contexts.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.contexts.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.contexts.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.state" class="field ">
+    <h3>
+        <code><a class="field" href="#field.state">state</a>: <a class="enum" href="enum.StatusState.html">StatusState</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The combined status for the commit.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.Commit" class="use">
+    <h3>
+        <code><a class="object" href="object.Commit.html">Commit</a>.<a class="field" href="object.Commit.html#field.statusCheckRollup">statusCheckRollup</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

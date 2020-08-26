@@ -1,0 +1,2469 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PullRequest</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">PullRequest</a>
+</h1>
+
+
+<div class="docblock">
+    <p>A repository pull request.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.activeLockReason" class="field ">
+    <h3>
+        <code><a class="field" href="#field.activeLockReason">activeLockReason</a>: <a class="enum" href="enum.LockReason.html">LockReason</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Reason that the conversation was locked.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.additions" class="field ">
+    <h3>
+        <code><a class="field" href="#field.additions">additions</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The number of additions in this pull request.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.assignees" class="field ">
+    <h3>
+        <code><a class="field" href="#field.assignees">assignees</a>(<span class=""><a class="arg" href="#field.assignees.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.assignees.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.assignees.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.assignees.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.UserConnection.html">UserConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of Users assigned to this object.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.assignees.args">
+            <h4><a href="#field.assignees.args">Args</a></h4>
+            
+            <div id="field.assignees.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.assignees.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.assignees.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.assignees.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.assignees.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.assignees.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.assignees.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.assignees.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.author" class="field ">
+    <h3>
+        <code><a class="field" href="#field.author">author</a>: <a class="interface" href="interface.Actor.html">Actor</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The actor who authored the comment.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.authorAssociation" class="field ">
+    <h3>
+        <code><a class="field" href="#field.authorAssociation">authorAssociation</a>: <a class="enum" href="enum.CommentAuthorAssociation.html">CommentAuthorAssociation</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Author's association with the subject of the comment.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.baseRef" class="field ">
+    <h3>
+        <code><a class="field" href="#field.baseRef">baseRef</a>: <a class="object" href="object.Ref.html">Ref</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the base Ref associated with the pull request.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.baseRefName" class="field ">
+    <h3>
+        <code><a class="field" href="#field.baseRefName">baseRefName</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the name of the base Ref associated with the pull request, even if the ref has been deleted.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.baseRefOid" class="field ">
+    <h3>
+        <code><a class="field" href="#field.baseRefOid">baseRefOid</a>: <a class="scalar" href="scalar.GitObjectID.html">GitObjectID</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the oid of the base ref associated with the pull request, even if the ref has been deleted.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.baseRepository" class="field ">
+    <h3>
+        <code><a class="field" href="#field.baseRepository">baseRepository</a>: <a class="object" href="object.Repository.html">Repository</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The repository associated with this pull request's base Ref.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.body" class="field ">
+    <h3>
+        <code><a class="field" href="#field.body">body</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The body as Markdown.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.bodyHTML" class="field ">
+    <h3>
+        <code><a class="field" href="#field.bodyHTML">bodyHTML</a>: <a class="scalar" href="scalar.HTML.html">HTML</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The body rendered to HTML.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.bodyText" class="field ">
+    <h3>
+        <code><a class="field" href="#field.bodyText">bodyText</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The body rendered to text.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.changedFiles" class="field ">
+    <h3>
+        <code><a class="field" href="#field.changedFiles">changedFiles</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The number of changed files in this pull request.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.checksResourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.checksResourcePath">checksResourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for the checks of this pull request.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.checksUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.checksUrl">checksUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for the checks of this pull request.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.closed" class="field ">
+    <h3>
+        <code><a class="field" href="#field.closed">closed</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p><code>true</code> if the pull request is closed</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.closedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.closedAt">closedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was closed.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.comments" class="field ">
+    <h3>
+        <code><a class="field" href="#field.comments">comments</a>(<span class=""><a class="arg" href="#field.comments.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.comments.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.comments.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.comments.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.IssueCommentConnection.html">IssueCommentConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of comments associated with the pull request.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.comments.args">
+            <h4><a href="#field.comments.args">Args</a></h4>
+            
+            <div id="field.comments.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.comments.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.comments.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.comments.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.comments.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.comments.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.comments.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.comments.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.commits" class="field ">
+    <h3>
+        <code><a class="field" href="#field.commits">commits</a>(<span class=""><a class="arg" href="#field.commits.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.commits.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.commits.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.commits.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.PullRequestCommitConnection.html">PullRequestCommitConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of commits present in this pull request's head branch not present in the base branch.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.commits.args">
+            <h4><a href="#field.commits.args">Args</a></h4>
+            
+            <div id="field.commits.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.commits.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.commits.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.commits.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.commits.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.commits.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.commits.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.commits.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.createdAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createdAt">createdAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was created.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.createdViaEmail" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createdViaEmail">createdViaEmail</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Check if this comment was created via an email reply.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.databaseId" class="field ">
+    <h3>
+        <code><a class="field" href="#field.databaseId">databaseId</a>: <a class="scalar" href="scalar.Int.html">Int</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the primary key from the database.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.deletions" class="field ">
+    <h3>
+        <code><a class="field" href="#field.deletions">deletions</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The number of deletions in this pull request.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.editor" class="field ">
+    <h3>
+        <code><a class="field" href="#field.editor">editor</a>: <a class="interface" href="interface.Actor.html">Actor</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The actor who edited this pull request's body.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.files" class="field ">
+    <h3>
+        <code><a class="field" href="#field.files">files</a>(<span class=""><a class="arg" href="#field.files.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.files.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.files.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.files.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.PullRequestChangedFileConnection.html">PullRequestChangedFileConnection</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Lists the files changed within this pull request.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.files.args">
+            <h4><a href="#field.files.args">Args</a></h4>
+            
+            <div id="field.files.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.files.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.files.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.files.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.files.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.files.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.files.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.files.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.headRef" class="field ">
+    <h3>
+        <code><a class="field" href="#field.headRef">headRef</a>: <a class="object" href="object.Ref.html">Ref</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the head Ref associated with the pull request.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.headRefName" class="field ">
+    <h3>
+        <code><a class="field" href="#field.headRefName">headRefName</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the name of the head Ref associated with the pull request, even if the ref has been deleted.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.headRefOid" class="field ">
+    <h3>
+        <code><a class="field" href="#field.headRefOid">headRefOid</a>: <a class="scalar" href="scalar.GitObjectID.html">GitObjectID</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the oid of the head ref associated with the pull request, even if the ref has been deleted.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.headRepository" class="field ">
+    <h3>
+        <code><a class="field" href="#field.headRepository">headRepository</a>: <a class="object" href="object.Repository.html">Repository</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The repository associated with this pull request's head Ref.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.headRepositoryOwner" class="field ">
+    <h3>
+        <code><a class="field" href="#field.headRepositoryOwner">headRepositoryOwner</a>: <a class="interface" href="interface.RepositoryOwner.html">RepositoryOwner</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The owner of the repository associated with this pull request's head Ref.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.hovercard" class="field ">
+    <h3>
+        <code><a class="field" href="#field.hovercard">hovercard</a>(<span class=""><a class="arg" href="#field.hovercard.arg.includeNotificationContexts">includeNotificationContexts</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = true): <a class="object" href="object.Hovercard.html">Hovercard</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The hovercard information for this issue</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.hovercard.args">
+            <h4><a href="#field.hovercard.args">Args</a></h4>
+            
+            <div id="field.hovercard.arg.includeNotificationContexts" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.hovercard.arg.includeNotificationContexts">includeNotificationContexts</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = true</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Whether or not to include notification contexts</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.includesCreatedEdit" class="field ">
+    <h3>
+        <code><a class="field" href="#field.includesCreatedEdit">includesCreatedEdit</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Check if this comment was edited and includes an edit with the creation data</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.isCrossRepository" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isCrossRepository">isCrossRepository</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The head and base repositories are different.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.isDraft" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isDraft">isDraft</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies if the pull request is a draft.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.labels" class="field ">
+    <h3>
+        <code><a class="field" href="#field.labels">labels</a>(<span class=""><a class="arg" href="#field.labels.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.LabelOrder.html">LabelOrder</a> = {field: CREATED_AT, direction: ASC}</span>, <span class=""><a class="arg" href="#field.labels.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.labels.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.labels.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.labels.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.LabelConnection.html">LabelConnection</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of labels associated with the object.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.labels.args">
+            <h4><a href="#field.labels.args">Args</a></h4>
+            
+            <div id="field.labels.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.labels.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.LabelOrder.html">LabelOrder</a> = {field: CREATED_AT, direction: ASC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for labels returned from the connection.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.labels.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.labels.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.labels.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.labels.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.labels.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.labels.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.labels.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.labels.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.lastEditedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.lastEditedAt">lastEditedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The moment the editor made the last edit</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.locked" class="field ">
+    <h3>
+        <code><a class="field" href="#field.locked">locked</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p><code>true</code> if the pull request is locked</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.maintainerCanModify" class="field ">
+    <h3>
+        <code><a class="field" href="#field.maintainerCanModify">maintainerCanModify</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Indicates whether maintainers can modify the pull request.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.mergeCommit" class="field ">
+    <h3>
+        <code><a class="field" href="#field.mergeCommit">mergeCommit</a>: <a class="object" href="object.Commit.html">Commit</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The commit that was created when this pull request was merged.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.mergeable" class="field ">
+    <h3>
+        <code><a class="field" href="#field.mergeable">mergeable</a>: <a class="enum" href="enum.MergeableState.html">MergeableState</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether or not the pull request can be merged based on the existence of merge conflicts.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.merged" class="field ">
+    <h3>
+        <code><a class="field" href="#field.merged">merged</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether or not the pull request was merged.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.mergedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.mergedAt">mergedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The date and time that the pull request was merged.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.mergedBy" class="field ">
+    <h3>
+        <code><a class="field" href="#field.mergedBy">mergedBy</a>: <a class="interface" href="interface.Actor.html">Actor</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The actor who merged the pull request.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.milestone" class="field ">
+    <h3>
+        <code><a class="field" href="#field.milestone">milestone</a>: <a class="object" href="object.Milestone.html">Milestone</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the milestone associated with the pull request.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.number" class="field ">
+    <h3>
+        <code><a class="field" href="#field.number">number</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the pull request number.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.participants" class="field ">
+    <h3>
+        <code><a class="field" href="#field.participants">participants</a>(<span class=""><a class="arg" href="#field.participants.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.participants.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.participants.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.participants.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.UserConnection.html">UserConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of Users that are participating in the Pull Request conversation.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.participants.args">
+            <h4><a href="#field.participants.args">Args</a></h4>
+            
+            <div id="field.participants.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.participants.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.participants.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.participants.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.participants.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.participants.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.participants.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.participants.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.permalink" class="field ">
+    <h3>
+        <code><a class="field" href="#field.permalink">permalink</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The permalink to the pull request.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.potentialMergeCommit" class="field ">
+    <h3>
+        <code><a class="field" href="#field.potentialMergeCommit">potentialMergeCommit</a>: <a class="object" href="object.Commit.html">Commit</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The commit that GitHub automatically generated to test if this pull request could be merged. This field will not return a value if the pull request is merged, or if the test merge commit is still being generated. See the <code>mergeable</code> field for more details on the mergeability of the pull request.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.projectCards" class="field ">
+    <h3>
+        <code><a class="field" href="#field.projectCards">projectCards</a>(<span class=""><a class="arg" href="#field.projectCards.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.projectCards.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.projectCards.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.projectCards.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.projectCards.arg.archivedStates">archivedStates</a>: [<a class="enum" href="enum.ProjectCardArchivedState.html">ProjectCardArchivedState</a>] = [ARCHIVED, NOT_ARCHIVED]): <a class="object" href="object.ProjectCardConnection.html">ProjectCardConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>List of project cards associated with this pull request.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.projectCards.args">
+            <h4><a href="#field.projectCards.args">Args</a></h4>
+            
+            <div id="field.projectCards.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.projectCards.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.projectCards.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.projectCards.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.projectCards.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.projectCards.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.projectCards.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.projectCards.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.projectCards.arg.archivedStates" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.projectCards.arg.archivedStates">archivedStates</a>: [<a class="enum" href="enum.ProjectCardArchivedState.html">ProjectCardArchivedState</a>] = [ARCHIVED, NOT_ARCHIVED]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>A list of archived states to filter the cards by</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.publishedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.publishedAt">publishedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies when the comment was published at.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.reactionGroups" class="field ">
+    <h3>
+        <code><a class="field" href="#field.reactionGroups">reactionGroups</a>: [<a class="object" href="object.ReactionGroup.html">ReactionGroup</a>!]
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of reactions grouped by content left on the subject.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.reactions" class="field ">
+    <h3>
+        <code><a class="field" href="#field.reactions">reactions</a>(<span class=""><a class="arg" href="#field.reactions.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.reactions.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.reactions.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.reactions.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.reactions.arg.content">content</a>: <a class="enum" href="enum.ReactionContent.html">ReactionContent</a></span>, <span class=""><a class="arg" href="#field.reactions.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.ReactionOrder.html">ReactionOrder</a>): <a class="object" href="object.ReactionConnection.html">ReactionConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of Reactions left on the Issue.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.reactions.args">
+            <h4><a href="#field.reactions.args">Args</a></h4>
+            
+            <div id="field.reactions.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reactions.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.reactions.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reactions.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.reactions.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reactions.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.reactions.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reactions.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.reactions.arg.content" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reactions.arg.content">content</a>: <a class="enum" href="enum.ReactionContent.html">ReactionContent</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Allows filtering Reactions by emoji.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.reactions.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reactions.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.ReactionOrder.html">ReactionOrder</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Allows specifying the order in which reactions are returned.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.repository" class="field ">
+    <h3>
+        <code><a class="field" href="#field.repository">repository</a>: <a class="object" href="object.Repository.html">Repository</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The repository associated with this node.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.resourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.resourcePath">resourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for this pull request.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.revertResourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.revertResourcePath">revertResourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for reverting this pull request.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.revertUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.revertUrl">revertUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for reverting this pull request.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.reviewDecision" class="field ">
+    <h3>
+        <code><a class="field" href="#field.reviewDecision">reviewDecision</a>: <a class="enum" href="enum.PullRequestReviewDecision.html">PullRequestReviewDecision</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The current status of this pull request with respect to code review.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.reviewRequests" class="field ">
+    <h3>
+        <code><a class="field" href="#field.reviewRequests">reviewRequests</a>(<span class=""><a class="arg" href="#field.reviewRequests.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.reviewRequests.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.reviewRequests.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.reviewRequests.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.ReviewRequestConnection.html">ReviewRequestConnection</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of review requests associated with the pull request.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.reviewRequests.args">
+            <h4><a href="#field.reviewRequests.args">Args</a></h4>
+            
+            <div id="field.reviewRequests.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reviewRequests.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.reviewRequests.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reviewRequests.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.reviewRequests.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reviewRequests.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.reviewRequests.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reviewRequests.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.reviewThreads" class="field ">
+    <h3>
+        <code><a class="field" href="#field.reviewThreads">reviewThreads</a>(<span class=""><a class="arg" href="#field.reviewThreads.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.reviewThreads.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.reviewThreads.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.reviewThreads.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.PullRequestReviewThreadConnection.html">PullRequestReviewThreadConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The list of all review threads for this pull request.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.reviewThreads.args">
+            <h4><a href="#field.reviewThreads.args">Args</a></h4>
+            
+            <div id="field.reviewThreads.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reviewThreads.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.reviewThreads.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reviewThreads.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.reviewThreads.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reviewThreads.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.reviewThreads.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reviewThreads.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.reviews" class="field ">
+    <h3>
+        <code><a class="field" href="#field.reviews">reviews</a>(<span class=""><a class="arg" href="#field.reviews.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.reviews.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.reviews.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.reviews.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.reviews.arg.states">states</a>: [<a class="enum" href="enum.PullRequestReviewState.html">PullRequestReviewState</a>!]</span>, <span class=""><a class="arg" href="#field.reviews.arg.author">author</a>: <a class="scalar" href="scalar.String.html">String</a>): <a class="object" href="object.PullRequestReviewConnection.html">PullRequestReviewConnection</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of reviews associated with the pull request.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.reviews.args">
+            <h4><a href="#field.reviews.args">Args</a></h4>
+            
+            <div id="field.reviews.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reviews.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.reviews.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reviews.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.reviews.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reviews.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.reviews.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reviews.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.reviews.arg.states" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reviews.arg.states">states</a>: [<a class="enum" href="enum.PullRequestReviewState.html">PullRequestReviewState</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>A list of states to filter the reviews.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.reviews.arg.author" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reviews.arg.author">author</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Filter by author of the review.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.state" class="field ">
+    <h3>
+        <code><a class="field" href="#field.state">state</a>: <a class="enum" href="enum.PullRequestState.html">PullRequestState</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the state of the pull request.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.suggestedReviewers" class="field ">
+    <h3>
+        <code><a class="field" href="#field.suggestedReviewers">suggestedReviewers</a>: [<a class="object" href="object.SuggestedReviewer.html">SuggestedReviewer</a>]!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of reviewer suggestions based on commit history and past review comments.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.timeline" class="field deprecated">
+    <h3>
+        <code><a class="field" href="#field.timeline">timeline</a>(<span class=""><a class="arg" href="#field.timeline.arg.since">since</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a></span>, <span class=""><a class="arg" href="#field.timeline.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.timeline.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.timeline.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.timeline.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.PullRequestTimelineConnection.html">PullRequestTimelineConnection</a>!
+        </code>
+    </h3>
+    
+    <div class="stability">
+        <div class="stab deprecated">
+            <span class="emoji">👎</span>
+            <span class="label">Deprecated:</span>
+            <p class="reason">&#x60;timeline&#x60; will be removed Use PullRequest.timelineItems instead. Removal on 2020-10-01 UTC.</p>
+        </div>
+    </div>
+    
+    
+    <div class="docblock">
+        <p>A list of events, comments, commits, etc. associated with the pull request.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.timeline.args">
+            <h4><a href="#field.timeline.args">Args</a></h4>
+            
+            <div id="field.timeline.arg.since" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.timeline.arg.since">since</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Allows filtering timeline events by a <code>since</code> timestamp.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.timeline.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.timeline.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.timeline.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.timeline.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.timeline.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.timeline.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.timeline.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.timeline.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.timelineItems" class="field ">
+    <h3>
+        <code><a class="field" href="#field.timelineItems">timelineItems</a>(<span class=""><a class="arg" href="#field.timelineItems.arg.since">since</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a></span>, <span class=""><a class="arg" href="#field.timelineItems.arg.skip">skip</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.timelineItems.arg.itemTypes">itemTypes</a>: [<a class="enum" href="enum.PullRequestTimelineItemsItemType.html">PullRequestTimelineItemsItemType</a>!]</span>, <span class=""><a class="arg" href="#field.timelineItems.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.timelineItems.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.timelineItems.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.timelineItems.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.PullRequestTimelineItemsConnection.html">PullRequestTimelineItemsConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of events, comments, commits, etc. associated with the pull request.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.timelineItems.args">
+            <h4><a href="#field.timelineItems.args">Args</a></h4>
+            
+            <div id="field.timelineItems.arg.since" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.timelineItems.arg.since">since</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Filter timeline items by a <code>since</code> timestamp.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.timelineItems.arg.skip" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.timelineItems.arg.skip">skip</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Skips the first <em>n</em> elements in the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.timelineItems.arg.itemTypes" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.timelineItems.arg.itemTypes">itemTypes</a>: [<a class="enum" href="enum.PullRequestTimelineItemsItemType.html">PullRequestTimelineItemsItemType</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Filter timeline items by type.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.timelineItems.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.timelineItems.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.timelineItems.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.timelineItems.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.timelineItems.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.timelineItems.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.timelineItems.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.timelineItems.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.title" class="field ">
+    <h3>
+        <code><a class="field" href="#field.title">title</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the pull request title.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.updatedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updatedAt">updatedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was last updated.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.url" class="field ">
+    <h3>
+        <code><a class="field" href="#field.url">url</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for this pull request.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.userContentEdits" class="field ">
+    <h3>
+        <code><a class="field" href="#field.userContentEdits">userContentEdits</a>(<span class=""><a class="arg" href="#field.userContentEdits.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.userContentEdits.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.userContentEdits.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.userContentEdits.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.UserContentEditConnection.html">UserContentEditConnection</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of edits to this content.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.userContentEdits.args">
+            <h4><a href="#field.userContentEdits.args">Args</a></h4>
+            
+            <div id="field.userContentEdits.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.userContentEdits.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.userContentEdits.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.userContentEdits.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.userContentEdits.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.userContentEdits.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.userContentEdits.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.userContentEdits.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.viewerCanApplySuggestion" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerCanApplySuggestion">viewerCanApplySuggestion</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether or not the viewer can apply suggestion.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerCanReact" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerCanReact">viewerCanReact</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Can user react to this subject</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerCanSubscribe" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerCanSubscribe">viewerCanSubscribe</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Check if the viewer is able to change their subscription status for the repository.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerCanUpdate" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerCanUpdate">viewerCanUpdate</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Check if the current viewer can update this object.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerCannotUpdateReasons" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerCannotUpdateReasons">viewerCannotUpdateReasons</a>: [<a class="enum" href="enum.CommentCannotUpdateReason.html">CommentCannotUpdateReason</a>!]!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Reasons why the current viewer can not update this comment.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerDidAuthor" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerDidAuthor">viewerDidAuthor</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Did the viewer author this comment.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerSubscription" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerSubscription">viewerSubscription</a>: <a class="enum" href="enum.SubscriptionState.html">SubscriptionState</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies if the viewer is watching, not watching, or ignoring the subscribable entity.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.AutomaticBaseChangeFailedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.AutomaticBaseChangeFailedEvent.html">AutomaticBaseChangeFailedEvent</a>.<a class="field" href="object.AutomaticBaseChangeFailedEvent.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.AutomaticBaseChangeSucceededEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.AutomaticBaseChangeSucceededEvent.html">AutomaticBaseChangeSucceededEvent</a>.<a class="field" href="object.AutomaticBaseChangeSucceededEvent.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.BaseRefForcePushedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.BaseRefForcePushedEvent.html">BaseRefForcePushedEvent</a>.<a class="field" href="object.BaseRefForcePushedEvent.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ClosePullRequestPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.ClosePullRequestPayload.html">ClosePullRequestPayload</a>.<a class="field" href="object.ClosePullRequestPayload.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ConvertToDraftEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.ConvertToDraftEvent.html">ConvertToDraftEvent</a>.<a class="field" href="object.ConvertToDraftEvent.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.CreatePullRequestPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.CreatePullRequestPayload.html">CreatePullRequestPayload</a>.<a class="field" href="object.CreatePullRequestPayload.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.CreatedPullRequestContribution" class="use">
+    <h3>
+        <code><a class="object" href="object.CreatedPullRequestContribution.html">CreatedPullRequestContribution</a>.<a class="field" href="object.CreatedPullRequestContribution.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.CreatedPullRequestReviewContribution" class="use">
+    <h3>
+        <code><a class="object" href="object.CreatedPullRequestReviewContribution.html">CreatedPullRequestReviewContribution</a>.<a class="field" href="object.CreatedPullRequestReviewContribution.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.DeployedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.DeployedEvent.html">DeployedEvent</a>.<a class="field" href="object.DeployedEvent.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.DeploymentEnvironmentChangedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.DeploymentEnvironmentChangedEvent.html">DeploymentEnvironmentChangedEvent</a>.<a class="field" href="object.DeploymentEnvironmentChangedEvent.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.HeadRefDeletedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.HeadRefDeletedEvent.html">HeadRefDeletedEvent</a>.<a class="field" href="object.HeadRefDeletedEvent.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.HeadRefForcePushedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.HeadRefForcePushedEvent.html">HeadRefForcePushedEvent</a>.<a class="field" href="object.HeadRefForcePushedEvent.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.HeadRefRestoredEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.HeadRefRestoredEvent.html">HeadRefRestoredEvent</a>.<a class="field" href="object.HeadRefRestoredEvent.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.IssueComment" class="use">
+    <h3>
+        <code><a class="object" href="object.IssueComment.html">IssueComment</a>.<a class="field" href="object.IssueComment.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.MarkPullRequestReadyForReviewPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.MarkPullRequestReadyForReviewPayload.html">MarkPullRequestReadyForReviewPayload</a>.<a class="field" href="object.MarkPullRequestReadyForReviewPayload.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.MergePullRequestPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.MergePullRequestPayload.html">MergePullRequestPayload</a>.<a class="field" href="object.MergePullRequestPayload.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.MergedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.MergedEvent.html">MergedEvent</a>.<a class="field" href="object.MergedEvent.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequestCommit" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequestCommit.html">PullRequestCommit</a>.<a class="field" href="object.PullRequestCommit.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequestCommitCommentThread" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequestCommitCommentThread.html">PullRequestCommitCommentThread</a>.<a class="field" href="object.PullRequestCommitCommentThread.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequestConnection" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequestConnection.html">PullRequestConnection</a>.<a class="field" href="object.PullRequestConnection.html#field.nodes">nodes</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequestEdge" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequestEdge.html">PullRequestEdge</a>.<a class="field" href="object.PullRequestEdge.html#field.node">node</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequestReview" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequestReview.html">PullRequestReview</a>.<a class="field" href="object.PullRequestReview.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequestReviewComment" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequestReviewComment.html">PullRequestReviewComment</a>.<a class="field" href="object.PullRequestReviewComment.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequestReviewThread" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequestReviewThread.html">PullRequestReviewThread</a>.<a class="field" href="object.PullRequestReviewThread.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequestRevisionMarker" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequestRevisionMarker.html">PullRequestRevisionMarker</a>.<a class="field" href="object.PullRequestRevisionMarker.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ReadyForReviewEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.ReadyForReviewEvent.html">ReadyForReviewEvent</a>.<a class="field" href="object.ReadyForReviewEvent.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ReopenPullRequestPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.ReopenPullRequestPayload.html">ReopenPullRequestPayload</a>.<a class="field" href="object.ReopenPullRequestPayload.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Repository" class="use">
+    <h3>
+        <code><a class="object" href="object.Repository.html">Repository</a>.<a class="field" href="object.Repository.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.RequestReviewsPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.RequestReviewsPayload.html">RequestReviewsPayload</a>.<a class="field" href="object.RequestReviewsPayload.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ReviewDismissedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.ReviewDismissedEvent.html">ReviewDismissedEvent</a>.<a class="field" href="object.ReviewDismissedEvent.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ReviewRequest" class="use">
+    <h3>
+        <code><a class="object" href="object.ReviewRequest.html">ReviewRequest</a>.<a class="field" href="object.ReviewRequest.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ReviewRequestRemovedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.ReviewRequestRemovedEvent.html">ReviewRequestRemovedEvent</a>.<a class="field" href="object.ReviewRequestRemovedEvent.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ReviewRequestedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.ReviewRequestedEvent.html">ReviewRequestedEvent</a>.<a class="field" href="object.ReviewRequestedEvent.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.UpdatePullRequestPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.UpdatePullRequestPayload.html">UpdatePullRequestPayload</a>.<a class="field" href="object.UpdatePullRequestPayload.html#field.pullRequest">pullRequest</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Closer" class="use">
+    <h3>
+        <code><a class="union" href="union.Closer.html">Closer</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.IssueOrPullRequest" class="use">
+    <h3>
+        <code><a class="union" href="union.IssueOrPullRequest.html">IssueOrPullRequest</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.MilestoneItem" class="use">
+    <h3>
+        <code><a class="union" href="union.MilestoneItem.html">MilestoneItem</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.ProjectCardItem" class="use">
+    <h3>
+        <code><a class="union" href="union.ProjectCardItem.html">ProjectCardItem</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.ReferencedSubject" class="use">
+    <h3>
+        <code><a class="union" href="union.ReferencedSubject.html">ReferencedSubject</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.RenamedTitleSubject" class="use">
+    <h3>
+        <code><a class="union" href="union.RenamedTitleSubject.html">RenamedTitleSubject</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.SearchResultItem" class="use">
+    <h3>
+        <code><a class="union" href="union.SearchResultItem.html">SearchResultItem</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Assignable" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Assignable.html">Assignable</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Closable" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Closable.html">Closable</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Comment" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Comment.html">Comment</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Labelable" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Labelable.html">Labelable</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Lockable" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Lockable.html">Lockable</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Reactable" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Reactable.html">Reactable</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.RepositoryNode" class="use">
+    <h3>
+        <code><a class="interface" href="interface.RepositoryNode.html">RepositoryNode</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Subscribable" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Subscribable.html">Subscribable</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.UniformResourceLocatable" class="use">
+    <h3>
+        <code><a class="interface" href="interface.UniformResourceLocatable.html">UniformResourceLocatable</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Updatable" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Updatable.html">Updatable</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.UpdatableComment" class="use">
+    <h3>
+        <code><a class="interface" href="interface.UpdatableComment.html">UpdatableComment</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

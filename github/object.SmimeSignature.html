@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SmimeSignature</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">SmimeSignature</a>
+</h1>
+
+
+<div class="docblock">
+    <p>Represents an S/MIME signature on a Commit or Tag.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.email" class="field ">
+    <h3>
+        <code><a class="field" href="#field.email">email</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Email used to sign this object.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.isValid" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isValid">isValid</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>True if the signature is valid and verified by GitHub.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.payload" class="field ">
+    <h3>
+        <code><a class="field" href="#field.payload">payload</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Payload for GPG signing object. Raw ODB object without the signature header.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.signature" class="field ">
+    <h3>
+        <code><a class="field" href="#field.signature">signature</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>ASCII-armored signature header from object.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.signer" class="field ">
+    <h3>
+        <code><a class="field" href="#field.signer">signer</a>: <a class="object" href="object.User.html">User</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>GitHub user corresponding to the email signing this commit.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.state" class="field ">
+    <h3>
+        <code><a class="field" href="#field.state">state</a>: <a class="enum" href="enum.GitSignatureState.html">GitSignatureState</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The state of this signature. <code>VALID</code> if signature is valid and verified by GitHub, otherwise represents reason why signature is considered invalid.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.wasSignedByGitHub" class="field ">
+    <h3>
+        <code><a class="field" href="#field.wasSignedByGitHub">wasSignedByGitHub</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>True if the signature was made with GitHub's signing key.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.GitSignature" class="use">
+    <h3>
+        <code><a class="interface" href="interface.GitSignature.html">GitSignature</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

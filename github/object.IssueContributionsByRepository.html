@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IssueContributionsByRepository</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">IssueContributionsByRepository</a>
+</h1>
+
+
+<div class="docblock">
+    <p>This aggregates issues opened by a user within one repository.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.contributions" class="field ">
+    <h3>
+        <code><a class="field" href="#field.contributions">contributions</a>(<span class=""><a class="arg" href="#field.contributions.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.contributions.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.contributions.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.contributions.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.contributions.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.ContributionOrder.html">ContributionOrder</a> = {direction: DESC}): <a class="object" href="object.CreatedIssueContributionConnection.html">CreatedIssueContributionConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The issue contributions.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.contributions.args">
+            <h4><a href="#field.contributions.args">Args</a></h4>
+            
+            <div id="field.contributions.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.contributions.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.contributions.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.contributions.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.contributions.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.contributions.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.contributions.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.contributions.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.contributions.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.contributions.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.ContributionOrder.html">ContributionOrder</a> = {direction: DESC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for contributions returned from the connection.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.repository" class="field ">
+    <h3>
+        <code><a class="field" href="#field.repository">repository</a>: <a class="object" href="object.Repository.html">Repository</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The repository in which the issues were opened.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.ContributionsCollection" class="use">
+    <h3>
+        <code><a class="object" href="object.ContributionsCollection.html">ContributionsCollection</a>.<a class="field" href="object.ContributionsCollection.html#field.issueContributionsByRepository">issueContributionsByRepository</a>
+        
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UserStatus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">UserStatus</a>
+</h1>
+
+
+<div class="docblock">
+    <p>The user's description of what they're currently doing.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.createdAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createdAt">createdAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was created.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.emoji" class="field ">
+    <h3>
+        <code><a class="field" href="#field.emoji">emoji</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>An emoji summarizing the user's status.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.emojiHTML" class="field ">
+    <h3>
+        <code><a class="field" href="#field.emojiHTML">emojiHTML</a>: <a class="scalar" href="scalar.HTML.html">HTML</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The status emoji as HTML.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.expiresAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.expiresAt">expiresAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>If set, the status will not be shown after this date.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>ID of the object.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.indicatesLimitedAvailability" class="field ">
+    <h3>
+        <code><a class="field" href="#field.indicatesLimitedAvailability">indicatesLimitedAvailability</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether this status indicates the user is not fully available on GitHub.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.message" class="field ">
+    <h3>
+        <code><a class="field" href="#field.message">message</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A brief message describing what the user is doing.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.organization" class="field ">
+    <h3>
+        <code><a class="field" href="#field.organization">organization</a>: <a class="object" href="object.Organization.html">Organization</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The organization whose members can see this status. If null, this status is publicly visible.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.updatedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updatedAt">updatedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was last updated.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.user" class="field ">
+    <h3>
+        <code><a class="field" href="#field.user">user</a>: <a class="object" href="object.User.html">User</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The user who has this status.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.ChangeUserStatusPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.ChangeUserStatusPayload.html">ChangeUserStatusPayload</a>.<a class="field" href="object.ChangeUserStatusPayload.html#field.status">status</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.User" class="use">
+    <h3>
+        <code><a class="object" href="object.User.html">User</a>.<a class="field" href="object.User.html#field.status">status</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.UserStatusConnection" class="use">
+    <h3>
+        <code><a class="object" href="object.UserStatusConnection.html">UserStatusConnection</a>.<a class="field" href="object.UserStatusConnection.html#field.nodes">nodes</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.UserStatusEdge" class="use">
+    <h3>
+        <code><a class="object" href="object.UserStatusEdge.html">UserStatusEdge</a>.<a class="field" href="object.UserStatusEdge.html#field.node">node</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

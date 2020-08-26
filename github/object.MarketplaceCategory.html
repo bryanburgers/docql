@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MarketplaceCategory</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">MarketplaceCategory</a>
+</h1>
+
+
+<div class="docblock">
+    <p>A public description of a Marketplace category.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.description" class="field ">
+    <h3>
+        <code><a class="field" href="#field.description">description</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The category's description.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.howItWorks" class="field ">
+    <h3>
+        <code><a class="field" href="#field.howItWorks">howItWorks</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The technical description of how apps listed in this category work with GitHub.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.name" class="field ">
+    <h3>
+        <code><a class="field" href="#field.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The category's name.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.primaryListingCount" class="field ">
+    <h3>
+        <code><a class="field" href="#field.primaryListingCount">primaryListingCount</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>How many Marketplace listings have this as their primary category.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.resourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.resourcePath">resourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for this Marketplace category.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.secondaryListingCount" class="field ">
+    <h3>
+        <code><a class="field" href="#field.secondaryListingCount">secondaryListingCount</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>How many Marketplace listings have this as their secondary category.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.slug" class="field ">
+    <h3>
+        <code><a class="field" href="#field.slug">slug</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The short name of the category used in its URL.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.url" class="field ">
+    <h3>
+        <code><a class="field" href="#field.url">url</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for this Marketplace category.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.MarketplaceListing" class="use">
+    <h3>
+        <code><a class="object" href="object.MarketplaceListing.html">MarketplaceListing</a>.<a class="field" href="object.MarketplaceListing.html#field.primaryCategory">primaryCategory</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.MarketplaceListing" class="use">
+    <h3>
+        <code><a class="object" href="object.MarketplaceListing.html">MarketplaceListing</a>.<a class="field" href="object.MarketplaceListing.html#field.secondaryCategory">secondaryCategory</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Query" class="use">
+    <h3>
+        <code><a class="object" href="object.Query.html">Query</a>.<a class="field" href="object.Query.html#field.marketplaceCategories">marketplaceCategories</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Query" class="use">
+    <h3>
+        <code><a class="object" href="object.Query.html">Query</a>.<a class="field" href="object.Query.html#field.marketplaceCategory">marketplaceCategory</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

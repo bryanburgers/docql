@@ -1,0 +1,360 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RepositoryOwner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Interface <a href="index.html">GitHub</a>::<wbr><a class="interface" href="">RepositoryOwner</a>
+</h1>
+
+
+<div class="docblock">
+    <p>Represents an owner of a Repository.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.avatarUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.avatarUrl">avatarUrl</a>(<span class=""><a class="arg" href="#field.avatarUrl.arg.size">size</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A URL pointing to the owner's public avatar.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.avatarUrl.args">
+            <h4><a href="#field.avatarUrl.args">Args</a></h4>
+            
+            <div id="field.avatarUrl.arg.size" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.avatarUrl.arg.size">size</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The size of the resulting square image.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.login" class="field ">
+    <h3>
+        <code><a class="field" href="#field.login">login</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The username used to login.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.repositories" class="field ">
+    <h3>
+        <code><a class="field" href="#field.repositories">repositories</a>(<span class=""><a class="arg" href="#field.repositories.arg.privacy">privacy</a>: <a class="enum" href="enum.RepositoryPrivacy.html">RepositoryPrivacy</a></span>, <span class=""><a class="arg" href="#field.repositories.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.RepositoryOrder.html">RepositoryOrder</a></span>, <span class=""><a class="arg" href="#field.repositories.arg.affiliations">affiliations</a>: [<a class="enum" href="enum.RepositoryAffiliation.html">RepositoryAffiliation</a>]</span>, <span class=""><a class="arg" href="#field.repositories.arg.ownerAffiliations">ownerAffiliations</a>: [<a class="enum" href="enum.RepositoryAffiliation.html">RepositoryAffiliation</a>] = [OWNER, COLLABORATOR]</span>, <span class=""><a class="arg" href="#field.repositories.arg.isLocked">isLocked</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></span>, <span class=""><a class="arg" href="#field.repositories.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.repositories.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.repositories.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.repositories.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.repositories.arg.isFork">isFork</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>): <a class="object" href="object.RepositoryConnection.html">RepositoryConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of repositories that the user owns.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.repositories.args">
+            <h4><a href="#field.repositories.args">Args</a></h4>
+            
+            <div id="field.repositories.arg.privacy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositories.arg.privacy">privacy</a>: <a class="enum" href="enum.RepositoryPrivacy.html">RepositoryPrivacy</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>If non-null, filters repositories according to privacy</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositories.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositories.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.RepositoryOrder.html">RepositoryOrder</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for repositories returned from the connection</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositories.arg.affiliations" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositories.arg.affiliations">affiliations</a>: [<a class="enum" href="enum.RepositoryAffiliation.html">RepositoryAffiliation</a>]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Array of viewer's affiliation options for repositories returned from the connection. For example, OWNER will include only repositories that the current viewer owns.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositories.arg.ownerAffiliations" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositories.arg.ownerAffiliations">ownerAffiliations</a>: [<a class="enum" href="enum.RepositoryAffiliation.html">RepositoryAffiliation</a>] = [OWNER, COLLABORATOR]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Array of owner's affiliation options for repositories returned from the connection. For example, OWNER will include only repositories that the organization or user being viewed owns.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositories.arg.isLocked" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositories.arg.isLocked">isLocked</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>If non-null, filters repositories according to whether they have been locked</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositories.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositories.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositories.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositories.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositories.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositories.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositories.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositories.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositories.arg.isFork" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositories.arg.isFork">isFork</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>If non-null, filters repositories according to whether they are forks of another repository</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.repository" class="field ">
+    <h3>
+        <code><a class="field" href="#field.repository">repository</a>(<span class=""><a class="arg" href="#field.repository.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!): <a class="object" href="object.Repository.html">Repository</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Find Repository.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.repository.args">
+            <h4><a href="#field.repository.args">Args</a></h4>
+            
+            <div id="field.repository.arg.name" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repository.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Name of Repository to find.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.resourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.resourcePath">resourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for the owner.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.url" class="field ">
+    <h3>
+        <code><a class="field" href="#field.url">url</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for the owner.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="possible_types"><a href="#possible_types">Possible Types</a></h2>
+
+
+<section id="possible_type.Organization" class="possible_type ">
+    <h3>
+        <code><a class="object" href="object.Organization.html">Organization</a></code>
+    </h3>
+</section>
+
+<section id="possible_type.User" class="possible_type ">
+    <h3>
+        <code><a class="object" href="object.User.html">User</a></code>
+    </h3>
+</section>
+
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.Gist" class="use">
+    <h3>
+        <code><a class="object" href="object.Gist.html">Gist</a>.<a class="field" href="object.Gist.html#field.owner">owner</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequest" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequest.html">PullRequest</a>.<a class="field" href="object.PullRequest.html#field.headRepositoryOwner">headRepositoryOwner</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Query" class="use">
+    <h3>
+        <code><a class="object" href="object.Query.html">Query</a>.<a class="field" href="object.Query.html#field.repositoryOwner">repositoryOwner</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Repository" class="use">
+    <h3>
+        <code><a class="object" href="object.Repository.html">Repository</a>.<a class="field" href="object.Repository.html#field.owner">owner</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.RepositoryInfo" class="use">
+    <h3>
+        <code><a class="interface" href="interface.RepositoryInfo.html">RepositoryInfo</a>.<a class="field" href="interface.RepositoryInfo.html#field.owner">owner</a>
+        
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

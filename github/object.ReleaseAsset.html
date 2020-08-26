@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ReleaseAsset</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">ReleaseAsset</a>
+</h1>
+
+
+<div class="docblock">
+    <p>A release asset contains the content for a release asset.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.contentType" class="field ">
+    <h3>
+        <code><a class="field" href="#field.contentType">contentType</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The asset's content-type</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.createdAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createdAt">createdAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was created.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.downloadCount" class="field ">
+    <h3>
+        <code><a class="field" href="#field.downloadCount">downloadCount</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The number of times this asset was downloaded</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.downloadUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.downloadUrl">downloadUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the URL where you can download the release asset via the browser.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.name" class="field ">
+    <h3>
+        <code><a class="field" href="#field.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the title of the release asset.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.release" class="field ">
+    <h3>
+        <code><a class="field" href="#field.release">release</a>: <a class="object" href="object.Release.html">Release</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Release that the asset is associated with</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.size" class="field ">
+    <h3>
+        <code><a class="field" href="#field.size">size</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The size (in bytes) of the asset</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.updatedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updatedAt">updatedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was last updated.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.uploadedBy" class="field ">
+    <h3>
+        <code><a class="field" href="#field.uploadedBy">uploadedBy</a>: <a class="object" href="object.User.html">User</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The user that performed the upload</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.url" class="field ">
+    <h3>
+        <code><a class="field" href="#field.url">url</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the URL of the release asset.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.ReleaseAssetConnection" class="use">
+    <h3>
+        <code><a class="object" href="object.ReleaseAssetConnection.html">ReleaseAssetConnection</a>.<a class="field" href="object.ReleaseAssetConnection.html#field.nodes">nodes</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ReleaseAssetEdge" class="use">
+    <h3>
+        <code><a class="object" href="object.ReleaseAssetEdge.html">ReleaseAssetEdge</a>.<a class="field" href="object.ReleaseAssetEdge.html#field.node">node</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

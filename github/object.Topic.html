@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Topic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">Topic</a>
+</h1>
+
+
+<div class="docblock">
+    <p>A topic aggregates entities that are related to a subject.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.name" class="field ">
+    <h3>
+        <code><a class="field" href="#field.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The topic's name.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.relatedTopics" class="field ">
+    <h3>
+        <code><a class="field" href="#field.relatedTopics">relatedTopics</a>(<span class=""><a class="arg" href="#field.relatedTopics.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a> = 3): [<a class="object" href="object.Topic.html">Topic</a>!]!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of related topics, including aliases of this topic, sorted with the most relevant
+first. Returns up to 10 Topics.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.relatedTopics.args">
+            <h4><a href="#field.relatedTopics.args">Args</a></h4>
+            
+            <div id="field.relatedTopics.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.relatedTopics.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a> = 3</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>How many topics to return.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.stargazers" class="field ">
+    <h3>
+        <code><a class="field" href="#field.stargazers">stargazers</a>(<span class=""><a class="arg" href="#field.stargazers.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.stargazers.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.stargazers.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.stargazers.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.stargazers.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.StarOrder.html">StarOrder</a>): <a class="object" href="object.StargazerConnection.html">StargazerConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of users who have starred this starrable.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.stargazers.args">
+            <h4><a href="#field.stargazers.args">Args</a></h4>
+            
+            <div id="field.stargazers.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.stargazers.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.stargazers.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.stargazers.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.stargazers.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.stargazers.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.stargazers.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.stargazers.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.stargazers.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.stargazers.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.StarOrder.html">StarOrder</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Order for connection</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.viewerHasStarred" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerHasStarred">viewerHasStarred</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Returns a boolean indicating whether the viewing user has starred this starrable.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.AcceptTopicSuggestionPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.AcceptTopicSuggestionPayload.html">AcceptTopicSuggestionPayload</a>.<a class="field" href="object.AcceptTopicSuggestionPayload.html#field.topic">topic</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.DeclineTopicSuggestionPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.DeclineTopicSuggestionPayload.html">DeclineTopicSuggestionPayload</a>.<a class="field" href="object.DeclineTopicSuggestionPayload.html#field.topic">topic</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Query" class="use">
+    <h3>
+        <code><a class="object" href="object.Query.html">Query</a>.<a class="field" href="object.Query.html#field.topic">topic</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.RepoAddTopicAuditEntry" class="use">
+    <h3>
+        <code><a class="object" href="object.RepoAddTopicAuditEntry.html">RepoAddTopicAuditEntry</a>.<a class="field" href="object.RepoAddTopicAuditEntry.html#field.topic">topic</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.RepoRemoveTopicAuditEntry" class="use">
+    <h3>
+        <code><a class="object" href="object.RepoRemoveTopicAuditEntry.html">RepoRemoveTopicAuditEntry</a>.<a class="field" href="object.RepoRemoveTopicAuditEntry.html#field.topic">topic</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.RepositoryTopic" class="use">
+    <h3>
+        <code><a class="object" href="object.RepositoryTopic.html">RepositoryTopic</a>.<a class="field" href="object.RepositoryTopic.html#field.topic">topic</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Topic" class="use">
+    <h3>
+        <code><a class="object" href="object.Topic.html">Topic</a>.<a class="field" href="object.Topic.html#field.relatedTopics">relatedTopics</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.TopicAuditEntryData" class="use">
+    <h3>
+        <code><a class="interface" href="interface.TopicAuditEntryData.html">TopicAuditEntryData</a>.<a class="field" href="interface.TopicAuditEntryData.html#field.topic">topic</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Starrable" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Starrable.html">Starrable</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

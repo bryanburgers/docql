@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EnterpriseUserAccount</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">EnterpriseUserAccount</a>
+</h1>
+
+
+<div class="docblock">
+    <p>An account for a user who is an admin of an enterprise or a member of an enterprise through one or more organizations.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.avatarUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.avatarUrl">avatarUrl</a>(<span class=""><a class="arg" href="#field.avatarUrl.arg.size">size</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A URL pointing to the enterprise user account's public avatar.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.avatarUrl.args">
+            <h4><a href="#field.avatarUrl.args">Args</a></h4>
+            
+            <div id="field.avatarUrl.arg.size" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.avatarUrl.arg.size">size</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The size of the resulting square image.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.createdAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createdAt">createdAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was created.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.enterprise" class="field ">
+    <h3>
+        <code><a class="field" href="#field.enterprise">enterprise</a>: <a class="object" href="object.Enterprise.html">Enterprise</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The enterprise in which this user account exists.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.login" class="field ">
+    <h3>
+        <code><a class="field" href="#field.login">login</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>An identifier for the enterprise user account, a login or email address</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.name" class="field ">
+    <h3>
+        <code><a class="field" href="#field.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The name of the enterprise user account</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.organizations" class="field ">
+    <h3>
+        <code><a class="field" href="#field.organizations">organizations</a>(<span class=""><a class="arg" href="#field.organizations.arg.query">query</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.organizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}</span>, <span class=""><a class="arg" href="#field.organizations.arg.role">role</a>: <a class="enum" href="enum.EnterpriseUserAccountMembershipRole.html">EnterpriseUserAccountMembershipRole</a></span>, <span class=""><a class="arg" href="#field.organizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.organizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.organizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.organizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.EnterpriseOrganizationMembershipConnection.html">EnterpriseOrganizationMembershipConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of enterprise organizations this user is a member of.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.organizations.args">
+            <h4><a href="#field.organizations.args">Args</a></h4>
+            
+            <div id="field.organizations.arg.query" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.organizations.arg.query">query</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The search string to look for.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.organizations.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.organizations.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.OrganizationOrder.html">OrganizationOrder</a> = {field: LOGIN, direction: ASC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for organizations returned from the connection.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.organizations.arg.role" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.organizations.arg.role">role</a>: <a class="enum" href="enum.EnterpriseUserAccountMembershipRole.html">EnterpriseUserAccountMembershipRole</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The role of the user in the enterprise organization.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.organizations.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.organizations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.organizations.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.organizations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.organizations.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.organizations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.organizations.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.organizations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.resourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.resourcePath">resourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for this user.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.updatedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updatedAt">updatedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was last updated.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.url" class="field ">
+    <h3>
+        <code><a class="field" href="#field.url">url</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for this user.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.user" class="field ">
+    <h3>
+        <code><a class="field" href="#field.user">user</a>: <a class="object" href="object.User.html">User</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The user within the enterprise.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.EnterpriseUserAccountConnection" class="use">
+    <h3>
+        <code><a class="object" href="object.EnterpriseUserAccountConnection.html">EnterpriseUserAccountConnection</a>.<a class="field" href="object.EnterpriseUserAccountConnection.html#field.nodes">nodes</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.EnterpriseUserAccountEdge" class="use">
+    <h3>
+        <code><a class="object" href="object.EnterpriseUserAccountEdge.html">EnterpriseUserAccountEdge</a>.<a class="field" href="object.EnterpriseUserAccountEdge.html#field.node">node</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.EnterpriseMember" class="use">
+    <h3>
+        <code><a class="union" href="union.EnterpriseMember.html">EnterpriseMember</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Actor" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Actor.html">Actor</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

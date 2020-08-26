@@ -1,0 +1,1302 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Team</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">Team</a>
+</h1>
+
+
+<div class="docblock">
+    <p>A team of users in an organization.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.ancestors" class="field ">
+    <h3>
+        <code><a class="field" href="#field.ancestors">ancestors</a>(<span class=""><a class="arg" href="#field.ancestors.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.ancestors.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.ancestors.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.ancestors.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.TeamConnection.html">TeamConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of teams that are ancestors of this team.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.ancestors.args">
+            <h4><a href="#field.ancestors.args">Args</a></h4>
+            
+            <div id="field.ancestors.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.ancestors.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.ancestors.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.ancestors.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.ancestors.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.ancestors.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.ancestors.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.ancestors.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.avatarUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.avatarUrl">avatarUrl</a>(<span class=""><a class="arg" href="#field.avatarUrl.arg.size">size</a>: <a class="scalar" href="scalar.Int.html">Int</a> = 400): <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A URL pointing to the team's avatar.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.avatarUrl.args">
+            <h4><a href="#field.avatarUrl.args">Args</a></h4>
+            
+            <div id="field.avatarUrl.arg.size" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.avatarUrl.arg.size">size</a>: <a class="scalar" href="scalar.Int.html">Int</a> = 400</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The size in pixels of the resulting square image.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.childTeams" class="field ">
+    <h3>
+        <code><a class="field" href="#field.childTeams">childTeams</a>(<span class=""><a class="arg" href="#field.childTeams.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.TeamOrder.html">TeamOrder</a></span>, <span class=""><a class="arg" href="#field.childTeams.arg.userLogins">userLogins</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</span>, <span class=""><a class="arg" href="#field.childTeams.arg.immediateOnly">immediateOnly</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = true</span>, <span class=""><a class="arg" href="#field.childTeams.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.childTeams.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.childTeams.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.childTeams.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.TeamConnection.html">TeamConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>List of child teams belonging to this team</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.childTeams.args">
+            <h4><a href="#field.childTeams.args">Args</a></h4>
+            
+            <div id="field.childTeams.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.childTeams.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.TeamOrder.html">TeamOrder</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Order for connection</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.childTeams.arg.userLogins" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.childTeams.arg.userLogins">userLogins</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>User logins to filter by</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.childTeams.arg.immediateOnly" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.childTeams.arg.immediateOnly">immediateOnly</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a> = true</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Whether to list immediate child teams or all descendant child teams.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.childTeams.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.childTeams.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.childTeams.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.childTeams.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.childTeams.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.childTeams.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.childTeams.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.childTeams.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.combinedSlug" class="field ">
+    <h3>
+        <code><a class="field" href="#field.combinedSlug">combinedSlug</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The slug corresponding to the organization and team.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.createdAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createdAt">createdAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was created.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.databaseId" class="field ">
+    <h3>
+        <code><a class="field" href="#field.databaseId">databaseId</a>: <a class="scalar" href="scalar.Int.html">Int</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the primary key from the database.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.description" class="field ">
+    <h3>
+        <code><a class="field" href="#field.description">description</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The description of the team.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.discussion" class="field ">
+    <h3>
+        <code><a class="field" href="#field.discussion">discussion</a>(<span class=""><a class="arg" href="#field.discussion.arg.number">number</a>: <a class="scalar" href="scalar.Int.html">Int</a>!): <a class="object" href="object.TeamDiscussion.html">TeamDiscussion</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Find a team discussion by its number.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.discussion.args">
+            <h4><a href="#field.discussion.args">Args</a></h4>
+            
+            <div id="field.discussion.arg.number" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.discussion.arg.number">number</a>: <a class="scalar" href="scalar.Int.html">Int</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The sequence number of the discussion to find.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.discussions" class="field ">
+    <h3>
+        <code><a class="field" href="#field.discussions">discussions</a>(<span class=""><a class="arg" href="#field.discussions.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.discussions.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.discussions.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.discussions.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.discussions.arg.isPinned">isPinned</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></span>, <span class=""><a class="arg" href="#field.discussions.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.TeamDiscussionOrder.html">TeamDiscussionOrder</a>): <a class="object" href="object.TeamDiscussionConnection.html">TeamDiscussionConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of team discussions.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.discussions.args">
+            <h4><a href="#field.discussions.args">Args</a></h4>
+            
+            <div id="field.discussions.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.discussions.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.discussions.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.discussions.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.discussions.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.discussions.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.discussions.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.discussions.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.discussions.arg.isPinned" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.discussions.arg.isPinned">isPinned</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>If provided, filters discussions according to whether or not they are pinned.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.discussions.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.discussions.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.TeamDiscussionOrder.html">TeamDiscussionOrder</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Order for connection</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.discussionsResourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.discussionsResourcePath">discussionsResourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for team discussions</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.discussionsUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.discussionsUrl">discussionsUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for team discussions</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.editTeamResourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.editTeamResourcePath">editTeamResourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for editing this team</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.editTeamUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.editTeamUrl">editTeamUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for editing this team</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.invitations" class="field ">
+    <h3>
+        <code><a class="field" href="#field.invitations">invitations</a>(<span class=""><a class="arg" href="#field.invitations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.invitations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.invitations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.invitations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.OrganizationInvitationConnection.html">OrganizationInvitationConnection</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of pending invitations for users to this team</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.invitations.args">
+            <h4><a href="#field.invitations.args">Args</a></h4>
+            
+            <div id="field.invitations.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.invitations.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.invitations.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.invitations.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.invitations.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.invitations.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.invitations.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.invitations.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.memberStatuses" class="field ">
+    <h3>
+        <code><a class="field" href="#field.memberStatuses">memberStatuses</a>(<span class=""><a class="arg" href="#field.memberStatuses.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.memberStatuses.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.memberStatuses.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.memberStatuses.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.memberStatuses.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.UserStatusOrder.html">UserStatusOrder</a> = {field: UPDATED_AT, direction: DESC}): <a class="object" href="object.UserStatusConnection.html">UserStatusConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Get the status messages members of this entity have set that are either public or visible only to the organization.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.memberStatuses.args">
+            <h4><a href="#field.memberStatuses.args">Args</a></h4>
+            
+            <div id="field.memberStatuses.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.memberStatuses.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.memberStatuses.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.memberStatuses.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.memberStatuses.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.memberStatuses.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.memberStatuses.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.memberStatuses.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.memberStatuses.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.memberStatuses.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.UserStatusOrder.html">UserStatusOrder</a> = {field: UPDATED_AT, direction: DESC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for user statuses returned from the connection.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.members" class="field ">
+    <h3>
+        <code><a class="field" href="#field.members">members</a>(<span class=""><a class="arg" href="#field.members.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.members.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.members.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.members.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.members.arg.query">query</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.members.arg.membership">membership</a>: <a class="enum" href="enum.TeamMembershipType.html">TeamMembershipType</a> = ALL</span>, <span class=""><a class="arg" href="#field.members.arg.role">role</a>: <a class="enum" href="enum.TeamMemberRole.html">TeamMemberRole</a></span>, <span class=""><a class="arg" href="#field.members.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.TeamMemberOrder.html">TeamMemberOrder</a>): <a class="object" href="object.TeamMemberConnection.html">TeamMemberConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of users who are members of this team.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.members.args">
+            <h4><a href="#field.members.args">Args</a></h4>
+            
+            <div id="field.members.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.members.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.members.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.members.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.members.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.members.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.members.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.members.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.members.arg.query" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.members.arg.query">query</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The search string to look for.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.members.arg.membership" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.members.arg.membership">membership</a>: <a class="enum" href="enum.TeamMembershipType.html">TeamMembershipType</a> = ALL</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Filter by membership type</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.members.arg.role" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.members.arg.role">role</a>: <a class="enum" href="enum.TeamMemberRole.html">TeamMemberRole</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Filter by team member role</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.members.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.members.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.TeamMemberOrder.html">TeamMemberOrder</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Order for the connection.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.membersResourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.membersResourcePath">membersResourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for the team' members</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.membersUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.membersUrl">membersUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for the team' members</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.name" class="field ">
+    <h3>
+        <code><a class="field" href="#field.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The name of the team.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.newTeamResourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.newTeamResourcePath">newTeamResourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path creating a new team</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.newTeamUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.newTeamUrl">newTeamUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL creating a new team</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.organization" class="field ">
+    <h3>
+        <code><a class="field" href="#field.organization">organization</a>: <a class="object" href="object.Organization.html">Organization</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The organization that owns this team.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.parentTeam" class="field ">
+    <h3>
+        <code><a class="field" href="#field.parentTeam">parentTeam</a>: <a class="object" href="object.Team.html">Team</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The parent team of the team.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.privacy" class="field ">
+    <h3>
+        <code><a class="field" href="#field.privacy">privacy</a>: <a class="enum" href="enum.TeamPrivacy.html">TeamPrivacy</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The level of privacy the team has.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.repositories" class="field ">
+    <h3>
+        <code><a class="field" href="#field.repositories">repositories</a>(<span class=""><a class="arg" href="#field.repositories.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.repositories.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.repositories.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.repositories.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.repositories.arg.query">query</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.repositories.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.TeamRepositoryOrder.html">TeamRepositoryOrder</a>): <a class="object" href="object.TeamRepositoryConnection.html">TeamRepositoryConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of repositories this team has access to.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.repositories.args">
+            <h4><a href="#field.repositories.args">Args</a></h4>
+            
+            <div id="field.repositories.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositories.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositories.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositories.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositories.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositories.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositories.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositories.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositories.arg.query" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositories.arg.query">query</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The search string to look for.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.repositories.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.repositories.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.TeamRepositoryOrder.html">TeamRepositoryOrder</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Order for the connection.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.repositoriesResourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.repositoriesResourcePath">repositoriesResourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for this team's repositories</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.repositoriesUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.repositoriesUrl">repositoriesUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for this team's repositories</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.resourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.resourcePath">resourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for this team</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.slug" class="field ">
+    <h3>
+        <code><a class="field" href="#field.slug">slug</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The slug corresponding to the team.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.teamsResourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.teamsResourcePath">teamsResourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for this team's teams</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.teamsUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.teamsUrl">teamsUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for this team's teams</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.updatedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updatedAt">updatedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was last updated.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.url" class="field ">
+    <h3>
+        <code><a class="field" href="#field.url">url</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for this team</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerCanAdminister" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerCanAdminister">viewerCanAdminister</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Team is adminable by the viewer.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerCanSubscribe" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerCanSubscribe">viewerCanSubscribe</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Check if the viewer is able to change their subscription status for the repository.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerSubscription" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerSubscription">viewerSubscription</a>: <a class="enum" href="enum.SubscriptionState.html">SubscriptionState</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies if the viewer is watching, not watching, or ignoring the subscribable entity.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.OrgRestoreMemberMembershipTeamAuditEntryData" class="use">
+    <h3>
+        <code><a class="object" href="object.OrgRestoreMemberMembershipTeamAuditEntryData.html">OrgRestoreMemberMembershipTeamAuditEntryData</a>.<a class="field" href="object.OrgRestoreMemberMembershipTeamAuditEntryData.html#field.team">team</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Organization" class="use">
+    <h3>
+        <code><a class="object" href="object.Organization.html">Organization</a>.<a class="field" href="object.Organization.html#field.team">team</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Team" class="use">
+    <h3>
+        <code><a class="object" href="object.Team.html">Team</a>.<a class="field" href="object.Team.html#field.parentTeam">parentTeam</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.TeamAddMemberAuditEntry" class="use">
+    <h3>
+        <code><a class="object" href="object.TeamAddMemberAuditEntry.html">TeamAddMemberAuditEntry</a>.<a class="field" href="object.TeamAddMemberAuditEntry.html#field.team">team</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.TeamAddRepositoryAuditEntry" class="use">
+    <h3>
+        <code><a class="object" href="object.TeamAddRepositoryAuditEntry.html">TeamAddRepositoryAuditEntry</a>.<a class="field" href="object.TeamAddRepositoryAuditEntry.html#field.team">team</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.TeamChangeParentTeamAuditEntry" class="use">
+    <h3>
+        <code><a class="object" href="object.TeamChangeParentTeamAuditEntry.html">TeamChangeParentTeamAuditEntry</a>.<a class="field" href="object.TeamChangeParentTeamAuditEntry.html#field.parentTeam">parentTeam</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.TeamChangeParentTeamAuditEntry" class="use">
+    <h3>
+        <code><a class="object" href="object.TeamChangeParentTeamAuditEntry.html">TeamChangeParentTeamAuditEntry</a>.<a class="field" href="object.TeamChangeParentTeamAuditEntry.html#field.parentTeamWas">parentTeamWas</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.TeamChangeParentTeamAuditEntry" class="use">
+    <h3>
+        <code><a class="object" href="object.TeamChangeParentTeamAuditEntry.html">TeamChangeParentTeamAuditEntry</a>.<a class="field" href="object.TeamChangeParentTeamAuditEntry.html#field.team">team</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.TeamConnection" class="use">
+    <h3>
+        <code><a class="object" href="object.TeamConnection.html">TeamConnection</a>.<a class="field" href="object.TeamConnection.html#field.nodes">nodes</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.TeamDiscussion" class="use">
+    <h3>
+        <code><a class="object" href="object.TeamDiscussion.html">TeamDiscussion</a>.<a class="field" href="object.TeamDiscussion.html#field.team">team</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.TeamEdge" class="use">
+    <h3>
+        <code><a class="object" href="object.TeamEdge.html">TeamEdge</a>.<a class="field" href="object.TeamEdge.html#field.node">node</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.TeamRemoveMemberAuditEntry" class="use">
+    <h3>
+        <code><a class="object" href="object.TeamRemoveMemberAuditEntry.html">TeamRemoveMemberAuditEntry</a>.<a class="field" href="object.TeamRemoveMemberAuditEntry.html#field.team">team</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.TeamRemoveRepositoryAuditEntry" class="use">
+    <h3>
+        <code><a class="object" href="object.TeamRemoveRepositoryAuditEntry.html">TeamRemoveRepositoryAuditEntry</a>.<a class="field" href="object.TeamRemoveRepositoryAuditEntry.html#field.team">team</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.TeamAuditEntryData" class="use">
+    <h3>
+        <code><a class="interface" href="interface.TeamAuditEntryData.html">TeamAuditEntryData</a>.<a class="field" href="interface.TeamAuditEntryData.html#field.team">team</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PermissionGranter" class="use">
+    <h3>
+        <code><a class="union" href="union.PermissionGranter.html">PermissionGranter</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.PushAllowanceActor" class="use">
+    <h3>
+        <code><a class="union" href="union.PushAllowanceActor.html">PushAllowanceActor</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.RequestedReviewer" class="use">
+    <h3>
+        <code><a class="union" href="union.RequestedReviewer.html">RequestedReviewer</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.ReviewDismissalAllowanceActor" class="use">
+    <h3>
+        <code><a class="union" href="union.ReviewDismissalAllowanceActor.html">ReviewDismissalAllowanceActor</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.MemberStatusable" class="use">
+    <h3>
+        <code><a class="interface" href="interface.MemberStatusable.html">MemberStatusable</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Subscribable" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Subscribable.html">Subscribable</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

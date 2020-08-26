@@ -1,0 +1,567 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Milestone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">Milestone</a>
+</h1>
+
+
+<div class="docblock">
+    <p>Represents a Milestone object on a given repository.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.closed" class="field ">
+    <h3>
+        <code><a class="field" href="#field.closed">closed</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p><code>true</code> if the object is closed (definition of closed may depend on type)</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.closedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.closedAt">closedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was closed.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.createdAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createdAt">createdAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was created.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.creator" class="field ">
+    <h3>
+        <code><a class="field" href="#field.creator">creator</a>: <a class="interface" href="interface.Actor.html">Actor</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the actor who created the milestone.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.description" class="field ">
+    <h3>
+        <code><a class="field" href="#field.description">description</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the description of the milestone.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.dueOn" class="field ">
+    <h3>
+        <code><a class="field" href="#field.dueOn">dueOn</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the due date of the milestone.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.issuePrioritiesDebug" class="field ">
+    <h3>
+        <code><a class="field" href="#field.issuePrioritiesDebug">issuePrioritiesDebug</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Just for debugging on review-lab</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.issues" class="field ">
+    <h3>
+        <code><a class="field" href="#field.issues">issues</a>(<span class=""><a class="arg" href="#field.issues.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.IssueOrder.html">IssueOrder</a></span>, <span class=""><a class="arg" href="#field.issues.arg.labels">labels</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</span>, <span class=""><a class="arg" href="#field.issues.arg.states">states</a>: [<a class="enum" href="enum.IssueState.html">IssueState</a>!]</span>, <span class=""><a class="arg" href="#field.issues.arg.filterBy">filterBy</a>: <a class="input_object" href="input_object.IssueFilters.html">IssueFilters</a></span>, <span class=""><a class="arg" href="#field.issues.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.issues.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.issues.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.issues.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.IssueConnection.html">IssueConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of issues associated with the milestone.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.issues.args">
+            <h4><a href="#field.issues.args">Args</a></h4>
+            
+            <div id="field.issues.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.issues.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.IssueOrder.html">IssueOrder</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for issues returned from the connection.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.issues.arg.labels" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.issues.arg.labels">labels</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>A list of label names to filter the pull requests by.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.issues.arg.states" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.issues.arg.states">states</a>: [<a class="enum" href="enum.IssueState.html">IssueState</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>A list of states to filter the issues by.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.issues.arg.filterBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.issues.arg.filterBy">filterBy</a>: <a class="input_object" href="input_object.IssueFilters.html">IssueFilters</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Filtering options for issues returned from the connection.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.issues.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.issues.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.issues.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.issues.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.issues.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.issues.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.issues.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.issues.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.number" class="field ">
+    <h3>
+        <code><a class="field" href="#field.number">number</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the number of the milestone.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.pullRequests" class="field ">
+    <h3>
+        <code><a class="field" href="#field.pullRequests">pullRequests</a>(<span class=""><a class="arg" href="#field.pullRequests.arg.states">states</a>: [<a class="enum" href="enum.PullRequestState.html">PullRequestState</a>!]</span>, <span class=""><a class="arg" href="#field.pullRequests.arg.labels">labels</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</span>, <span class=""><a class="arg" href="#field.pullRequests.arg.headRefName">headRefName</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.pullRequests.arg.baseRefName">baseRefName</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.pullRequests.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.IssueOrder.html">IssueOrder</a></span>, <span class=""><a class="arg" href="#field.pullRequests.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.pullRequests.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.pullRequests.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.pullRequests.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.PullRequestConnection.html">PullRequestConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of pull requests associated with the milestone.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.pullRequests.args">
+            <h4><a href="#field.pullRequests.args">Args</a></h4>
+            
+            <div id="field.pullRequests.arg.states" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pullRequests.arg.states">states</a>: [<a class="enum" href="enum.PullRequestState.html">PullRequestState</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>A list of states to filter the pull requests by.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pullRequests.arg.labels" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pullRequests.arg.labels">labels</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>A list of label names to filter the pull requests by.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pullRequests.arg.headRefName" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pullRequests.arg.headRefName">headRefName</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The head ref name to filter the pull requests by.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pullRequests.arg.baseRefName" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pullRequests.arg.baseRefName">baseRefName</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The base ref name to filter the pull requests by.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pullRequests.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pullRequests.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.IssueOrder.html">IssueOrder</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for pull requests returned from the connection.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pullRequests.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pullRequests.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pullRequests.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pullRequests.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pullRequests.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pullRequests.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pullRequests.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pullRequests.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.repository" class="field ">
+    <h3>
+        <code><a class="field" href="#field.repository">repository</a>: <a class="object" href="object.Repository.html">Repository</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The repository associated with this milestone.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.resourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.resourcePath">resourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for this milestone</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.state" class="field ">
+    <h3>
+        <code><a class="field" href="#field.state">state</a>: <a class="enum" href="enum.MilestoneState.html">MilestoneState</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the state of the milestone.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.title" class="field ">
+    <h3>
+        <code><a class="field" href="#field.title">title</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the title of the milestone.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.updatedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updatedAt">updatedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was last updated.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.url" class="field ">
+    <h3>
+        <code><a class="field" href="#field.url">url</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for this milestone</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.Issue" class="use">
+    <h3>
+        <code><a class="object" href="object.Issue.html">Issue</a>.<a class="field" href="object.Issue.html#field.milestone">milestone</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.MilestoneConnection" class="use">
+    <h3>
+        <code><a class="object" href="object.MilestoneConnection.html">MilestoneConnection</a>.<a class="field" href="object.MilestoneConnection.html#field.nodes">nodes</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.MilestoneEdge" class="use">
+    <h3>
+        <code><a class="object" href="object.MilestoneEdge.html">MilestoneEdge</a>.<a class="field" href="object.MilestoneEdge.html#field.node">node</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequest" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequest.html">PullRequest</a>.<a class="field" href="object.PullRequest.html#field.milestone">milestone</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Repository" class="use">
+    <h3>
+        <code><a class="object" href="object.Repository.html">Repository</a>.<a class="field" href="object.Repository.html#field.milestone">milestone</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Closable" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Closable.html">Closable</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.UniformResourceLocatable" class="use">
+    <h3>
+        <code><a class="interface" href="interface.UniformResourceLocatable.html">UniformResourceLocatable</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

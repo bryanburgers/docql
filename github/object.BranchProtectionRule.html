@@ -1,0 +1,632 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BranchProtectionRule</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">BranchProtectionRule</a>
+</h1>
+
+
+<div class="docblock">
+    <p>A branch protection rule.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.branchProtectionRuleConflicts" class="field ">
+    <h3>
+        <code><a class="field" href="#field.branchProtectionRuleConflicts">branchProtectionRuleConflicts</a>(<span class=""><a class="arg" href="#field.branchProtectionRuleConflicts.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.branchProtectionRuleConflicts.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.branchProtectionRuleConflicts.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.branchProtectionRuleConflicts.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.BranchProtectionRuleConflictConnection.html">BranchProtectionRuleConflictConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of conflicts matching branches protection rule and other branch protection rules</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.branchProtectionRuleConflicts.args">
+            <h4><a href="#field.branchProtectionRuleConflicts.args">Args</a></h4>
+            
+            <div id="field.branchProtectionRuleConflicts.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.branchProtectionRuleConflicts.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.branchProtectionRuleConflicts.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.branchProtectionRuleConflicts.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.branchProtectionRuleConflicts.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.branchProtectionRuleConflicts.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.branchProtectionRuleConflicts.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.branchProtectionRuleConflicts.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.creator" class="field ">
+    <h3>
+        <code><a class="field" href="#field.creator">creator</a>: <a class="interface" href="interface.Actor.html">Actor</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The actor who created this branch protection rule.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.databaseId" class="field ">
+    <h3>
+        <code><a class="field" href="#field.databaseId">databaseId</a>: <a class="scalar" href="scalar.Int.html">Int</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the primary key from the database.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.dismissesStaleReviews" class="field ">
+    <h3>
+        <code><a class="field" href="#field.dismissesStaleReviews">dismissesStaleReviews</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Will new commits pushed to matching branches dismiss pull request review approvals.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.isAdminEnforced" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isAdminEnforced">isAdminEnforced</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Can admins overwrite branch protection.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.matchingRefs" class="field ">
+    <h3>
+        <code><a class="field" href="#field.matchingRefs">matchingRefs</a>(<span class=""><a class="arg" href="#field.matchingRefs.arg.query">query</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.matchingRefs.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.matchingRefs.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.matchingRefs.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.matchingRefs.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.RefConnection.html">RefConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Repository refs that are protected by this rule</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.matchingRefs.args">
+            <h4><a href="#field.matchingRefs.args">Args</a></h4>
+            
+            <div id="field.matchingRefs.arg.query" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.matchingRefs.arg.query">query</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Filters refs with query on name</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.matchingRefs.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.matchingRefs.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.matchingRefs.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.matchingRefs.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.matchingRefs.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.matchingRefs.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.matchingRefs.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.matchingRefs.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.pattern" class="field ">
+    <h3>
+        <code><a class="field" href="#field.pattern">pattern</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the protection rule pattern.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.pushAllowances" class="field ">
+    <h3>
+        <code><a class="field" href="#field.pushAllowances">pushAllowances</a>(<span class=""><a class="arg" href="#field.pushAllowances.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.pushAllowances.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.pushAllowances.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.pushAllowances.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.PushAllowanceConnection.html">PushAllowanceConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list push allowances for this branch protection rule.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.pushAllowances.args">
+            <h4><a href="#field.pushAllowances.args">Args</a></h4>
+            
+            <div id="field.pushAllowances.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pushAllowances.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pushAllowances.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pushAllowances.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pushAllowances.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pushAllowances.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.pushAllowances.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.pushAllowances.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.repository" class="field ">
+    <h3>
+        <code><a class="field" href="#field.repository">repository</a>: <a class="object" href="object.Repository.html">Repository</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The repository associated with this branch protection rule.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.requiredApprovingReviewCount" class="field ">
+    <h3>
+        <code><a class="field" href="#field.requiredApprovingReviewCount">requiredApprovingReviewCount</a>: <a class="scalar" href="scalar.Int.html">Int</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Number of approving reviews required to update matching branches.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.requiredStatusCheckContexts" class="field ">
+    <h3>
+        <code><a class="field" href="#field.requiredStatusCheckContexts">requiredStatusCheckContexts</a>: [<a class="scalar" href="scalar.String.html">String</a>]
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>List of required status check contexts that must pass for commits to be accepted to matching branches.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.requiresApprovingReviews" class="field ">
+    <h3>
+        <code><a class="field" href="#field.requiresApprovingReviews">requiresApprovingReviews</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Are approving reviews required to update matching branches.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.requiresCodeOwnerReviews" class="field ">
+    <h3>
+        <code><a class="field" href="#field.requiresCodeOwnerReviews">requiresCodeOwnerReviews</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Are reviews from code owners required to update matching branches.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.requiresCommitSignatures" class="field ">
+    <h3>
+        <code><a class="field" href="#field.requiresCommitSignatures">requiresCommitSignatures</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Are commits required to be signed.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.requiresStatusChecks" class="field ">
+    <h3>
+        <code><a class="field" href="#field.requiresStatusChecks">requiresStatusChecks</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Are status checks required to update matching branches.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.requiresStrictStatusChecks" class="field ">
+    <h3>
+        <code><a class="field" href="#field.requiresStrictStatusChecks">requiresStrictStatusChecks</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Are branches required to be up to date before merging.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.restrictsPushes" class="field ">
+    <h3>
+        <code><a class="field" href="#field.restrictsPushes">restrictsPushes</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Is pushing to matching branches restricted.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.restrictsReviewDismissals" class="field ">
+    <h3>
+        <code><a class="field" href="#field.restrictsReviewDismissals">restrictsReviewDismissals</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Is dismissal of pull request reviews restricted.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.reviewDismissalAllowances" class="field ">
+    <h3>
+        <code><a class="field" href="#field.reviewDismissalAllowances">reviewDismissalAllowances</a>(<span class=""><a class="arg" href="#field.reviewDismissalAllowances.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.reviewDismissalAllowances.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.reviewDismissalAllowances.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.reviewDismissalAllowances.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.ReviewDismissalAllowanceConnection.html">ReviewDismissalAllowanceConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list review dismissal allowances for this branch protection rule.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.reviewDismissalAllowances.args">
+            <h4><a href="#field.reviewDismissalAllowances.args">Args</a></h4>
+            
+            <div id="field.reviewDismissalAllowances.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reviewDismissalAllowances.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.reviewDismissalAllowances.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reviewDismissalAllowances.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.reviewDismissalAllowances.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reviewDismissalAllowances.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.reviewDismissalAllowances.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reviewDismissalAllowances.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.BranchProtectionRuleConflict" class="use">
+    <h3>
+        <code><a class="object" href="object.BranchProtectionRuleConflict.html">BranchProtectionRuleConflict</a>.<a class="field" href="object.BranchProtectionRuleConflict.html#field.branchProtectionRule">branchProtectionRule</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.BranchProtectionRuleConflict" class="use">
+    <h3>
+        <code><a class="object" href="object.BranchProtectionRuleConflict.html">BranchProtectionRuleConflict</a>.<a class="field" href="object.BranchProtectionRuleConflict.html#field.conflictingBranchProtectionRule">conflictingBranchProtectionRule</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.BranchProtectionRuleConnection" class="use">
+    <h3>
+        <code><a class="object" href="object.BranchProtectionRuleConnection.html">BranchProtectionRuleConnection</a>.<a class="field" href="object.BranchProtectionRuleConnection.html#field.nodes">nodes</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.BranchProtectionRuleEdge" class="use">
+    <h3>
+        <code><a class="object" href="object.BranchProtectionRuleEdge.html">BranchProtectionRuleEdge</a>.<a class="field" href="object.BranchProtectionRuleEdge.html#field.node">node</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.CreateBranchProtectionRulePayload" class="use">
+    <h3>
+        <code><a class="object" href="object.CreateBranchProtectionRulePayload.html">CreateBranchProtectionRulePayload</a>.<a class="field" href="object.CreateBranchProtectionRulePayload.html#field.branchProtectionRule">branchProtectionRule</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PushAllowance" class="use">
+    <h3>
+        <code><a class="object" href="object.PushAllowance.html">PushAllowance</a>.<a class="field" href="object.PushAllowance.html#field.branchProtectionRule">branchProtectionRule</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ReviewDismissalAllowance" class="use">
+    <h3>
+        <code><a class="object" href="object.ReviewDismissalAllowance.html">ReviewDismissalAllowance</a>.<a class="field" href="object.ReviewDismissalAllowance.html#field.branchProtectionRule">branchProtectionRule</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.UpdateBranchProtectionRulePayload" class="use">
+    <h3>
+        <code><a class="object" href="object.UpdateBranchProtectionRulePayload.html">UpdateBranchProtectionRulePayload</a>.<a class="field" href="object.UpdateBranchProtectionRulePayload.html#field.branchProtectionRule">branchProtectionRule</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

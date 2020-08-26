@@ -1,0 +1,413 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Release</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">Release</a>
+</h1>
+
+
+<div class="docblock">
+    <p>A release contains the content for a release.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.author" class="field ">
+    <h3>
+        <code><a class="field" href="#field.author">author</a>: <a class="object" href="object.User.html">User</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The author of the release</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.createdAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createdAt">createdAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was created.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.description" class="field ">
+    <h3>
+        <code><a class="field" href="#field.description">description</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The description of the release.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.descriptionHTML" class="field ">
+    <h3>
+        <code><a class="field" href="#field.descriptionHTML">descriptionHTML</a>: <a class="scalar" href="scalar.HTML.html">HTML</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The description of this release rendered to HTML.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.isDraft" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isDraft">isDraft</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether or not the release is a draft</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.isPrerelease" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isPrerelease">isPrerelease</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether or not the release is a prerelease</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.name" class="field ">
+    <h3>
+        <code><a class="field" href="#field.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The title of the release.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.publishedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.publishedAt">publishedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the release was created.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.releaseAssets" class="field ">
+    <h3>
+        <code><a class="field" href="#field.releaseAssets">releaseAssets</a>(<span class=""><a class="arg" href="#field.releaseAssets.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.releaseAssets.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.releaseAssets.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.releaseAssets.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.releaseAssets.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>): <a class="object" href="object.ReleaseAssetConnection.html">ReleaseAssetConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>List of releases assets which are dependent on this release.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.releaseAssets.args">
+            <h4><a href="#field.releaseAssets.args">Args</a></h4>
+            
+            <div id="field.releaseAssets.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.releaseAssets.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.releaseAssets.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.releaseAssets.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.releaseAssets.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.releaseAssets.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.releaseAssets.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.releaseAssets.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.releaseAssets.arg.name" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.releaseAssets.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>A list of names to filter the assets by.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.resourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.resourcePath">resourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for this issue</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.shortDescriptionHTML" class="field ">
+    <h3>
+        <code><a class="field" href="#field.shortDescriptionHTML">shortDescriptionHTML</a>(<span class=""><a class="arg" href="#field.shortDescriptionHTML.arg.limit">limit</a>: <a class="scalar" href="scalar.Int.html">Int</a> = 200): <a class="scalar" href="scalar.HTML.html">HTML</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A description of the release, rendered to HTML without any links in it.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.shortDescriptionHTML.args">
+            <h4><a href="#field.shortDescriptionHTML.args">Args</a></h4>
+            
+            <div id="field.shortDescriptionHTML.arg.limit" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.shortDescriptionHTML.arg.limit">limit</a>: <a class="scalar" href="scalar.Int.html">Int</a> = 200</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>How many characters to return.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.tag" class="field ">
+    <h3>
+        <code><a class="field" href="#field.tag">tag</a>: <a class="object" href="object.Ref.html">Ref</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The Git tag the release points to</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.tagName" class="field ">
+    <h3>
+        <code><a class="field" href="#field.tagName">tagName</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The name of the release's Git tag</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.updatedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updatedAt">updatedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was last updated.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.url" class="field ">
+    <h3>
+        <code><a class="field" href="#field.url">url</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for this issue</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.PackageVersion" class="use">
+    <h3>
+        <code><a class="object" href="object.PackageVersion.html">PackageVersion</a>.<a class="field" href="object.PackageVersion.html#field.release">release</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ReleaseAsset" class="use">
+    <h3>
+        <code><a class="object" href="object.ReleaseAsset.html">ReleaseAsset</a>.<a class="field" href="object.ReleaseAsset.html#field.release">release</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ReleaseConnection" class="use">
+    <h3>
+        <code><a class="object" href="object.ReleaseConnection.html">ReleaseConnection</a>.<a class="field" href="object.ReleaseConnection.html#field.nodes">nodes</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ReleaseEdge" class="use">
+    <h3>
+        <code><a class="object" href="object.ReleaseEdge.html">ReleaseEdge</a>.<a class="field" href="object.ReleaseEdge.html#field.node">node</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Repository" class="use">
+    <h3>
+        <code><a class="object" href="object.Repository.html">Repository</a>.<a class="field" href="object.Repository.html#field.release">release</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.UniformResourceLocatable" class="use">
+    <h3>
+        <code><a class="interface" href="interface.UniformResourceLocatable.html">UniformResourceLocatable</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

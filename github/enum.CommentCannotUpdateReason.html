@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CommentCannotUpdateReason</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Enum <a href="index.html">GitHub</a>::<wbr><a class="enum" href="">CommentCannotUpdateReason</a>
+</h1>
+
+
+<div class="docblock">
+    <p>The possible errors that will prevent a user from updating a comment.</p>
+
+</div>
+
+
+<h2 id="enum_values"><a href="#enum_values">Enum Values</a></h2>
+
+
+<section id="enum_value.ARCHIVED" class="field ">
+    <h3>
+        <code><a class="enum_value" href="#enum_value.ARCHIVED">ARCHIVED</a></code>
+    </h3>
+    
+    <div class="docblock">
+        <p>Unable to create comment because repository is archived.</p>
+
+    </div>
+    
+</section>
+
+<section id="enum_value.INSUFFICIENT_ACCESS" class="field ">
+    <h3>
+        <code><a class="enum_value" href="#enum_value.INSUFFICIENT_ACCESS">INSUFFICIENT_ACCESS</a></code>
+    </h3>
+    
+    <div class="docblock">
+        <p>You must be the author or have write access to this repository to update this comment.</p>
+
+    </div>
+    
+</section>
+
+<section id="enum_value.LOCKED" class="field ">
+    <h3>
+        <code><a class="enum_value" href="#enum_value.LOCKED">LOCKED</a></code>
+    </h3>
+    
+    <div class="docblock">
+        <p>Unable to create comment because issue is locked.</p>
+
+    </div>
+    
+</section>
+
+<section id="enum_value.LOGIN_REQUIRED" class="field ">
+    <h3>
+        <code><a class="enum_value" href="#enum_value.LOGIN_REQUIRED">LOGIN_REQUIRED</a></code>
+    </h3>
+    
+    <div class="docblock">
+        <p>You must be logged in to update this comment.</p>
+
+    </div>
+    
+</section>
+
+<section id="enum_value.MAINTENANCE" class="field ">
+    <h3>
+        <code><a class="enum_value" href="#enum_value.MAINTENANCE">MAINTENANCE</a></code>
+    </h3>
+    
+    <div class="docblock">
+        <p>Repository is under maintenance.</p>
+
+    </div>
+    
+</section>
+
+<section id="enum_value.VERIFIED_EMAIL_REQUIRED" class="field ">
+    <h3>
+        <code><a class="enum_value" href="#enum_value.VERIFIED_EMAIL_REQUIRED">VERIFIED_EMAIL_REQUIRED</a></code>
+    </h3>
+    
+    <div class="docblock">
+        <p>At least one email address must be verified to update this comment.</p>
+
+    </div>
+    
+</section>
+
+<section id="enum_value.DENIED" class="field ">
+    <h3>
+        <code><a class="enum_value" href="#enum_value.DENIED">DENIED</a></code>
+    </h3>
+    
+    <div class="docblock">
+        <p>You cannot update this comment</p>
+
+    </div>
+    
+</section>
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.CommitComment" class="use">
+    <h3>
+        <code><a class="object" href="object.CommitComment.html">CommitComment</a>.<a class="field" href="object.CommitComment.html#field.viewerCannotUpdateReasons">viewerCannotUpdateReasons</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.GistComment" class="use">
+    <h3>
+        <code><a class="object" href="object.GistComment.html">GistComment</a>.<a class="field" href="object.GistComment.html#field.viewerCannotUpdateReasons">viewerCannotUpdateReasons</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Issue" class="use">
+    <h3>
+        <code><a class="object" href="object.Issue.html">Issue</a>.<a class="field" href="object.Issue.html#field.viewerCannotUpdateReasons">viewerCannotUpdateReasons</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.IssueComment" class="use">
+    <h3>
+        <code><a class="object" href="object.IssueComment.html">IssueComment</a>.<a class="field" href="object.IssueComment.html#field.viewerCannotUpdateReasons">viewerCannotUpdateReasons</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequest" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequest.html">PullRequest</a>.<a class="field" href="object.PullRequest.html#field.viewerCannotUpdateReasons">viewerCannotUpdateReasons</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequestReview" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequestReview.html">PullRequestReview</a>.<a class="field" href="object.PullRequestReview.html#field.viewerCannotUpdateReasons">viewerCannotUpdateReasons</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequestReviewComment" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequestReviewComment.html">PullRequestReviewComment</a>.<a class="field" href="object.PullRequestReviewComment.html#field.viewerCannotUpdateReasons">viewerCannotUpdateReasons</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.TeamDiscussion" class="use">
+    <h3>
+        <code><a class="object" href="object.TeamDiscussion.html">TeamDiscussion</a>.<a class="field" href="object.TeamDiscussion.html#field.viewerCannotUpdateReasons">viewerCannotUpdateReasons</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.TeamDiscussionComment" class="use">
+    <h3>
+        <code><a class="object" href="object.TeamDiscussionComment.html">TeamDiscussionComment</a>.<a class="field" href="object.TeamDiscussionComment.html#field.viewerCannotUpdateReasons">viewerCannotUpdateReasons</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.UpdatableComment" class="use">
+    <h3>
+        <code><a class="interface" href="interface.UpdatableComment.html">UpdatableComment</a>.<a class="field" href="interface.UpdatableComment.html#field.viewerCannotUpdateReasons">viewerCannotUpdateReasons</a>
+        
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

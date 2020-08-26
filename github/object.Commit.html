@@ -1,0 +1,1322 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Commit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">Commit</a>
+</h1>
+
+
+<div class="docblock">
+    <p>Represents a Git commit.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.abbreviatedOid" class="field ">
+    <h3>
+        <code><a class="field" href="#field.abbreviatedOid">abbreviatedOid</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>An abbreviated version of the Git object ID</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.additions" class="field ">
+    <h3>
+        <code><a class="field" href="#field.additions">additions</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The number of additions in this commit.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.associatedPullRequests" class="field ">
+    <h3>
+        <code><a class="field" href="#field.associatedPullRequests">associatedPullRequests</a>(<span class=""><a class="arg" href="#field.associatedPullRequests.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.associatedPullRequests.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.associatedPullRequests.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.associatedPullRequests.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.associatedPullRequests.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.PullRequestOrder.html">PullRequestOrder</a> = {field: CREATED_AT, direction: ASC}): <a class="object" href="object.PullRequestConnection.html">PullRequestConnection</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The pull requests associated with a commit</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.associatedPullRequests.args">
+            <h4><a href="#field.associatedPullRequests.args">Args</a></h4>
+            
+            <div id="field.associatedPullRequests.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.associatedPullRequests.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.associatedPullRequests.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.associatedPullRequests.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.associatedPullRequests.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.associatedPullRequests.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.associatedPullRequests.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.associatedPullRequests.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.associatedPullRequests.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.associatedPullRequests.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.PullRequestOrder.html">PullRequestOrder</a> = {field: CREATED_AT, direction: ASC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for pull requests.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.author" class="field ">
+    <h3>
+        <code><a class="field" href="#field.author">author</a>: <a class="object" href="object.GitActor.html">GitActor</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Authorship details of the commit.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.authoredByCommitter" class="field ">
+    <h3>
+        <code><a class="field" href="#field.authoredByCommitter">authoredByCommitter</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Check if the committer and the author match.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.authoredDate" class="field ">
+    <h3>
+        <code><a class="field" href="#field.authoredDate">authoredDate</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The datetime when this commit was authored.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.blame" class="field ">
+    <h3>
+        <code><a class="field" href="#field.blame">blame</a>(<span class=""><a class="arg" href="#field.blame.arg.path">path</a>: <a class="scalar" href="scalar.String.html">String</a>!): <a class="object" href="object.Blame.html">Blame</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Fetches <code>git blame</code> information.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.blame.args">
+            <h4><a href="#field.blame.args">Args</a></h4>
+            
+            <div id="field.blame.arg.path" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.blame.arg.path">path</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The file whose Git blame information you want.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.changedFiles" class="field ">
+    <h3>
+        <code><a class="field" href="#field.changedFiles">changedFiles</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The number of changed files in this commit.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.comments" class="field ">
+    <h3>
+        <code><a class="field" href="#field.comments">comments</a>(<span class=""><a class="arg" href="#field.comments.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.comments.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.comments.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.comments.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.CommitCommentConnection.html">CommitCommentConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Comments made on the commit.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.comments.args">
+            <h4><a href="#field.comments.args">Args</a></h4>
+            
+            <div id="field.comments.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.comments.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.comments.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.comments.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.comments.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.comments.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.comments.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.comments.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.commitResourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.commitResourcePath">commitResourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for this Git object</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.commitUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.commitUrl">commitUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for this Git object</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.committedDate" class="field ">
+    <h3>
+        <code><a class="field" href="#field.committedDate">committedDate</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The datetime when this commit was committed.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.committedViaWeb" class="field ">
+    <h3>
+        <code><a class="field" href="#field.committedViaWeb">committedViaWeb</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Check if commited via GitHub web UI.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.committer" class="field ">
+    <h3>
+        <code><a class="field" href="#field.committer">committer</a>: <a class="object" href="object.GitActor.html">GitActor</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Committership details of the commit.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.deletions" class="field ">
+    <h3>
+        <code><a class="field" href="#field.deletions">deletions</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The number of deletions in this commit.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.deployments" class="field ">
+    <h3>
+        <code><a class="field" href="#field.deployments">deployments</a>(<span class=""><a class="arg" href="#field.deployments.arg.environments">environments</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</span>, <span class=""><a class="arg" href="#field.deployments.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.DeploymentOrder.html">DeploymentOrder</a> = {field: CREATED_AT, direction: ASC}</span>, <span class=""><a class="arg" href="#field.deployments.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.deployments.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.deployments.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.deployments.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.DeploymentConnection.html">DeploymentConnection</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The deployments associated with a commit.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.deployments.args">
+            <h4><a href="#field.deployments.args">Args</a></h4>
+            
+            <div id="field.deployments.arg.environments" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.deployments.arg.environments">environments</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Environments to list deployments for</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.deployments.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.deployments.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.DeploymentOrder.html">DeploymentOrder</a> = {field: CREATED_AT, direction: ASC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for deployments returned from the connection.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.deployments.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.deployments.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.deployments.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.deployments.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.deployments.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.deployments.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.deployments.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.deployments.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.history" class="field ">
+    <h3>
+        <code><a class="field" href="#field.history">history</a>(<span class=""><a class="arg" href="#field.history.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.history.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.history.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.history.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.history.arg.path">path</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.history.arg.author">author</a>: <a class="input_object" href="input_object.CommitAuthor.html">CommitAuthor</a></span>, <span class=""><a class="arg" href="#field.history.arg.since">since</a>: <a class="scalar" href="scalar.GitTimestamp.html">GitTimestamp</a></span>, <span class=""><a class="arg" href="#field.history.arg.until">until</a>: <a class="scalar" href="scalar.GitTimestamp.html">GitTimestamp</a>): <a class="object" href="object.CommitHistoryConnection.html">CommitHistoryConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The linear commit history starting from (and including) this commit, in the same order as <code>git log</code>.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.history.args">
+            <h4><a href="#field.history.args">Args</a></h4>
+            
+            <div id="field.history.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.history.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.history.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.history.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.history.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.history.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.history.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.history.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.history.arg.path" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.history.arg.path">path</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>If non-null, filters history to only show commits touching files under this path.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.history.arg.author" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.history.arg.author">author</a>: <a class="input_object" href="input_object.CommitAuthor.html">CommitAuthor</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>If non-null, filters history to only show commits with matching authorship.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.history.arg.since" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.history.arg.since">since</a>: <a class="scalar" href="scalar.GitTimestamp.html">GitTimestamp</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Allows specifying a beginning time or date for fetching commits.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.history.arg.until" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.history.arg.until">until</a>: <a class="scalar" href="scalar.GitTimestamp.html">GitTimestamp</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Allows specifying an ending time or date for fetching commits.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.message" class="field ">
+    <h3>
+        <code><a class="field" href="#field.message">message</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The Git commit message</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.messageBody" class="field ">
+    <h3>
+        <code><a class="field" href="#field.messageBody">messageBody</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The Git commit message body</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.messageBodyHTML" class="field ">
+    <h3>
+        <code><a class="field" href="#field.messageBodyHTML">messageBodyHTML</a>: <a class="scalar" href="scalar.HTML.html">HTML</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The commit message body rendered to HTML.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.messageHeadline" class="field ">
+    <h3>
+        <code><a class="field" href="#field.messageHeadline">messageHeadline</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The Git commit message headline</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.messageHeadlineHTML" class="field ">
+    <h3>
+        <code><a class="field" href="#field.messageHeadlineHTML">messageHeadlineHTML</a>: <a class="scalar" href="scalar.HTML.html">HTML</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The commit message headline rendered to HTML.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.oid" class="field ">
+    <h3>
+        <code><a class="field" href="#field.oid">oid</a>: <a class="scalar" href="scalar.GitObjectID.html">GitObjectID</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The Git object ID</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.onBehalfOf" class="field ">
+    <h3>
+        <code><a class="field" href="#field.onBehalfOf">onBehalfOf</a>: <a class="object" href="object.Organization.html">Organization</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The organization this commit was made on behalf of.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.parents" class="field ">
+    <h3>
+        <code><a class="field" href="#field.parents">parents</a>(<span class=""><a class="arg" href="#field.parents.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.parents.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.parents.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.parents.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.CommitConnection.html">CommitConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The parents of a commit.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.parents.args">
+            <h4><a href="#field.parents.args">Args</a></h4>
+            
+            <div id="field.parents.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.parents.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.parents.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.parents.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.parents.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.parents.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.parents.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.parents.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.pushedDate" class="field ">
+    <h3>
+        <code><a class="field" href="#field.pushedDate">pushedDate</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The datetime when this commit was pushed.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.repository" class="field ">
+    <h3>
+        <code><a class="field" href="#field.repository">repository</a>: <a class="object" href="object.Repository.html">Repository</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The Repository this commit belongs to</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.resourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.resourcePath">resourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for this commit</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.signature" class="field ">
+    <h3>
+        <code><a class="field" href="#field.signature">signature</a>: <a class="interface" href="interface.GitSignature.html">GitSignature</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Commit signing information, if present.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.status" class="field ">
+    <h3>
+        <code><a class="field" href="#field.status">status</a>: <a class="object" href="object.Status.html">Status</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Status information for this commit</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.statusCheckRollup" class="field ">
+    <h3>
+        <code><a class="field" href="#field.statusCheckRollup">statusCheckRollup</a>: <a class="object" href="object.StatusCheckRollup.html">StatusCheckRollup</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Check and Status rollup information for this commit.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.submodules" class="field ">
+    <h3>
+        <code><a class="field" href="#field.submodules">submodules</a>(<span class=""><a class="arg" href="#field.submodules.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.submodules.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.submodules.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.submodules.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.SubmoduleConnection.html">SubmoduleConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Returns a list of all submodules in this repository as of this Commit parsed from the .gitmodules file.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.submodules.args">
+            <h4><a href="#field.submodules.args">Args</a></h4>
+            
+            <div id="field.submodules.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.submodules.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.submodules.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.submodules.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.submodules.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.submodules.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.submodules.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.submodules.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.tarballUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.tarballUrl">tarballUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Returns a URL to download a tarball archive for a repository.
+Note: For private repositories, these links are temporary and expire after five minutes.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.tree" class="field ">
+    <h3>
+        <code><a class="field" href="#field.tree">tree</a>: <a class="object" href="object.Tree.html">Tree</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Commit's root Tree</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.treeResourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.treeResourcePath">treeResourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for the tree of this commit</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.treeUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.treeUrl">treeUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for the tree of this commit</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.url" class="field ">
+    <h3>
+        <code><a class="field" href="#field.url">url</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for this commit</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerCanSubscribe" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerCanSubscribe">viewerCanSubscribe</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Check if the viewer is able to change their subscription status for the repository.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerSubscription" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerSubscription">viewerSubscription</a>: <a class="enum" href="enum.SubscriptionState.html">SubscriptionState</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies if the viewer is watching, not watching, or ignoring the subscribable entity.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.zipballUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.zipballUrl">zipballUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Returns a URL to download a zipball archive for a repository.
+Note: For private repositories, these links are temporary and expire after five minutes.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.BaseRefForcePushedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.BaseRefForcePushedEvent.html">BaseRefForcePushedEvent</a>.<a class="field" href="object.BaseRefForcePushedEvent.html#field.afterCommit">afterCommit</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.BaseRefForcePushedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.BaseRefForcePushedEvent.html">BaseRefForcePushedEvent</a>.<a class="field" href="object.BaseRefForcePushedEvent.html#field.beforeCommit">beforeCommit</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.BlameRange" class="use">
+    <h3>
+        <code><a class="object" href="object.BlameRange.html">BlameRange</a>.<a class="field" href="object.BlameRange.html#field.commit">commit</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.CommitComment" class="use">
+    <h3>
+        <code><a class="object" href="object.CommitComment.html">CommitComment</a>.<a class="field" href="object.CommitComment.html#field.commit">commit</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.CommitCommentThread" class="use">
+    <h3>
+        <code><a class="object" href="object.CommitCommentThread.html">CommitCommentThread</a>.<a class="field" href="object.CommitCommentThread.html#field.commit">commit</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.CommitConnection" class="use">
+    <h3>
+        <code><a class="object" href="object.CommitConnection.html">CommitConnection</a>.<a class="field" href="object.CommitConnection.html#field.nodes">nodes</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.CommitEdge" class="use">
+    <h3>
+        <code><a class="object" href="object.CommitEdge.html">CommitEdge</a>.<a class="field" href="object.CommitEdge.html#field.node">node</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.CommitHistoryConnection" class="use">
+    <h3>
+        <code><a class="object" href="object.CommitHistoryConnection.html">CommitHistoryConnection</a>.<a class="field" href="object.CommitHistoryConnection.html#field.nodes">nodes</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Deployment" class="use">
+    <h3>
+        <code><a class="object" href="object.Deployment.html">Deployment</a>.<a class="field" href="object.Deployment.html#field.commit">commit</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.HeadRefForcePushedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.HeadRefForcePushedEvent.html">HeadRefForcePushedEvent</a>.<a class="field" href="object.HeadRefForcePushedEvent.html#field.afterCommit">afterCommit</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.HeadRefForcePushedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.HeadRefForcePushedEvent.html">HeadRefForcePushedEvent</a>.<a class="field" href="object.HeadRefForcePushedEvent.html#field.beforeCommit">beforeCommit</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.MergeBranchPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.MergeBranchPayload.html">MergeBranchPayload</a>.<a class="field" href="object.MergeBranchPayload.html#field.mergeCommit">mergeCommit</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.MergedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.MergedEvent.html">MergedEvent</a>.<a class="field" href="object.MergedEvent.html#field.commit">commit</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequest" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequest.html">PullRequest</a>.<a class="field" href="object.PullRequest.html#field.mergeCommit">mergeCommit</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequest" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequest.html">PullRequest</a>.<a class="field" href="object.PullRequest.html#field.potentialMergeCommit">potentialMergeCommit</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequestCommit" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequestCommit.html">PullRequestCommit</a>.<a class="field" href="object.PullRequestCommit.html#field.commit">commit</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequestCommitCommentThread" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequestCommitCommentThread.html">PullRequestCommitCommentThread</a>.<a class="field" href="object.PullRequestCommitCommentThread.html#field.commit">commit</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequestReview" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequestReview.html">PullRequestReview</a>.<a class="field" href="object.PullRequestReview.html#field.commit">commit</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequestReviewComment" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequestReviewComment.html">PullRequestReviewComment</a>.<a class="field" href="object.PullRequestReviewComment.html#field.commit">commit</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequestReviewComment" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequestReviewComment.html">PullRequestReviewComment</a>.<a class="field" href="object.PullRequestReviewComment.html#field.originalCommit">originalCommit</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequestRevisionMarker" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequestRevisionMarker.html">PullRequestRevisionMarker</a>.<a class="field" href="object.PullRequestRevisionMarker.html#field.lastSeenCommit">lastSeenCommit</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ReferencedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.ReferencedEvent.html">ReferencedEvent</a>.<a class="field" href="object.ReferencedEvent.html#field.commit">commit</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Status" class="use">
+    <h3>
+        <code><a class="object" href="object.Status.html">Status</a>.<a class="field" href="object.Status.html#field.commit">commit</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.StatusCheckRollup" class="use">
+    <h3>
+        <code><a class="object" href="object.StatusCheckRollup.html">StatusCheckRollup</a>.<a class="field" href="object.StatusCheckRollup.html#field.commit">commit</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.StatusContext" class="use">
+    <h3>
+        <code><a class="object" href="object.StatusContext.html">StatusContext</a>.<a class="field" href="object.StatusContext.html#field.commit">commit</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Closer" class="use">
+    <h3>
+        <code><a class="union" href="union.Closer.html">Closer</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.IssueTimelineItem" class="use">
+    <h3>
+        <code><a class="union" href="union.IssueTimelineItem.html">IssueTimelineItem</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequestTimelineItem" class="use">
+    <h3>
+        <code><a class="union" href="union.PullRequestTimelineItem.html">PullRequestTimelineItem</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.GitObject" class="use">
+    <h3>
+        <code><a class="interface" href="interface.GitObject.html">GitObject</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Subscribable" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Subscribable.html">Subscribable</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.UniformResourceLocatable" class="use">
+    <h3>
+        <code><a class="interface" href="interface.UniformResourceLocatable.html">UniformResourceLocatable</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

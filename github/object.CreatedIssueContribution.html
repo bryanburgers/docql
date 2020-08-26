@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CreatedIssueContribution</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">CreatedIssueContribution</a>
+</h1>
+
+
+<div class="docblock">
+    <p>Represents the contribution a user made on GitHub by opening an issue.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.isRestricted" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isRestricted">isRestricted</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether this contribution is associated with a record you do not have access to. For
+example, your own 'first issue' contribution may have been made on a repository you can no
+longer access.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.issue" class="field ">
+    <h3>
+        <code><a class="field" href="#field.issue">issue</a>: <a class="object" href="object.Issue.html">Issue</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The issue that was opened.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.occurredAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.occurredAt">occurredAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>When this contribution was made.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.resourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.resourcePath">resourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for this contribution.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.url" class="field ">
+    <h3>
+        <code><a class="field" href="#field.url">url</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for this contribution.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.user" class="field ">
+    <h3>
+        <code><a class="field" href="#field.user">user</a>: <a class="object" href="object.User.html">User</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The user who made this contribution.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.ContributionsCollection" class="use">
+    <h3>
+        <code><a class="object" href="object.ContributionsCollection.html">ContributionsCollection</a>.<a class="field" href="object.ContributionsCollection.html#field.popularIssueContribution">popularIssueContribution</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.CreatedIssueContributionConnection" class="use">
+    <h3>
+        <code><a class="object" href="object.CreatedIssueContributionConnection.html">CreatedIssueContributionConnection</a>.<a class="field" href="object.CreatedIssueContributionConnection.html#field.nodes">nodes</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.CreatedIssueContributionEdge" class="use">
+    <h3>
+        <code><a class="object" href="object.CreatedIssueContributionEdge.html">CreatedIssueContributionEdge</a>.<a class="field" href="object.CreatedIssueContributionEdge.html#field.node">node</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.CreatedIssueOrRestrictedContribution" class="use">
+    <h3>
+        <code><a class="union" href="union.CreatedIssueOrRestrictedContribution.html">CreatedIssueOrRestrictedContribution</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Contribution" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Contribution.html">Contribution</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

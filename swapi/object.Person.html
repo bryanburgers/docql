@@ -1,0 +1,944 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Person</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">Star Wars</a>::<wbr><a class="object" href="">Person</a>
+</h1>
+
+
+<div class="docblock">
+    <p>A Person is an individual person or character within the Star Wars universe</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.birthYear" class="field ">
+    <h3>
+        <code><a class="field" href="#field.birthYear">birthYear</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The birth year of the person, using the in-universe standard of BBY or ABY - Before the Battle of Yavin or After the Battle of Yavin. The Battle of Yavin is a battle that occurs at the end of Star Wars episode IV: A New Hope.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.createdAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createdAt">createdAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.eyeColor" class="field ">
+    <h3>
+        <code><a class="field" href="#field.eyeColor">eyeColor</a>: [<a class="enum" href="enum.PERSON_EYE_COLOR.html">PERSON_EYE_COLOR</a>!]
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The eye color of this person. Will be &quot;UNKNOWN&quot; if not known or null if the person does not have an eye.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.films" class="field ">
+    <h3>
+        <code><a class="field" href="#field.films">films</a>(<span class=""><a class="arg" href="#field.films.arg.filter">filter</a>: <a class="input_object" href="input_object.FilmFilter.html">FilmFilter</a></span>, <span class=""><a class="arg" href="#field.films.arg.orderBy">orderBy</a>: <a class="enum" href="enum.FilmOrderBy.html">FilmOrderBy</a></span>, <span class=""><a class="arg" href="#field.films.arg.skip">skip</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.films.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.films.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.films.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.films.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): [<a class="object" href="object.Film.html">Film</a>!]
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.films.args">
+            <h4><a href="#field.films.args">Args</a></h4>
+            
+            <div id="field.films.arg.filter" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.films.arg.filter">filter</a>: <a class="input_object" href="input_object.FilmFilter.html">FilmFilter</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.films.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.films.arg.orderBy">orderBy</a>: <a class="enum" href="enum.FilmOrderBy.html">FilmOrderBy</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.films.arg.skip" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.films.arg.skip">skip</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.films.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.films.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.films.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.films.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.films.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.films.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.films.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.films.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.gender" class="field ">
+    <h3>
+        <code><a class="field" href="#field.gender">gender</a>: <a class="enum" href="enum.PERSON_GENDER.html">PERSON_GENDER</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The gender of this person. Will be &quot;UNKNOWN&quot; if not known or null if the person does not have a gender.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.hairColor" class="field ">
+    <h3>
+        <code><a class="field" href="#field.hairColor">hairColor</a>: [<a class="enum" href="enum.PERSON_HAIR_COLOR.html">PERSON_HAIR_COLOR</a>!]
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The hair color of this person. Will be &quot;UNKNOWN&quot; if not known or null if the person does not have hair.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.height" class="field ">
+    <h3>
+        <code><a class="field" href="#field.height">height</a>: <a class="scalar" href="scalar.Int.html">Int</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The height of the person in centimeters.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.homeworld" class="field ">
+    <h3>
+        <code><a class="field" href="#field.homeworld">homeworld</a>(<span class=""><a class="arg" href="#field.homeworld.arg.filter">filter</a>: <a class="input_object" href="input_object.PlanetFilter.html">PlanetFilter</a>): <a class="object" href="object.Planet.html">Planet</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.homeworld.args">
+            <h4><a href="#field.homeworld.args">Args</a></h4>
+            
+            <div id="field.homeworld.arg.filter" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.homeworld.arg.filter">filter</a>: <a class="input_object" href="input_object.PlanetFilter.html">PlanetFilter</a></code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.isPublished" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isPublished">isPublished</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>indicates if the record is published</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.mass" class="field ">
+    <h3>
+        <code><a class="field" href="#field.mass">mass</a>: <a class="scalar" href="scalar.Float.html">Float</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The mass of the person in kilograms.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.name" class="field ">
+    <h3>
+        <code><a class="field" href="#field.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The name of this person.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.skinColor" class="field ">
+    <h3>
+        <code><a class="field" href="#field.skinColor">skinColor</a>: [<a class="enum" href="enum.PERSON_SKIN_COLOR.html">PERSON_SKIN_COLOR</a>!]
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The skin color of this person.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.species" class="field ">
+    <h3>
+        <code><a class="field" href="#field.species">species</a>(<span class=""><a class="arg" href="#field.species.arg.filter">filter</a>: <a class="input_object" href="input_object.SpeciesFilter.html">SpeciesFilter</a></span>, <span class=""><a class="arg" href="#field.species.arg.orderBy">orderBy</a>: <a class="enum" href="enum.SpeciesOrderBy.html">SpeciesOrderBy</a></span>, <span class=""><a class="arg" href="#field.species.arg.skip">skip</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.species.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.species.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.species.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.species.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): [<a class="object" href="object.Species.html">Species</a>!]
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.species.args">
+            <h4><a href="#field.species.args">Args</a></h4>
+            
+            <div id="field.species.arg.filter" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.species.arg.filter">filter</a>: <a class="input_object" href="input_object.SpeciesFilter.html">SpeciesFilter</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.species.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.species.arg.orderBy">orderBy</a>: <a class="enum" href="enum.SpeciesOrderBy.html">SpeciesOrderBy</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.species.arg.skip" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.species.arg.skip">skip</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.species.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.species.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.species.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.species.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.species.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.species.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.species.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.species.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.starships" class="field ">
+    <h3>
+        <code><a class="field" href="#field.starships">starships</a>(<span class=""><a class="arg" href="#field.starships.arg.filter">filter</a>: <a class="input_object" href="input_object.StarshipFilter.html">StarshipFilter</a></span>, <span class=""><a class="arg" href="#field.starships.arg.orderBy">orderBy</a>: <a class="enum" href="enum.StarshipOrderBy.html">StarshipOrderBy</a></span>, <span class=""><a class="arg" href="#field.starships.arg.skip">skip</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.starships.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.starships.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.starships.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.starships.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): [<a class="object" href="object.Starship.html">Starship</a>!]
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.starships.args">
+            <h4><a href="#field.starships.args">Args</a></h4>
+            
+            <div id="field.starships.arg.filter" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.starships.arg.filter">filter</a>: <a class="input_object" href="input_object.StarshipFilter.html">StarshipFilter</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.starships.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.starships.arg.orderBy">orderBy</a>: <a class="enum" href="enum.StarshipOrderBy.html">StarshipOrderBy</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.starships.arg.skip" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.starships.arg.skip">skip</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.starships.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.starships.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.starships.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.starships.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.starships.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.starships.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.starships.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.starships.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.updatedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updatedAt">updatedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.vehicles" class="field ">
+    <h3>
+        <code><a class="field" href="#field.vehicles">vehicles</a>(<span class=""><a class="arg" href="#field.vehicles.arg.filter">filter</a>: <a class="input_object" href="input_object.VehicleFilter.html">VehicleFilter</a></span>, <span class=""><a class="arg" href="#field.vehicles.arg.orderBy">orderBy</a>: <a class="enum" href="enum.VehicleOrderBy.html">VehicleOrderBy</a></span>, <span class=""><a class="arg" href="#field.vehicles.arg.skip">skip</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.vehicles.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.vehicles.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.vehicles.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.vehicles.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): [<a class="object" href="object.Vehicle.html">Vehicle</a>!]
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.vehicles.args">
+            <h4><a href="#field.vehicles.args">Args</a></h4>
+            
+            <div id="field.vehicles.arg.filter" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.vehicles.arg.filter">filter</a>: <a class="input_object" href="input_object.VehicleFilter.html">VehicleFilter</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.vehicles.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.vehicles.arg.orderBy">orderBy</a>: <a class="enum" href="enum.VehicleOrderBy.html">VehicleOrderBy</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.vehicles.arg.skip" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.vehicles.arg.skip">skip</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.vehicles.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.vehicles.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.vehicles.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.vehicles.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.vehicles.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.vehicles.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.vehicles.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.vehicles.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field._filmsMeta" class="field ">
+    <h3>
+        <code><a class="field" href="#field._filmsMeta">_filmsMeta</a>(<span class=""><a class="arg" href="#field._filmsMeta.arg.filter">filter</a>: <a class="input_object" href="input_object.FilmFilter.html">FilmFilter</a></span>, <span class=""><a class="arg" href="#field._filmsMeta.arg.orderBy">orderBy</a>: <a class="enum" href="enum.FilmOrderBy.html">FilmOrderBy</a></span>, <span class=""><a class="arg" href="#field._filmsMeta.arg.skip">skip</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field._filmsMeta.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field._filmsMeta.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field._filmsMeta.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field._filmsMeta.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object._QueryMeta.html">_QueryMeta</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Meta information about the query.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field._filmsMeta.args">
+            <h4><a href="#field._filmsMeta.args">Args</a></h4>
+            
+            <div id="field._filmsMeta.arg.filter" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._filmsMeta.arg.filter">filter</a>: <a class="input_object" href="input_object.FilmFilter.html">FilmFilter</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field._filmsMeta.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._filmsMeta.arg.orderBy">orderBy</a>: <a class="enum" href="enum.FilmOrderBy.html">FilmOrderBy</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field._filmsMeta.arg.skip" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._filmsMeta.arg.skip">skip</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field._filmsMeta.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._filmsMeta.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field._filmsMeta.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._filmsMeta.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field._filmsMeta.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._filmsMeta.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field._filmsMeta.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._filmsMeta.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field._speciesMeta" class="field ">
+    <h3>
+        <code><a class="field" href="#field._speciesMeta">_speciesMeta</a>(<span class=""><a class="arg" href="#field._speciesMeta.arg.filter">filter</a>: <a class="input_object" href="input_object.SpeciesFilter.html">SpeciesFilter</a></span>, <span class=""><a class="arg" href="#field._speciesMeta.arg.orderBy">orderBy</a>: <a class="enum" href="enum.SpeciesOrderBy.html">SpeciesOrderBy</a></span>, <span class=""><a class="arg" href="#field._speciesMeta.arg.skip">skip</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field._speciesMeta.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field._speciesMeta.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field._speciesMeta.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field._speciesMeta.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object._QueryMeta.html">_QueryMeta</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Meta information about the query.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field._speciesMeta.args">
+            <h4><a href="#field._speciesMeta.args">Args</a></h4>
+            
+            <div id="field._speciesMeta.arg.filter" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._speciesMeta.arg.filter">filter</a>: <a class="input_object" href="input_object.SpeciesFilter.html">SpeciesFilter</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field._speciesMeta.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._speciesMeta.arg.orderBy">orderBy</a>: <a class="enum" href="enum.SpeciesOrderBy.html">SpeciesOrderBy</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field._speciesMeta.arg.skip" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._speciesMeta.arg.skip">skip</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field._speciesMeta.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._speciesMeta.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field._speciesMeta.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._speciesMeta.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field._speciesMeta.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._speciesMeta.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field._speciesMeta.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._speciesMeta.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field._starshipsMeta" class="field ">
+    <h3>
+        <code><a class="field" href="#field._starshipsMeta">_starshipsMeta</a>(<span class=""><a class="arg" href="#field._starshipsMeta.arg.filter">filter</a>: <a class="input_object" href="input_object.StarshipFilter.html">StarshipFilter</a></span>, <span class=""><a class="arg" href="#field._starshipsMeta.arg.orderBy">orderBy</a>: <a class="enum" href="enum.StarshipOrderBy.html">StarshipOrderBy</a></span>, <span class=""><a class="arg" href="#field._starshipsMeta.arg.skip">skip</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field._starshipsMeta.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field._starshipsMeta.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field._starshipsMeta.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field._starshipsMeta.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object._QueryMeta.html">_QueryMeta</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Meta information about the query.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field._starshipsMeta.args">
+            <h4><a href="#field._starshipsMeta.args">Args</a></h4>
+            
+            <div id="field._starshipsMeta.arg.filter" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._starshipsMeta.arg.filter">filter</a>: <a class="input_object" href="input_object.StarshipFilter.html">StarshipFilter</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field._starshipsMeta.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._starshipsMeta.arg.orderBy">orderBy</a>: <a class="enum" href="enum.StarshipOrderBy.html">StarshipOrderBy</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field._starshipsMeta.arg.skip" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._starshipsMeta.arg.skip">skip</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field._starshipsMeta.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._starshipsMeta.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field._starshipsMeta.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._starshipsMeta.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field._starshipsMeta.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._starshipsMeta.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field._starshipsMeta.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._starshipsMeta.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field._vehiclesMeta" class="field ">
+    <h3>
+        <code><a class="field" href="#field._vehiclesMeta">_vehiclesMeta</a>(<span class=""><a class="arg" href="#field._vehiclesMeta.arg.filter">filter</a>: <a class="input_object" href="input_object.VehicleFilter.html">VehicleFilter</a></span>, <span class=""><a class="arg" href="#field._vehiclesMeta.arg.orderBy">orderBy</a>: <a class="enum" href="enum.VehicleOrderBy.html">VehicleOrderBy</a></span>, <span class=""><a class="arg" href="#field._vehiclesMeta.arg.skip">skip</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field._vehiclesMeta.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field._vehiclesMeta.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field._vehiclesMeta.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field._vehiclesMeta.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object._QueryMeta.html">_QueryMeta</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Meta information about the query.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field._vehiclesMeta.args">
+            <h4><a href="#field._vehiclesMeta.args">Args</a></h4>
+            
+            <div id="field._vehiclesMeta.arg.filter" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._vehiclesMeta.arg.filter">filter</a>: <a class="input_object" href="input_object.VehicleFilter.html">VehicleFilter</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field._vehiclesMeta.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._vehiclesMeta.arg.orderBy">orderBy</a>: <a class="enum" href="enum.VehicleOrderBy.html">VehicleOrderBy</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field._vehiclesMeta.arg.skip" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._vehiclesMeta.arg.skip">skip</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field._vehiclesMeta.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._vehiclesMeta.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field._vehiclesMeta.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._vehiclesMeta.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field._vehiclesMeta.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._vehiclesMeta.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field._vehiclesMeta.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field._vehiclesMeta.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.AddToPeopleFilmPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.AddToPeopleFilmPayload.html">AddToPeopleFilmPayload</a>.<a class="field" href="object.AddToPeopleFilmPayload.html#field.charactersPerson">charactersPerson</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.AddToPeoplePlanetPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.AddToPeoplePlanetPayload.html">AddToPeoplePlanetPayload</a>.<a class="field" href="object.AddToPeoplePlanetPayload.html#field.residentsPerson">residentsPerson</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.AddToPeopleSpeciesPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.AddToPeopleSpeciesPayload.html">AddToPeopleSpeciesPayload</a>.<a class="field" href="object.AddToPeopleSpeciesPayload.html#field.peoplePerson">peoplePerson</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.AddToPeopleStarshipsPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.AddToPeopleStarshipsPayload.html">AddToPeopleStarshipsPayload</a>.<a class="field" href="object.AddToPeopleStarshipsPayload.html#field.pilotsPerson">pilotsPerson</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.AddToPeopleVehiclesPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.AddToPeopleVehiclesPayload.html">AddToPeopleVehiclesPayload</a>.<a class="field" href="object.AddToPeopleVehiclesPayload.html#field.pilotsPerson">pilotsPerson</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Film" class="use">
+    <h3>
+        <code><a class="object" href="object.Film.html">Film</a>.<a class="field" href="object.Film.html#field.characters">characters</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Mutation" class="use">
+    <h3>
+        <code><a class="object" href="object.Mutation.html">Mutation</a>.<a class="field" href="object.Mutation.html#field.createPerson">createPerson</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Mutation" class="use">
+    <h3>
+        <code><a class="object" href="object.Mutation.html">Mutation</a>.<a class="field" href="object.Mutation.html#field.deletePerson">deletePerson</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Mutation" class="use">
+    <h3>
+        <code><a class="object" href="object.Mutation.html">Mutation</a>.<a class="field" href="object.Mutation.html#field.updateOrCreatePerson">updateOrCreatePerson</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Mutation" class="use">
+    <h3>
+        <code><a class="object" href="object.Mutation.html">Mutation</a>.<a class="field" href="object.Mutation.html#field.updatePerson">updatePerson</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PersonSubscriptionPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.PersonSubscriptionPayload.html">PersonSubscriptionPayload</a>.<a class="field" href="object.PersonSubscriptionPayload.html#field.node">node</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Planet" class="use">
+    <h3>
+        <code><a class="object" href="object.Planet.html">Planet</a>.<a class="field" href="object.Planet.html#field.residents">residents</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Query" class="use">
+    <h3>
+        <code><a class="object" href="object.Query.html">Query</a>.<a class="field" href="object.Query.html#field.Person">Person</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Query" class="use">
+    <h3>
+        <code><a class="object" href="object.Query.html">Query</a>.<a class="field" href="object.Query.html#field.allPersons">allPersons</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.RemoveFromPeopleFilmPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.RemoveFromPeopleFilmPayload.html">RemoveFromPeopleFilmPayload</a>.<a class="field" href="object.RemoveFromPeopleFilmPayload.html#field.charactersPerson">charactersPerson</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.RemoveFromPeoplePlanetPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.RemoveFromPeoplePlanetPayload.html">RemoveFromPeoplePlanetPayload</a>.<a class="field" href="object.RemoveFromPeoplePlanetPayload.html#field.residentsPerson">residentsPerson</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.RemoveFromPeopleSpeciesPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.RemoveFromPeopleSpeciesPayload.html">RemoveFromPeopleSpeciesPayload</a>.<a class="field" href="object.RemoveFromPeopleSpeciesPayload.html#field.peoplePerson">peoplePerson</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.RemoveFromPeopleStarshipsPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.RemoveFromPeopleStarshipsPayload.html">RemoveFromPeopleStarshipsPayload</a>.<a class="field" href="object.RemoveFromPeopleStarshipsPayload.html#field.pilotsPerson">pilotsPerson</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.RemoveFromPeopleVehiclesPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.RemoveFromPeopleVehiclesPayload.html">RemoveFromPeopleVehiclesPayload</a>.<a class="field" href="object.RemoveFromPeopleVehiclesPayload.html#field.pilotsPerson">pilotsPerson</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Species" class="use">
+    <h3>
+        <code><a class="object" href="object.Species.html">Species</a>.<a class="field" href="object.Species.html#field.people">people</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Starship" class="use">
+    <h3>
+        <code><a class="object" href="object.Starship.html">Starship</a>.<a class="field" href="object.Starship.html#field.pilots">pilots</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Vehicle" class="use">
+    <h3>
+        <code><a class="object" href="object.Vehicle.html">Vehicle</a>.<a class="field" href="object.Vehicle.html#field.pilots">pilots</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

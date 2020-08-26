@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EnterpriseBillingInfo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">EnterpriseBillingInfo</a>
+</h1>
+
+
+<div class="docblock">
+    <p>Enterprise billing information visible to enterprise billing managers and owners.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.allLicensableUsersCount" class="field ">
+    <h3>
+        <code><a class="field" href="#field.allLicensableUsersCount">allLicensableUsersCount</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The number of licenseable users/emails across the enterprise.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.assetPacks" class="field ">
+    <h3>
+        <code><a class="field" href="#field.assetPacks">assetPacks</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The number of data packs used by all organizations owned by the enterprise.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.availableSeats" class="field deprecated">
+    <h3>
+        <code><a class="field" href="#field.availableSeats">availableSeats</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    <div class="stability">
+        <div class="stab deprecated">
+            <span class="emoji">👎</span>
+            <span class="label">Deprecated:</span>
+            <p class="reason">&#x60;availableSeats&#x60; will be replaced with &#x60;totalAvailableLicenses&#x60; to provide more clarity on the value being returned Use EnterpriseBillingInfo.totalAvailableLicenses instead. Removal on 2020-01-01 UTC.</p>
+        </div>
+    </div>
+    
+    
+    <div class="docblock">
+        <p>The number of available seats across all owned organizations based on the unique number of billable users.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.bandwidthQuota" class="field ">
+    <h3>
+        <code><a class="field" href="#field.bandwidthQuota">bandwidthQuota</a>: <a class="scalar" href="scalar.Float.html">Float</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The bandwidth quota in GB for all organizations owned by the enterprise.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.bandwidthUsage" class="field ">
+    <h3>
+        <code><a class="field" href="#field.bandwidthUsage">bandwidthUsage</a>: <a class="scalar" href="scalar.Float.html">Float</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The bandwidth usage in GB for all organizations owned by the enterprise.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.bandwidthUsagePercentage" class="field ">
+    <h3>
+        <code><a class="field" href="#field.bandwidthUsagePercentage">bandwidthUsagePercentage</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The bandwidth usage as a percentage of the bandwidth quota.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.seats" class="field deprecated">
+    <h3>
+        <code><a class="field" href="#field.seats">seats</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    <div class="stability">
+        <div class="stab deprecated">
+            <span class="emoji">👎</span>
+            <span class="label">Deprecated:</span>
+            <p class="reason">&#x60;seats&#x60; will be replaced with &#x60;totalLicenses&#x60; to provide more clarity on the value being returned Use EnterpriseBillingInfo.totalLicenses instead. Removal on 2020-01-01 UTC.</p>
+        </div>
+    </div>
+    
+    
+    <div class="docblock">
+        <p>The total seats across all organizations owned by the enterprise.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.storageQuota" class="field ">
+    <h3>
+        <code><a class="field" href="#field.storageQuota">storageQuota</a>: <a class="scalar" href="scalar.Float.html">Float</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The storage quota in GB for all organizations owned by the enterprise.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.storageUsage" class="field ">
+    <h3>
+        <code><a class="field" href="#field.storageUsage">storageUsage</a>: <a class="scalar" href="scalar.Float.html">Float</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The storage usage in GB for all organizations owned by the enterprise.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.storageUsagePercentage" class="field ">
+    <h3>
+        <code><a class="field" href="#field.storageUsagePercentage">storageUsagePercentage</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The storage usage as a percentage of the storage quota.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.totalAvailableLicenses" class="field ">
+    <h3>
+        <code><a class="field" href="#field.totalAvailableLicenses">totalAvailableLicenses</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The number of available licenses across all owned organizations based on the unique number of billable users.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.totalLicenses" class="field ">
+    <h3>
+        <code><a class="field" href="#field.totalLicenses">totalLicenses</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The total number of licenses allocated.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.Enterprise" class="use">
+    <h3>
+        <code><a class="object" href="object.Enterprise.html">Enterprise</a>.<a class="field" href="object.Enterprise.html#field.billingInfo">billingInfo</a>
+        
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

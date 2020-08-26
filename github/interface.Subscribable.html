@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Subscribable</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Interface <a href="index.html">GitHub</a>::<wbr><a class="interface" href="">Subscribable</a>
+</h1>
+
+
+<div class="docblock">
+    <p>Entities that can be subscribed to for web and email notifications.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.viewerCanSubscribe" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerCanSubscribe">viewerCanSubscribe</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Check if the viewer is able to change their subscription status for the repository.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerSubscription" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerSubscription">viewerSubscription</a>: <a class="enum" href="enum.SubscriptionState.html">SubscriptionState</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies if the viewer is watching, not watching, or ignoring the subscribable entity.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="possible_types"><a href="#possible_types">Possible Types</a></h2>
+
+
+<section id="possible_type.Commit" class="possible_type ">
+    <h3>
+        <code><a class="object" href="object.Commit.html">Commit</a></code>
+    </h3>
+</section>
+
+<section id="possible_type.Issue" class="possible_type ">
+    <h3>
+        <code><a class="object" href="object.Issue.html">Issue</a></code>
+    </h3>
+</section>
+
+<section id="possible_type.PullRequest" class="possible_type ">
+    <h3>
+        <code><a class="object" href="object.PullRequest.html">PullRequest</a></code>
+    </h3>
+</section>
+
+<section id="possible_type.Repository" class="possible_type ">
+    <h3>
+        <code><a class="object" href="object.Repository.html">Repository</a></code>
+    </h3>
+</section>
+
+<section id="possible_type.Team" class="possible_type ">
+    <h3>
+        <code><a class="object" href="object.Team.html">Team</a></code>
+    </h3>
+</section>
+
+<section id="possible_type.TeamDiscussion" class="possible_type ">
+    <h3>
+        <code><a class="object" href="object.TeamDiscussion.html">TeamDiscussion</a></code>
+    </h3>
+</section>
+
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.SubscribedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.SubscribedEvent.html">SubscribedEvent</a>.<a class="field" href="object.SubscribedEvent.html#field.subscribable">subscribable</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.UnsubscribedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.UnsubscribedEvent.html">UnsubscribedEvent</a>.<a class="field" href="object.UnsubscribedEvent.html#field.subscribable">subscribable</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.UpdateSubscriptionPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.UpdateSubscriptionPayload.html">UpdateSubscriptionPayload</a>.<a class="field" href="object.UpdateSubscriptionPayload.html#field.subscribable">subscribable</a>
+        
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

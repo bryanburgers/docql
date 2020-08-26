@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PackageOwner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Interface <a href="index.html">GitHub</a>::<wbr><a class="interface" href="">PackageOwner</a>
+</h1>
+
+
+<div class="docblock">
+    <p>Represents an owner of a package.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.packages" class="field ">
+    <h3>
+        <code><a class="field" href="#field.packages">packages</a>(<span class=""><a class="arg" href="#field.packages.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.packages.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.packages.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.packages.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.packages.arg.names">names</a>: [<a class="scalar" href="scalar.String.html">String</a>]</span>, <span class=""><a class="arg" href="#field.packages.arg.repositoryId">repositoryId</a>: <a class="scalar" href="scalar.ID.html">ID</a></span>, <span class=""><a class="arg" href="#field.packages.arg.packageType">packageType</a>: <a class="enum" href="enum.PackageType.html">PackageType</a></span>, <span class=""><a class="arg" href="#field.packages.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.PackageOrder.html">PackageOrder</a> = {field: CREATED_AT, direction: DESC}): <a class="object" href="object.PackageConnection.html">PackageConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of packages under the owner.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.packages.args">
+            <h4><a href="#field.packages.args">Args</a></h4>
+            
+            <div id="field.packages.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.packages.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.packages.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.packages.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.packages.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.packages.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.packages.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.packages.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.packages.arg.names" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.packages.arg.names">names</a>: [<a class="scalar" href="scalar.String.html">String</a>]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Find packages by their names.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.packages.arg.repositoryId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.packages.arg.repositoryId">repositoryId</a>: <a class="scalar" href="scalar.ID.html">ID</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Find packages in a repository by ID.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.packages.arg.packageType" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.packages.arg.packageType">packageType</a>: <a class="enum" href="enum.PackageType.html">PackageType</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Filter registry package by type.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.packages.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.packages.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.PackageOrder.html">PackageOrder</a> = {field: CREATED_AT, direction: DESC}</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering of the returned packages.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+
+
+
+<h2 id="possible_types"><a href="#possible_types">Possible Types</a></h2>
+
+
+<section id="possible_type.Organization" class="possible_type ">
+    <h3>
+        <code><a class="object" href="object.Organization.html">Organization</a></code>
+    </h3>
+</section>
+
+<section id="possible_type.Repository" class="possible_type ">
+    <h3>
+        <code><a class="object" href="object.Repository.html">Repository</a></code>
+    </h3>
+</section>
+
+<section id="possible_type.User" class="possible_type ">
+    <h3>
+        <code><a class="object" href="object.User.html">User</a></code>
+    </h3>
+</section>
+
+
+
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GitObject</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Interface <a href="index.html">GitHub</a>::<wbr><a class="interface" href="">GitObject</a>
+</h1>
+
+
+<div class="docblock">
+    <p>Represents a Git object.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.abbreviatedOid" class="field ">
+    <h3>
+        <code><a class="field" href="#field.abbreviatedOid">abbreviatedOid</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>An abbreviated version of the Git object ID</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.commitResourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.commitResourcePath">commitResourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for this Git object</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.commitUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.commitUrl">commitUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for this Git object</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.oid" class="field ">
+    <h3>
+        <code><a class="field" href="#field.oid">oid</a>: <a class="scalar" href="scalar.GitObjectID.html">GitObjectID</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The Git object ID</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.repository" class="field ">
+    <h3>
+        <code><a class="field" href="#field.repository">repository</a>: <a class="object" href="object.Repository.html">Repository</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The Repository the Git object belongs to</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="possible_types"><a href="#possible_types">Possible Types</a></h2>
+
+
+<section id="possible_type.Blob" class="possible_type ">
+    <h3>
+        <code><a class="object" href="object.Blob.html">Blob</a></code>
+    </h3>
+</section>
+
+<section id="possible_type.Commit" class="possible_type ">
+    <h3>
+        <code><a class="object" href="object.Commit.html">Commit</a></code>
+    </h3>
+</section>
+
+<section id="possible_type.Tag" class="possible_type ">
+    <h3>
+        <code><a class="object" href="object.Tag.html">Tag</a></code>
+    </h3>
+</section>
+
+<section id="possible_type.Tree" class="possible_type ">
+    <h3>
+        <code><a class="object" href="object.Tree.html">Tree</a></code>
+    </h3>
+</section>
+
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.Ref" class="use">
+    <h3>
+        <code><a class="object" href="object.Ref.html">Ref</a>.<a class="field" href="object.Ref.html#field.target">target</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Repository" class="use">
+    <h3>
+        <code><a class="object" href="object.Repository.html">Repository</a>.<a class="field" href="object.Repository.html#field.object">object</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Tag" class="use">
+    <h3>
+        <code><a class="object" href="object.Tag.html">Tag</a>.<a class="field" href="object.Tag.html#field.target">target</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.TreeEntry" class="use">
+    <h3>
+        <code><a class="object" href="object.TreeEntry.html">TreeEntry</a>.<a class="field" href="object.TreeEntry.html#field.object">object</a>
+        
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,375 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ref</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">Ref</a>
+</h1>
+
+
+<div class="docblock">
+    <p>Represents a Git reference.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.associatedPullRequests" class="field ">
+    <h3>
+        <code><a class="field" href="#field.associatedPullRequests">associatedPullRequests</a>(<span class=""><a class="arg" href="#field.associatedPullRequests.arg.states">states</a>: [<a class="enum" href="enum.PullRequestState.html">PullRequestState</a>!]</span>, <span class=""><a class="arg" href="#field.associatedPullRequests.arg.labels">labels</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</span>, <span class=""><a class="arg" href="#field.associatedPullRequests.arg.headRefName">headRefName</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.associatedPullRequests.arg.baseRefName">baseRefName</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.associatedPullRequests.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.IssueOrder.html">IssueOrder</a></span>, <span class=""><a class="arg" href="#field.associatedPullRequests.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.associatedPullRequests.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.associatedPullRequests.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.associatedPullRequests.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.PullRequestConnection.html">PullRequestConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of pull requests with this ref as the head ref.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.associatedPullRequests.args">
+            <h4><a href="#field.associatedPullRequests.args">Args</a></h4>
+            
+            <div id="field.associatedPullRequests.arg.states" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.associatedPullRequests.arg.states">states</a>: [<a class="enum" href="enum.PullRequestState.html">PullRequestState</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>A list of states to filter the pull requests by.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.associatedPullRequests.arg.labels" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.associatedPullRequests.arg.labels">labels</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>A list of label names to filter the pull requests by.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.associatedPullRequests.arg.headRefName" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.associatedPullRequests.arg.headRefName">headRefName</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The head ref name to filter the pull requests by.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.associatedPullRequests.arg.baseRefName" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.associatedPullRequests.arg.baseRefName">baseRefName</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The base ref name to filter the pull requests by.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.associatedPullRequests.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.associatedPullRequests.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.IssueOrder.html">IssueOrder</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for pull requests returned from the connection.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.associatedPullRequests.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.associatedPullRequests.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.associatedPullRequests.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.associatedPullRequests.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.associatedPullRequests.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.associatedPullRequests.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.associatedPullRequests.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.associatedPullRequests.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.name" class="field ">
+    <h3>
+        <code><a class="field" href="#field.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The ref name.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.prefix" class="field ">
+    <h3>
+        <code><a class="field" href="#field.prefix">prefix</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The ref's prefix, such as <code>refs/heads/</code> or <code>refs/tags/</code>.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.repository" class="field ">
+    <h3>
+        <code><a class="field" href="#field.repository">repository</a>: <a class="object" href="object.Repository.html">Repository</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The repository the ref belongs to.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.target" class="field ">
+    <h3>
+        <code><a class="field" href="#field.target">target</a>: <a class="interface" href="interface.GitObject.html">GitObject</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The object the ref points to. Returns null when object does not exist.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.BaseRefForcePushedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.BaseRefForcePushedEvent.html">BaseRefForcePushedEvent</a>.<a class="field" href="object.BaseRefForcePushedEvent.html#field.ref">ref</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.BranchProtectionRuleConflict" class="use">
+    <h3>
+        <code><a class="object" href="object.BranchProtectionRuleConflict.html">BranchProtectionRuleConflict</a>.<a class="field" href="object.BranchProtectionRuleConflict.html#field.ref">ref</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.CreateRefPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.CreateRefPayload.html">CreateRefPayload</a>.<a class="field" href="object.CreateRefPayload.html#field.ref">ref</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.DeployedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.DeployedEvent.html">DeployedEvent</a>.<a class="field" href="object.DeployedEvent.html#field.ref">ref</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Deployment" class="use">
+    <h3>
+        <code><a class="object" href="object.Deployment.html">Deployment</a>.<a class="field" href="object.Deployment.html#field.ref">ref</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.HeadRefDeletedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.HeadRefDeletedEvent.html">HeadRefDeletedEvent</a>.<a class="field" href="object.HeadRefDeletedEvent.html#field.headRef">headRef</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.HeadRefForcePushedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.HeadRefForcePushedEvent.html">HeadRefForcePushedEvent</a>.<a class="field" href="object.HeadRefForcePushedEvent.html#field.ref">ref</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.MergedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.MergedEvent.html">MergedEvent</a>.<a class="field" href="object.MergedEvent.html#field.mergeRef">mergeRef</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequest" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequest.html">PullRequest</a>.<a class="field" href="object.PullRequest.html#field.baseRef">baseRef</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequest" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequest.html">PullRequest</a>.<a class="field" href="object.PullRequest.html#field.headRef">headRef</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.RefConnection" class="use">
+    <h3>
+        <code><a class="object" href="object.RefConnection.html">RefConnection</a>.<a class="field" href="object.RefConnection.html#field.nodes">nodes</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.RefEdge" class="use">
+    <h3>
+        <code><a class="object" href="object.RefEdge.html">RefEdge</a>.<a class="field" href="object.RefEdge.html#field.node">node</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Release" class="use">
+    <h3>
+        <code><a class="object" href="object.Release.html">Release</a>.<a class="field" href="object.Release.html#field.tag">tag</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Repository" class="use">
+    <h3>
+        <code><a class="object" href="object.Repository.html">Repository</a>.<a class="field" href="object.Repository.html#field.defaultBranchRef">defaultBranchRef</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Repository" class="use">
+    <h3>
+        <code><a class="object" href="object.Repository.html">Repository</a>.<a class="field" href="object.Repository.html#field.ref">ref</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.UpdateRefPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.UpdateRefPayload.html">UpdateRefPayload</a>.<a class="field" href="object.UpdateRefPayload.html#field.ref">ref</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

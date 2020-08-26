@@ -1,0 +1,888 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TeamDiscussion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">TeamDiscussion</a>
+</h1>
+
+
+<div class="docblock">
+    <p>A team discussion.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.author" class="field ">
+    <h3>
+        <code><a class="field" href="#field.author">author</a>: <a class="interface" href="interface.Actor.html">Actor</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The actor who authored the comment.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.authorAssociation" class="field ">
+    <h3>
+        <code><a class="field" href="#field.authorAssociation">authorAssociation</a>: <a class="enum" href="enum.CommentAuthorAssociation.html">CommentAuthorAssociation</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Author's association with the discussion's team.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.body" class="field ">
+    <h3>
+        <code><a class="field" href="#field.body">body</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The body as Markdown.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.bodyHTML" class="field ">
+    <h3>
+        <code><a class="field" href="#field.bodyHTML">bodyHTML</a>: <a class="scalar" href="scalar.HTML.html">HTML</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The body rendered to HTML.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.bodyText" class="field ">
+    <h3>
+        <code><a class="field" href="#field.bodyText">bodyText</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The body rendered to text.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.bodyVersion" class="field ">
+    <h3>
+        <code><a class="field" href="#field.bodyVersion">bodyVersion</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the discussion body hash.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.comments" class="field ">
+    <h3>
+        <code><a class="field" href="#field.comments">comments</a>(<span class=""><a class="arg" href="#field.comments.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.comments.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.comments.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.comments.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.comments.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.TeamDiscussionCommentOrder.html">TeamDiscussionCommentOrder</a></span>, <span class=""><a class="arg" href="#field.comments.arg.fromComment">fromComment</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.TeamDiscussionCommentConnection.html">TeamDiscussionCommentConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of comments on this discussion.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.comments.args">
+            <h4><a href="#field.comments.args">Args</a></h4>
+            
+            <div id="field.comments.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.comments.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.comments.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.comments.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.comments.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.comments.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.comments.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.comments.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.comments.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.comments.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.TeamDiscussionCommentOrder.html">TeamDiscussionCommentOrder</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Order for connection</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.comments.arg.fromComment" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.comments.arg.fromComment">fromComment</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>When provided, filters the connection such that results begin with the comment with this number.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.commentsResourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.commentsResourcePath">commentsResourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for discussion comments</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.commentsUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.commentsUrl">commentsUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for discussion comments</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.createdAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createdAt">createdAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was created.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.createdViaEmail" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createdViaEmail">createdViaEmail</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Check if this comment was created via an email reply.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.databaseId" class="field ">
+    <h3>
+        <code><a class="field" href="#field.databaseId">databaseId</a>: <a class="scalar" href="scalar.Int.html">Int</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the primary key from the database.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.editor" class="field ">
+    <h3>
+        <code><a class="field" href="#field.editor">editor</a>: <a class="interface" href="interface.Actor.html">Actor</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The actor who edited the comment.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.includesCreatedEdit" class="field ">
+    <h3>
+        <code><a class="field" href="#field.includesCreatedEdit">includesCreatedEdit</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Check if this comment was edited and includes an edit with the creation data</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.isPinned" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isPinned">isPinned</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether or not the discussion is pinned.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.isPrivate" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isPrivate">isPrivate</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether or not the discussion is only visible to team members and org admins.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.lastEditedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.lastEditedAt">lastEditedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The moment the editor made the last edit</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.number" class="field ">
+    <h3>
+        <code><a class="field" href="#field.number">number</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the discussion within its team.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.publishedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.publishedAt">publishedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies when the comment was published at.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.reactionGroups" class="field ">
+    <h3>
+        <code><a class="field" href="#field.reactionGroups">reactionGroups</a>: [<a class="object" href="object.ReactionGroup.html">ReactionGroup</a>!]
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of reactions grouped by content left on the subject.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.reactions" class="field ">
+    <h3>
+        <code><a class="field" href="#field.reactions">reactions</a>(<span class=""><a class="arg" href="#field.reactions.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.reactions.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.reactions.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.reactions.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.reactions.arg.content">content</a>: <a class="enum" href="enum.ReactionContent.html">ReactionContent</a></span>, <span class=""><a class="arg" href="#field.reactions.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.ReactionOrder.html">ReactionOrder</a>): <a class="object" href="object.ReactionConnection.html">ReactionConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of Reactions left on the Issue.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.reactions.args">
+            <h4><a href="#field.reactions.args">Args</a></h4>
+            
+            <div id="field.reactions.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reactions.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.reactions.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reactions.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.reactions.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reactions.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.reactions.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reactions.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.reactions.arg.content" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reactions.arg.content">content</a>: <a class="enum" href="enum.ReactionContent.html">ReactionContent</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Allows filtering Reactions by emoji.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.reactions.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.reactions.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.ReactionOrder.html">ReactionOrder</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Allows specifying the order in which reactions are returned.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.resourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.resourcePath">resourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for this discussion</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.team" class="field ">
+    <h3>
+        <code><a class="field" href="#field.team">team</a>: <a class="object" href="object.Team.html">Team</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The team that defines the context of this discussion.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.title" class="field ">
+    <h3>
+        <code><a class="field" href="#field.title">title</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The title of the discussion</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.updatedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updatedAt">updatedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was last updated.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.url" class="field ">
+    <h3>
+        <code><a class="field" href="#field.url">url</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for this discussion</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.userContentEdits" class="field ">
+    <h3>
+        <code><a class="field" href="#field.userContentEdits">userContentEdits</a>(<span class=""><a class="arg" href="#field.userContentEdits.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.userContentEdits.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.userContentEdits.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.userContentEdits.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.UserContentEditConnection.html">UserContentEditConnection</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of edits to this content.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.userContentEdits.args">
+            <h4><a href="#field.userContentEdits.args">Args</a></h4>
+            
+            <div id="field.userContentEdits.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.userContentEdits.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.userContentEdits.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.userContentEdits.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.userContentEdits.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.userContentEdits.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.userContentEdits.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.userContentEdits.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.viewerCanDelete" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerCanDelete">viewerCanDelete</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Check if the current viewer can delete this object.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerCanPin" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerCanPin">viewerCanPin</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether or not the current viewer can pin this discussion.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerCanReact" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerCanReact">viewerCanReact</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Can user react to this subject</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerCanSubscribe" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerCanSubscribe">viewerCanSubscribe</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Check if the viewer is able to change their subscription status for the repository.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerCanUpdate" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerCanUpdate">viewerCanUpdate</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Check if the current viewer can update this object.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerCannotUpdateReasons" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerCannotUpdateReasons">viewerCannotUpdateReasons</a>: [<a class="enum" href="enum.CommentCannotUpdateReason.html">CommentCannotUpdateReason</a>!]!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Reasons why the current viewer can not update this comment.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerDidAuthor" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerDidAuthor">viewerDidAuthor</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Did the viewer author this comment.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerSubscription" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerSubscription">viewerSubscription</a>: <a class="enum" href="enum.SubscriptionState.html">SubscriptionState</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies if the viewer is watching, not watching, or ignoring the subscribable entity.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.CreateTeamDiscussionPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.CreateTeamDiscussionPayload.html">CreateTeamDiscussionPayload</a>.<a class="field" href="object.CreateTeamDiscussionPayload.html#field.teamDiscussion">teamDiscussion</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Team" class="use">
+    <h3>
+        <code><a class="object" href="object.Team.html">Team</a>.<a class="field" href="object.Team.html#field.discussion">discussion</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.TeamDiscussionComment" class="use">
+    <h3>
+        <code><a class="object" href="object.TeamDiscussionComment.html">TeamDiscussionComment</a>.<a class="field" href="object.TeamDiscussionComment.html#field.discussion">discussion</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.TeamDiscussionConnection" class="use">
+    <h3>
+        <code><a class="object" href="object.TeamDiscussionConnection.html">TeamDiscussionConnection</a>.<a class="field" href="object.TeamDiscussionConnection.html#field.nodes">nodes</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.TeamDiscussionEdge" class="use">
+    <h3>
+        <code><a class="object" href="object.TeamDiscussionEdge.html">TeamDiscussionEdge</a>.<a class="field" href="object.TeamDiscussionEdge.html#field.node">node</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.UpdateTeamDiscussionPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.UpdateTeamDiscussionPayload.html">UpdateTeamDiscussionPayload</a>.<a class="field" href="object.UpdateTeamDiscussionPayload.html#field.teamDiscussion">teamDiscussion</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Comment" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Comment.html">Comment</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Deletable" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Deletable.html">Deletable</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Reactable" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Reactable.html">Reactable</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Subscribable" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Subscribable.html">Subscribable</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.UniformResourceLocatable" class="use">
+    <h3>
+        <code><a class="interface" href="interface.UniformResourceLocatable.html">UniformResourceLocatable</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Updatable" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Updatable.html">Updatable</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.UpdatableComment" class="use">
+    <h3>
+        <code><a class="interface" href="interface.UpdatableComment.html">UpdatableComment</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

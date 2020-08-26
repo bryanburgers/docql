@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OrganizationIdentityProvider</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">OrganizationIdentityProvider</a>
+</h1>
+
+
+<div class="docblock">
+    <p>An Identity Provider configured to provision SAML and SCIM identities for Organizations</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.digestMethod" class="field ">
+    <h3>
+        <code><a class="field" href="#field.digestMethod">digestMethod</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The digest algorithm used to sign SAML requests for the Identity Provider.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.externalIdentities" class="field ">
+    <h3>
+        <code><a class="field" href="#field.externalIdentities">externalIdentities</a>(<span class=""><a class="arg" href="#field.externalIdentities.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.externalIdentities.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.externalIdentities.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.externalIdentities.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.ExternalIdentityConnection.html">ExternalIdentityConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>External Identities provisioned by this Identity Provider</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.externalIdentities.args">
+            <h4><a href="#field.externalIdentities.args">Args</a></h4>
+            
+            <div id="field.externalIdentities.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.externalIdentities.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.externalIdentities.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.externalIdentities.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.externalIdentities.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.externalIdentities.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.externalIdentities.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.externalIdentities.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.idpCertificate" class="field ">
+    <h3>
+        <code><a class="field" href="#field.idpCertificate">idpCertificate</a>: <a class="scalar" href="scalar.X509Certificate.html">X509Certificate</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The x509 certificate used by the Identity Provder to sign assertions and responses.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.issuer" class="field ">
+    <h3>
+        <code><a class="field" href="#field.issuer">issuer</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The Issuer Entity ID for the SAML Identity Provider</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.organization" class="field ">
+    <h3>
+        <code><a class="field" href="#field.organization">organization</a>: <a class="object" href="object.Organization.html">Organization</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Organization this Identity Provider belongs to</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.signatureMethod" class="field ">
+    <h3>
+        <code><a class="field" href="#field.signatureMethod">signatureMethod</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The signature algorithm used to sign SAML requests for the Identity Provider.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.ssoUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.ssoUrl">ssoUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The URL endpoint for the Identity Provider's SAML SSO.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.Organization" class="use">
+    <h3>
+        <code><a class="object" href="object.Organization.html">Organization</a>.<a class="field" href="object.Organization.html#field.samlIdentityProvider">samlIdentityProvider</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

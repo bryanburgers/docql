@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DeploymentStatus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">DeploymentStatus</a>
+</h1>
+
+
+<div class="docblock">
+    <p>Describes the status of a given deployment attempt.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.createdAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createdAt">createdAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was created.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.creator" class="field ">
+    <h3>
+        <code><a class="field" href="#field.creator">creator</a>: <a class="interface" href="interface.Actor.html">Actor</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the actor who triggered the deployment.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.deployment" class="field ">
+    <h3>
+        <code><a class="field" href="#field.deployment">deployment</a>: <a class="object" href="object.Deployment.html">Deployment</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the deployment associated with status.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.description" class="field ">
+    <h3>
+        <code><a class="field" href="#field.description">description</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the description of the deployment.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.environmentUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.environmentUrl">environmentUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the environment URL of the deployment.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.logUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.logUrl">logUrl</a>: <a class="scalar" href="scalar.URI.html">URI</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the log URL of the deployment.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.state" class="field ">
+    <h3>
+        <code><a class="field" href="#field.state">state</a>: <a class="enum" href="enum.DeploymentStatusState.html">DeploymentStatusState</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the current state of the deployment.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.updatedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updatedAt">updatedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was last updated.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.Deployment" class="use">
+    <h3>
+        <code><a class="object" href="object.Deployment.html">Deployment</a>.<a class="field" href="object.Deployment.html#field.latestStatus">latestStatus</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.DeploymentEnvironmentChangedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.DeploymentEnvironmentChangedEvent.html">DeploymentEnvironmentChangedEvent</a>.<a class="field" href="object.DeploymentEnvironmentChangedEvent.html#field.deploymentStatus">deploymentStatus</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.DeploymentStatusConnection" class="use">
+    <h3>
+        <code><a class="object" href="object.DeploymentStatusConnection.html">DeploymentStatusConnection</a>.<a class="field" href="object.DeploymentStatusConnection.html#field.nodes">nodes</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.DeploymentStatusEdge" class="use">
+    <h3>
+        <code><a class="object" href="object.DeploymentStatusEdge.html">DeploymentStatusEdge</a>.<a class="field" href="object.DeploymentStatusEdge.html#field.node">node</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DraftPullRequestReviewThread</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Input Object <a href="index.html">GitHub</a>::<wbr><a class="input_object" href="">DraftPullRequestReviewThread</a>
+</h1>
+
+
+<div class="docblock">
+    <p>Specifies a review comment thread to be left with a Pull Request Review.</p>
+
+</div>
+
+
+<h2 id="input_fields"><a href="#input_fields">Input Fields</a></h2>
+
+
+<section>
+    <h3 id="input_field.path" class="input_field ">
+        <code><a class="field" href="#input_field.path">path</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    <div class="docblock">
+        <p>Path to the file being commented on.</p>
+
+    </div>
+    
+</section>
+
+<section>
+    <h3 id="input_field.line" class="input_field ">
+        <code><a class="field" href="#input_field.line">line</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    <div class="docblock">
+        <p>The line of the blob to which the thread refers. The end of the line range for multi-line comments.</p>
+
+    </div>
+    
+</section>
+
+<section>
+    <h3 id="input_field.side" class="input_field ">
+        <code><a class="field" href="#input_field.side">side</a>: <a class="enum" href="enum.DiffSide.html">DiffSide</a>
+        </code>
+    </h3>
+    
+    <div class="docblock">
+        <p>The side of the diff on which the line resides. For multi-line comments, this is the side for the end of the line range.</p>
+
+    </div>
+    
+</section>
+
+<section>
+    <h3 id="input_field.startLine" class="input_field ">
+        <code><a class="field" href="#input_field.startLine">startLine</a>: <a class="scalar" href="scalar.Int.html">Int</a>
+        </code>
+    </h3>
+    
+    <div class="docblock">
+        <p>The first line of the range to which the comment refers.</p>
+
+    </div>
+    
+</section>
+
+<section>
+    <h3 id="input_field.startSide" class="input_field ">
+        <code><a class="field" href="#input_field.startSide">startSide</a>: <a class="enum" href="enum.DiffSide.html">DiffSide</a>
+        </code>
+    </h3>
+    
+    <div class="docblock">
+        <p>The side of the diff on which the start line resides.</p>
+
+    </div>
+    
+</section>
+
+<section>
+    <h3 id="input_field.body" class="input_field ">
+        <code><a class="field" href="#input_field.body">body</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    <div class="docblock">
+        <p>Body of the comment to leave.</p>
+
+    </div>
+    
+</section>
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.AddPullRequestReviewInput" class="use">
+    <h3>
+        <code><a class="input_object" href="input_object.AddPullRequestReviewInput.html">AddPullRequestReviewInput</a>.<a class="input_field" href="input_object.AddPullRequestReviewInput.html#input_field.threads">threads</a>
+        
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,804 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Actor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Interface <a href="index.html">GitHub</a>::<wbr><a class="interface" href="">Actor</a>
+</h1>
+
+
+<div class="docblock">
+    <p>Represents an object which can take actions on GitHub. Typically a User or Bot.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.avatarUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.avatarUrl">avatarUrl</a>(<span class=""><a class="arg" href="#field.avatarUrl.arg.size">size</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A URL pointing to the actor's public avatar.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.avatarUrl.args">
+            <h4><a href="#field.avatarUrl.args">Args</a></h4>
+            
+            <div id="field.avatarUrl.arg.size" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.avatarUrl.arg.size">size</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The size of the resulting square image.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.login" class="field ">
+    <h3>
+        <code><a class="field" href="#field.login">login</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The username of the actor.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.resourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.resourcePath">resourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP path for this actor.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.url" class="field ">
+    <h3>
+        <code><a class="field" href="#field.url">url</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for this actor.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="possible_types"><a href="#possible_types">Possible Types</a></h2>
+
+
+<section id="possible_type.Bot" class="possible_type ">
+    <h3>
+        <code><a class="object" href="object.Bot.html">Bot</a></code>
+    </h3>
+</section>
+
+<section id="possible_type.EnterpriseUserAccount" class="possible_type ">
+    <h3>
+        <code><a class="object" href="object.EnterpriseUserAccount.html">EnterpriseUserAccount</a></code>
+    </h3>
+</section>
+
+<section id="possible_type.Mannequin" class="possible_type ">
+    <h3>
+        <code><a class="object" href="object.Mannequin.html">Mannequin</a></code>
+    </h3>
+</section>
+
+<section id="possible_type.Organization" class="possible_type ">
+    <h3>
+        <code><a class="object" href="object.Organization.html">Organization</a></code>
+    </h3>
+</section>
+
+<section id="possible_type.User" class="possible_type ">
+    <h3>
+        <code><a class="object" href="object.User.html">User</a></code>
+    </h3>
+</section>
+
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.AddedToProjectEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.AddedToProjectEvent.html">AddedToProjectEvent</a>.<a class="field" href="object.AddedToProjectEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.AssignedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.AssignedEvent.html">AssignedEvent</a>.<a class="field" href="object.AssignedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.AutomaticBaseChangeFailedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.AutomaticBaseChangeFailedEvent.html">AutomaticBaseChangeFailedEvent</a>.<a class="field" href="object.AutomaticBaseChangeFailedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.AutomaticBaseChangeSucceededEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.AutomaticBaseChangeSucceededEvent.html">AutomaticBaseChangeSucceededEvent</a>.<a class="field" href="object.AutomaticBaseChangeSucceededEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.BaseRefChangedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.BaseRefChangedEvent.html">BaseRefChangedEvent</a>.<a class="field" href="object.BaseRefChangedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.BaseRefForcePushedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.BaseRefForcePushedEvent.html">BaseRefForcePushedEvent</a>.<a class="field" href="object.BaseRefForcePushedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.BranchProtectionRule" class="use">
+    <h3>
+        <code><a class="object" href="object.BranchProtectionRule.html">BranchProtectionRule</a>.<a class="field" href="object.BranchProtectionRule.html#field.creator">creator</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ClosedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.ClosedEvent.html">ClosedEvent</a>.<a class="field" href="object.ClosedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.CommentDeletedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.CommentDeletedEvent.html">CommentDeletedEvent</a>.<a class="field" href="object.CommentDeletedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.CommitComment" class="use">
+    <h3>
+        <code><a class="object" href="object.CommitComment.html">CommitComment</a>.<a class="field" href="object.CommitComment.html#field.author">author</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.CommitComment" class="use">
+    <h3>
+        <code><a class="object" href="object.CommitComment.html">CommitComment</a>.<a class="field" href="object.CommitComment.html#field.editor">editor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ConnectedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.ConnectedEvent.html">ConnectedEvent</a>.<a class="field" href="object.ConnectedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ConvertToDraftEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.ConvertToDraftEvent.html">ConvertToDraftEvent</a>.<a class="field" href="object.ConvertToDraftEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ConvertedNoteToIssueEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.ConvertedNoteToIssueEvent.html">ConvertedNoteToIssueEvent</a>.<a class="field" href="object.ConvertedNoteToIssueEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.CrossReferencedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.CrossReferencedEvent.html">CrossReferencedEvent</a>.<a class="field" href="object.CrossReferencedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.DemilestonedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.DemilestonedEvent.html">DemilestonedEvent</a>.<a class="field" href="object.DemilestonedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.DeployedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.DeployedEvent.html">DeployedEvent</a>.<a class="field" href="object.DeployedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Deployment" class="use">
+    <h3>
+        <code><a class="object" href="object.Deployment.html">Deployment</a>.<a class="field" href="object.Deployment.html#field.creator">creator</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.DeploymentEnvironmentChangedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.DeploymentEnvironmentChangedEvent.html">DeploymentEnvironmentChangedEvent</a>.<a class="field" href="object.DeploymentEnvironmentChangedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.DeploymentStatus" class="use">
+    <h3>
+        <code><a class="object" href="object.DeploymentStatus.html">DeploymentStatus</a>.<a class="field" href="object.DeploymentStatus.html#field.creator">creator</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.DisconnectedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.DisconnectedEvent.html">DisconnectedEvent</a>.<a class="field" href="object.DisconnectedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.GistComment" class="use">
+    <h3>
+        <code><a class="object" href="object.GistComment.html">GistComment</a>.<a class="field" href="object.GistComment.html#field.author">author</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.GistComment" class="use">
+    <h3>
+        <code><a class="object" href="object.GistComment.html">GistComment</a>.<a class="field" href="object.GistComment.html#field.editor">editor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.HeadRefDeletedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.HeadRefDeletedEvent.html">HeadRefDeletedEvent</a>.<a class="field" href="object.HeadRefDeletedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.HeadRefForcePushedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.HeadRefForcePushedEvent.html">HeadRefForcePushedEvent</a>.<a class="field" href="object.HeadRefForcePushedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.HeadRefRestoredEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.HeadRefRestoredEvent.html">HeadRefRestoredEvent</a>.<a class="field" href="object.HeadRefRestoredEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Issue" class="use">
+    <h3>
+        <code><a class="object" href="object.Issue.html">Issue</a>.<a class="field" href="object.Issue.html#field.author">author</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Issue" class="use">
+    <h3>
+        <code><a class="object" href="object.Issue.html">Issue</a>.<a class="field" href="object.Issue.html#field.editor">editor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.IssueComment" class="use">
+    <h3>
+        <code><a class="object" href="object.IssueComment.html">IssueComment</a>.<a class="field" href="object.IssueComment.html#field.author">author</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.IssueComment" class="use">
+    <h3>
+        <code><a class="object" href="object.IssueComment.html">IssueComment</a>.<a class="field" href="object.IssueComment.html#field.editor">editor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.LabeledEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.LabeledEvent.html">LabeledEvent</a>.<a class="field" href="object.LabeledEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.LockLockablePayload" class="use">
+    <h3>
+        <code><a class="object" href="object.LockLockablePayload.html">LockLockablePayload</a>.<a class="field" href="object.LockLockablePayload.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.LockedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.LockedEvent.html">LockedEvent</a>.<a class="field" href="object.LockedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.MarkedAsDuplicateEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.MarkedAsDuplicateEvent.html">MarkedAsDuplicateEvent</a>.<a class="field" href="object.MarkedAsDuplicateEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.MentionedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.MentionedEvent.html">MentionedEvent</a>.<a class="field" href="object.MentionedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.MergePullRequestPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.MergePullRequestPayload.html">MergePullRequestPayload</a>.<a class="field" href="object.MergePullRequestPayload.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.MergedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.MergedEvent.html">MergedEvent</a>.<a class="field" href="object.MergedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Milestone" class="use">
+    <h3>
+        <code><a class="object" href="object.Milestone.html">Milestone</a>.<a class="field" href="object.Milestone.html#field.creator">creator</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.MilestonedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.MilestonedEvent.html">MilestonedEvent</a>.<a class="field" href="object.MilestonedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.MovedColumnsInProjectEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.MovedColumnsInProjectEvent.html">MovedColumnsInProjectEvent</a>.<a class="field" href="object.MovedColumnsInProjectEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PinnedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.PinnedEvent.html">PinnedEvent</a>.<a class="field" href="object.PinnedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Project" class="use">
+    <h3>
+        <code><a class="object" href="object.Project.html">Project</a>.<a class="field" href="object.Project.html#field.creator">creator</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ProjectCard" class="use">
+    <h3>
+        <code><a class="object" href="object.ProjectCard.html">ProjectCard</a>.<a class="field" href="object.ProjectCard.html#field.creator">creator</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequest" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequest.html">PullRequest</a>.<a class="field" href="object.PullRequest.html#field.author">author</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequest" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequest.html">PullRequest</a>.<a class="field" href="object.PullRequest.html#field.editor">editor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequest" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequest.html">PullRequest</a>.<a class="field" href="object.PullRequest.html#field.mergedBy">mergedBy</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequestReview" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequestReview.html">PullRequestReview</a>.<a class="field" href="object.PullRequestReview.html#field.author">author</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequestReview" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequestReview.html">PullRequestReview</a>.<a class="field" href="object.PullRequestReview.html#field.editor">editor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequestReviewComment" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequestReviewComment.html">PullRequestReviewComment</a>.<a class="field" href="object.PullRequestReviewComment.html#field.author">author</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PullRequestReviewComment" class="use">
+    <h3>
+        <code><a class="object" href="object.PullRequestReviewComment.html">PullRequestReviewComment</a>.<a class="field" href="object.PullRequestReviewComment.html#field.editor">editor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ReadyForReviewEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.ReadyForReviewEvent.html">ReadyForReviewEvent</a>.<a class="field" href="object.ReadyForReviewEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ReferencedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.ReferencedEvent.html">ReferencedEvent</a>.<a class="field" href="object.ReferencedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.RemovedFromProjectEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.RemovedFromProjectEvent.html">RemovedFromProjectEvent</a>.<a class="field" href="object.RemovedFromProjectEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.RenamedTitleEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.RenamedTitleEvent.html">RenamedTitleEvent</a>.<a class="field" href="object.RenamedTitleEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ReopenedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.ReopenedEvent.html">ReopenedEvent</a>.<a class="field" href="object.ReopenedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.RequestReviewsPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.RequestReviewsPayload.html">RequestReviewsPayload</a>.<a class="field" href="object.RequestReviewsPayload.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ReviewDismissedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.ReviewDismissedEvent.html">ReviewDismissedEvent</a>.<a class="field" href="object.ReviewDismissedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ReviewRequestRemovedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.ReviewRequestRemovedEvent.html">ReviewRequestRemovedEvent</a>.<a class="field" href="object.ReviewRequestRemovedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.ReviewRequestedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.ReviewRequestedEvent.html">ReviewRequestedEvent</a>.<a class="field" href="object.ReviewRequestedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.SavedReply" class="use">
+    <h3>
+        <code><a class="object" href="object.SavedReply.html">SavedReply</a>.<a class="field" href="object.SavedReply.html#field.user">user</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.StatusContext" class="use">
+    <h3>
+        <code><a class="object" href="object.StatusContext.html">StatusContext</a>.<a class="field" href="object.StatusContext.html#field.creator">creator</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.SubscribedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.SubscribedEvent.html">SubscribedEvent</a>.<a class="field" href="object.SubscribedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.TeamDiscussion" class="use">
+    <h3>
+        <code><a class="object" href="object.TeamDiscussion.html">TeamDiscussion</a>.<a class="field" href="object.TeamDiscussion.html#field.author">author</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.TeamDiscussion" class="use">
+    <h3>
+        <code><a class="object" href="object.TeamDiscussion.html">TeamDiscussion</a>.<a class="field" href="object.TeamDiscussion.html#field.editor">editor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.TeamDiscussionComment" class="use">
+    <h3>
+        <code><a class="object" href="object.TeamDiscussionComment.html">TeamDiscussionComment</a>.<a class="field" href="object.TeamDiscussionComment.html#field.author">author</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.TeamDiscussionComment" class="use">
+    <h3>
+        <code><a class="object" href="object.TeamDiscussionComment.html">TeamDiscussionComment</a>.<a class="field" href="object.TeamDiscussionComment.html#field.editor">editor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.TransferredEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.TransferredEvent.html">TransferredEvent</a>.<a class="field" href="object.TransferredEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.UnassignedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.UnassignedEvent.html">UnassignedEvent</a>.<a class="field" href="object.UnassignedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.UnlabeledEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.UnlabeledEvent.html">UnlabeledEvent</a>.<a class="field" href="object.UnlabeledEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.UnlockLockablePayload" class="use">
+    <h3>
+        <code><a class="object" href="object.UnlockLockablePayload.html">UnlockLockablePayload</a>.<a class="field" href="object.UnlockLockablePayload.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.UnlockedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.UnlockedEvent.html">UnlockedEvent</a>.<a class="field" href="object.UnlockedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.UnmarkedAsDuplicateEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.UnmarkedAsDuplicateEvent.html">UnmarkedAsDuplicateEvent</a>.<a class="field" href="object.UnmarkedAsDuplicateEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.UnpinnedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.UnpinnedEvent.html">UnpinnedEvent</a>.<a class="field" href="object.UnpinnedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.UnsubscribedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.UnsubscribedEvent.html">UnsubscribedEvent</a>.<a class="field" href="object.UnsubscribedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.UpdateIssuePayload" class="use">
+    <h3>
+        <code><a class="object" href="object.UpdateIssuePayload.html">UpdateIssuePayload</a>.<a class="field" href="object.UpdateIssuePayload.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.UpdatePullRequestPayload" class="use">
+    <h3>
+        <code><a class="object" href="object.UpdatePullRequestPayload.html">UpdatePullRequestPayload</a>.<a class="field" href="object.UpdatePullRequestPayload.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.UserBlockedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.UserBlockedEvent.html">UserBlockedEvent</a>.<a class="field" href="object.UserBlockedEvent.html#field.actor">actor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.UserContentEdit" class="use">
+    <h3>
+        <code><a class="object" href="object.UserContentEdit.html">UserContentEdit</a>.<a class="field" href="object.UserContentEdit.html#field.deletedBy">deletedBy</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.UserContentEdit" class="use">
+    <h3>
+        <code><a class="object" href="object.UserContentEdit.html">UserContentEdit</a>.<a class="field" href="object.UserContentEdit.html#field.editor">editor</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Comment" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Comment.html">Comment</a>.<a class="field" href="interface.Comment.html#field.author">author</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Comment" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Comment.html">Comment</a>.<a class="field" href="interface.Comment.html#field.editor">editor</a>
+        
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

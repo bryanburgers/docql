@@ -1,0 +1,399 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Deployment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">Deployment</a>
+</h1>
+
+
+<div class="docblock">
+    <p>Represents triggered deployment instance.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.commit" class="field ">
+    <h3>
+        <code><a class="field" href="#field.commit">commit</a>: <a class="object" href="object.Commit.html">Commit</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the commit sha of the deployment.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.commitOid" class="field ">
+    <h3>
+        <code><a class="field" href="#field.commitOid">commitOid</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the oid of the deployment commit, even if the commit has been deleted.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.createdAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createdAt">createdAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was created.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.creator" class="field ">
+    <h3>
+        <code><a class="field" href="#field.creator">creator</a>: <a class="interface" href="interface.Actor.html">Actor</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the actor who triggered the deployment.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.databaseId" class="field ">
+    <h3>
+        <code><a class="field" href="#field.databaseId">databaseId</a>: <a class="scalar" href="scalar.Int.html">Int</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the primary key from the database.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.description" class="field ">
+    <h3>
+        <code><a class="field" href="#field.description">description</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The deployment description.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.environment" class="field ">
+    <h3>
+        <code><a class="field" href="#field.environment">environment</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The latest environment to which this deployment was made.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.latestEnvironment" class="field ">
+    <h3>
+        <code><a class="field" href="#field.latestEnvironment">latestEnvironment</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The latest environment to which this deployment was made.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.latestStatus" class="field ">
+    <h3>
+        <code><a class="field" href="#field.latestStatus">latestStatus</a>: <a class="object" href="object.DeploymentStatus.html">DeploymentStatus</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The latest status of this deployment.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.originalEnvironment" class="field ">
+    <h3>
+        <code><a class="field" href="#field.originalEnvironment">originalEnvironment</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The original environment to which this deployment was made.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.payload" class="field ">
+    <h3>
+        <code><a class="field" href="#field.payload">payload</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Extra information that a deployment system might need.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.ref" class="field ">
+    <h3>
+        <code><a class="field" href="#field.ref">ref</a>: <a class="object" href="object.Ref.html">Ref</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the Ref of the deployment, if the deployment was created by ref.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.repository" class="field ">
+    <h3>
+        <code><a class="field" href="#field.repository">repository</a>: <a class="object" href="object.Repository.html">Repository</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the repository associated with the deployment.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.state" class="field ">
+    <h3>
+        <code><a class="field" href="#field.state">state</a>: <a class="enum" href="enum.DeploymentState.html">DeploymentState</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The current state of the deployment.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.statuses" class="field ">
+    <h3>
+        <code><a class="field" href="#field.statuses">statuses</a>(<span class=""><a class="arg" href="#field.statuses.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.statuses.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.statuses.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.statuses.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.DeploymentStatusConnection.html">DeploymentStatusConnection</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of statuses associated with the deployment.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.statuses.args">
+            <h4><a href="#field.statuses.args">Args</a></h4>
+            
+            <div id="field.statuses.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.statuses.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.statuses.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.statuses.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.statuses.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.statuses.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.statuses.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.statuses.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.task" class="field ">
+    <h3>
+        <code><a class="field" href="#field.task">task</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The deployment task.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.updatedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updatedAt">updatedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was last updated.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.DeployedEvent" class="use">
+    <h3>
+        <code><a class="object" href="object.DeployedEvent.html">DeployedEvent</a>.<a class="field" href="object.DeployedEvent.html#field.deployment">deployment</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.DeploymentConnection" class="use">
+    <h3>
+        <code><a class="object" href="object.DeploymentConnection.html">DeploymentConnection</a>.<a class="field" href="object.DeploymentConnection.html#field.nodes">nodes</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.DeploymentEdge" class="use">
+    <h3>
+        <code><a class="object" href="object.DeploymentEdge.html">DeploymentEdge</a>.<a class="field" href="object.DeploymentEdge.html#field.node">node</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.DeploymentStatus" class="use">
+    <h3>
+        <code><a class="object" href="object.DeploymentStatus.html">DeploymentStatus</a>.<a class="field" href="object.DeploymentStatus.html#field.deployment">deployment</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

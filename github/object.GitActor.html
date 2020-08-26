@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GitActor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">GitActor</a>
+</h1>
+
+
+<div class="docblock">
+    <p>Represents an actor in a Git commit (ie. an author or committer).</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.avatarUrl" class="field ">
+    <h3>
+        <code><a class="field" href="#field.avatarUrl">avatarUrl</a>(<span class=""><a class="arg" href="#field.avatarUrl.arg.size">size</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A URL pointing to the author's public avatar.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.avatarUrl.args">
+            <h4><a href="#field.avatarUrl.args">Args</a></h4>
+            
+            <div id="field.avatarUrl.arg.size" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.avatarUrl.arg.size">size</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The size of the resulting square image.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.date" class="field ">
+    <h3>
+        <code><a class="field" href="#field.date">date</a>: <a class="scalar" href="scalar.GitTimestamp.html">GitTimestamp</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The timestamp of the Git action (authoring or committing).</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.email" class="field ">
+    <h3>
+        <code><a class="field" href="#field.email">email</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The email in the Git commit.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.name" class="field ">
+    <h3>
+        <code><a class="field" href="#field.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The name in the Git commit.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.user" class="field ">
+    <h3>
+        <code><a class="field" href="#field.user">user</a>: <a class="object" href="object.User.html">User</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The GitHub user corresponding to the email field. Null if no such user exists.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.Commit" class="use">
+    <h3>
+        <code><a class="object" href="object.Commit.html">Commit</a>.<a class="field" href="object.Commit.html#field.author">author</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Commit" class="use">
+    <h3>
+        <code><a class="object" href="object.Commit.html">Commit</a>.<a class="field" href="object.Commit.html#field.committer">committer</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Tag" class="use">
+    <h3>
+        <code><a class="object" href="object.Tag.html">Tag</a>.<a class="field" href="object.Tag.html#field.tagger">tagger</a>
+        
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

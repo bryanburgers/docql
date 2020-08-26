@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TreeEntry</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">TreeEntry</a>
+</h1>
+
+
+<div class="docblock">
+    <p>Represents a Git tree entry.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.mode" class="field ">
+    <h3>
+        <code><a class="field" href="#field.mode">mode</a>: <a class="scalar" href="scalar.Int.html">Int</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Entry file mode.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.name" class="field ">
+    <h3>
+        <code><a class="field" href="#field.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Entry file name.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.object" class="field ">
+    <h3>
+        <code><a class="field" href="#field.object">object</a>: <a class="interface" href="interface.GitObject.html">GitObject</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Entry file object.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.oid" class="field ">
+    <h3>
+        <code><a class="field" href="#field.oid">oid</a>: <a class="scalar" href="scalar.GitObjectID.html">GitObjectID</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Entry file Git object ID.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.repository" class="field ">
+    <h3>
+        <code><a class="field" href="#field.repository">repository</a>: <a class="object" href="object.Repository.html">Repository</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The Repository the tree entry belongs to</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.submodule" class="field ">
+    <h3>
+        <code><a class="field" href="#field.submodule">submodule</a>: <a class="object" href="object.Submodule.html">Submodule</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>If the TreeEntry is for a directory occupied by a submodule project, this returns the corresponding submodule</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.type" class="field ">
+    <h3>
+        <code><a class="field" href="#field.type">type</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Entry file type.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.Tree" class="use">
+    <h3>
+        <code><a class="object" href="object.Tree.html">Tree</a>.<a class="field" href="object.Tree.html#field.entries">entries</a>
+        
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

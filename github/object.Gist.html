@@ -1,0 +1,549 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">Gist</a>
+</h1>
+
+
+<div class="docblock">
+    <p>A Gist.</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.comments" class="field ">
+    <h3>
+        <code><a class="field" href="#field.comments">comments</a>(<span class=""><a class="arg" href="#field.comments.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.comments.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.comments.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.comments.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a>): <a class="object" href="object.GistCommentConnection.html">GistCommentConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of comments associated with the gist</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.comments.args">
+            <h4><a href="#field.comments.args">Args</a></h4>
+            
+            <div id="field.comments.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.comments.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.comments.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.comments.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.comments.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.comments.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.comments.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.comments.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.createdAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createdAt">createdAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was created.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.description" class="field ">
+    <h3>
+        <code><a class="field" href="#field.description">description</a>: <a class="scalar" href="scalar.String.html">String</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The gist description.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.files" class="field ">
+    <h3>
+        <code><a class="field" href="#field.files">files</a>(<span class=""><a class="arg" href="#field.files.arg.limit">limit</a>: <a class="scalar" href="scalar.Int.html">Int</a> = 10</span>, <span class=""><a class="arg" href="#field.files.arg.oid">oid</a>: <a class="scalar" href="scalar.GitObjectID.html">GitObjectID</a>): [<a class="object" href="object.GistFile.html">GistFile</a>]
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The files in this gist.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.files.args">
+            <h4><a href="#field.files.args">Args</a></h4>
+            
+            <div id="field.files.arg.limit" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.files.arg.limit">limit</a>: <a class="scalar" href="scalar.Int.html">Int</a> = 10</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The maximum number of files to return.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.files.arg.oid" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.files.arg.oid">oid</a>: <a class="scalar" href="scalar.GitObjectID.html">GitObjectID</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The oid of the files to return</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.forks" class="field ">
+    <h3>
+        <code><a class="field" href="#field.forks">forks</a>(<span class=""><a class="arg" href="#field.forks.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.forks.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.forks.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.forks.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.forks.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.GistOrder.html">GistOrder</a>): <a class="object" href="object.GistConnection.html">GistConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of forks associated with the gist</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.forks.args">
+            <h4><a href="#field.forks.args">Args</a></h4>
+            
+            <div id="field.forks.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.forks.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.forks.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.forks.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.forks.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.forks.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.forks.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.forks.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.forks.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.forks.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.GistOrder.html">GistOrder</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Ordering options for gists returned from the connection</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.isFork" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isFork">isFork</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies if the gist is a fork.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.isPublic" class="field ">
+    <h3>
+        <code><a class="field" href="#field.isPublic">isPublic</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Whether the gist is public or not.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.name" class="field ">
+    <h3>
+        <code><a class="field" href="#field.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The gist name.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.owner" class="field ">
+    <h3>
+        <code><a class="field" href="#field.owner">owner</a>: <a class="interface" href="interface.RepositoryOwner.html">RepositoryOwner</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The gist owner.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.pushedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.pushedAt">pushedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies when the gist was last pushed to.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.resourcePath" class="field ">
+    <h3>
+        <code><a class="field" href="#field.resourcePath">resourcePath</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTML path to this resource.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.stargazers" class="field ">
+    <h3>
+        <code><a class="field" href="#field.stargazers">stargazers</a>(<span class=""><a class="arg" href="#field.stargazers.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.stargazers.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.stargazers.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.stargazers.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.stargazers.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.StarOrder.html">StarOrder</a>): <a class="object" href="object.StargazerConnection.html">StargazerConnection</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>A list of users who have starred this starrable.</p>
+
+    </div>
+    
+    
+        <div class="args" id="field.stargazers.args">
+            <h4><a href="#field.stargazers.args">Args</a></h4>
+            
+            <div id="field.stargazers.arg.after" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.stargazers.arg.after">after</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come after the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.stargazers.arg.before" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.stargazers.arg.before">before</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the elements in the list that come before the specified cursor.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.stargazers.arg.first" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.stargazers.arg.first">first</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the first <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.stargazers.arg.last" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.stargazers.arg.last">last</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Returns the last <em>n</em> elements from the list.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.stargazers.arg.orderBy" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.stargazers.arg.orderBy">orderBy</a>: <a class="input_object" href="input_object.StarOrder.html">StarOrder</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Order for connection</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.updatedAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updatedAt">updatedAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was last updated.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.url" class="field ">
+    <h3>
+        <code><a class="field" href="#field.url">url</a>: <a class="scalar" href="scalar.URI.html">URI</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The HTTP URL for this Gist.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.viewerHasStarred" class="field ">
+    <h3>
+        <code><a class="field" href="#field.viewerHasStarred">viewerHasStarred</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Returns a boolean indicating whether the viewing user has starred this starrable.</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.GistComment" class="use">
+    <h3>
+        <code><a class="object" href="object.GistComment.html">GistComment</a>.<a class="field" href="object.GistComment.html#field.gist">gist</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.GistConnection" class="use">
+    <h3>
+        <code><a class="object" href="object.GistConnection.html">GistConnection</a>.<a class="field" href="object.GistConnection.html#field.nodes">nodes</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.GistEdge" class="use">
+    <h3>
+        <code><a class="object" href="object.GistEdge.html">GistEdge</a>.<a class="field" href="object.GistEdge.html#field.node">node</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.User" class="use">
+    <h3>
+        <code><a class="object" href="object.User.html">User</a>.<a class="field" href="object.User.html#field.gist">gist</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.PinnableItem" class="use">
+    <h3>
+        <code><a class="union" href="union.PinnableItem.html">PinnableItem</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.Starrable" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Starrable.html">Starrable</a>
+        </code>
+    </h3>
+</section>
+
+<section id="use.UniformResourceLocatable" class="use">
+    <h3>
+        <code><a class="interface" href="interface.UniformResourceLocatable.html">UniformResourceLocatable</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

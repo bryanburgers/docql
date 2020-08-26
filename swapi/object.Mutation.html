@@ -1,0 +1,3329 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mutation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">Star Wars</a>::<wbr><a class="object" href="">Mutation</a>
+</h1>
+
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.createAsset" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createAsset">createAsset</a>(<span class=""><a class="arg" href="#field.createAsset.arg.fileName">fileName</a>: <a class="scalar" href="scalar.String.html">String</a>!</span>, <span class=""><a class="arg" href="#field.createAsset.arg.handle">handle</a>: <a class="scalar" href="scalar.String.html">String</a>!</span>, <span class=""><a class="arg" href="#field.createAsset.arg.height">height</a>: <a class="scalar" href="scalar.Float.html">Float</a></span>, <span class=""><a class="arg" href="#field.createAsset.arg.mimeType">mimeType</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.createAsset.arg.size">size</a>: <a class="scalar" href="scalar.Float.html">Float</a>!</span>, <span class=""><a class="arg" href="#field.createAsset.arg.url">url</a>: <a class="scalar" href="scalar.String.html">String</a>!</span>, <span class=""><a class="arg" href="#field.createAsset.arg.width">width</a>: <a class="scalar" href="scalar.Float.html">Float</a>): <a class="object" href="object.Asset.html">Asset</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.createAsset.args">
+            <h4><a href="#field.createAsset.args">Args</a></h4>
+            
+            <div id="field.createAsset.arg.fileName" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createAsset.arg.fileName">fileName</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Original File Name</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createAsset.arg.handle" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createAsset.arg.handle">handle</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The File Handle</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createAsset.arg.height" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createAsset.arg.height">height</a>: <a class="scalar" href="scalar.Float.html">Float</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The height of the file in case it is an image</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createAsset.arg.mimeType" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createAsset.arg.mimeType">mimeType</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The Mime Type</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createAsset.arg.size" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createAsset.arg.size">size</a>: <a class="scalar" href="scalar.Float.html">Float</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The Size Of The File</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createAsset.arg.url" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createAsset.arg.url">url</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The Url Of The Asset</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createAsset.arg.width" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createAsset.arg.width">width</a>: <a class="scalar" href="scalar.Float.html">Float</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The width of the file in case it is an image</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.createFilm" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createFilm">createFilm</a>(<span class=""><a class="arg" href="#field.createFilm.arg.director">director</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.createFilm.arg.episodeId">episodeId</a>: <a class="scalar" href="scalar.Int.html">Int</a>!</span>, <span class=""><a class="arg" href="#field.createFilm.arg.isPublished">isPublished</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></span>, <span class=""><a class="arg" href="#field.createFilm.arg.openingCrawl">openingCrawl</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.createFilm.arg.producers">producers</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</span>, <span class=""><a class="arg" href="#field.createFilm.arg.releaseDate">releaseDate</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a></span>, <span class=""><a class="arg" href="#field.createFilm.arg.title">title</a>: <a class="scalar" href="scalar.String.html">String</a>!</span>, <span class=""><a class="arg" href="#field.createFilm.arg.charactersIds">charactersIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.createFilm.arg.characters">characters</a>: [<a class="input_object" href="input_object.FilmcharactersPerson.html">FilmcharactersPerson</a>!]</span>, <span class=""><a class="arg" href="#field.createFilm.arg.planetsIds">planetsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.createFilm.arg.planets">planets</a>: [<a class="input_object" href="input_object.FilmplanetsPlanet.html">FilmplanetsPlanet</a>!]</span>, <span class=""><a class="arg" href="#field.createFilm.arg.speciesIds">speciesIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.createFilm.arg.species">species</a>: [<a class="input_object" href="input_object.FilmspeciesSpecies.html">FilmspeciesSpecies</a>!]</span>, <span class=""><a class="arg" href="#field.createFilm.arg.starshipsIds">starshipsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.createFilm.arg.starships">starships</a>: [<a class="input_object" href="input_object.FilmstarshipsStarship.html">FilmstarshipsStarship</a>!]</span>, <span class=""><a class="arg" href="#field.createFilm.arg.vehiclesIds">vehiclesIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.createFilm.arg.vehicles">vehicles</a>: [<a class="input_object" href="input_object.FilmvehiclesVehicle.html">FilmvehiclesVehicle</a>!]): <a class="object" href="object.Film.html">Film</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.createFilm.args">
+            <h4><a href="#field.createFilm.args">Args</a></h4>
+            
+            <div id="field.createFilm.arg.director" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createFilm.arg.director">director</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The name of the director of this film.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createFilm.arg.episodeId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createFilm.arg.episodeId">episodeId</a>: <a class="scalar" href="scalar.Int.html">Int</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The episode number of this film.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createFilm.arg.isPublished" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createFilm.arg.isPublished">isPublished</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>indicates if the record is published</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createFilm.arg.openingCrawl" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createFilm.arg.openingCrawl">openingCrawl</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The opening paragraphs at the beginning of this film.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createFilm.arg.producers" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createFilm.arg.producers">producers</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The names of the producers of this film.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createFilm.arg.releaseDate" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createFilm.arg.releaseDate">releaseDate</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The ISO 8601 date format of film release at original creator country.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createFilm.arg.title" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createFilm.arg.title">title</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The title of this film</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createFilm.arg.charactersIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createFilm.arg.charactersIds">charactersIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createFilm.arg.characters" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createFilm.arg.characters">characters</a>: [<a class="input_object" href="input_object.FilmcharactersPerson.html">FilmcharactersPerson</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createFilm.arg.planetsIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createFilm.arg.planetsIds">planetsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createFilm.arg.planets" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createFilm.arg.planets">planets</a>: [<a class="input_object" href="input_object.FilmplanetsPlanet.html">FilmplanetsPlanet</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createFilm.arg.speciesIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createFilm.arg.speciesIds">speciesIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createFilm.arg.species" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createFilm.arg.species">species</a>: [<a class="input_object" href="input_object.FilmspeciesSpecies.html">FilmspeciesSpecies</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createFilm.arg.starshipsIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createFilm.arg.starshipsIds">starshipsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createFilm.arg.starships" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createFilm.arg.starships">starships</a>: [<a class="input_object" href="input_object.FilmstarshipsStarship.html">FilmstarshipsStarship</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createFilm.arg.vehiclesIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createFilm.arg.vehiclesIds">vehiclesIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createFilm.arg.vehicles" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createFilm.arg.vehicles">vehicles</a>: [<a class="input_object" href="input_object.FilmvehiclesVehicle.html">FilmvehiclesVehicle</a>!]</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.createPerson" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createPerson">createPerson</a>(<span class=""><a class="arg" href="#field.createPerson.arg.birthYear">birthYear</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.createPerson.arg.eyeColor">eyeColor</a>: [<a class="enum" href="enum.PERSON_EYE_COLOR.html">PERSON_EYE_COLOR</a>!]</span>, <span class=""><a class="arg" href="#field.createPerson.arg.gender">gender</a>: <a class="enum" href="enum.PERSON_GENDER.html">PERSON_GENDER</a></span>, <span class=""><a class="arg" href="#field.createPerson.arg.hairColor">hairColor</a>: [<a class="enum" href="enum.PERSON_HAIR_COLOR.html">PERSON_HAIR_COLOR</a>!]</span>, <span class=""><a class="arg" href="#field.createPerson.arg.height">height</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.createPerson.arg.isPublished">isPublished</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></span>, <span class=""><a class="arg" href="#field.createPerson.arg.mass">mass</a>: <a class="scalar" href="scalar.Float.html">Float</a></span>, <span class=""><a class="arg" href="#field.createPerson.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!</span>, <span class=""><a class="arg" href="#field.createPerson.arg.skinColor">skinColor</a>: [<a class="enum" href="enum.PERSON_SKIN_COLOR.html">PERSON_SKIN_COLOR</a>!]</span>, <span class=""><a class="arg" href="#field.createPerson.arg.homeworldId">homeworldId</a>: <a class="scalar" href="scalar.ID.html">ID</a></span>, <span class=""><a class="arg" href="#field.createPerson.arg.homeworld">homeworld</a>: <a class="input_object" href="input_object.PersonhomeworldPlanet.html">PersonhomeworldPlanet</a></span>, <span class=""><a class="arg" href="#field.createPerson.arg.filmsIds">filmsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.createPerson.arg.films">films</a>: [<a class="input_object" href="input_object.PersonfilmsFilm.html">PersonfilmsFilm</a>!]</span>, <span class=""><a class="arg" href="#field.createPerson.arg.speciesIds">speciesIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.createPerson.arg.species">species</a>: [<a class="input_object" href="input_object.PersonspeciesSpecies.html">PersonspeciesSpecies</a>!]</span>, <span class=""><a class="arg" href="#field.createPerson.arg.starshipsIds">starshipsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.createPerson.arg.starships">starships</a>: [<a class="input_object" href="input_object.PersonstarshipsStarship.html">PersonstarshipsStarship</a>!]</span>, <span class=""><a class="arg" href="#field.createPerson.arg.vehiclesIds">vehiclesIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.createPerson.arg.vehicles">vehicles</a>: [<a class="input_object" href="input_object.PersonvehiclesVehicle.html">PersonvehiclesVehicle</a>!]): <a class="object" href="object.Person.html">Person</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.createPerson.args">
+            <h4><a href="#field.createPerson.args">Args</a></h4>
+            
+            <div id="field.createPerson.arg.birthYear" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPerson.arg.birthYear">birthYear</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The birth year of the person, using the in-universe standard of BBY or ABY - Before the Battle of Yavin or After the Battle of Yavin. The Battle of Yavin is a battle that occurs at the end of Star Wars episode IV: A New Hope.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createPerson.arg.eyeColor" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPerson.arg.eyeColor">eyeColor</a>: [<a class="enum" href="enum.PERSON_EYE_COLOR.html">PERSON_EYE_COLOR</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The eye color of this person. Will be &quot;UNKNOWN&quot; if not known or null if the person does not have an eye.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createPerson.arg.gender" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPerson.arg.gender">gender</a>: <a class="enum" href="enum.PERSON_GENDER.html">PERSON_GENDER</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The gender of this person. Will be &quot;UNKNOWN&quot; if not known or null if the person does not have a gender.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createPerson.arg.hairColor" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPerson.arg.hairColor">hairColor</a>: [<a class="enum" href="enum.PERSON_HAIR_COLOR.html">PERSON_HAIR_COLOR</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The hair color of this person. Will be &quot;UNKNOWN&quot; if not known or null if the person does not have hair.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createPerson.arg.height" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPerson.arg.height">height</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The height of the person in centimeters.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createPerson.arg.isPublished" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPerson.arg.isPublished">isPublished</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>indicates if the record is published</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createPerson.arg.mass" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPerson.arg.mass">mass</a>: <a class="scalar" href="scalar.Float.html">Float</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The mass of the person in kilograms.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createPerson.arg.name" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPerson.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The name of this person.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createPerson.arg.skinColor" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPerson.arg.skinColor">skinColor</a>: [<a class="enum" href="enum.PERSON_SKIN_COLOR.html">PERSON_SKIN_COLOR</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The skin color of this person.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createPerson.arg.homeworldId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPerson.arg.homeworldId">homeworldId</a>: <a class="scalar" href="scalar.ID.html">ID</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createPerson.arg.homeworld" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPerson.arg.homeworld">homeworld</a>: <a class="input_object" href="input_object.PersonhomeworldPlanet.html">PersonhomeworldPlanet</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createPerson.arg.filmsIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPerson.arg.filmsIds">filmsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createPerson.arg.films" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPerson.arg.films">films</a>: [<a class="input_object" href="input_object.PersonfilmsFilm.html">PersonfilmsFilm</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createPerson.arg.speciesIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPerson.arg.speciesIds">speciesIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createPerson.arg.species" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPerson.arg.species">species</a>: [<a class="input_object" href="input_object.PersonspeciesSpecies.html">PersonspeciesSpecies</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createPerson.arg.starshipsIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPerson.arg.starshipsIds">starshipsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createPerson.arg.starships" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPerson.arg.starships">starships</a>: [<a class="input_object" href="input_object.PersonstarshipsStarship.html">PersonstarshipsStarship</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createPerson.arg.vehiclesIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPerson.arg.vehiclesIds">vehiclesIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createPerson.arg.vehicles" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPerson.arg.vehicles">vehicles</a>: [<a class="input_object" href="input_object.PersonvehiclesVehicle.html">PersonvehiclesVehicle</a>!]</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.createPlanet" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createPlanet">createPlanet</a>(<span class=""><a class="arg" href="#field.createPlanet.arg.climate">climate</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</span>, <span class=""><a class="arg" href="#field.createPlanet.arg.diameter">diameter</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.createPlanet.arg.gravity">gravity</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.createPlanet.arg.isPublished">isPublished</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></span>, <span class=""><a class="arg" href="#field.createPlanet.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!</span>, <span class=""><a class="arg" href="#field.createPlanet.arg.orbitalPeriod">orbitalPeriod</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.createPlanet.arg.population">population</a>: <a class="scalar" href="scalar.Float.html">Float</a></span>, <span class=""><a class="arg" href="#field.createPlanet.arg.rotationPeriod">rotationPeriod</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.createPlanet.arg.surfaceWater">surfaceWater</a>: <a class="scalar" href="scalar.Float.html">Float</a></span>, <span class=""><a class="arg" href="#field.createPlanet.arg.terrain">terrain</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</span>, <span class=""><a class="arg" href="#field.createPlanet.arg.filmsIds">filmsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.createPlanet.arg.films">films</a>: [<a class="input_object" href="input_object.PlanetfilmsFilm.html">PlanetfilmsFilm</a>!]</span>, <span class=""><a class="arg" href="#field.createPlanet.arg.residentsIds">residentsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.createPlanet.arg.residents">residents</a>: [<a class="input_object" href="input_object.PlanetresidentsPerson.html">PlanetresidentsPerson</a>!]): <a class="object" href="object.Planet.html">Planet</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.createPlanet.args">
+            <h4><a href="#field.createPlanet.args">Args</a></h4>
+            
+            <div id="field.createPlanet.arg.climate" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPlanet.arg.climate">climate</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The climate of this planet.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createPlanet.arg.diameter" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPlanet.arg.diameter">diameter</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The diameter of this planet in kilometers.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createPlanet.arg.gravity" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPlanet.arg.gravity">gravity</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>A number denoting the gravity of this planet, where &quot;1&quot; is normal or 1 standard G. &quot;2&quot; is twice or 2 standard Gs. &quot;0.5&quot; is half or 0.5 standard Gs.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createPlanet.arg.isPublished" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPlanet.arg.isPublished">isPublished</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>indicates if the record is published</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createPlanet.arg.name" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPlanet.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The name of the planet</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createPlanet.arg.orbitalPeriod" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPlanet.arg.orbitalPeriod">orbitalPeriod</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The number of standard days it takes for this planet to complete a single orbit of its local star.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createPlanet.arg.population" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPlanet.arg.population">population</a>: <a class="scalar" href="scalar.Float.html">Float</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The average population of sentient beings inhabiting this planet.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createPlanet.arg.rotationPeriod" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPlanet.arg.rotationPeriod">rotationPeriod</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The number of standard hours it takes for this planet to complete a single rotation on its axis.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createPlanet.arg.surfaceWater" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPlanet.arg.surfaceWater">surfaceWater</a>: <a class="scalar" href="scalar.Float.html">Float</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The percentage of the planet surface that is naturally occurring water or bodies of water.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createPlanet.arg.terrain" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPlanet.arg.terrain">terrain</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The terrain of this planet.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createPlanet.arg.filmsIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPlanet.arg.filmsIds">filmsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createPlanet.arg.films" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPlanet.arg.films">films</a>: [<a class="input_object" href="input_object.PlanetfilmsFilm.html">PlanetfilmsFilm</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createPlanet.arg.residentsIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPlanet.arg.residentsIds">residentsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createPlanet.arg.residents" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createPlanet.arg.residents">residents</a>: [<a class="input_object" href="input_object.PlanetresidentsPerson.html">PlanetresidentsPerson</a>!]</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.createSpecies" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createSpecies">createSpecies</a>(<span class=""><a class="arg" href="#field.createSpecies.arg.averageHeight">averageHeight</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.createSpecies.arg.averageLifespan">averageLifespan</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.createSpecies.arg.classification">classification</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.createSpecies.arg.designation">designation</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.createSpecies.arg.eyeColor">eyeColor</a>: [<a class="enum" href="enum.SPECIES_EYE_COLOR.html">SPECIES_EYE_COLOR</a>!]</span>, <span class=""><a class="arg" href="#field.createSpecies.arg.hairColor">hairColor</a>: [<a class="enum" href="enum.SPECIES_HAIR_COLOR.html">SPECIES_HAIR_COLOR</a>!]</span>, <span class=""><a class="arg" href="#field.createSpecies.arg.isPublished">isPublished</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></span>, <span class=""><a class="arg" href="#field.createSpecies.arg.language">language</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.createSpecies.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!</span>, <span class=""><a class="arg" href="#field.createSpecies.arg.skinColor">skinColor</a>: [<a class="enum" href="enum.SPECIES_SKIN_COLOR.html">SPECIES_SKIN_COLOR</a>!]</span>, <span class=""><a class="arg" href="#field.createSpecies.arg.filmsIds">filmsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.createSpecies.arg.films">films</a>: [<a class="input_object" href="input_object.SpeciesfilmsFilm.html">SpeciesfilmsFilm</a>!]</span>, <span class=""><a class="arg" href="#field.createSpecies.arg.peopleIds">peopleIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.createSpecies.arg.people">people</a>: [<a class="input_object" href="input_object.SpeciespeoplePerson.html">SpeciespeoplePerson</a>!]): <a class="object" href="object.Species.html">Species</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.createSpecies.args">
+            <h4><a href="#field.createSpecies.args">Args</a></h4>
+            
+            <div id="field.createSpecies.arg.averageHeight" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createSpecies.arg.averageHeight">averageHeight</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The average height of this species in centimeters.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createSpecies.arg.averageLifespan" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createSpecies.arg.averageLifespan">averageLifespan</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The average lifespan of this species in years.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createSpecies.arg.classification" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createSpecies.arg.classification">classification</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The classification of this species, such as &quot;mammal&quot; or &quot;reptile&quot;.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createSpecies.arg.designation" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createSpecies.arg.designation">designation</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The designation of this species, such as &quot;sentient&quot;.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createSpecies.arg.eyeColor" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createSpecies.arg.eyeColor">eyeColor</a>: [<a class="enum" href="enum.SPECIES_EYE_COLOR.html">SPECIES_EYE_COLOR</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The eye colors for this species, &quot;UNKNOWN&quot; if not known, null if this species does not typically have eyes.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createSpecies.arg.hairColor" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createSpecies.arg.hairColor">hairColor</a>: [<a class="enum" href="enum.SPECIES_HAIR_COLOR.html">SPECIES_HAIR_COLOR</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The hair colors for this species, &quot;UNKNOWN&quot; if not known, null if this species does not typically have hairs.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createSpecies.arg.isPublished" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createSpecies.arg.isPublished">isPublished</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>indicates if the record is published</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createSpecies.arg.language" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createSpecies.arg.language">language</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The language commonly spoken by this species.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createSpecies.arg.name" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createSpecies.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The name of this species.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createSpecies.arg.skinColor" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createSpecies.arg.skinColor">skinColor</a>: [<a class="enum" href="enum.SPECIES_SKIN_COLOR.html">SPECIES_SKIN_COLOR</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The skin colors for this species, &quot;UNKNOWN&quot; if not known, null if this species does not typically have a skin.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createSpecies.arg.filmsIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createSpecies.arg.filmsIds">filmsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createSpecies.arg.films" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createSpecies.arg.films">films</a>: [<a class="input_object" href="input_object.SpeciesfilmsFilm.html">SpeciesfilmsFilm</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createSpecies.arg.peopleIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createSpecies.arg.peopleIds">peopleIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createSpecies.arg.people" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createSpecies.arg.people">people</a>: [<a class="input_object" href="input_object.SpeciespeoplePerson.html">SpeciespeoplePerson</a>!]</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.createStarship" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createStarship">createStarship</a>(<span class=""><a class="arg" href="#field.createStarship.arg.cargoCapacity">cargoCapacity</a>: <a class="scalar" href="scalar.Float.html">Float</a></span>, <span class=""><a class="arg" href="#field.createStarship.arg.class">class</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.createStarship.arg.consumables">consumables</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.createStarship.arg.costInCredits">costInCredits</a>: <a class="scalar" href="scalar.Float.html">Float</a></span>, <span class=""><a class="arg" href="#field.createStarship.arg.crew">crew</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.createStarship.arg.hyperdriveRating">hyperdriveRating</a>: <a class="scalar" href="scalar.Float.html">Float</a></span>, <span class=""><a class="arg" href="#field.createStarship.arg.isPublished">isPublished</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></span>, <span class=""><a class="arg" href="#field.createStarship.arg.length">length</a>: <a class="scalar" href="scalar.Float.html">Float</a></span>, <span class=""><a class="arg" href="#field.createStarship.arg.manufacturer">manufacturer</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</span>, <span class=""><a class="arg" href="#field.createStarship.arg.maxAtmospheringSpeed">maxAtmospheringSpeed</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.createStarship.arg.mglt">mglt</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.createStarship.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!</span>, <span class=""><a class="arg" href="#field.createStarship.arg.passengers">passengers</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.createStarship.arg.filmsIds">filmsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.createStarship.arg.films">films</a>: [<a class="input_object" href="input_object.StarshipfilmsFilm.html">StarshipfilmsFilm</a>!]</span>, <span class=""><a class="arg" href="#field.createStarship.arg.pilotsIds">pilotsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.createStarship.arg.pilots">pilots</a>: [<a class="input_object" href="input_object.StarshippilotsPerson.html">StarshippilotsPerson</a>!]): <a class="object" href="object.Starship.html">Starship</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.createStarship.args">
+            <h4><a href="#field.createStarship.args">Args</a></h4>
+            
+            <div id="field.createStarship.arg.cargoCapacity" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createStarship.arg.cargoCapacity">cargoCapacity</a>: <a class="scalar" href="scalar.Float.html">Float</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The maximum number of kilograms that this starship can transport.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createStarship.arg.class" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createStarship.arg.class">class</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The class of this starship, such as &quot;Starfighter&quot; or &quot;Deep Space Mobile Battlestation&quot;</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createStarship.arg.consumables" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createStarship.arg.consumables">consumables</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The maximum length of time that this starship can provide consumables for its entire crew without having to resupply.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createStarship.arg.costInCredits" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createStarship.arg.costInCredits">costInCredits</a>: <a class="scalar" href="scalar.Float.html">Float</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The cost of this starship new, in galactic credits.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createStarship.arg.crew" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createStarship.arg.crew">crew</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The number of personnel needed to run or pilot this starship.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createStarship.arg.hyperdriveRating" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createStarship.arg.hyperdriveRating">hyperdriveRating</a>: <a class="scalar" href="scalar.Float.html">Float</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The class of this starships hyperdrive.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createStarship.arg.isPublished" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createStarship.arg.isPublished">isPublished</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>indicates if the record is published</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createStarship.arg.length" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createStarship.arg.length">length</a>: <a class="scalar" href="scalar.Float.html">Float</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The length of this starship in meters.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createStarship.arg.manufacturer" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createStarship.arg.manufacturer">manufacturer</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The manufacturer of this starship.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createStarship.arg.maxAtmospheringSpeed" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createStarship.arg.maxAtmospheringSpeed">maxAtmospheringSpeed</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The maximum speed of this starship in the atmosphere. null if this starship is incapable of atmospheric flight.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createStarship.arg.mglt" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createStarship.arg.mglt">mglt</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The Maximum number of Megalights this starship can travel in a standard hour. A &quot;Megalight&quot; is a standard unit of distance and has never been defined before within the Star Wars universe.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createStarship.arg.name" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createStarship.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The name of this starship. The common name, such as &quot;Death Star&quot;.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createStarship.arg.passengers" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createStarship.arg.passengers">passengers</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The number of non-essential people this starship can transport.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createStarship.arg.filmsIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createStarship.arg.filmsIds">filmsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createStarship.arg.films" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createStarship.arg.films">films</a>: [<a class="input_object" href="input_object.StarshipfilmsFilm.html">StarshipfilmsFilm</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createStarship.arg.pilotsIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createStarship.arg.pilotsIds">pilotsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createStarship.arg.pilots" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createStarship.arg.pilots">pilots</a>: [<a class="input_object" href="input_object.StarshippilotsPerson.html">StarshippilotsPerson</a>!]</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.createVehicle" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createVehicle">createVehicle</a>(<span class=""><a class="arg" href="#field.createVehicle.arg.cargoCapacity">cargoCapacity</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.createVehicle.arg.class">class</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.createVehicle.arg.consumables">consumables</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.createVehicle.arg.costInCredits">costInCredits</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.createVehicle.arg.crew">crew</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.createVehicle.arg.isPublished">isPublished</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></span>, <span class=""><a class="arg" href="#field.createVehicle.arg.length">length</a>: <a class="scalar" href="scalar.Float.html">Float</a></span>, <span class=""><a class="arg" href="#field.createVehicle.arg.manufacturer">manufacturer</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</span>, <span class=""><a class="arg" href="#field.createVehicle.arg.maxAtmospheringSpeed">maxAtmospheringSpeed</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.createVehicle.arg.model">model</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.createVehicle.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!</span>, <span class=""><a class="arg" href="#field.createVehicle.arg.passengers">passengers</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.createVehicle.arg.filmsIds">filmsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.createVehicle.arg.films">films</a>: [<a class="input_object" href="input_object.VehiclefilmsFilm.html">VehiclefilmsFilm</a>!]</span>, <span class=""><a class="arg" href="#field.createVehicle.arg.pilotsIds">pilotsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.createVehicle.arg.pilots">pilots</a>: [<a class="input_object" href="input_object.VehiclepilotsPerson.html">VehiclepilotsPerson</a>!]): <a class="object" href="object.Vehicle.html">Vehicle</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.createVehicle.args">
+            <h4><a href="#field.createVehicle.args">Args</a></h4>
+            
+            <div id="field.createVehicle.arg.cargoCapacity" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createVehicle.arg.cargoCapacity">cargoCapacity</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The maximum number of kilograms that this vehicle can transport.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createVehicle.arg.class" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createVehicle.arg.class">class</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The class of this vehicle, such as &quot;Wheeled&quot; or &quot;Repulsorcraft&quot;.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createVehicle.arg.consumables" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createVehicle.arg.consumables">consumables</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The maximum length of time that this vehicle can provide consumables for its entire crew without having to resupply.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createVehicle.arg.costInCredits" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createVehicle.arg.costInCredits">costInCredits</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The cost of this vehicle new, in Galactic Credits.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createVehicle.arg.crew" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createVehicle.arg.crew">crew</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The number of personnel needed to run or pilot this vehicle.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createVehicle.arg.isPublished" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createVehicle.arg.isPublished">isPublished</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>indicates if the record is published</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createVehicle.arg.length" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createVehicle.arg.length">length</a>: <a class="scalar" href="scalar.Float.html">Float</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The length of this vehicle in meters.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createVehicle.arg.manufacturer" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createVehicle.arg.manufacturer">manufacturer</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The manufacturer of this vehicle.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createVehicle.arg.maxAtmospheringSpeed" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createVehicle.arg.maxAtmospheringSpeed">maxAtmospheringSpeed</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The maximum speed of this vehicle in the atmosphere.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createVehicle.arg.model" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createVehicle.arg.model">model</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The model or official name of this vehicle. Such as &quot;All-Terrain Attack Transport&quot;.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createVehicle.arg.name" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createVehicle.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a>!</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The name of this vehicle. The common name, such as &quot;Sand Crawler&quot; or &quot;Speeder bike&quot;.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createVehicle.arg.passengers" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createVehicle.arg.passengers">passengers</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The number of non-essential people this vehicle can transport.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.createVehicle.arg.filmsIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createVehicle.arg.filmsIds">filmsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createVehicle.arg.films" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createVehicle.arg.films">films</a>: [<a class="input_object" href="input_object.VehiclefilmsFilm.html">VehiclefilmsFilm</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createVehicle.arg.pilotsIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createVehicle.arg.pilotsIds">pilotsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.createVehicle.arg.pilots" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.createVehicle.arg.pilots">pilots</a>: [<a class="input_object" href="input_object.VehiclepilotsPerson.html">VehiclepilotsPerson</a>!]</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.updateAsset" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updateAsset">updateAsset</a>(<span class=""><a class="arg" href="#field.updateAsset.arg.fileName">fileName</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.updateAsset.arg.handle">handle</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.updateAsset.arg.height">height</a>: <a class="scalar" href="scalar.Float.html">Float</a></span>, <span class=""><a class="arg" href="#field.updateAsset.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</span>, <span class=""><a class="arg" href="#field.updateAsset.arg.mimeType">mimeType</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.updateAsset.arg.size">size</a>: <a class="scalar" href="scalar.Float.html">Float</a></span>, <span class=""><a class="arg" href="#field.updateAsset.arg.url">url</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.updateAsset.arg.width">width</a>: <a class="scalar" href="scalar.Float.html">Float</a>): <a class="object" href="object.Asset.html">Asset</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.updateAsset.args">
+            <h4><a href="#field.updateAsset.args">Args</a></h4>
+            
+            <div id="field.updateAsset.arg.fileName" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateAsset.arg.fileName">fileName</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>Original File Name</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateAsset.arg.handle" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateAsset.arg.handle">handle</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The File Handle</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateAsset.arg.height" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateAsset.arg.height">height</a>: <a class="scalar" href="scalar.Float.html">Float</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The height of the file in case it is an image</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateAsset.arg.id" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateAsset.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateAsset.arg.mimeType" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateAsset.arg.mimeType">mimeType</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The Mime Type</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateAsset.arg.size" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateAsset.arg.size">size</a>: <a class="scalar" href="scalar.Float.html">Float</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The Size Of The File</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateAsset.arg.url" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateAsset.arg.url">url</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The Url Of The Asset</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateAsset.arg.width" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateAsset.arg.width">width</a>: <a class="scalar" href="scalar.Float.html">Float</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The width of the file in case it is an image</p>
+
+                </div>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.updateFilm" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updateFilm">updateFilm</a>(<span class=""><a class="arg" href="#field.updateFilm.arg.director">director</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.updateFilm.arg.episodeId">episodeId</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.updateFilm.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</span>, <span class=""><a class="arg" href="#field.updateFilm.arg.isPublished">isPublished</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></span>, <span class=""><a class="arg" href="#field.updateFilm.arg.openingCrawl">openingCrawl</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.updateFilm.arg.producers">producers</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</span>, <span class=""><a class="arg" href="#field.updateFilm.arg.releaseDate">releaseDate</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a></span>, <span class=""><a class="arg" href="#field.updateFilm.arg.title">title</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.updateFilm.arg.charactersIds">charactersIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.updateFilm.arg.characters">characters</a>: [<a class="input_object" href="input_object.FilmcharactersPerson.html">FilmcharactersPerson</a>!]</span>, <span class=""><a class="arg" href="#field.updateFilm.arg.planetsIds">planetsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.updateFilm.arg.planets">planets</a>: [<a class="input_object" href="input_object.FilmplanetsPlanet.html">FilmplanetsPlanet</a>!]</span>, <span class=""><a class="arg" href="#field.updateFilm.arg.speciesIds">speciesIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.updateFilm.arg.species">species</a>: [<a class="input_object" href="input_object.FilmspeciesSpecies.html">FilmspeciesSpecies</a>!]</span>, <span class=""><a class="arg" href="#field.updateFilm.arg.starshipsIds">starshipsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.updateFilm.arg.starships">starships</a>: [<a class="input_object" href="input_object.FilmstarshipsStarship.html">FilmstarshipsStarship</a>!]</span>, <span class=""><a class="arg" href="#field.updateFilm.arg.vehiclesIds">vehiclesIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.updateFilm.arg.vehicles">vehicles</a>: [<a class="input_object" href="input_object.FilmvehiclesVehicle.html">FilmvehiclesVehicle</a>!]): <a class="object" href="object.Film.html">Film</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.updateFilm.args">
+            <h4><a href="#field.updateFilm.args">Args</a></h4>
+            
+            <div id="field.updateFilm.arg.director" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateFilm.arg.director">director</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The name of the director of this film.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateFilm.arg.episodeId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateFilm.arg.episodeId">episodeId</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The episode number of this film.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateFilm.arg.id" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateFilm.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateFilm.arg.isPublished" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateFilm.arg.isPublished">isPublished</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>indicates if the record is published</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateFilm.arg.openingCrawl" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateFilm.arg.openingCrawl">openingCrawl</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The opening paragraphs at the beginning of this film.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateFilm.arg.producers" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateFilm.arg.producers">producers</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The names of the producers of this film.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateFilm.arg.releaseDate" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateFilm.arg.releaseDate">releaseDate</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The ISO 8601 date format of film release at original creator country.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateFilm.arg.title" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateFilm.arg.title">title</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The title of this film</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateFilm.arg.charactersIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateFilm.arg.charactersIds">charactersIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateFilm.arg.characters" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateFilm.arg.characters">characters</a>: [<a class="input_object" href="input_object.FilmcharactersPerson.html">FilmcharactersPerson</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateFilm.arg.planetsIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateFilm.arg.planetsIds">planetsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateFilm.arg.planets" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateFilm.arg.planets">planets</a>: [<a class="input_object" href="input_object.FilmplanetsPlanet.html">FilmplanetsPlanet</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateFilm.arg.speciesIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateFilm.arg.speciesIds">speciesIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateFilm.arg.species" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateFilm.arg.species">species</a>: [<a class="input_object" href="input_object.FilmspeciesSpecies.html">FilmspeciesSpecies</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateFilm.arg.starshipsIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateFilm.arg.starshipsIds">starshipsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateFilm.arg.starships" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateFilm.arg.starships">starships</a>: [<a class="input_object" href="input_object.FilmstarshipsStarship.html">FilmstarshipsStarship</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateFilm.arg.vehiclesIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateFilm.arg.vehiclesIds">vehiclesIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateFilm.arg.vehicles" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateFilm.arg.vehicles">vehicles</a>: [<a class="input_object" href="input_object.FilmvehiclesVehicle.html">FilmvehiclesVehicle</a>!]</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.updatePerson" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updatePerson">updatePerson</a>(<span class=""><a class="arg" href="#field.updatePerson.arg.birthYear">birthYear</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.updatePerson.arg.eyeColor">eyeColor</a>: [<a class="enum" href="enum.PERSON_EYE_COLOR.html">PERSON_EYE_COLOR</a>!]</span>, <span class=""><a class="arg" href="#field.updatePerson.arg.gender">gender</a>: <a class="enum" href="enum.PERSON_GENDER.html">PERSON_GENDER</a></span>, <span class=""><a class="arg" href="#field.updatePerson.arg.hairColor">hairColor</a>: [<a class="enum" href="enum.PERSON_HAIR_COLOR.html">PERSON_HAIR_COLOR</a>!]</span>, <span class=""><a class="arg" href="#field.updatePerson.arg.height">height</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.updatePerson.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</span>, <span class=""><a class="arg" href="#field.updatePerson.arg.isPublished">isPublished</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></span>, <span class=""><a class="arg" href="#field.updatePerson.arg.mass">mass</a>: <a class="scalar" href="scalar.Float.html">Float</a></span>, <span class=""><a class="arg" href="#field.updatePerson.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.updatePerson.arg.skinColor">skinColor</a>: [<a class="enum" href="enum.PERSON_SKIN_COLOR.html">PERSON_SKIN_COLOR</a>!]</span>, <span class=""><a class="arg" href="#field.updatePerson.arg.homeworldId">homeworldId</a>: <a class="scalar" href="scalar.ID.html">ID</a></span>, <span class=""><a class="arg" href="#field.updatePerson.arg.homeworld">homeworld</a>: <a class="input_object" href="input_object.PersonhomeworldPlanet.html">PersonhomeworldPlanet</a></span>, <span class=""><a class="arg" href="#field.updatePerson.arg.filmsIds">filmsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.updatePerson.arg.films">films</a>: [<a class="input_object" href="input_object.PersonfilmsFilm.html">PersonfilmsFilm</a>!]</span>, <span class=""><a class="arg" href="#field.updatePerson.arg.speciesIds">speciesIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.updatePerson.arg.species">species</a>: [<a class="input_object" href="input_object.PersonspeciesSpecies.html">PersonspeciesSpecies</a>!]</span>, <span class=""><a class="arg" href="#field.updatePerson.arg.starshipsIds">starshipsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.updatePerson.arg.starships">starships</a>: [<a class="input_object" href="input_object.PersonstarshipsStarship.html">PersonstarshipsStarship</a>!]</span>, <span class=""><a class="arg" href="#field.updatePerson.arg.vehiclesIds">vehiclesIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.updatePerson.arg.vehicles">vehicles</a>: [<a class="input_object" href="input_object.PersonvehiclesVehicle.html">PersonvehiclesVehicle</a>!]): <a class="object" href="object.Person.html">Person</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.updatePerson.args">
+            <h4><a href="#field.updatePerson.args">Args</a></h4>
+            
+            <div id="field.updatePerson.arg.birthYear" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePerson.arg.birthYear">birthYear</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The birth year of the person, using the in-universe standard of BBY or ABY - Before the Battle of Yavin or After the Battle of Yavin. The Battle of Yavin is a battle that occurs at the end of Star Wars episode IV: A New Hope.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updatePerson.arg.eyeColor" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePerson.arg.eyeColor">eyeColor</a>: [<a class="enum" href="enum.PERSON_EYE_COLOR.html">PERSON_EYE_COLOR</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The eye color of this person. Will be &quot;UNKNOWN&quot; if not known or null if the person does not have an eye.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updatePerson.arg.gender" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePerson.arg.gender">gender</a>: <a class="enum" href="enum.PERSON_GENDER.html">PERSON_GENDER</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The gender of this person. Will be &quot;UNKNOWN&quot; if not known or null if the person does not have a gender.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updatePerson.arg.hairColor" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePerson.arg.hairColor">hairColor</a>: [<a class="enum" href="enum.PERSON_HAIR_COLOR.html">PERSON_HAIR_COLOR</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The hair color of this person. Will be &quot;UNKNOWN&quot; if not known or null if the person does not have hair.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updatePerson.arg.height" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePerson.arg.height">height</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The height of the person in centimeters.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updatePerson.arg.id" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePerson.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updatePerson.arg.isPublished" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePerson.arg.isPublished">isPublished</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>indicates if the record is published</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updatePerson.arg.mass" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePerson.arg.mass">mass</a>: <a class="scalar" href="scalar.Float.html">Float</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The mass of the person in kilograms.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updatePerson.arg.name" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePerson.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The name of this person.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updatePerson.arg.skinColor" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePerson.arg.skinColor">skinColor</a>: [<a class="enum" href="enum.PERSON_SKIN_COLOR.html">PERSON_SKIN_COLOR</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The skin color of this person.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updatePerson.arg.homeworldId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePerson.arg.homeworldId">homeworldId</a>: <a class="scalar" href="scalar.ID.html">ID</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updatePerson.arg.homeworld" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePerson.arg.homeworld">homeworld</a>: <a class="input_object" href="input_object.PersonhomeworldPlanet.html">PersonhomeworldPlanet</a></code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updatePerson.arg.filmsIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePerson.arg.filmsIds">filmsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updatePerson.arg.films" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePerson.arg.films">films</a>: [<a class="input_object" href="input_object.PersonfilmsFilm.html">PersonfilmsFilm</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updatePerson.arg.speciesIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePerson.arg.speciesIds">speciesIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updatePerson.arg.species" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePerson.arg.species">species</a>: [<a class="input_object" href="input_object.PersonspeciesSpecies.html">PersonspeciesSpecies</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updatePerson.arg.starshipsIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePerson.arg.starshipsIds">starshipsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updatePerson.arg.starships" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePerson.arg.starships">starships</a>: [<a class="input_object" href="input_object.PersonstarshipsStarship.html">PersonstarshipsStarship</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updatePerson.arg.vehiclesIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePerson.arg.vehiclesIds">vehiclesIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updatePerson.arg.vehicles" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePerson.arg.vehicles">vehicles</a>: [<a class="input_object" href="input_object.PersonvehiclesVehicle.html">PersonvehiclesVehicle</a>!]</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.updatePlanet" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updatePlanet">updatePlanet</a>(<span class=""><a class="arg" href="#field.updatePlanet.arg.climate">climate</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</span>, <span class=""><a class="arg" href="#field.updatePlanet.arg.diameter">diameter</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.updatePlanet.arg.gravity">gravity</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.updatePlanet.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</span>, <span class=""><a class="arg" href="#field.updatePlanet.arg.isPublished">isPublished</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></span>, <span class=""><a class="arg" href="#field.updatePlanet.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.updatePlanet.arg.orbitalPeriod">orbitalPeriod</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.updatePlanet.arg.population">population</a>: <a class="scalar" href="scalar.Float.html">Float</a></span>, <span class=""><a class="arg" href="#field.updatePlanet.arg.rotationPeriod">rotationPeriod</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.updatePlanet.arg.surfaceWater">surfaceWater</a>: <a class="scalar" href="scalar.Float.html">Float</a></span>, <span class=""><a class="arg" href="#field.updatePlanet.arg.terrain">terrain</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</span>, <span class=""><a class="arg" href="#field.updatePlanet.arg.filmsIds">filmsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.updatePlanet.arg.films">films</a>: [<a class="input_object" href="input_object.PlanetfilmsFilm.html">PlanetfilmsFilm</a>!]</span>, <span class=""><a class="arg" href="#field.updatePlanet.arg.residentsIds">residentsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.updatePlanet.arg.residents">residents</a>: [<a class="input_object" href="input_object.PlanetresidentsPerson.html">PlanetresidentsPerson</a>!]): <a class="object" href="object.Planet.html">Planet</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.updatePlanet.args">
+            <h4><a href="#field.updatePlanet.args">Args</a></h4>
+            
+            <div id="field.updatePlanet.arg.climate" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePlanet.arg.climate">climate</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The climate of this planet.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updatePlanet.arg.diameter" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePlanet.arg.diameter">diameter</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The diameter of this planet in kilometers.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updatePlanet.arg.gravity" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePlanet.arg.gravity">gravity</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>A number denoting the gravity of this planet, where &quot;1&quot; is normal or 1 standard G. &quot;2&quot; is twice or 2 standard Gs. &quot;0.5&quot; is half or 0.5 standard Gs.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updatePlanet.arg.id" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePlanet.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updatePlanet.arg.isPublished" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePlanet.arg.isPublished">isPublished</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>indicates if the record is published</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updatePlanet.arg.name" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePlanet.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The name of the planet</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updatePlanet.arg.orbitalPeriod" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePlanet.arg.orbitalPeriod">orbitalPeriod</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The number of standard days it takes for this planet to complete a single orbit of its local star.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updatePlanet.arg.population" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePlanet.arg.population">population</a>: <a class="scalar" href="scalar.Float.html">Float</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The average population of sentient beings inhabiting this planet.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updatePlanet.arg.rotationPeriod" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePlanet.arg.rotationPeriod">rotationPeriod</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The number of standard hours it takes for this planet to complete a single rotation on its axis.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updatePlanet.arg.surfaceWater" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePlanet.arg.surfaceWater">surfaceWater</a>: <a class="scalar" href="scalar.Float.html">Float</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The percentage of the planet surface that is naturally occurring water or bodies of water.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updatePlanet.arg.terrain" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePlanet.arg.terrain">terrain</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The terrain of this planet.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updatePlanet.arg.filmsIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePlanet.arg.filmsIds">filmsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updatePlanet.arg.films" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePlanet.arg.films">films</a>: [<a class="input_object" href="input_object.PlanetfilmsFilm.html">PlanetfilmsFilm</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updatePlanet.arg.residentsIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePlanet.arg.residentsIds">residentsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updatePlanet.arg.residents" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updatePlanet.arg.residents">residents</a>: [<a class="input_object" href="input_object.PlanetresidentsPerson.html">PlanetresidentsPerson</a>!]</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.updateSpecies" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updateSpecies">updateSpecies</a>(<span class=""><a class="arg" href="#field.updateSpecies.arg.averageHeight">averageHeight</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.updateSpecies.arg.averageLifespan">averageLifespan</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.updateSpecies.arg.classification">classification</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.updateSpecies.arg.designation">designation</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.updateSpecies.arg.eyeColor">eyeColor</a>: [<a class="enum" href="enum.SPECIES_EYE_COLOR.html">SPECIES_EYE_COLOR</a>!]</span>, <span class=""><a class="arg" href="#field.updateSpecies.arg.hairColor">hairColor</a>: [<a class="enum" href="enum.SPECIES_HAIR_COLOR.html">SPECIES_HAIR_COLOR</a>!]</span>, <span class=""><a class="arg" href="#field.updateSpecies.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</span>, <span class=""><a class="arg" href="#field.updateSpecies.arg.isPublished">isPublished</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></span>, <span class=""><a class="arg" href="#field.updateSpecies.arg.language">language</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.updateSpecies.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.updateSpecies.arg.skinColor">skinColor</a>: [<a class="enum" href="enum.SPECIES_SKIN_COLOR.html">SPECIES_SKIN_COLOR</a>!]</span>, <span class=""><a class="arg" href="#field.updateSpecies.arg.filmsIds">filmsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.updateSpecies.arg.films">films</a>: [<a class="input_object" href="input_object.SpeciesfilmsFilm.html">SpeciesfilmsFilm</a>!]</span>, <span class=""><a class="arg" href="#field.updateSpecies.arg.peopleIds">peopleIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.updateSpecies.arg.people">people</a>: [<a class="input_object" href="input_object.SpeciespeoplePerson.html">SpeciespeoplePerson</a>!]): <a class="object" href="object.Species.html">Species</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.updateSpecies.args">
+            <h4><a href="#field.updateSpecies.args">Args</a></h4>
+            
+            <div id="field.updateSpecies.arg.averageHeight" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateSpecies.arg.averageHeight">averageHeight</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The average height of this species in centimeters.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateSpecies.arg.averageLifespan" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateSpecies.arg.averageLifespan">averageLifespan</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The average lifespan of this species in years.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateSpecies.arg.classification" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateSpecies.arg.classification">classification</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The classification of this species, such as &quot;mammal&quot; or &quot;reptile&quot;.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateSpecies.arg.designation" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateSpecies.arg.designation">designation</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The designation of this species, such as &quot;sentient&quot;.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateSpecies.arg.eyeColor" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateSpecies.arg.eyeColor">eyeColor</a>: [<a class="enum" href="enum.SPECIES_EYE_COLOR.html">SPECIES_EYE_COLOR</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The eye colors for this species, &quot;UNKNOWN&quot; if not known, null if this species does not typically have eyes.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateSpecies.arg.hairColor" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateSpecies.arg.hairColor">hairColor</a>: [<a class="enum" href="enum.SPECIES_HAIR_COLOR.html">SPECIES_HAIR_COLOR</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The hair colors for this species, &quot;UNKNOWN&quot; if not known, null if this species does not typically have hairs.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateSpecies.arg.id" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateSpecies.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateSpecies.arg.isPublished" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateSpecies.arg.isPublished">isPublished</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>indicates if the record is published</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateSpecies.arg.language" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateSpecies.arg.language">language</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The language commonly spoken by this species.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateSpecies.arg.name" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateSpecies.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The name of this species.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateSpecies.arg.skinColor" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateSpecies.arg.skinColor">skinColor</a>: [<a class="enum" href="enum.SPECIES_SKIN_COLOR.html">SPECIES_SKIN_COLOR</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The skin colors for this species, &quot;UNKNOWN&quot; if not known, null if this species does not typically have a skin.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateSpecies.arg.filmsIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateSpecies.arg.filmsIds">filmsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateSpecies.arg.films" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateSpecies.arg.films">films</a>: [<a class="input_object" href="input_object.SpeciesfilmsFilm.html">SpeciesfilmsFilm</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateSpecies.arg.peopleIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateSpecies.arg.peopleIds">peopleIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateSpecies.arg.people" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateSpecies.arg.people">people</a>: [<a class="input_object" href="input_object.SpeciespeoplePerson.html">SpeciespeoplePerson</a>!]</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.updateStarship" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updateStarship">updateStarship</a>(<span class=""><a class="arg" href="#field.updateStarship.arg.cargoCapacity">cargoCapacity</a>: <a class="scalar" href="scalar.Float.html">Float</a></span>, <span class=""><a class="arg" href="#field.updateStarship.arg.class">class</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.updateStarship.arg.consumables">consumables</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.updateStarship.arg.costInCredits">costInCredits</a>: <a class="scalar" href="scalar.Float.html">Float</a></span>, <span class=""><a class="arg" href="#field.updateStarship.arg.crew">crew</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.updateStarship.arg.hyperdriveRating">hyperdriveRating</a>: <a class="scalar" href="scalar.Float.html">Float</a></span>, <span class=""><a class="arg" href="#field.updateStarship.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</span>, <span class=""><a class="arg" href="#field.updateStarship.arg.isPublished">isPublished</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></span>, <span class=""><a class="arg" href="#field.updateStarship.arg.length">length</a>: <a class="scalar" href="scalar.Float.html">Float</a></span>, <span class=""><a class="arg" href="#field.updateStarship.arg.manufacturer">manufacturer</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</span>, <span class=""><a class="arg" href="#field.updateStarship.arg.maxAtmospheringSpeed">maxAtmospheringSpeed</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.updateStarship.arg.mglt">mglt</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.updateStarship.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.updateStarship.arg.passengers">passengers</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.updateStarship.arg.filmsIds">filmsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.updateStarship.arg.films">films</a>: [<a class="input_object" href="input_object.StarshipfilmsFilm.html">StarshipfilmsFilm</a>!]</span>, <span class=""><a class="arg" href="#field.updateStarship.arg.pilotsIds">pilotsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.updateStarship.arg.pilots">pilots</a>: [<a class="input_object" href="input_object.StarshippilotsPerson.html">StarshippilotsPerson</a>!]): <a class="object" href="object.Starship.html">Starship</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.updateStarship.args">
+            <h4><a href="#field.updateStarship.args">Args</a></h4>
+            
+            <div id="field.updateStarship.arg.cargoCapacity" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateStarship.arg.cargoCapacity">cargoCapacity</a>: <a class="scalar" href="scalar.Float.html">Float</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The maximum number of kilograms that this starship can transport.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateStarship.arg.class" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateStarship.arg.class">class</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The class of this starship, such as &quot;Starfighter&quot; or &quot;Deep Space Mobile Battlestation&quot;</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateStarship.arg.consumables" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateStarship.arg.consumables">consumables</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The maximum length of time that this starship can provide consumables for its entire crew without having to resupply.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateStarship.arg.costInCredits" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateStarship.arg.costInCredits">costInCredits</a>: <a class="scalar" href="scalar.Float.html">Float</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The cost of this starship new, in galactic credits.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateStarship.arg.crew" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateStarship.arg.crew">crew</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The number of personnel needed to run or pilot this starship.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateStarship.arg.hyperdriveRating" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateStarship.arg.hyperdriveRating">hyperdriveRating</a>: <a class="scalar" href="scalar.Float.html">Float</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The class of this starships hyperdrive.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateStarship.arg.id" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateStarship.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateStarship.arg.isPublished" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateStarship.arg.isPublished">isPublished</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>indicates if the record is published</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateStarship.arg.length" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateStarship.arg.length">length</a>: <a class="scalar" href="scalar.Float.html">Float</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The length of this starship in meters.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateStarship.arg.manufacturer" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateStarship.arg.manufacturer">manufacturer</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The manufacturer of this starship.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateStarship.arg.maxAtmospheringSpeed" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateStarship.arg.maxAtmospheringSpeed">maxAtmospheringSpeed</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The maximum speed of this starship in the atmosphere. null if this starship is incapable of atmospheric flight.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateStarship.arg.mglt" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateStarship.arg.mglt">mglt</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The Maximum number of Megalights this starship can travel in a standard hour. A &quot;Megalight&quot; is a standard unit of distance and has never been defined before within the Star Wars universe.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateStarship.arg.name" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateStarship.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The name of this starship. The common name, such as &quot;Death Star&quot;.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateStarship.arg.passengers" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateStarship.arg.passengers">passengers</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The number of non-essential people this starship can transport.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateStarship.arg.filmsIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateStarship.arg.filmsIds">filmsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateStarship.arg.films" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateStarship.arg.films">films</a>: [<a class="input_object" href="input_object.StarshipfilmsFilm.html">StarshipfilmsFilm</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateStarship.arg.pilotsIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateStarship.arg.pilotsIds">pilotsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateStarship.arg.pilots" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateStarship.arg.pilots">pilots</a>: [<a class="input_object" href="input_object.StarshippilotsPerson.html">StarshippilotsPerson</a>!]</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.updateVehicle" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updateVehicle">updateVehicle</a>(<span class=""><a class="arg" href="#field.updateVehicle.arg.cargoCapacity">cargoCapacity</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.updateVehicle.arg.class">class</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.updateVehicle.arg.consumables">consumables</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.updateVehicle.arg.costInCredits">costInCredits</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.updateVehicle.arg.crew">crew</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.updateVehicle.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</span>, <span class=""><a class="arg" href="#field.updateVehicle.arg.isPublished">isPublished</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></span>, <span class=""><a class="arg" href="#field.updateVehicle.arg.length">length</a>: <a class="scalar" href="scalar.Float.html">Float</a></span>, <span class=""><a class="arg" href="#field.updateVehicle.arg.manufacturer">manufacturer</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</span>, <span class=""><a class="arg" href="#field.updateVehicle.arg.maxAtmospheringSpeed">maxAtmospheringSpeed</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.updateVehicle.arg.model">model</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.updateVehicle.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a></span>, <span class=""><a class="arg" href="#field.updateVehicle.arg.passengers">passengers</a>: <a class="scalar" href="scalar.Int.html">Int</a></span>, <span class=""><a class="arg" href="#field.updateVehicle.arg.filmsIds">filmsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.updateVehicle.arg.films">films</a>: [<a class="input_object" href="input_object.VehiclefilmsFilm.html">VehiclefilmsFilm</a>!]</span>, <span class=""><a class="arg" href="#field.updateVehicle.arg.pilotsIds">pilotsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</span>, <span class=""><a class="arg" href="#field.updateVehicle.arg.pilots">pilots</a>: [<a class="input_object" href="input_object.VehiclepilotsPerson.html">VehiclepilotsPerson</a>!]): <a class="object" href="object.Vehicle.html">Vehicle</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.updateVehicle.args">
+            <h4><a href="#field.updateVehicle.args">Args</a></h4>
+            
+            <div id="field.updateVehicle.arg.cargoCapacity" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateVehicle.arg.cargoCapacity">cargoCapacity</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The maximum number of kilograms that this vehicle can transport.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateVehicle.arg.class" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateVehicle.arg.class">class</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The class of this vehicle, such as &quot;Wheeled&quot; or &quot;Repulsorcraft&quot;.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateVehicle.arg.consumables" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateVehicle.arg.consumables">consumables</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The maximum length of time that this vehicle can provide consumables for its entire crew without having to resupply.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateVehicle.arg.costInCredits" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateVehicle.arg.costInCredits">costInCredits</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The cost of this vehicle new, in Galactic Credits.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateVehicle.arg.crew" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateVehicle.arg.crew">crew</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The number of personnel needed to run or pilot this vehicle.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateVehicle.arg.id" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateVehicle.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateVehicle.arg.isPublished" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateVehicle.arg.isPublished">isPublished</a>: <a class="scalar" href="scalar.Boolean.html">Boolean</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>indicates if the record is published</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateVehicle.arg.length" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateVehicle.arg.length">length</a>: <a class="scalar" href="scalar.Float.html">Float</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The length of this vehicle in meters.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateVehicle.arg.manufacturer" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateVehicle.arg.manufacturer">manufacturer</a>: [<a class="scalar" href="scalar.String.html">String</a>!]</code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The manufacturer of this vehicle.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateVehicle.arg.maxAtmospheringSpeed" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateVehicle.arg.maxAtmospheringSpeed">maxAtmospheringSpeed</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The maximum speed of this vehicle in the atmosphere.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateVehicle.arg.model" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateVehicle.arg.model">model</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The model or official name of this vehicle. Such as &quot;All-Terrain Attack Transport&quot;.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateVehicle.arg.name" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateVehicle.arg.name">name</a>: <a class="scalar" href="scalar.String.html">String</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The name of this vehicle. The common name, such as &quot;Sand Crawler&quot; or &quot;Speeder bike&quot;.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateVehicle.arg.passengers" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateVehicle.arg.passengers">passengers</a>: <a class="scalar" href="scalar.Int.html">Int</a></code>
+                </h5>
+                
+                <div class="docblock">
+                    <p>The number of non-essential people this vehicle can transport.</p>
+
+                </div>
+                
+                </div>
+            
+            <div id="field.updateVehicle.arg.filmsIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateVehicle.arg.filmsIds">filmsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateVehicle.arg.films" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateVehicle.arg.films">films</a>: [<a class="input_object" href="input_object.VehiclefilmsFilm.html">VehiclefilmsFilm</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateVehicle.arg.pilotsIds" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateVehicle.arg.pilotsIds">pilotsIds</a>: [<a class="scalar" href="scalar.ID.html">ID</a>!]</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateVehicle.arg.pilots" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateVehicle.arg.pilots">pilots</a>: [<a class="input_object" href="input_object.VehiclepilotsPerson.html">VehiclepilotsPerson</a>!]</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.updateOrCreateAsset" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updateOrCreateAsset">updateOrCreateAsset</a>(<span class=""><a class="arg" href="#field.updateOrCreateAsset.arg.update">update</a>: <a class="input_object" href="input_object.UpdateAsset.html">UpdateAsset</a>!</span>, <span class=""><a class="arg" href="#field.updateOrCreateAsset.arg.create">create</a>: <a class="input_object" href="input_object.CreateAsset.html">CreateAsset</a>!): <a class="object" href="object.Asset.html">Asset</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.updateOrCreateAsset.args">
+            <h4><a href="#field.updateOrCreateAsset.args">Args</a></h4>
+            
+            <div id="field.updateOrCreateAsset.arg.update" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateOrCreateAsset.arg.update">update</a>: <a class="input_object" href="input_object.UpdateAsset.html">UpdateAsset</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateOrCreateAsset.arg.create" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateOrCreateAsset.arg.create">create</a>: <a class="input_object" href="input_object.CreateAsset.html">CreateAsset</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.updateOrCreateFilm" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updateOrCreateFilm">updateOrCreateFilm</a>(<span class=""><a class="arg" href="#field.updateOrCreateFilm.arg.update">update</a>: <a class="input_object" href="input_object.UpdateFilm.html">UpdateFilm</a>!</span>, <span class=""><a class="arg" href="#field.updateOrCreateFilm.arg.create">create</a>: <a class="input_object" href="input_object.CreateFilm.html">CreateFilm</a>!): <a class="object" href="object.Film.html">Film</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.updateOrCreateFilm.args">
+            <h4><a href="#field.updateOrCreateFilm.args">Args</a></h4>
+            
+            <div id="field.updateOrCreateFilm.arg.update" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateOrCreateFilm.arg.update">update</a>: <a class="input_object" href="input_object.UpdateFilm.html">UpdateFilm</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateOrCreateFilm.arg.create" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateOrCreateFilm.arg.create">create</a>: <a class="input_object" href="input_object.CreateFilm.html">CreateFilm</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.updateOrCreatePerson" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updateOrCreatePerson">updateOrCreatePerson</a>(<span class=""><a class="arg" href="#field.updateOrCreatePerson.arg.update">update</a>: <a class="input_object" href="input_object.UpdatePerson.html">UpdatePerson</a>!</span>, <span class=""><a class="arg" href="#field.updateOrCreatePerson.arg.create">create</a>: <a class="input_object" href="input_object.CreatePerson.html">CreatePerson</a>!): <a class="object" href="object.Person.html">Person</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.updateOrCreatePerson.args">
+            <h4><a href="#field.updateOrCreatePerson.args">Args</a></h4>
+            
+            <div id="field.updateOrCreatePerson.arg.update" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateOrCreatePerson.arg.update">update</a>: <a class="input_object" href="input_object.UpdatePerson.html">UpdatePerson</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateOrCreatePerson.arg.create" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateOrCreatePerson.arg.create">create</a>: <a class="input_object" href="input_object.CreatePerson.html">CreatePerson</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.updateOrCreatePlanet" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updateOrCreatePlanet">updateOrCreatePlanet</a>(<span class=""><a class="arg" href="#field.updateOrCreatePlanet.arg.update">update</a>: <a class="input_object" href="input_object.UpdatePlanet.html">UpdatePlanet</a>!</span>, <span class=""><a class="arg" href="#field.updateOrCreatePlanet.arg.create">create</a>: <a class="input_object" href="input_object.CreatePlanet.html">CreatePlanet</a>!): <a class="object" href="object.Planet.html">Planet</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.updateOrCreatePlanet.args">
+            <h4><a href="#field.updateOrCreatePlanet.args">Args</a></h4>
+            
+            <div id="field.updateOrCreatePlanet.arg.update" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateOrCreatePlanet.arg.update">update</a>: <a class="input_object" href="input_object.UpdatePlanet.html">UpdatePlanet</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateOrCreatePlanet.arg.create" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateOrCreatePlanet.arg.create">create</a>: <a class="input_object" href="input_object.CreatePlanet.html">CreatePlanet</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.updateOrCreateSpecies" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updateOrCreateSpecies">updateOrCreateSpecies</a>(<span class=""><a class="arg" href="#field.updateOrCreateSpecies.arg.update">update</a>: <a class="input_object" href="input_object.UpdateSpecies.html">UpdateSpecies</a>!</span>, <span class=""><a class="arg" href="#field.updateOrCreateSpecies.arg.create">create</a>: <a class="input_object" href="input_object.CreateSpecies.html">CreateSpecies</a>!): <a class="object" href="object.Species.html">Species</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.updateOrCreateSpecies.args">
+            <h4><a href="#field.updateOrCreateSpecies.args">Args</a></h4>
+            
+            <div id="field.updateOrCreateSpecies.arg.update" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateOrCreateSpecies.arg.update">update</a>: <a class="input_object" href="input_object.UpdateSpecies.html">UpdateSpecies</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateOrCreateSpecies.arg.create" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateOrCreateSpecies.arg.create">create</a>: <a class="input_object" href="input_object.CreateSpecies.html">CreateSpecies</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.updateOrCreateStarship" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updateOrCreateStarship">updateOrCreateStarship</a>(<span class=""><a class="arg" href="#field.updateOrCreateStarship.arg.update">update</a>: <a class="input_object" href="input_object.UpdateStarship.html">UpdateStarship</a>!</span>, <span class=""><a class="arg" href="#field.updateOrCreateStarship.arg.create">create</a>: <a class="input_object" href="input_object.CreateStarship.html">CreateStarship</a>!): <a class="object" href="object.Starship.html">Starship</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.updateOrCreateStarship.args">
+            <h4><a href="#field.updateOrCreateStarship.args">Args</a></h4>
+            
+            <div id="field.updateOrCreateStarship.arg.update" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateOrCreateStarship.arg.update">update</a>: <a class="input_object" href="input_object.UpdateStarship.html">UpdateStarship</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateOrCreateStarship.arg.create" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateOrCreateStarship.arg.create">create</a>: <a class="input_object" href="input_object.CreateStarship.html">CreateStarship</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.updateOrCreateVehicle" class="field ">
+    <h3>
+        <code><a class="field" href="#field.updateOrCreateVehicle">updateOrCreateVehicle</a>(<span class=""><a class="arg" href="#field.updateOrCreateVehicle.arg.update">update</a>: <a class="input_object" href="input_object.UpdateVehicle.html">UpdateVehicle</a>!</span>, <span class=""><a class="arg" href="#field.updateOrCreateVehicle.arg.create">create</a>: <a class="input_object" href="input_object.CreateVehicle.html">CreateVehicle</a>!): <a class="object" href="object.Vehicle.html">Vehicle</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.updateOrCreateVehicle.args">
+            <h4><a href="#field.updateOrCreateVehicle.args">Args</a></h4>
+            
+            <div id="field.updateOrCreateVehicle.arg.update" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateOrCreateVehicle.arg.update">update</a>: <a class="input_object" href="input_object.UpdateVehicle.html">UpdateVehicle</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.updateOrCreateVehicle.arg.create" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.updateOrCreateVehicle.arg.create">create</a>: <a class="input_object" href="input_object.CreateVehicle.html">CreateVehicle</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.deleteAsset" class="field ">
+    <h3>
+        <code><a class="field" href="#field.deleteAsset">deleteAsset</a>(<span class=""><a class="arg" href="#field.deleteAsset.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!): <a class="object" href="object.Asset.html">Asset</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.deleteAsset.args">
+            <h4><a href="#field.deleteAsset.args">Args</a></h4>
+            
+            <div id="field.deleteAsset.arg.id" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.deleteAsset.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.deleteFilm" class="field ">
+    <h3>
+        <code><a class="field" href="#field.deleteFilm">deleteFilm</a>(<span class=""><a class="arg" href="#field.deleteFilm.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!): <a class="object" href="object.Film.html">Film</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.deleteFilm.args">
+            <h4><a href="#field.deleteFilm.args">Args</a></h4>
+            
+            <div id="field.deleteFilm.arg.id" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.deleteFilm.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.deletePerson" class="field ">
+    <h3>
+        <code><a class="field" href="#field.deletePerson">deletePerson</a>(<span class=""><a class="arg" href="#field.deletePerson.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!): <a class="object" href="object.Person.html">Person</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.deletePerson.args">
+            <h4><a href="#field.deletePerson.args">Args</a></h4>
+            
+            <div id="field.deletePerson.arg.id" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.deletePerson.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.deletePlanet" class="field ">
+    <h3>
+        <code><a class="field" href="#field.deletePlanet">deletePlanet</a>(<span class=""><a class="arg" href="#field.deletePlanet.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!): <a class="object" href="object.Planet.html">Planet</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.deletePlanet.args">
+            <h4><a href="#field.deletePlanet.args">Args</a></h4>
+            
+            <div id="field.deletePlanet.arg.id" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.deletePlanet.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.deleteSpecies" class="field ">
+    <h3>
+        <code><a class="field" href="#field.deleteSpecies">deleteSpecies</a>(<span class=""><a class="arg" href="#field.deleteSpecies.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!): <a class="object" href="object.Species.html">Species</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.deleteSpecies.args">
+            <h4><a href="#field.deleteSpecies.args">Args</a></h4>
+            
+            <div id="field.deleteSpecies.arg.id" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.deleteSpecies.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.deleteStarship" class="field ">
+    <h3>
+        <code><a class="field" href="#field.deleteStarship">deleteStarship</a>(<span class=""><a class="arg" href="#field.deleteStarship.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!): <a class="object" href="object.Starship.html">Starship</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.deleteStarship.args">
+            <h4><a href="#field.deleteStarship.args">Args</a></h4>
+            
+            <div id="field.deleteStarship.arg.id" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.deleteStarship.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.deleteVehicle" class="field ">
+    <h3>
+        <code><a class="field" href="#field.deleteVehicle">deleteVehicle</a>(<span class=""><a class="arg" href="#field.deleteVehicle.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!): <a class="object" href="object.Vehicle.html">Vehicle</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.deleteVehicle.args">
+            <h4><a href="#field.deleteVehicle.args">Args</a></h4>
+            
+            <div id="field.deleteVehicle.arg.id" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.deleteVehicle.arg.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.addToFilmPlanets" class="field ">
+    <h3>
+        <code><a class="field" href="#field.addToFilmPlanets">addToFilmPlanets</a>(<span class=""><a class="arg" href="#field.addToFilmPlanets.arg.planetsPlanetId">planetsPlanetId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</span>, <span class=""><a class="arg" href="#field.addToFilmPlanets.arg.filmsFilmId">filmsFilmId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!): <a class="object" href="object.AddToFilmPlanetsPayload.html">AddToFilmPlanetsPayload</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.addToFilmPlanets.args">
+            <h4><a href="#field.addToFilmPlanets.args">Args</a></h4>
+            
+            <div id="field.addToFilmPlanets.arg.planetsPlanetId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.addToFilmPlanets.arg.planetsPlanetId">planetsPlanetId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.addToFilmPlanets.arg.filmsFilmId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.addToFilmPlanets.arg.filmsFilmId">filmsFilmId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.addToFilmSpecies" class="field ">
+    <h3>
+        <code><a class="field" href="#field.addToFilmSpecies">addToFilmSpecies</a>(<span class=""><a class="arg" href="#field.addToFilmSpecies.arg.speciesSpeciesId">speciesSpeciesId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</span>, <span class=""><a class="arg" href="#field.addToFilmSpecies.arg.filmsFilmId">filmsFilmId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!): <a class="object" href="object.AddToFilmSpeciesPayload.html">AddToFilmSpeciesPayload</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.addToFilmSpecies.args">
+            <h4><a href="#field.addToFilmSpecies.args">Args</a></h4>
+            
+            <div id="field.addToFilmSpecies.arg.speciesSpeciesId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.addToFilmSpecies.arg.speciesSpeciesId">speciesSpeciesId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.addToFilmSpecies.arg.filmsFilmId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.addToFilmSpecies.arg.filmsFilmId">filmsFilmId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.addToFilmStarships" class="field ">
+    <h3>
+        <code><a class="field" href="#field.addToFilmStarships">addToFilmStarships</a>(<span class=""><a class="arg" href="#field.addToFilmStarships.arg.starshipsStarshipId">starshipsStarshipId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</span>, <span class=""><a class="arg" href="#field.addToFilmStarships.arg.filmsFilmId">filmsFilmId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!): <a class="object" href="object.AddToFilmStarshipsPayload.html">AddToFilmStarshipsPayload</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.addToFilmStarships.args">
+            <h4><a href="#field.addToFilmStarships.args">Args</a></h4>
+            
+            <div id="field.addToFilmStarships.arg.starshipsStarshipId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.addToFilmStarships.arg.starshipsStarshipId">starshipsStarshipId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.addToFilmStarships.arg.filmsFilmId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.addToFilmStarships.arg.filmsFilmId">filmsFilmId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.addToFilmVehicles" class="field ">
+    <h3>
+        <code><a class="field" href="#field.addToFilmVehicles">addToFilmVehicles</a>(<span class=""><a class="arg" href="#field.addToFilmVehicles.arg.vehiclesVehicleId">vehiclesVehicleId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</span>, <span class=""><a class="arg" href="#field.addToFilmVehicles.arg.filmsFilmId">filmsFilmId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!): <a class="object" href="object.AddToFilmVehiclesPayload.html">AddToFilmVehiclesPayload</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.addToFilmVehicles.args">
+            <h4><a href="#field.addToFilmVehicles.args">Args</a></h4>
+            
+            <div id="field.addToFilmVehicles.arg.vehiclesVehicleId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.addToFilmVehicles.arg.vehiclesVehicleId">vehiclesVehicleId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.addToFilmVehicles.arg.filmsFilmId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.addToFilmVehicles.arg.filmsFilmId">filmsFilmId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.addToPeopleFilm" class="field ">
+    <h3>
+        <code><a class="field" href="#field.addToPeopleFilm">addToPeopleFilm</a>(<span class=""><a class="arg" href="#field.addToPeopleFilm.arg.filmsFilmId">filmsFilmId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</span>, <span class=""><a class="arg" href="#field.addToPeopleFilm.arg.charactersPersonId">charactersPersonId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!): <a class="object" href="object.AddToPeopleFilmPayload.html">AddToPeopleFilmPayload</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.addToPeopleFilm.args">
+            <h4><a href="#field.addToPeopleFilm.args">Args</a></h4>
+            
+            <div id="field.addToPeopleFilm.arg.filmsFilmId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.addToPeopleFilm.arg.filmsFilmId">filmsFilmId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.addToPeopleFilm.arg.charactersPersonId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.addToPeopleFilm.arg.charactersPersonId">charactersPersonId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.addToPeoplePlanet" class="field ">
+    <h3>
+        <code><a class="field" href="#field.addToPeoplePlanet">addToPeoplePlanet</a>(<span class=""><a class="arg" href="#field.addToPeoplePlanet.arg.homeworldPlanetId">homeworldPlanetId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</span>, <span class=""><a class="arg" href="#field.addToPeoplePlanet.arg.residentsPersonId">residentsPersonId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!): <a class="object" href="object.AddToPeoplePlanetPayload.html">AddToPeoplePlanetPayload</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.addToPeoplePlanet.args">
+            <h4><a href="#field.addToPeoplePlanet.args">Args</a></h4>
+            
+            <div id="field.addToPeoplePlanet.arg.homeworldPlanetId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.addToPeoplePlanet.arg.homeworldPlanetId">homeworldPlanetId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.addToPeoplePlanet.arg.residentsPersonId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.addToPeoplePlanet.arg.residentsPersonId">residentsPersonId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.addToPeopleSpecies" class="field ">
+    <h3>
+        <code><a class="field" href="#field.addToPeopleSpecies">addToPeopleSpecies</a>(<span class=""><a class="arg" href="#field.addToPeopleSpecies.arg.speciesSpeciesId">speciesSpeciesId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</span>, <span class=""><a class="arg" href="#field.addToPeopleSpecies.arg.peoplePersonId">peoplePersonId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!): <a class="object" href="object.AddToPeopleSpeciesPayload.html">AddToPeopleSpeciesPayload</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.addToPeopleSpecies.args">
+            <h4><a href="#field.addToPeopleSpecies.args">Args</a></h4>
+            
+            <div id="field.addToPeopleSpecies.arg.speciesSpeciesId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.addToPeopleSpecies.arg.speciesSpeciesId">speciesSpeciesId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.addToPeopleSpecies.arg.peoplePersonId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.addToPeopleSpecies.arg.peoplePersonId">peoplePersonId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.addToPeopleStarships" class="field ">
+    <h3>
+        <code><a class="field" href="#field.addToPeopleStarships">addToPeopleStarships</a>(<span class=""><a class="arg" href="#field.addToPeopleStarships.arg.starshipsStarshipId">starshipsStarshipId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</span>, <span class=""><a class="arg" href="#field.addToPeopleStarships.arg.pilotsPersonId">pilotsPersonId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!): <a class="object" href="object.AddToPeopleStarshipsPayload.html">AddToPeopleStarshipsPayload</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.addToPeopleStarships.args">
+            <h4><a href="#field.addToPeopleStarships.args">Args</a></h4>
+            
+            <div id="field.addToPeopleStarships.arg.starshipsStarshipId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.addToPeopleStarships.arg.starshipsStarshipId">starshipsStarshipId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.addToPeopleStarships.arg.pilotsPersonId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.addToPeopleStarships.arg.pilotsPersonId">pilotsPersonId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.addToPeopleVehicles" class="field ">
+    <h3>
+        <code><a class="field" href="#field.addToPeopleVehicles">addToPeopleVehicles</a>(<span class=""><a class="arg" href="#field.addToPeopleVehicles.arg.vehiclesVehicleId">vehiclesVehicleId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</span>, <span class=""><a class="arg" href="#field.addToPeopleVehicles.arg.pilotsPersonId">pilotsPersonId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!): <a class="object" href="object.AddToPeopleVehiclesPayload.html">AddToPeopleVehiclesPayload</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.addToPeopleVehicles.args">
+            <h4><a href="#field.addToPeopleVehicles.args">Args</a></h4>
+            
+            <div id="field.addToPeopleVehicles.arg.vehiclesVehicleId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.addToPeopleVehicles.arg.vehiclesVehicleId">vehiclesVehicleId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.addToPeopleVehicles.arg.pilotsPersonId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.addToPeopleVehicles.arg.pilotsPersonId">pilotsPersonId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.removeFromFilmPlanets" class="field ">
+    <h3>
+        <code><a class="field" href="#field.removeFromFilmPlanets">removeFromFilmPlanets</a>(<span class=""><a class="arg" href="#field.removeFromFilmPlanets.arg.planetsPlanetId">planetsPlanetId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</span>, <span class=""><a class="arg" href="#field.removeFromFilmPlanets.arg.filmsFilmId">filmsFilmId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!): <a class="object" href="object.RemoveFromFilmPlanetsPayload.html">RemoveFromFilmPlanetsPayload</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.removeFromFilmPlanets.args">
+            <h4><a href="#field.removeFromFilmPlanets.args">Args</a></h4>
+            
+            <div id="field.removeFromFilmPlanets.arg.planetsPlanetId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.removeFromFilmPlanets.arg.planetsPlanetId">planetsPlanetId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.removeFromFilmPlanets.arg.filmsFilmId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.removeFromFilmPlanets.arg.filmsFilmId">filmsFilmId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.removeFromFilmSpecies" class="field ">
+    <h3>
+        <code><a class="field" href="#field.removeFromFilmSpecies">removeFromFilmSpecies</a>(<span class=""><a class="arg" href="#field.removeFromFilmSpecies.arg.speciesSpeciesId">speciesSpeciesId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</span>, <span class=""><a class="arg" href="#field.removeFromFilmSpecies.arg.filmsFilmId">filmsFilmId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!): <a class="object" href="object.RemoveFromFilmSpeciesPayload.html">RemoveFromFilmSpeciesPayload</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.removeFromFilmSpecies.args">
+            <h4><a href="#field.removeFromFilmSpecies.args">Args</a></h4>
+            
+            <div id="field.removeFromFilmSpecies.arg.speciesSpeciesId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.removeFromFilmSpecies.arg.speciesSpeciesId">speciesSpeciesId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.removeFromFilmSpecies.arg.filmsFilmId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.removeFromFilmSpecies.arg.filmsFilmId">filmsFilmId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.removeFromFilmStarships" class="field ">
+    <h3>
+        <code><a class="field" href="#field.removeFromFilmStarships">removeFromFilmStarships</a>(<span class=""><a class="arg" href="#field.removeFromFilmStarships.arg.starshipsStarshipId">starshipsStarshipId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</span>, <span class=""><a class="arg" href="#field.removeFromFilmStarships.arg.filmsFilmId">filmsFilmId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!): <a class="object" href="object.RemoveFromFilmStarshipsPayload.html">RemoveFromFilmStarshipsPayload</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.removeFromFilmStarships.args">
+            <h4><a href="#field.removeFromFilmStarships.args">Args</a></h4>
+            
+            <div id="field.removeFromFilmStarships.arg.starshipsStarshipId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.removeFromFilmStarships.arg.starshipsStarshipId">starshipsStarshipId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.removeFromFilmStarships.arg.filmsFilmId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.removeFromFilmStarships.arg.filmsFilmId">filmsFilmId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.removeFromFilmVehicles" class="field ">
+    <h3>
+        <code><a class="field" href="#field.removeFromFilmVehicles">removeFromFilmVehicles</a>(<span class=""><a class="arg" href="#field.removeFromFilmVehicles.arg.vehiclesVehicleId">vehiclesVehicleId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</span>, <span class=""><a class="arg" href="#field.removeFromFilmVehicles.arg.filmsFilmId">filmsFilmId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!): <a class="object" href="object.RemoveFromFilmVehiclesPayload.html">RemoveFromFilmVehiclesPayload</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.removeFromFilmVehicles.args">
+            <h4><a href="#field.removeFromFilmVehicles.args">Args</a></h4>
+            
+            <div id="field.removeFromFilmVehicles.arg.vehiclesVehicleId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.removeFromFilmVehicles.arg.vehiclesVehicleId">vehiclesVehicleId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.removeFromFilmVehicles.arg.filmsFilmId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.removeFromFilmVehicles.arg.filmsFilmId">filmsFilmId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.removeFromPeopleFilm" class="field ">
+    <h3>
+        <code><a class="field" href="#field.removeFromPeopleFilm">removeFromPeopleFilm</a>(<span class=""><a class="arg" href="#field.removeFromPeopleFilm.arg.filmsFilmId">filmsFilmId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</span>, <span class=""><a class="arg" href="#field.removeFromPeopleFilm.arg.charactersPersonId">charactersPersonId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!): <a class="object" href="object.RemoveFromPeopleFilmPayload.html">RemoveFromPeopleFilmPayload</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.removeFromPeopleFilm.args">
+            <h4><a href="#field.removeFromPeopleFilm.args">Args</a></h4>
+            
+            <div id="field.removeFromPeopleFilm.arg.filmsFilmId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.removeFromPeopleFilm.arg.filmsFilmId">filmsFilmId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.removeFromPeopleFilm.arg.charactersPersonId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.removeFromPeopleFilm.arg.charactersPersonId">charactersPersonId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.removeFromPeoplePlanet" class="field ">
+    <h3>
+        <code><a class="field" href="#field.removeFromPeoplePlanet">removeFromPeoplePlanet</a>(<span class=""><a class="arg" href="#field.removeFromPeoplePlanet.arg.homeworldPlanetId">homeworldPlanetId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</span>, <span class=""><a class="arg" href="#field.removeFromPeoplePlanet.arg.residentsPersonId">residentsPersonId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!): <a class="object" href="object.RemoveFromPeoplePlanetPayload.html">RemoveFromPeoplePlanetPayload</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.removeFromPeoplePlanet.args">
+            <h4><a href="#field.removeFromPeoplePlanet.args">Args</a></h4>
+            
+            <div id="field.removeFromPeoplePlanet.arg.homeworldPlanetId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.removeFromPeoplePlanet.arg.homeworldPlanetId">homeworldPlanetId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.removeFromPeoplePlanet.arg.residentsPersonId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.removeFromPeoplePlanet.arg.residentsPersonId">residentsPersonId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.removeFromPeopleSpecies" class="field ">
+    <h3>
+        <code><a class="field" href="#field.removeFromPeopleSpecies">removeFromPeopleSpecies</a>(<span class=""><a class="arg" href="#field.removeFromPeopleSpecies.arg.speciesSpeciesId">speciesSpeciesId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</span>, <span class=""><a class="arg" href="#field.removeFromPeopleSpecies.arg.peoplePersonId">peoplePersonId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!): <a class="object" href="object.RemoveFromPeopleSpeciesPayload.html">RemoveFromPeopleSpeciesPayload</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.removeFromPeopleSpecies.args">
+            <h4><a href="#field.removeFromPeopleSpecies.args">Args</a></h4>
+            
+            <div id="field.removeFromPeopleSpecies.arg.speciesSpeciesId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.removeFromPeopleSpecies.arg.speciesSpeciesId">speciesSpeciesId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.removeFromPeopleSpecies.arg.peoplePersonId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.removeFromPeopleSpecies.arg.peoplePersonId">peoplePersonId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.removeFromPeopleStarships" class="field ">
+    <h3>
+        <code><a class="field" href="#field.removeFromPeopleStarships">removeFromPeopleStarships</a>(<span class=""><a class="arg" href="#field.removeFromPeopleStarships.arg.starshipsStarshipId">starshipsStarshipId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</span>, <span class=""><a class="arg" href="#field.removeFromPeopleStarships.arg.pilotsPersonId">pilotsPersonId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!): <a class="object" href="object.RemoveFromPeopleStarshipsPayload.html">RemoveFromPeopleStarshipsPayload</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.removeFromPeopleStarships.args">
+            <h4><a href="#field.removeFromPeopleStarships.args">Args</a></h4>
+            
+            <div id="field.removeFromPeopleStarships.arg.starshipsStarshipId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.removeFromPeopleStarships.arg.starshipsStarshipId">starshipsStarshipId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.removeFromPeopleStarships.arg.pilotsPersonId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.removeFromPeopleStarships.arg.pilotsPersonId">pilotsPersonId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.removeFromPeopleVehicles" class="field ">
+    <h3>
+        <code><a class="field" href="#field.removeFromPeopleVehicles">removeFromPeopleVehicles</a>(<span class=""><a class="arg" href="#field.removeFromPeopleVehicles.arg.vehiclesVehicleId">vehiclesVehicleId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</span>, <span class=""><a class="arg" href="#field.removeFromPeopleVehicles.arg.pilotsPersonId">pilotsPersonId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!): <a class="object" href="object.RemoveFromPeopleVehiclesPayload.html">RemoveFromPeopleVehiclesPayload</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.removeFromPeopleVehicles.args">
+            <h4><a href="#field.removeFromPeopleVehicles.args">Args</a></h4>
+            
+            <div id="field.removeFromPeopleVehicles.arg.vehiclesVehicleId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.removeFromPeopleVehicles.arg.vehiclesVehicleId">vehiclesVehicleId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+            <div id="field.removeFromPeopleVehicles.arg.pilotsPersonId" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.removeFromPeopleVehicles.arg.pilotsPersonId">pilotsPersonId</a>: <a class="scalar" href="scalar.ID.html">ID</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+<section id="field.invokeFunction" class="field ">
+    <h3>
+        <code><a class="field" href="#field.invokeFunction">invokeFunction</a>(<span class=""><a class="arg" href="#field.invokeFunction.arg.input">input</a>: <a class="input_object" href="input_object.InvokeFunctionInput.html">InvokeFunctionInput</a>!): <a class="object" href="object.InvokeFunctionPayload.html">InvokeFunctionPayload</a>
+        </code>
+    </h3>
+    
+    
+    
+        <div class="args" id="field.invokeFunction.args">
+            <h4><a href="#field.invokeFunction.args">Args</a></h4>
+            
+            <div id="field.invokeFunction.arg.input" class="arg ">
+                <h5>
+                    <code><a class="arg" href="#field.invokeFunction.arg.input">input</a>: <a class="input_object" href="input_object.InvokeFunctionInput.html">InvokeFunctionInput</a>!</code>
+                </h5>
+                
+                </div>
+            
+        </div>
+    
+</section>
+
+
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>

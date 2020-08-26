@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sponsorship</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="body_wrapper" class="docql">
+        <section id="main" class="content">
+            <h1 class="fqn">
+    Object <a href="index.html">GitHub</a>::<wbr><a class="object" href="">Sponsorship</a>
+</h1>
+
+
+<div class="docblock">
+    <p>A sponsorship relationship between a sponsor and a maintainer</p>
+
+</div>
+
+
+<h2 id="fields"><a href="#fields">Fields</a></h2>
+
+
+<section id="field.createdAt" class="field ">
+    <h3>
+        <code><a class="field" href="#field.createdAt">createdAt</a>: <a class="scalar" href="scalar.DateTime.html">DateTime</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>Identifies the date and time when the object was created.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.id" class="field ">
+    <h3>
+        <code><a class="field" href="#field.id">id</a>: <a class="scalar" href="scalar.ID.html">ID</a>!
+        </code>
+    </h3>
+    
+    
+    
+</section>
+
+<section id="field.maintainer" class="field deprecated">
+    <h3>
+        <code><a class="field" href="#field.maintainer">maintainer</a>: <a class="object" href="object.User.html">User</a>!
+        </code>
+    </h3>
+    
+    <div class="stability">
+        <div class="stab deprecated">
+            <span class="emoji">👎</span>
+            <span class="label">Deprecated:</span>
+            <p class="reason">&#x60;Sponsorship.maintainer&#x60; will be removed. Use &#x60;Sponsorship.sponsorable&#x60; instead. Removal on 2020-04-01 UTC.</p>
+        </div>
+    </div>
+    
+    
+    <div class="docblock">
+        <p>The entity that is being sponsored</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.privacyLevel" class="field ">
+    <h3>
+        <code><a class="field" href="#field.privacyLevel">privacyLevel</a>: <a class="enum" href="enum.SponsorshipPrivacy.html">SponsorshipPrivacy</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The privacy level for this sponsorship.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.sponsor" class="field deprecated">
+    <h3>
+        <code><a class="field" href="#field.sponsor">sponsor</a>: <a class="object" href="object.User.html">User</a>
+        </code>
+    </h3>
+    
+    <div class="stability">
+        <div class="stab deprecated">
+            <span class="emoji">👎</span>
+            <span class="label">Deprecated:</span>
+            <p class="reason">&#x60;Sponsorship.sponsor&#x60; will be removed. Use &#x60;Sponsorship.sponsorEntity&#x60; instead. Removal on 2020-10-01 UTC.</p>
+        </div>
+    </div>
+    
+    
+    <div class="docblock">
+        <p>The user that is sponsoring. Returns null if the sponsorship is private or if sponsor is not a user.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.sponsorEntity" class="field ">
+    <h3>
+        <code><a class="field" href="#field.sponsorEntity">sponsorEntity</a>: <a class="union" href="union.Sponsor.html">Sponsor</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The user or organization that is sponsoring. Returns null if the sponsorship is private.</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.sponsorable" class="field ">
+    <h3>
+        <code><a class="field" href="#field.sponsorable">sponsorable</a>: <a class="interface" href="interface.Sponsorable.html">Sponsorable</a>!
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The entity that is being sponsored</p>
+
+    </div>
+    
+    
+</section>
+
+<section id="field.tier" class="field ">
+    <h3>
+        <code><a class="field" href="#field.tier">tier</a>: <a class="object" href="object.SponsorsTier.html">SponsorsTier</a>
+        </code>
+    </h3>
+    
+    
+    <div class="docblock">
+        <p>The associated sponsorship tier</p>
+
+    </div>
+    
+    
+</section>
+
+
+
+
+<h2 id="uses"><a href="#uses">Uses</a></h2>
+
+
+<section id="use.SponsorshipConnection" class="use">
+    <h3>
+        <code><a class="object" href="object.SponsorshipConnection.html">SponsorshipConnection</a>.<a class="field" href="object.SponsorshipConnection.html#field.nodes">nodes</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.SponsorshipEdge" class="use">
+    <h3>
+        <code><a class="object" href="object.SponsorshipEdge.html">SponsorshipEdge</a>.<a class="field" href="object.SponsorshipEdge.html#field.node">node</a>
+        
+        </code>
+    </h3>
+</section>
+
+<section id="use.Node" class="use">
+    <h3>
+        <code><a class="interface" href="interface.Node.html">Node</a>
+        </code>
+    </h3>
+</section>
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <p>Generated on <time datetime="2020-08-26">26 Aug 2020</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
+    </footer>
+</body>
+</html>
