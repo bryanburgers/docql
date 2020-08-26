@@ -3,7 +3,8 @@ Generate static HTML documentation for GraphQL APIs.
 
 ## Overview
 
-[GraphiQL] is great. So are tools like [Altair] and [Insomnia].
+[GraphiQL] is great. So are tools like [Altair] and [Insomnia]. But they aren't
+necessarily enough.
 
 `docql` comes in when you want documentation for GraphQL APIs that lives in a
 shared place. Having HTML documentation allows teams to link to specific
@@ -41,14 +42,8 @@ npx docql -e $API -o ./doc
 
 ### native binaries
 
-If native binaries are more your style, each release comes with native binaries
-on the GitHub release page.
-
-```
-docql -e $API -o ./doc
-```
-
-Or you can install your own from [crates.io] using [Rust]'s `cargo`.
+If native binaries are more your style and you have access to [Rust]'s `cargo`,
+you can install with `cargo install`.
 
 ```
 cargo install docql
