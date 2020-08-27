@@ -9,9 +9,13 @@ pub enum Error {
     #[error("Failed to retrieve args: {0}")]
     Args(String),
 
-    /// The call to get the GraphQL Schema from the runtime failed
+    /// The call to get the GraphQL Schema from the runtime via a GraphQL endpoint failed
     #[error("Failed to execute introspection query: {0}")]
     Query(String),
+
+    /// The call to get the GraphQL Schema from the runtime via a schema file failed
+    #[error("Failed to read schema file: {0}")]
+    ReadSchemaFile(String),
 
     /// The call to the runtime to prepare the output directory failed
     #[error("Failed to prepare output directory '{0}': {1}")]
@@ -46,10 +50,11 @@ impl Error {
             Self::Date(_) => 10,
             Self::Args(_) => 11,
             Self::Query(_) => 12,
-            Self::PrepareOutputDirectory(_, _) => 13,
-            Self::WriteFile(_, _) => 14,
-            Self::Serde(_) => 20,
-            Self::HandlebarsTemplate(_) | Self::HandlebarsRender(_) => 21,
+            Self::ReadSchemaFile(_) => 13,
+            Self::PrepareOutputDirectory(_, _) => 20,
+            Self::WriteFile(_, _) => 21,
+            Self::Serde(_) => 30,
+            Self::HandlebarsTemplate(_) | Self::HandlebarsRender(_) => 31,
         }
     }
 }

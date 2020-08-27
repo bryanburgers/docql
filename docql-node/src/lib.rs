@@ -22,6 +22,8 @@ extern "C" {
     async fn get_args(this: &Runtime) -> Result<JsValue, JsValue>;
     #[wasm_bindgen(method, catch)]
     async fn query(this: &Runtime, url: String, graphql: JsValue, headers: JsValue) -> Result<JsValue, JsValue>;
+    #[wasm_bindgen(method, catch, js_name = readFile)]
+    async fn read_file(this: &Runtime, path: String) -> Result<JsValue, JsValue>;
     #[wasm_bindgen(method, catch, js_name = prepareOutputDirectory)]
     async fn prepare_output_directory(this: &Runtime, output: String) -> Result<(), JsValue>;
     #[wasm_bindgen(method, catch, js_name = writeFile)]
@@ -56,6 +58,11 @@ impl RuntimeTrait for WasmRuntime {
             .into_serde()
             .map_err(|err| format!("Failed to convert result into serde: {}", err))?;
         Ok(r)
+    }
+
+    async fn read_file(&self, path: &str) -> Result<String, Self::Error> {
+        let s = self.0.read_file(path.to_string()).await.map_err(javascript_to_string)?;
+        Ok(javascript_to_string(s))
     }
 
     async fn prepare_output_directory(&self, output: &str) -> Result<(), Self::Error> {

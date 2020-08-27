@@ -49,6 +49,11 @@ pub trait Runtime {
         headers: HashMap<String, String>,
     ) -> Result<Value, Self::Error>;
 
+    /// Read a file from the filesystem.
+    ///
+    /// Used when rendering documentation based on an already downloaded schema.
+    async fn read_file(&self, path: &str) -> Result<String, Self::Error>;
+
     /// Prepare the output directory.
     ///
     /// The runtime can use this to create the directory, etc.

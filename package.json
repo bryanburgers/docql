@@ -12,8 +12,8 @@
   "author": "Bryan Burgers <bryan@burgers.io>",
   "license": "MIT",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/bryanburgers/docql.git"
+    "type": "git",
+    "url": "https://github.com/bryanburgers/docql.git"
   },
   "dependencies": {
     "node-fetch": "^2.6.0"

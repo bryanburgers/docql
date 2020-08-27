@@ -24,6 +24,10 @@ class Runtime {
         return await response.json()
     }
 
+    async readFile(path) {
+        return await fs.readFile(path, { encoding: 'utf8' })
+    }
+
     async prepareOutputDirectory(output) {
         await fs.mkdir(output, { recursive: true })
     }

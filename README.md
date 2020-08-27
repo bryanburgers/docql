@@ -58,7 +58,7 @@ docql -e $API -o ./doc
 
 ```
 USAGE:
-    docql [OPTIONS] --endpoint <url> --output <path>
+    docql [OPTIONS] --output <path> <--endpoint <url>|--schema <path>>
 
 FLAGS:
     -h, --help       Prints help information
@@ -70,4 +70,5 @@ OPTIONS:
                                 "Authorization: Bearer abcdef"`
     -n, --name <name>           The name to give to the schema (used in the title of the page) [default: GraphQL Schema]
     -o, --output <path>         The directory to put the generated documentation
+    -s, --schema <path>         The output of a GraphQL introspection query already stored locally
 ```

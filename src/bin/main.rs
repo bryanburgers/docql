@@ -54,6 +54,12 @@ impl RuntimeTrait for Runtime {
         Ok(response)
     }
 
+    async fn read_file(&self, path: &str) -> Result<String, Self::Error> {
+        tokio::fs::read_to_string(path)
+            .await
+            .map_err(|e| e.to_string())
+    }
+
     async fn prepare_output_directory(&self, output: &str) -> Result<(), Self::Error> {
         tokio::fs::create_dir_all(output)
             .await
