@@ -12,6 +12,7 @@ pub struct Renderer<'a> {
 impl<'a> Renderer<'a> {
     pub fn new(schema_name: String, date: NaiveDate, schema: &'a schema::Schema) -> Result<Self> {
         let mut handlebars = handlebars::Handlebars::new();
+        handlebars.set_strict_mode(true);
         handlebars
             .register_template_string("layout", include_str!("templates/layout.handlebars"))?;
         handlebars.register_template_string("index", include_str!("templates/index.handlebars"))?;
