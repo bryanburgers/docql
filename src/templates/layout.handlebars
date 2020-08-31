@@ -8,13 +8,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="body_wrapper" class="docql">
+    <header>
+        <p><span>Search:</span> <input type="search" name="search"></p>
+    </header>
+    <main id="body_wrapper" class="docql" data-state="main">
         <section id="main" class="content">
             {{{content}}}
         </section>
-    </div>
+        <section id="search_results" class="content">
+            <h1 class="fqn">
+                Search Results
+            </h1>
+            <section id="search_content">
+            </section>
+        </section>
+    </main>
     <footer>
         <p>Generated on <time datetime="{{dateIso}}">{{dateHuman}}</time> by <a href="https://github.com/bryanburgers/docql">docql</a>.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

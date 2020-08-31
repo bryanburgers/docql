@@ -83,6 +83,7 @@ mod handlebars_helpers;
 mod renderer;
 mod runtime;
 mod schema;
+mod search_index;
 pub use error::{Error, Result};
 use renderer::Renderer;
 pub use runtime::{GraphqlRequest, Runtime, GRAPHQL_REQUEST, INTROSPECTION_QUERY};
@@ -224,6 +225,23 @@ pub async fn main(runtime: impl Runtime) -> Result<()> {
         )
         .await
         .map_err(|e| Error::WriteFile(style_filename, e.to_string()))?;
+    let script_filename = "script.js".to_string();
+    runtime
+        .write_file(
+            &output,
+            &script_filename,
+            include_str!("templates/script.js"),
+        )
+        .await
+        .map_err(|e| Error::WriteFile(script_filename, e.to_string()))?;
+
+    let search_index = search_index::SearchIndex::build(&schema);
+    let search_index = serde_json::to_string_pretty(&search_index)?;
+    let search_index_filename = "search-index.json".to_string();
+    runtime
+        .write_file(&output, &search_index_filename, &search_index)
+        .await
+        .map_err(|e| Error::WriteFile(search_index_filename, e.to_string()))?;
 
     futures::stream::iter(&schema.types)
         .map(|t| write_type(&runtime, &output, &renderer, t))

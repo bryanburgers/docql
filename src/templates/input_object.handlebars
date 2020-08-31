@@ -13,7 +13,7 @@
 {{#each inputObject.inputFields}}
 <section>
     <h3 id="input_field.{{name}}" class="input_field {{#if isDeprecated}}deprecated{{/if}}">
-        <code><a class="field" href="#input_field.{{name}}">{{ name }}</a>
+        <code><a class="input_field" href="#input_field.{{name}}">{{ name }}</a>
             {{~#if args}}({{#each args}}<span class="{{#if isDeprecated}}deprecated{{/if}}">{{ name }}: {{ t(type) }}{{#if defaultValue}} = {{defaultValue}}{{/if}}{{#if @last}}{{else}}</span>, {{/if}}{{/each}}){{/if~}}
             : {{ t(type) }}
         </code>

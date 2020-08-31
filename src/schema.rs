@@ -91,32 +91,32 @@ impl Kind {
 #[derive(Debug, Serialize, Deserialize, Eq, Ord, PartialEq, PartialOrd)]
 #[serde(rename_all = "camelCase")]
 pub struct Field {
-    name: String,
-    description: Option<String>,
-    args: Vec<InputValue>,
+    pub name: String,
+    pub description: Option<String>,
+    pub args: Vec<InputValue>,
     #[serde(rename = "type")]
-    typ: TypeRef,
-    is_deprecated: bool,
-    deprecation_reason: Option<String>,
+    pub typ: TypeRef,
+    pub is_deprecated: bool,
+    pub deprecation_reason: Option<String>,
 }
 
 #[derive(Debug, Serialize, Deserialize, Eq, Ord, PartialEq, PartialOrd)]
 #[serde(rename_all = "camelCase")]
 pub struct InputValue {
-    name: String,
-    description: Option<String>,
+    pub name: String,
+    pub description: Option<String>,
     #[serde(rename = "type")]
-    typ: TypeRef,
-    default_value: Option<String>,
+    pub typ: TypeRef,
+    pub default_value: Option<String>,
 }
 
 #[derive(Debug, Serialize, Deserialize, Eq, Ord, PartialEq, PartialOrd)]
 #[serde(rename_all = "camelCase")]
 pub struct EnumValue {
-    name: String,
-    description: Option<String>,
-    is_deprecated: bool,
-    deprecation_reason: Option<String>,
+    pub name: String,
+    pub description: Option<String>,
+    pub is_deprecated: bool,
+    pub deprecation_reason: Option<String>,
 }
 
 impl Schema {
