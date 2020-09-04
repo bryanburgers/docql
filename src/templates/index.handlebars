@@ -4,14 +4,18 @@
 
 <h2 id="roots">Roots</h2>
 
+{{#if queryType}}
 <section>
 <h3 id="root.query" class="root">
     <code><a class="root" href="#root.query">query</a>: <a class="object" href="object.{{ queryType }}.html">{{ queryType }}</a></code>
 </h3>
 </section>
+{{/if}}
 
+{{#if mutationType}}
 <section>
 <h3 id="root.mutation" class="root">
     <code><a class="root" href="#root.mutation">mutation</a>: <a class="object" href="object.{{ mutationType }}.html">{{ mutationType }}</a></code>
 </h3>
 </section>
+{{/if}}

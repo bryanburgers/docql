@@ -162,16 +162,16 @@ struct LayoutContext<'a> {
 #[serde(rename_all = "camelCase")]
 struct IndexContext<'a> {
     schema_name: &'a str,
-    query_type: &'a str,
-    mutation_type: &'a str,
+    query_type: Option<&'a str>,
+    mutation_type: Option<&'a str>,
 }
 
 impl<'a> IndexContext<'a> {
     fn new(schema_name: &'a str, schema: &'a schema::Schema) -> Self {
         Self {
             schema_name,
-            query_type: &schema.query_type.name,
-            mutation_type: &schema.mutation_type.name,
+            query_type: schema.query_type.as_ref().map(|t| t.name.as_str()),
+            mutation_type: schema.mutation_type.as_ref().map(|t| t.name.as_str()),
         }
     }
 }

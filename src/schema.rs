@@ -14,8 +14,8 @@ pub struct Data {
 #[derive(Debug, Serialize, Deserialize, Eq, Ord, PartialEq, PartialOrd)]
 #[serde(rename_all = "camelCase")]
 pub struct Schema {
-    pub query_type: RootTypeRef,
-    pub mutation_type: RootTypeRef,
+    pub query_type: Option<RootTypeRef>,
+    pub mutation_type: Option<RootTypeRef>,
     pub types: Vec<FullType>,
 }
 
