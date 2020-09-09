@@ -28,16 +28,24 @@ body > header {
     border-bottom: 1px solid #3e3e3e;
     font-size: 0.8em;
     background: #313131;
+    padding: 0 15px;
+}
+body > header > div {
+    margin: 8px auto;
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-body > header p {
-    display: grid;
-    max-width: 960px;
-    margin: 1em auto;
-    grid-template-columns: auto 1fr;
-}
-body > header span {
-    padding-right: 0.5em;
+body > header input {
+    font-size: 16px;
+    background: none;
+    border: none;
+    border-bottom: 1px dashed #d2991d;
+    color: #ddd;
+    /* color: #d2991d; */
+    grid-column-start: 2;
+    padding: 0.25em;
 }
 
 body > footer {
@@ -66,6 +74,10 @@ a:hover {
     padding: 10px 15px 20px 15px;
     position: relative;
     align-self: start;
+}
+
+#body_wrapper {
+    overflow-x: scroll;
 }
 
 #main, #search_results {
@@ -169,8 +181,8 @@ a.arg { color: #ffe3a5; }
 }
 
 section {
-    margin: 1em -0.25em;
-    padding: 0.25em;
+    margin: 1em 0;
+    padding: 0;
 }
 section > h3 {
     margin: 0;
