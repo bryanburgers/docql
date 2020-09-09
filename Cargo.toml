@@ -1,6 +1,6 @@
 [package]
 name = "docql"
-version = "0.3.1"
+version = "0.3.2"
 authors = ["Bryan Burgers <bryan@burgers.io>"]
 edition = "2018"
 description = "Generate static HTML documentation for GraphQL APIs."
